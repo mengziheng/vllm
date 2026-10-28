@@ -1,0 +1,311 @@
+{
+  "snapshot_utc": "2026-10-28T11:09:31.376387+00:00",
+  "publication_state": "Complete paired GPU validation collected and re-audited; final incremental candidate scan and normal publication next.",
+  "fixed_commit": "eb34e115d041ac685fa38eadf8eae6c51d61dc23",
+  "scope": "Allowlisted UTF-8 text candidates excluding .git; literal/key patterns; no secret values emitted.",
+  "copy_checks": {
+    "evaluation_v10_and_analysis_files_compared": 30,
+    "v9_raw_files_byte_exact": 57,
+    "v9_empty_runner_lock_omitted": true,
+    "historical_pr_description_byte_exact": true,
+    "frozen_v10_changes_byte_exact": true,
+    "evaluation_readme_change": "Only its CPU-report link points to preparation-reports.",
+    "executed_admission_script_matches_proof_sha256": true,
+    "licenses_and_attribution_retained": true
+  },
+  "verification_reused": [
+    {
+      "check": "v10 analysis integration",
+      "tests": 16,
+      "seconds": 2.212,
+      "result": "passed",
+      "reason": "Published code matches the already-tested v10/analysis copies."
+    },
+    {
+      "check": "isolated admission final fixtures",
+      "tests": 8,
+      "result": "passed",
+      "evidence": "pool-admission/legacy-admission-test-green.log"
+    }
+  ],
+  "declared_public_copy_redactions": [
+    {
+      "file": "pool-admission/legacy-admission-proof.redacted.json",
+      "field": "current_task.preparation_errors.h20-03",
+      "kind": "one private IPv4 in an old SSH diagnostic",
+      "replacement": "<private-ip-redacted>",
+      "original_task_evidence_unchanged": true,
+      "model_scores_or_responses_changed": false
+    }
+  ],
+  "pending_gpu_evidence": [],
+  "not_run_during_publication_preparation": [
+    "model requests",
+    "accuracy scoring",
+    "GPU benchmarks",
+    "old tool test suites",
+    "whole-source hashes"
+  ],
+  "git_mutations": {
+    "at_this_prepublication_check": {
+      "commit": false,
+      "push": false
+    },
+    "shared_pool_files_changed": false
+  },
+  "completed_pair_job": "48781766ecb1491487388e1ad00fe7c5",
+  "credential_scan_initial_snapshot": {
+    "files_scanned_before_generated_inventory_records": 177,
+    "bytes_scanned_before_generated_inventory_records": 17987649,
+    "private_key_material_matches": 0,
+    "known_credential_prefix_matches": 0,
+    "bearer_literal_matches": 0,
+    "url_embedded_credential_matches": 0,
+    "credential_assignment_matches": 0,
+    "nonempty_credential_like_json_key_matches": 0,
+    "internal_dns_pattern_matches": 0,
+    "unredacted_private_ipv4_addresses_found": 0,
+    "private_ip_pattern_false_positive": {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/accuracy-gsm8k/attempt-001/results/__model/results_2026-10-28T17-04-57.880448.json",
+      "field": "pretty_env_info",
+      "classification": "package version line with ==; not a URL/address"
+    },
+    "symlinks": 0,
+    "unsupported_file_types": 0,
+    "retained_path_metadata": {
+      "files": 43,
+      "matches": 230,
+      "policy": "Recorded local build, mount, and executed-script paths are retained as provenance; they are not credentials.",
+      "executed_script_local_pool_project_directory_retained": true,
+      "locations": [
+        {
+          "file": "pool-admission/full-pair-v10-compat-submit-argv.json",
+          "matches": 7
+        },
+        {
+          "file": "pool-admission/legacy-admission-proof.redacted.json",
+          "matches": 8
+        },
+        {
+          "file": "pool-admission/test_legacy_pool_admission.py",
+          "matches": 1
+        },
+        {
+          "file": "pool-admission/pool_legacy_admission.py",
+          "matches": 1
+        },
+        {
+          "file": "pool-admission/full-pair-v10-pair2-compat-submit-argv.json",
+          "matches": 7
+        },
+        {
+          "file": "pool-admission/legacy-admission-test-red.log",
+          "matches": 20
+        },
+        {
+          "file": "preparation-reports/native-runtime-build.md",
+          "matches": 3
+        },
+        {
+          "file": "preparation-reports/evaluation-cpu-preparation.md",
+          "matches": 2
+        },
+        {
+          "file": "evidence/sweep-unified-moe58986-8dd50e9bc7e6.json",
+          "matches": 7
+        },
+        {
+          "file": "native/FROZEN.json",
+          "matches": 2
+        },
+        {
+          "file": "native/model-receipt-h20-01.json",
+          "matches": 2
+        },
+        {
+          "file": "native/native-receipt.json",
+          "matches": 1
+        },
+        {
+          "file": "native/toolchain.json",
+          "matches": 44
+        },
+        {
+          "file": "evaluation/model-receipt-h20-01.json",
+          "matches": 2
+        },
+        {
+          "file": "evaluation/pool-submit-smoke-argv.json",
+          "matches": 7
+        },
+        {
+          "file": "evaluation/pool-submit-argv.json",
+          "matches": 7
+        },
+        {
+          "file": "build-scripts/assemble_runtime.py",
+          "matches": 1
+        },
+        {
+          "file": "build-scripts/complete_runtime.py",
+          "matches": 2
+        },
+        {
+          "file": "evidence/evaluation-cpu/launch-commands.json",
+          "matches": 30
+        },
+        {
+          "file": "evidence/evaluation-cpu/evaluation-v9-source-receipt.json",
+          "matches": 1
+        },
+        {
+          "file": "evidence/evaluation-cpu/unified-environment/sweep-unified-moe58986-12d67483203d.json",
+          "matches": 11
+        },
+        {
+          "file": "raw/fullpair-v10-a80de6bd/pool-job-status.json",
+          "matches": 24
+        },
+        {
+          "file": "raw/fullpair-v10-a80de6bd/launcher/sweep-unified-moe58986-f41ba688009b.json",
+          "matches": 12
+        },
+        {
+          "file": "raw/fullpair-v10-a80de6bd/job/manifest.json",
+          "matches": 3
+        },
+        {
+          "file": "raw/fullpair-v9-d8617fa4/job/manifest.json",
+          "matches": 3
+        },
+        {
+          "file": "raw/fullpair-v9-d8617fa4/job/runner-001/actual-environment.json",
+          "matches": 1
+        },
+        {
+          "file": "raw/fullpair-v9-d8617fa4/job/runner-001/command.json",
+          "matches": 1
+        },
+        {
+          "file": "raw/fullpair-v9-d8617fa4/job/setup-versions/identity.json",
+          "matches": 1
+        },
+        {
+          "file": "raw/fullpair-v9-d8617fa4/job/pair/plan.json",
+          "matches": 2
+        },
+        {
+          "file": "raw/fullpair-v9-d8617fa4/job/pair/identity.json",
+          "matches": 3
+        },
+        {
+          "file": "raw/fullpair-v9-d8617fa4/job/setup-versions/attempt-001/actual-environment.json",
+          "matches": 1
+        },
+        {
+          "file": "raw/fullpair-v9-d8617fa4/job/setup-versions/attempt-001/command.json",
+          "matches": 1
+        },
+        {
+          "file": "raw/fullpair-v9-d8617fa4/job/pair/client-version/identity.json",
+          "matches": 1
+        },
+        {
+          "file": "raw/fullpair-v9-d8617fa4/job/pair/client-version/attempt-001/actual-environment.json",
+          "matches": 1
+        },
+        {
+          "file": "raw/fullpair-v9-d8617fa4/job/pair/client-version/attempt-001/command.json",
+          "matches": 1
+        },
+        {
+          "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/accuracy-gsm8k/identity.json",
+          "matches": 1
+        },
+        {
+          "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/server-001/command.json",
+          "matches": 1
+        },
+        {
+          "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/server-001/proof.json",
+          "matches": 2
+        },
+        {
+          "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/accuracy-gsm8k/attempt-001/actual-environment.json",
+          "matches": 1
+        },
+        {
+          "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/accuracy-gsm8k/attempt-001/command.json",
+          "matches": 1
+        },
+        {
+          "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/server-001/startup-request/identity.json",
+          "matches": 1
+        },
+        {
+          "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/server-001/startup-request/attempt-001/actual-environment.json",
+          "matches": 1
+        },
+        {
+          "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/server-001/startup-request/attempt-001/command.json",
+          "matches": 1
+        }
+      ]
+    }
+  },
+  "final_credential_scan_report": "INCREMENTAL-CHECKS.json (new and changed candidates; stable prior payload results reused)",
+  "final_execution": {
+    "pair_id": "glm53-h20-pr58986-eb34e115-native-full-mtp3-20261028-pair2",
+    "source_commit": "eb34e115d041ac685fa38eadf8eae6c51d61dc23",
+    "arms": 2,
+    "workloads_per_arm": 14,
+    "quality_runs": 4,
+    "benchmark_runs": 24,
+    "measured_requests_per_benchmark": 128,
+    "successful_warmups_per_benchmark": 16,
+    "summary_status": "paired-raw-results-reaudited",
+    "actual_logged_dataset_docs_status": "matched",
+    "summary_exit": 0,
+    "actual_logged_dataset_docs_exit": 0,
+    "source_native_hardware_shared": true,
+    "actual_tuned_json_matches_pr_git_blob": true,
+    "raw_original_files": 388,
+    "raw_original_bytes": 61002180,
+    "raw_archive_sha256": "cda4c62a58cc8bfaa6f012f96871372d58db7c00e7db0472dd6d62bbc731ab28",
+    "raw_archive_bytes": 13012924,
+    "servers_runner_launcher_exit": 0,
+    "pool_status": "passed",
+    "foreign_gpu_contamination": false,
+    "resource_busy_before_launch": false,
+    "model_or_scoring_requests_rerun_during_publication": false,
+    "quality_observation": "GSMstrict1225→1219/1319 andflex1226→1220; AIME19→21/30; qualityequivalence notestablished."
+  },
+  "final_scan_format_extension": {
+    "newly_accepted_utf8_text_formats": [
+      ".csv",
+      ".sh",
+      ".yaml",
+      ".yml"
+    ],
+    "reason": "Retain actual hardware CSV, executed analysis shell command and official task YAML provenance.",
+    "credential_patterns_and_json_key_rules_changed": false,
+    "prior_accepted_format_results_reused": true,
+    "unsupported_cached_format_results_rechecked": true
+  },
+  "declared_false_positive_classifications": [
+    {
+      "file": "reports/pair2-summary.json",
+      "field": "throughput_units.total_token_throughput",
+      "value": "input + output tokens/s",
+      "classification": "Public performance metric unit, not an authentication token",
+      "raw_file_or_metric_redacted": false,
+      "scope": "Only exact filename, reaudited status and exact unit label; general credential matching remains active."
+    }
+  ],
+  "final_scan_policy_update": {
+    "version": 2,
+    "changed_scope": "Exact known public metric-unit field in pair2-summary.json",
+    "unaffected_prior_content_results_reused": true,
+    "affected_summary_rechecked": true
+  }
+}

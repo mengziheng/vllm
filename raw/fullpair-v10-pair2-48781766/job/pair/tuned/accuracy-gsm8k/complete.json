@@ -1,0 +1,13 @@
+{
+  "attempt": "attempt-001",
+  "audit": {
+    "task": "gsm8k",
+    "samples": 1319,
+    "full_dataset": true,
+    "logged_sample_rows": 2638,
+    "filters": {
+      "strict-match": 1319,
+      "flexible-extract": 1319
+    }
+  }
+}

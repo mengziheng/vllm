@@ -1,0 +1,21 @@
+{
+  "purpose": "Only after pair2 terminal passed: preserve original full results and clean-exit receipts; no live collection was run during preparation.",
+  "argv": [
+    "/Users/bytedance/Documents/ChatGPT/b200优化/.venv/bin/python",
+    "/Users/bytedance/Documents/ChatGPT/b200优化/review-20261028-native-runtime/scripts/collect_pair2_raw.py",
+    "--collect"
+  ],
+  "print_plan_argv": [
+    "/Users/bytedance/Documents/ChatGPT/b200优化/.venv/bin/python",
+    "/Users/bytedance/Documents/ChatGPT/b200优化/review-20261028-native-runtime/scripts/collect_pair2_raw.py"
+  ],
+  "destination": "/Users/bytedance/Documents/ChatGPT/b200优化/review-20261028-native-runtime/evidence/fullpair-v10-pair2-48781766",
+  "large_archive_directory": "/data03/tiger/vllm_pr58986_evalprep_20261028_eb34e115/exports",
+  "checks": [
+    "official pool status one matching job, passed, exit0, foreign_gpu_contamination=false",
+    "both arms passed14 jobs, pair-audit expected pair, runner/server exits0",
+    "actual launcher passed0 and stopped/Pid0/OOMfalse/ExitCode0",
+    "local archive SHA256 equals remote archive SHA256"
+  ],
+  "fixture_result": "Local synthetic filesystem fixture passed including scope, exclusions, no overwrite and refusal of running launcher; no real job archive collected."
+}

@@ -1,0 +1,161 @@
+{
+  "python": "/usr/local/bin/python3",
+  "python_version": "3.12.13 (001c8cb:001c8cb, Sep 11 2026, 20:08:55) [GCC 12.2.0]",
+  "torch": "2.13.0+cu130",
+  "torch_cuda": "13.0",
+  "torch_path": "/usr/local/lib/python3.12/site-packages/torch/__init__.py",
+  "cuda_initialized": false,
+  "tools": {
+    "nvcc": {
+      "path": "/usr/local/cuda/bin/nvcc",
+      "returncode": 0,
+      "stdout": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2025 NVIDIA Corporation\nBuilt on Wed_Aug_20_01:58:59_PM_PDT_2025\nCuda compilation tools, release 13.0, V13.0.88\nBuild cuda_13.0.r13.0/compiler.36424714_0\n",
+      "stderr": ""
+    },
+    "cmake": {
+      "path": "/usr/bin/cmake",
+      "returncode": 0,
+      "stdout": "cmake version 3.31.6\n\nCMake suite maintained and supported by Kitware (kitware.com/cmake).\n",
+      "stderr": ""
+    },
+    "ninja": {
+      "path": "/usr/local/bin/ninja",
+      "returncode": 0,
+      "stdout": "1.13.2.git.kitware.jobserver-pipe-1\n",
+      "stderr": ""
+    },
+    "g++": {
+      "path": "/opt/byted/toolchain/bin/g++",
+      "returncode": 0,
+      "stdout": "x86_64-conda-linux-gnu-c++ (conda-forge gcc 13.4.0-20) 13.4.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+      "stderr": ""
+    },
+    "g++-13": {
+      "path": null
+    },
+    "g++-14": {
+      "path": null
+    },
+    "ccache": {
+      "path": null
+    },
+    "uv": {
+      "path": null
+    }
+  },
+  "write_paths": {
+    "sources": {
+      "path": "/work/sources",
+      "device": 66310,
+      "statvfs": [
+        4096,
+        4096,
+        922681050,
+        97988117,
+        51099810,
+        234422272,
+        222004061,
+        222004061,
+        1024,
+        255
+      ]
+    },
+    "build": {
+      "path": "/work/build",
+      "device": 66310,
+      "statvfs": [
+        4096,
+        4096,
+        922681050,
+        97988117,
+        51099810,
+        234422272,
+        222004061,
+        222004061,
+        1024,
+        255
+      ]
+    },
+    "package": {
+      "path": "/work/package",
+      "device": 66310,
+      "statvfs": [
+        4096,
+        4096,
+        922681050,
+        97988117,
+        51099810,
+        234422272,
+        222004061,
+        222004061,
+        1024,
+        255
+      ]
+    },
+    "logs": {
+      "path": "/work/logs",
+      "device": 66310,
+      "statvfs": [
+        4096,
+        4096,
+        922681050,
+        97988117,
+        51099810,
+        234422272,
+        222004061,
+        222004061,
+        1024,
+        255
+      ]
+    },
+    "receipts": {
+      "path": "/work/receipts",
+      "device": 66310,
+      "statvfs": [
+        4096,
+        4096,
+        922681050,
+        97988117,
+        51099810,
+        234422272,
+        222004061,
+        222004061,
+        1024,
+        255
+      ]
+    },
+    "tmp": {
+      "path": "/work/tmp",
+      "device": 66310,
+      "statvfs": [
+        4096,
+        4096,
+        922681050,
+        97988117,
+        51099810,
+        234422272,
+        222004061,
+        222004061,
+        1024,
+        255
+      ]
+    },
+    "cache": {
+      "path": "/work/cache",
+      "device": 66310,
+      "statvfs": [
+        4096,
+        4096,
+        922681050,
+        97988117,
+        51099810,
+        234422272,
+        222004061,
+        222004061,
+        1024,
+        255
+      ]
+    }
+  },
+  "mountinfo": "1792 1156 0:105 / / rw,relatime master:374 - overlay overlay rw,lowerdir=/data00/docker/overlay2/l/4E5XOK5J5DMGOS5EVMC3GYL475:/data00/docker/overlay2/l/IUERM2W64FF6PIA7TMSONF4N7U:/data00/docker/overlay2/l/ZO6HC2OEQ2UPSU4FABLDBBWOIX:/data00/docker/overlay2/l/7YCGTZU7ZRDRC6ENG746W37LGP:/data00/docker/overlay2/l/SSYJZ3HSOAY5UQEUCOSN2NLJQW:/data00/docker/overlay2/l/E23RDJVQIGPEKQTZ5MUN5OLV3N:/data00/docker/overlay2/l/67V25UUK7GB6XD62P2FVO555MC:/data00/docker/overlay2/l/MBW2TVPNY6GY4JJWDRSXD6BR5E:/data00/docker/overlay2/l/C4JBIS57W6K2ESH3KR2TFECSUY:/data00/docker/overlay2/l/TWOXOHUYIYUYAQW25KQ55VJZWG:/data00/docker/overlay2/l/DQJXKNP4S4R666I5KEINF3R4YX:/data00/docker/overlay2/l/YRMQOLX4YAMB3BKO32A7WXWD3V:/data00/docker/overlay2/l/IUUL3PXHWUUQAKBAPP6BBF3Z6Q:/data00/docker/overlay2/l/XHJ2INFDCI4AM672OVUUXXQZ6H:/data00/docker/overlay2/l/PSCMMQLARPKHX7T4LWLBL2MTZ5:/data00/docker/overlay2/l/RS7EI2YSUKQHZBPXF7X2UFIKMG:/data00/docker/overlay2/l/O573A62QV2DHEI35ERIWWNSFAN:/data00/docker/overlay2/l/YMSAXWZIFE5GUVQRTOMOVAWVKF:/data00/docker/overlay2/l/Y4HUNAHHZQZ2PPRJF22L46RHAD:/data00/docker/overlay2/l/XWQJ2K7PNNMR54WXCCWGUFFXLN:/data00/docker/overlay2/l/D6772MT3RKZIRQ4GIDARREDMSO:/data00/docker/overlay2/l/YF3CDNTJZRPX6WTKMGG7X7DBN5:/data00/docker/overlay2/l/JLINDDQ72DQDYXAEFXEBDEY5A4:/data00/docker/overlay2/l/5ADIGK2CLN6B3Z3UXDGNU6OWO4:/data00/docker/overlay2/l/EC27RQJ56CYNVFSSV36IRENNJ3:/data00/docker/overlay2/l/SOV5NMZAXX253RRRVD4DD2WBUG:/data00/docker/overlay2/l/4ZDYT5FHT3HA3ST4X7LR2O7RUB:/data00/docker/overlay2/l/LYBYMWFCZJUMEJYMBF3LEH6PEZ:/data00/docker/overlay2/l/5WFUTO66OINJHT4YSMLF7CGOFU:/data00/docker/overlay2/l/36AINRALYLLV5F7UTHYF73DXRB:/data00/docker/overlay2/l/HOBT5GJNJLBPA3YOD5TIQKNAXQ:/data00/docker/overlay2/l/M64OHHBO53ROKSUKAKNR3LLF5F:/data00/docker/overlay2/l/26XWB4Y33HMJQAI7EUEOJJWZPU:/data00/docker/overlay2/l/7LQH5OLMMQASISWZEI3FK3VRVT:/data00/docker/overlay2/l/TFHK2GNHZBSOVLS4Z4AUS7CGOV:/data00/docker/overlay2/l/75HDO2ZBMPNC5W5UBGMEK6GSO6:/data00/docker/overlay2/l/37UKPLIJYHAOB4UWPIGQZODOLD:/data00/docker/overlay2/l/5IPP4MK2IMIW7GSYAMUUSTRRCE:/data00/docker/overlay2/l/7DTQKSCTJ2UK4GTJTINLBHDMOT:/data00/docker/overlay2/l/SRKBKNUDBQKBGYVRO6EGUCU4ER:/data00/docker/overlay2/l/VFPKW6HUHEMEYL6KF2KHE64CNK:/data00/docker/overlay2/l/TNGJVFZ4EUC2PFNXZXH7NGPJZZ,upperdir=/data00/docker/overlay2/09d06905c67e55093d73ea2ecc9a15d0bf919573c0d362a224cebed2e5b2c1b5/diff,workdir=/data00/docker/overlay2/09d06905c67e55093d73ea2ecc9a15d0bf919573c0d362a224cebed2e5b2c1b5/work,index=off,nfs_export=off\n1793 1792 0:134 / /proc rw,nosuid,nodev,noexec,relatime - proc proc rw\n1794 1792 0:135 / /dev rw,nosuid - tmpfs tmpfs rw,size=65536k,mode=755\n1795 1794 0:136 / /dev/pts rw,nosuid,noexec,relatime - devpts devpts rw,gid=5,mode=620,ptmxmode=666\n1796 1792 0:137 / /sys ro,nosuid,nodev,noexec,relatime - sysfs sysfs ro\n1797 1796 0:138 / /sys/fs/cgroup rw,nosuid,nodev,noexec,relatime - tmpfs tmpfs rw,mode=755\n1798 1797 0:26 /docker/7ffd084d9c9649ab822a420ce8dbd868015ab54ddf98cc828341a0093f2310ce /sys/fs/cgroup/systemd ro,nosuid,nodev,noexec,relatime master:10 - cgroup cgroup rw,xattr,release_agent=/lib/systemd/systemd-cgroups-agent,name=systemd\n1799 1797 0:30 /docker/7ffd084d9c9649ab822a420ce8dbd868015ab54ddf98cc828341a0093f2310ce /sys/fs/cgroup/cpu,cpuacct ro,nosuid,nodev,noexec,relatime master:15 - cgroup cgroup rw,cpu,cpuacct\n1800 1797 0:31 /docker/7ffd084d9c9649ab822a420ce8dbd868015ab54ddf98cc828341a0093f2310ce /sys/fs/cgroup/devices ro,nosuid,nodev,noexec,relatime master:16 - cgroup cgroup rw,devices\n1801 1797 0:32 /docker/7ffd084d9c9649ab822a420ce8dbd868015ab54ddf98cc828341a0093f2310ce /sys/fs/cgroup/freezer ro,nosuid,nodev,noexec,relatime master:17 - cgroup cgroup rw,freezer\n1802 1797 0:33 /docker/7ffd084d9c9649ab822a420ce8dbd868015ab54ddf98cc828341a0093f2310ce /sys/fs/cgroup/perf_event ro,nosuid,nodev,noexec,relatime master:18 - cgroup cgroup rw,perf_event\n1803 1797 0:34 /docker/7ffd084d9c9649ab822a420ce8dbd868015ab54ddf98cc828341a0093f2310ce /sys/fs/cgroup/net_cls,net_prio ro,nosuid,nodev,noexec,relatime master:19 - cgroup cgroup rw,net_cls,net_prio\n1804 1797 0:35 /docker/7ffd084d9c9649ab822a420ce8dbd868015ab54ddf98cc828341a0093f2310ce /sys/fs/cgroup/pids ro,nosuid,nodev,noexec,relatime master:20 - cgroup cgroup rw,pids\n1805 1797 0:36 /docker/7ffd084d9c9649ab822a420ce8dbd868015ab54ddf98cc828341a0093f2310ce /sys/fs/cgroup/cpuset ro,nosuid,nodev,noexec,relatime master:21 - cgroup cgroup rw,cpuset\n1806 1797 0:37 /docker/7ffd084d9c9649ab822a420ce8dbd868015ab54ddf98cc828341a0093f2310ce /sys/fs/cgroup/memory ro,nosuid,nodev,noexec,relatime master:22 - cgroup cgroup rw,memory\n1807 1797 0:38 /docker/7ffd084d9c9649ab822a420ce8dbd868015ab54ddf98cc828341a0093f2310ce /sys/fs/cgroup/blkio ro,nosuid,nodev,noexec,relatime master:23 - cgroup cgroup rw,blkio\n1808 1794 0:133 / /dev/mqueue rw,nosuid,nodev,noexec,relatime - mqueue mqueue rw\n1809 1794 0:139 / /dev/shm rw,nosuid,nodev,noexec,relatime - tmpfs shm rw,size=2097152k\n1810 1792 254:2 /usr/libexec/docker/docker-init /usr/sbin/docker-init ro,relatime master:1 - ext4 /dev/vda2 rw\n1811 1792 259:6 /tiger/vllm_pr58986_native_20261028_eb34e115 /work rw,noatime - ext4 /dev/nvme2n1p1 rw\n1812 1792 259:6 /tiger/vllm_pr58986_native_20261028_eb34e115/unified-environment/runtime/sweep-unified-moe58986-d2e530d79d37/tmp /tmp rw,noatime - ext4 /dev/nvme2n1p1 rw\n1813 1792 259:6 /tiger/vllm_pr58986_native_20261028_eb34e115/unified-environment/runtime/sweep-unified-moe58986-d2e530d79d37/home /sweep-home rw,noatime - ext4 /dev/nvme2n1p1 rw\n1814 1792 259:6 /tiger/operator_sweep_common/20261023-v1 /common ro,noatime - ext4 /dev/nvme2n1p1 rw\n1815 1792 259:6 /tiger/vllm_pr58986_native_20261028_eb34e115/unified-environment/runtime/sweep-unified-moe58986-d2e530d79d37/var-tmp /var/tmp rw,noatime - ext4 /dev/nvme2n1p1 rw\n1816 1792 259:1 /docker/containers/7ffd084d9c9649ab822a420ce8dbd868015ab54ddf98cc828341a0093f2310ce/resolv.conf /etc/resolv.conf rw,noatime - ext4 /dev/nvme0n1p1 rw\n1817 1792 259:1 /docker/containers/7ffd084d9c9649ab822a420ce8dbd868015ab54ddf98cc828341a0093f2310ce/hostname /etc/hostname rw,noatime - ext4 /dev/nvme0n1p1 rw\n1818 1792 259:1 /docker/containers/7ffd084d9c9649ab822a420ce8dbd868015ab54ddf98cc828341a0093f2310ce/hosts /etc/hosts rw,noatime - ext4 /dev/nvme0n1p1 rw\n1158 1793 0:134 /bus /proc/bus ro,nosuid,nodev,noexec,relatime - proc proc rw\n1159 1793 0:134 /fs /proc/fs ro,nosuid,nodev,noexec,relatime - proc proc rw\n1160 1793 0:134 /irq /proc/irq ro,nosuid,nodev,noexec,relatime - proc proc rw\n1162 1793 0:134 /sys /proc/sys ro,nosuid,nodev,noexec,relatime - proc proc rw\n1165 1793 0:134 /sysrq-trigger /proc/sysrq-trigger ro,nosuid,nodev,noexec,relatime - proc proc rw\n1166 1793 0:140 / /proc/asound ro,relatime - tmpfs tmpfs ro\n1167 1793 0:141 / /proc/acpi ro,relatime - tmpfs tmpfs ro\n1168 1793 0:135 /null /proc/kcore rw,nosuid - tmpfs tmpfs rw,size=65536k,mode=755\n1169 1793 0:135 /null /proc/keys rw,nosuid - tmpfs tmpfs rw,size=65536k,mode=755\n1170 1793 0:135 /null /proc/timer_list rw,nosuid - tmpfs tmpfs rw,size=65536k,mode=755\n1171 1793 0:135 /null /proc/sched_debug rw,nosuid - tmpfs tmpfs rw,size=65536k,mode=755\n1172 1796 0:142 / /sys/firmware ro,relatime - tmpfs tmpfs ro\n1173 1796 0:143 / /sys/devices/virtual/powercap ro,relatime - tmpfs tmpfs ro\n"
+}

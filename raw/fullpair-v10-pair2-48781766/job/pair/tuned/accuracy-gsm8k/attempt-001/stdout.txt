@@ -1,0 +1,6 @@
+local-completions ({'model': '/model', 'tokenizer': '/model', 'base_url': 'http://127.0.0.1:8000/v1/completions', 'num_concurrent': 8, 'max_retries': 0, 'tokenized_requests': False, 'tokenizer_backend': 'huggingface', 'max_length': 40000, 'timeout': 7200, 'seed': 20261028}), gen_kwargs: ({'do_sample': False, 'temperature': 0.0, 'max_gen_toks': 256, 'until': ['Question:', '</s>', '<|im_end|>']}), limit: None, num_fewshot: 5, batch_size: 1
+|Tasks|Version|     Filter     |n-shot|  Metric   |   |Value |   |Stderr|
+|-----|------:|----------------|-----:|-----------|---|-----:|---|-----:|
+|gsm8k|      3|flexible-extract|     5|exact_match|↑  |0.9249|±  |0.0073|
+|     |       |strict-match    |     5|exact_match|↑  |0.9242|±  |0.0073|
+

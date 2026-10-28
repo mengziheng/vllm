@@ -1,0 +1,32 @@
+{
+  "source_commit": "8b476fa8f60a5938daefd821b8bec5f49df36778",
+  "source_tree": "working-directory",
+  "contract": {
+    "CUDA_VERSION": "13.0.3",
+    "CUDA_PIP_VERSION": "13.0.3",
+    "CUDA_PYTHON_VERSION": "13.0.3",
+    "CUDA_NVCC_VERSION": "13.0.88",
+    "CUDA_CUDART_VERSION": "13.0.96",
+    "CUDA_TOOLKIT_SOURCE": "pip",
+    "TORCH_VERSION": "2.13.0+cu130",
+    "TORCHAUDIO_VERSION": "2.11.0+cu130",
+    "TORCHVISION_VERSION": "0.28.0+cu130",
+    "TORCHCODEC_VERSION": "0.16.0+cu130",
+    "TORCH_INDEX_URL": "https://download.pytorch.org/whl/cu130",
+    "TORCH_CUDA_VERSION": "13.0",
+    "NVIDIA_REQUIRE_CUDA": "cuda>=13.0 brand=tesla,driver>=535,driver<536 brand=tesla,driver>=570,driver<571 brand=nvidia,driver>=535,driver<536 brand=nvidia,driver>=570,driver<571",
+    "WITH_CUDA_COMPAT": "1",
+    "WHEEL_CUDA_TAG": "cu130",
+    "TRITON_VERSION": "3.7.1",
+    "CUDA_COMPAT_VERSION": "580.178.04-1",
+    "CUDA_LANE": "cuda13",
+    "BYTED_VLLM_EXPECT_CUDA_COMPILER": "13.0",
+    "BYTED_VLLM_EXPECT_TORCH_CUDA": "13.0",
+    "TORCH_CUDA_ARCH_LIST": "7.5 8.0 8.6 8.7 8.9 9.0 10.0 10.3 11.0 12.0 12.1"
+  },
+  "torch": "2.13.0+cu130",
+  "torch_cuda": "13.0",
+  "nvcc": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2025 NVIDIA Corporation\nBuilt on Wed_Aug_20_01:58:59_PM_PDT_2025\nCuda compilation tools, release 13.0, V13.0.88\nBuild cuda_13.0.r13.0/compiler.36424714_0",
+  "wheel": "vllm-0.32.0+byted.cu130.1-cp312-cp312-linux_x86_64.whl",
+  "bundled_native_runtime": "1"
+}

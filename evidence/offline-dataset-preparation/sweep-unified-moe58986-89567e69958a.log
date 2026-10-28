@@ -1,0 +1,118 @@
++ export 'PS4=+ byted-entrypoint:${LINENO}: '
++ PS4='+ byted-entrypoint:${LINENO}: '
++ byted-entrypoint:9: [[ 0 == \1 ]]
++ byted-entrypoint:18: [[ 9 -eq 0 ]]
++ byted-entrypoint:22: exec python3 /common/bin/bootstrap.py --framework v032 --task moe58986 -- python3 /work/check_offline_tasks.py
+{
+  "runtime": {
+    "started_at": "2026-10-28T07:24:25.438869+00:00",
+    "python_executable": "/usr/local/bin/python3",
+    "python": "3.12.13 (001c8cb:001c8cb, Sep 11 2026, 20:08:55) [GCC 12.2.0]",
+    "packages": {
+      "lm_eval": "0.4.13",
+      "datasets": "5.1.0",
+      "pyarrow": "26.0.0",
+      "huggingface_hub": "2.2.0",
+      "transformers": "5.19.0",
+      "torch": "2.13.0+cu130"
+    },
+    "env": {
+      "PYTHONPATH": "/client:/common/frameworks/v032:/common/site-packages:/work",
+      "HF_HOME": "/work/.cache/unified/huggingface",
+      "HF_HUB_CACHE": "/work/.cache/unified/huggingface/hub",
+      "HF_DATASETS_CACHE": "/work/.cache/unified/huggingface/datasets",
+      "HF_HUB_OFFLINE": "1",
+      "HF_DATASETS_OFFLINE": "1",
+      "TRANSFORMERS_OFFLINE": "1",
+      "CUDA_VISIBLE_DEVICES": "",
+      "NVIDIA_VISIBLE_DEVICES": "void",
+      "OPERATOR_SWEEP_RUN_ID": "sweep-unified-moe58986-89567e69958a"
+    },
+    "model_loading_invoked": false,
+    "model_inference_invoked": false,
+    "scoring_invoked": false,
+    "tasks": {}
+  }
+}
+Using the latest cached version of the dataset since openai/gsm8k couldn't be found on the Hugging Face Hub (offline mode is enabled).
+2026-10-28 15:24:34,824 WARNING datasets.load: Using the latest cached version of the dataset since openai/gsm8k couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'main' at /work/.cache/unified/huggingface/datasets/openai___gsm8k/main/0.0.0/740312add88f781978c0658806c59bc2815b9866 (last modified on Wed Oct 28 15:24:24 2026).
+2026-10-28 15:24:34,825 WARNING datasets.packaged_modules.cache.cache: Found the latest cached dataset configuration 'main' at /work/.cache/unified/huggingface/datasets/openai___gsm8k/main/0.0.0/740312add88f781978c0658806c59bc2815b9866 (last modified on Wed Oct 28 15:24:24 2026).
+/client/lm_eval/tasks/aime/utils.py:199: SyntaxWarning: invalid escape sequence '\%'
+  string = string.replace("\%", "")  # noqa: W605
+Using the latest cached version of the dataset since math-ai/aime25 couldn't be found on the Hugging Face Hub (offline mode is enabled).
+2026-10-28 15:24:35,045 WARNING datasets.load: Using the latest cached version of the dataset since math-ai/aime25 couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /work/.cache/unified/huggingface/datasets/math-ai___aime25/default/0.0.0/563bb8404243c5f09de6ec262f2db674fe5bce9b (last modified on Wed Oct 28 15:24:24 2026).
+2026-10-28 15:24:35,045 WARNING datasets.packaged_modules.cache.cache: Found the latest cached dataset configuration 'default' at /work/.cache/unified/huggingface/datasets/math-ai___aime25/default/0.0.0/563bb8404243c5f09de6ec262f2db674fe5bce9b (last modified on Wed Oct 28 15:24:24 2026).
+{
+  "loaded_task": "gsm8k",
+  "dataset_path": "openai/gsm8k",
+  "dataset_name": "main",
+  "fixed_repo_revision": "740312add88f781978c0658806c59bc2815b9866",
+  "official_yaml": "/client/lm_eval/tasks/gsm8k/gsm8k.yaml",
+  "official_yaml_sha256": "82eb1780b263bc040729032b3e076990c7933f42163c91e359f38820dd1d8833",
+  "splits": {
+    "train": {
+      "rows": 7473,
+      "columns": [
+        "question",
+        "answer"
+      ],
+      "fingerprint": "c6f812ae33c9159d",
+      "canonical_rows_sha256": "dca449882e67a1e7716b5da453650a7b16588a1f2d1a0d82394a43d75ea7e9ca",
+      "cache_files": [
+        {
+          "filename": "/work/.cache/unified/huggingface/datasets/openai___gsm8k/main/0.0.0/740312add88f781978c0658806c59bc2815b9866/gsm8k-train.arrow"
+        }
+      ]
+    },
+    "test": {
+      "rows": 1319,
+      "columns": [
+        "question",
+        "answer"
+      ],
+      "fingerprint": "59ec1b7f9357c7a2",
+      "canonical_rows_sha256": "32c548f08195e19e33408b844dd7be6aa4bcae457d957bc05909ff4bd4a00595",
+      "cache_files": [
+        {
+          "filename": "/work/.cache/unified/huggingface/datasets/openai___gsm8k/main/0.0.0/740312add88f781978c0658806c59bc2815b9866/gsm8k-test.arrow"
+        }
+      ]
+    }
+  },
+  "evaluation_rows": 1319,
+  "official_num_fewshot": 5
+}
+{
+  "loaded_task": "aime25",
+  "dataset_path": "math-ai/aime25",
+  "dataset_name": null,
+  "fixed_repo_revision": "563bb8404243c5f09de6ec262f2db674fe5bce9b",
+  "official_yaml": "/client/lm_eval/tasks/aime/aime25.yaml",
+  "official_yaml_sha256": "7c0fda485c9f5f8bc52027d6f3100b7359457f4025f5838b21289848c689b988",
+  "splits": {
+    "test": {
+      "rows": 30,
+      "columns": [
+        "problem",
+        "answer",
+        "id"
+      ],
+      "fingerprint": "cf493e24f4d1493b",
+      "canonical_rows_sha256": "93226328a3bc794c9b7cf8ccd90beb65491bafa0ac58b132f3c11fe9976131b9",
+      "cache_files": [
+        {
+          "filename": "/work/.cache/unified/huggingface/datasets/math-ai___aime25/default/0.0.0/563bb8404243c5f09de6ec262f2db674fe5bce9b/aime25-test.arrow"
+        }
+      ]
+    }
+  },
+  "evaluation_rows": 30,
+  "official_num_fewshot": 0
+}
+Traceback (most recent call last):
+  File "/work/check_offline_tasks.py", line 90, in <module>
+    assert isinstance(token_ids, list) and token_ids and isinstance(token_ids[0], int)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

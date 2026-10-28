@@ -1,0 +1,90 @@
+EEE..EE
+======================================================================
+ERROR: test_changed_host_is_rejected (__main__.LegacyAdmissionTests.test_changed_host_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/bytedance/Documents/ChatGPT/b200优化/review-20261028-native-runtime/scripts/test_legacy_pool_admission.py", line 35, in test_changed_host_is_rejected
+    with self.assertRaises(ValueError): self.resolve()
+                                        ^^^^^^^^^^^^^^
+  File "/Users/bytedance/Documents/ChatGPT/b200优化/review-20261028-native-runtime/scripts/test_legacy_pool_admission.py", line 27, in resolve
+    return admission.resolve_legacy(original, self.state, 'moe58986', self.legacy['release'], self.current)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bytedance/Documents/ChatGPT/b200优化/review-20261028-native-runtime/scripts/pool_legacy_admission.py", line 3, in resolve_legacy
+    return original(state, task, release, current)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bytedance/Documents/ChatGPT/b200优化/review-20261028-native-runtime/scripts/test_legacy_pool_admission.py", line 26, in original
+    raise KeyError('config_template')
+KeyError: 'config_template'
+
+======================================================================
+ERROR: test_changed_source_is_rejected (__main__.LegacyAdmissionTests.test_changed_source_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/bytedance/Documents/ChatGPT/b200优化/review-20261028-native-runtime/scripts/test_legacy_pool_admission.py", line 38, in test_changed_source_is_rejected
+    with self.assertRaises(ValueError): self.resolve()
+                                        ^^^^^^^^^^^^^^
+  File "/Users/bytedance/Documents/ChatGPT/b200优化/review-20261028-native-runtime/scripts/test_legacy_pool_admission.py", line 27, in resolve
+    return admission.resolve_legacy(original, self.state, 'moe58986', self.legacy['release'], self.current)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bytedance/Documents/ChatGPT/b200优化/review-20261028-native-runtime/scripts/pool_legacy_admission.py", line 3, in resolve_legacy
+    return original(state, task, release, current)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bytedance/Documents/ChatGPT/b200优化/review-20261028-native-runtime/scripts/test_legacy_pool_admission.py", line 26, in original
+    raise KeyError('config_template')
+KeyError: 'config_template'
+
+======================================================================
+ERROR: test_exact_current_legacy_release_preserves_current_ready_hosts (__main__.LegacyAdmissionTests.test_exact_current_legacy_release_preserves_current_ready_hosts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/bytedance/Documents/ChatGPT/b200优化/review-20261028-native-runtime/scripts/test_legacy_pool_admission.py", line 29, in test_exact_current_legacy_release_preserves_current_ready_hosts
+    self.assertEqual(self.resolve(), self.current)
+                     ^^^^^^^^^^^^^^
+  File "/Users/bytedance/Documents/ChatGPT/b200优化/review-20261028-native-runtime/scripts/test_legacy_pool_admission.py", line 27, in resolve
+    return admission.resolve_legacy(original, self.state, 'moe58986', self.legacy['release'], self.current)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bytedance/Documents/ChatGPT/b200优化/review-20261028-native-runtime/scripts/pool_legacy_admission.py", line 3, in resolve_legacy
+    return original(state, task, release, current)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bytedance/Documents/ChatGPT/b200优化/review-20261028-native-runtime/scripts/test_legacy_pool_admission.py", line 26, in original
+    raise KeyError('config_template')
+KeyError: 'config_template'
+
+======================================================================
+ERROR: test_superseded_release_is_rejected (__main__.LegacyAdmissionTests.test_superseded_release_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/bytedance/Documents/ChatGPT/b200优化/review-20261028-native-runtime/scripts/test_legacy_pool_admission.py", line 32, in test_superseded_release_is_rejected
+    with self.assertRaises(ValueError): self.resolve()
+                                        ^^^^^^^^^^^^^^
+  File "/Users/bytedance/Documents/ChatGPT/b200优化/review-20261028-native-runtime/scripts/test_legacy_pool_admission.py", line 27, in resolve
+    return admission.resolve_legacy(original, self.state, 'moe58986', self.legacy['release'], self.current)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bytedance/Documents/ChatGPT/b200优化/review-20261028-native-runtime/scripts/pool_legacy_admission.py", line 3, in resolve_legacy
+    return original(state, task, release, current)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bytedance/Documents/ChatGPT/b200优化/review-20261028-native-runtime/scripts/test_legacy_pool_admission.py", line 26, in original
+    raise KeyError('config_template')
+KeyError: 'config_template'
+
+======================================================================
+ERROR: test_supplement_is_not_silently_ignored (__main__.LegacyAdmissionTests.test_supplement_is_not_silently_ignored)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/bytedance/Documents/ChatGPT/b200优化/review-20261028-native-runtime/scripts/test_legacy_pool_admission.py", line 48, in test_supplement_is_not_silently_ignored
+    with self.assertRaises(ValueError): self.resolve()
+                                        ^^^^^^^^^^^^^^
+  File "/Users/bytedance/Documents/ChatGPT/b200优化/review-20261028-native-runtime/scripts/test_legacy_pool_admission.py", line 27, in resolve
+    return admission.resolve_legacy(original, self.state, 'moe58986', self.legacy['release'], self.current)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bytedance/Documents/ChatGPT/b200优化/review-20261028-native-runtime/scripts/pool_legacy_admission.py", line 3, in resolve_legacy
+    return original(state, task, release, current)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bytedance/Documents/ChatGPT/b200优化/review-20261028-native-runtime/scripts/test_legacy_pool_admission.py", line 26, in original
+    raise KeyError('config_template')
+KeyError: 'config_template'
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.028s
+
+FAILED (errors=5)

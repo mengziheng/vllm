@@ -1,0 +1,481 @@
+[1/64] Building CXX object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/api/dense_decode.cpp.o
+In file included from /work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/arch/config.h:38,
+                 from /work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/float8.h:40,
+                 from /work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/half.h:66,
+                 from /work/sources/FlashMLA/csrc/api/dense_decode.cpp:1:
+/work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/platform/platform.h:658:21: warning: 'long4' is deprecated: use long4_16a or long4_32a [-Wdeprecated-declarations]
+  658 | struct alignment_of<long4> {
+      |                     ^~~~~
+In file included from /usr/local/cuda/include/cuda_fp16.h:131,
+                 from /work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/half.h:63:
+/usr/local/cuda/include/vector_types.h:532:98: note: declared here
+  532 | typedef __device_builtin__ struct long4 __VECTOR_TYPE_DEPRECATED__("use long4_16a or long4_32a") long4;
+      |                                                                                                  ^~~~~
+/work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/platform/platform.h:662:21: warning: 'ulong4' is deprecated: use ulong4_16a or ulong4_32a [-Wdeprecated-declarations]
+  662 | struct alignment_of<ulong4> {
+      |                     ^~~~~~
+/usr/local/cuda/include/vector_types.h:533:101: note: declared here
+  533 | typedef __device_builtin__ struct ulong4 __VECTOR_TYPE_DEPRECATED__("use ulong4_16a or ulong4_32a") ulong4;
+      |                                                                                                     ^~~~~~
+/work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/platform/platform.h:666:21: warning: 'longlong4' is deprecated: use longlong4_16a or longlong4_32a [-Wdeprecated-declarations]
+  666 | struct alignment_of<longlong4> {
+      |                     ^~~~~~~~~
+/usr/local/cuda/include/vector_types.h:550:110: note: declared here
+  550 | typedef __device_builtin__ struct longlong4 __VECTOR_TYPE_DEPRECATED__("use longlong4_16a or longlong4_32a") longlong4;
+      |                                                                                                              ^~~~~~~~~
+/work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/platform/platform.h:670:21: warning: 'ulonglong4' is deprecated: use ulonglong4_16a or ulonglong4_32a [-Wdeprecated-declarations]
+  670 | struct alignment_of<ulonglong4> {
+      |                     ^~~~~~~~~~
+/usr/local/cuda/include/vector_types.h:551:113: note: declared here
+  551 | typedef __device_builtin__ struct ulonglong4 __VECTOR_TYPE_DEPRECATED__("use ulonglong4_16a or ulonglong4_32a") ulonglong4;
+      |                                                                                                                 ^~~~~~~~~~
+/work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/platform/platform.h:674:21: warning: 'double4' is deprecated: use double4_16a or double4_32a [-Wdeprecated-declarations]
+  674 | struct alignment_of<double4> {
+      |                     ^~~~~~~
+/usr/local/cuda/include/vector_types.h:561:104: note: declared here
+  561 | typedef __device_builtin__ struct double4 __VECTOR_TYPE_DEPRECATED__("use double4_16a or double4_32a") double4;
+      |                                                                                                        ^~~~~~~
+/work/sources/FlashMLA/csrc/api/dense_decode.cpp: In function 'std::tuple<torch::stable::Tensor, torch::stable::Tensor, std::optional<torch::stable::Tensor>, std::optional<torch::stable::Tensor> > dense_attn_decode_interface(torch::stable::Tensor, const torch::stable::Tensor&, int64_t, const torch::stable::Tensor&, const torch::stable::Tensor&, double, bool, std::optional<torch::stable::Tensor>, std::optional<torch::stable::Tensor>, const std::optional<torch::stable::Tensor>&)':
+/work/sources/FlashMLA/csrc/api/dense_decode.cpp:206:22: warning: narrowing conversion of '(int64_t)head_size_v' from 'int64_t' {aka 'long int'} to 'int' [-Wnarrowing]
+  206 |         num_heads_q, head_size_v,
+      |                      ^~~~~~~~~~~
+/work/sources/FlashMLA/csrc/api/dense_decode.cpp:211:33: warning: narrowing conversion of '(((long int)(((int)num_heads_q) * ((int)seqlen_q_ori))) * ((long int)head_size_v))' from 'long int' to 'int' [-Wnarrowing]
+  211 |         num_heads_q*seqlen_q_ori*head_size_v, num_heads_q*head_size_v, head_size_v,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/work/sources/FlashMLA/csrc/api/dense_decode.cpp:211:58: warning: narrowing conversion of '(((long int)((int)num_heads_q)) * ((long int)head_size_v))' from 'long int' to 'int' [-Wnarrowing]
+  211 |         num_heads_q*seqlen_q_ori*head_size_v, num_heads_q*head_size_v, head_size_v,
+      |                                               ~~~~~~~~~~~^~~~~~~~~~~~
+/work/sources/FlashMLA/csrc/api/dense_decode.cpp:211:72: warning: narrowing conversion of '(int64_t)head_size_v' from 'int64_t' {aka 'long int'} to 'int' [-Wnarrowing]
+  211 |         num_heads_q*seqlen_q_ori*head_size_v, num_heads_q*head_size_v, head_size_v,
+      |                                                                        ^~~~~~~~~~~
+/work/sources/FlashMLA/csrc/api/dense_decode.cpp:216:33: warning: narrowing conversion of '(((long int)(((int)num_heads_q) * ((int)seqlen_q_ori))) * ((long int)head_size_v))' from 'long int' to 'int' [-Wnarrowing]
+  216 |         num_heads_q*seqlen_q_ori*head_size_v, num_heads_q*head_size_v, head_size_v,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/work/sources/FlashMLA/csrc/api/dense_decode.cpp:216:58: warning: narrowing conversion of '(((long int)((int)num_heads_q)) * ((long int)head_size_v))' from 'long int' to 'int' [-Wnarrowing]
+  216 |         num_heads_q*seqlen_q_ori*head_size_v, num_heads_q*head_size_v, head_size_v,
+      |                                               ~~~~~~~~~~~^~~~~~~~~~~~
+/work/sources/FlashMLA/csrc/api/dense_decode.cpp:216:72: warning: narrowing conversion of '(int64_t)head_size_v' from 'int64_t' {aka 'long int'} to 'int' [-Wnarrowing]
+  216 |         num_heads_q*seqlen_q_ori*head_size_v, num_heads_q*head_size_v, head_size_v,
+      |                                                                        ^~~~~~~~~~~
+[2/64] Building CXX object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/api/api.cpp.o
+In file included from /work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/bfloat16.h:50,
+                 from /work/sources/FlashMLA/csrc/api/common.h:22,
+                 from /work/sources/FlashMLA/csrc/api/interfaces.h:7,
+                 from /work/sources/FlashMLA/csrc/api/api.cpp:5:
+/work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/platform/platform.h:658:21: warning: 'long4' is deprecated: use long4_16a or long4_32a [-Wdeprecated-declarations]
+  658 | struct alignment_of<long4> {
+      |                     ^~~~~
+In file included from /usr/local/cuda/include/driver_types.h:61,
+                 from /usr/local/cuda/include/builtin_types.h:59,
+                 from /usr/local/cuda/include/cuda_runtime.h:90,
+                 from /work/sources/FlashMLA/csrc/api/common.h:6:
+/usr/local/cuda/include/vector_types.h:532:98: note: declared here
+  532 | typedef __device_builtin__ struct long4 __VECTOR_TYPE_DEPRECATED__("use long4_16a or long4_32a") long4;
+      |                                                                                                  ^~~~~
+/work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/platform/platform.h:662:21: warning: 'ulong4' is deprecated: use ulong4_16a or ulong4_32a [-Wdeprecated-declarations]
+  662 | struct alignment_of<ulong4> {
+      |                     ^~~~~~
+/usr/local/cuda/include/vector_types.h:533:101: note: declared here
+  533 | typedef __device_builtin__ struct ulong4 __VECTOR_TYPE_DEPRECATED__("use ulong4_16a or ulong4_32a") ulong4;
+      |                                                                                                     ^~~~~~
+/work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/platform/platform.h:666:21: warning: 'longlong4' is deprecated: use longlong4_16a or longlong4_32a [-Wdeprecated-declarations]
+  666 | struct alignment_of<longlong4> {
+      |                     ^~~~~~~~~
+/usr/local/cuda/include/vector_types.h:550:110: note: declared here
+  550 | typedef __device_builtin__ struct longlong4 __VECTOR_TYPE_DEPRECATED__("use longlong4_16a or longlong4_32a") longlong4;
+      |                                                                                                              ^~~~~~~~~
+/work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/platform/platform.h:670:21: warning: 'ulonglong4' is deprecated: use ulonglong4_16a or ulonglong4_32a [-Wdeprecated-declarations]
+  670 | struct alignment_of<ulonglong4> {
+      |                     ^~~~~~~~~~
+/usr/local/cuda/include/vector_types.h:551:113: note: declared here
+  551 | typedef __device_builtin__ struct ulonglong4 __VECTOR_TYPE_DEPRECATED__("use ulonglong4_16a or ulonglong4_32a") ulonglong4;
+      |                                                                                                                 ^~~~~~~~~~
+/work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/platform/platform.h:674:21: warning: 'double4' is deprecated: use double4_16a or double4_32a [-Wdeprecated-declarations]
+  674 | struct alignment_of<double4> {
+      |                     ^~~~~~~
+/usr/local/cuda/include/vector_types.h:561:104: note: declared here
+  561 | typedef __device_builtin__ struct double4 __VECTOR_TYPE_DEPRECATED__("use double4_16a or double4_32a") double4;
+      |                                                                                                        ^~~~~~~
+[3/64] Building CXX object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/api/sparse_prefill.cpp.o
+In file included from /work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/bfloat16.h:50,
+                 from /work/sources/FlashMLA/csrc/api/common.h:22,
+                 from /work/sources/FlashMLA/csrc/api/sparse_prefill.cpp:1:
+/work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/platform/platform.h:658:21: warning: 'long4' is deprecated: use long4_16a or long4_32a [-Wdeprecated-declarations]
+  658 | struct alignment_of<long4> {
+      |                     ^~~~~
+In file included from /usr/local/cuda/include/driver_types.h:61,
+                 from /usr/local/cuda/include/builtin_types.h:59,
+                 from /usr/local/cuda/include/cuda_runtime.h:90,
+                 from /work/sources/FlashMLA/csrc/api/common.h:6:
+/usr/local/cuda/include/vector_types.h:532:98: note: declared here
+  532 | typedef __device_builtin__ struct long4 __VECTOR_TYPE_DEPRECATED__("use long4_16a or long4_32a") long4;
+      |                                                                                                  ^~~~~
+/work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/platform/platform.h:662:21: warning: 'ulong4' is deprecated: use ulong4_16a or ulong4_32a [-Wdeprecated-declarations]
+  662 | struct alignment_of<ulong4> {
+      |                     ^~~~~~
+/usr/local/cuda/include/vector_types.h:533:101: note: declared here
+  533 | typedef __device_builtin__ struct ulong4 __VECTOR_TYPE_DEPRECATED__("use ulong4_16a or ulong4_32a") ulong4;
+      |                                                                                                     ^~~~~~
+/work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/platform/platform.h:666:21: warning: 'longlong4' is deprecated: use longlong4_16a or longlong4_32a [-Wdeprecated-declarations]
+  666 | struct alignment_of<longlong4> {
+      |                     ^~~~~~~~~
+/usr/local/cuda/include/vector_types.h:550:110: note: declared here
+  550 | typedef __device_builtin__ struct longlong4 __VECTOR_TYPE_DEPRECATED__("use longlong4_16a or longlong4_32a") longlong4;
+      |                                                                                                              ^~~~~~~~~
+/work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/platform/platform.h:670:21: warning: 'ulonglong4' is deprecated: use ulonglong4_16a or ulonglong4_32a [-Wdeprecated-declarations]
+  670 | struct alignment_of<ulonglong4> {
+      |                     ^~~~~~~~~~
+/usr/local/cuda/include/vector_types.h:551:113: note: declared here
+  551 | typedef __device_builtin__ struct ulonglong4 __VECTOR_TYPE_DEPRECATED__("use ulonglong4_16a or ulonglong4_32a") ulonglong4;
+      |                                                                                                                 ^~~~~~~~~~
+/work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/platform/platform.h:674:21: warning: 'double4' is deprecated: use double4_16a or double4_32a [-Wdeprecated-declarations]
+  674 | struct alignment_of<double4> {
+      |                     ^~~~~~~
+/usr/local/cuda/include/vector_types.h:561:104: note: declared here
+  561 | typedef __device_builtin__ struct double4 __VECTOR_TYPE_DEPRECATED__("use double4_16a or double4_32a") double4;
+      |                                                                                                        ^~~~~~~
+/work/sources/FlashMLA/csrc/api/sparse_prefill.cpp: In function 'std::vector<torch::stable::Tensor> sparse_attn_prefill_interface(const torch::stable::Tensor&, const torch::stable::Tensor&, const torch::stable::Tensor&, double, int64_t, const std::optional<torch::stable::Tensor>&, const std::optional<torch::stable::Tensor>&, const std::optional<torch::stable::Tensor>&)':
+/work/sources/FlashMLA/csrc/api/sparse_prefill.cpp:222:37: warning: narrowing conversion of 'd_v' from 'int64_t' {aka 'long int'} to 'int' [-Wnarrowing]
+  222 |         s_q, s_kv, h_q, h_kv, d_qk, d_v, topk,
+      |                                     ^~~
+/work/sources/FlashMLA/csrc/api/sparse_prefill.cpp:223:9: warning: narrowing conversion of 'sm_scale' from 'double' to 'float' [-Wnarrowing]
+  223 |         sm_scale, sm_scale * LOG_2_E,
+      |         ^~~~~~~~
+/work/sources/FlashMLA/csrc/api/sparse_prefill.cpp:223:28: warning: narrowing conversion of '(sm_scale * ((double)((float)LOG_2_E)))' from 'double' to 'float' [-Wnarrowing]
+  223 |         sm_scale, sm_scale * LOG_2_E,
+      |                   ~~~~~~~~~^~~~~~~~~
+[4/64] Building CXX object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/api/sparse_decode.cpp.o
+In file included from /work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/bfloat16.h:50,
+                 from /work/sources/FlashMLA/csrc/api/common.h:22,
+                 from /work/sources/FlashMLA/csrc/api/sparse_decode.cpp:1:
+/work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/platform/platform.h:658:21: warning: 'long4' is deprecated: use long4_16a or long4_32a [-Wdeprecated-declarations]
+  658 | struct alignment_of<long4> {
+      |                     ^~~~~
+In file included from /usr/local/cuda/include/driver_types.h:61,
+                 from /usr/local/cuda/include/builtin_types.h:59,
+                 from /usr/local/cuda/include/cuda_runtime.h:90,
+                 from /work/sources/FlashMLA/csrc/api/common.h:6:
+/usr/local/cuda/include/vector_types.h:532:98: note: declared here
+  532 | typedef __device_builtin__ struct long4 __VECTOR_TYPE_DEPRECATED__("use long4_16a or long4_32a") long4;
+      |                                                                                                  ^~~~~
+/work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/platform/platform.h:662:21: warning: 'ulong4' is deprecated: use ulong4_16a or ulong4_32a [-Wdeprecated-declarations]
+  662 | struct alignment_of<ulong4> {
+      |                     ^~~~~~
+/usr/local/cuda/include/vector_types.h:533:101: note: declared here
+  533 | typedef __device_builtin__ struct ulong4 __VECTOR_TYPE_DEPRECATED__("use ulong4_16a or ulong4_32a") ulong4;
+      |                                                                                                     ^~~~~~
+/work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/platform/platform.h:666:21: warning: 'longlong4' is deprecated: use longlong4_16a or longlong4_32a [-Wdeprecated-declarations]
+  666 | struct alignment_of<longlong4> {
+      |                     ^~~~~~~~~
+/usr/local/cuda/include/vector_types.h:550:110: note: declared here
+  550 | typedef __device_builtin__ struct longlong4 __VECTOR_TYPE_DEPRECATED__("use longlong4_16a or longlong4_32a") longlong4;
+      |                                                                                                              ^~~~~~~~~
+/work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/platform/platform.h:670:21: warning: 'ulonglong4' is deprecated: use ulonglong4_16a or ulonglong4_32a [-Wdeprecated-declarations]
+  670 | struct alignment_of<ulonglong4> {
+      |                     ^~~~~~~~~~
+/usr/local/cuda/include/vector_types.h:551:113: note: declared here
+  551 | typedef __device_builtin__ struct ulonglong4 __VECTOR_TYPE_DEPRECATED__("use ulonglong4_16a or ulonglong4_32a") ulonglong4;
+      |                                                                                                                 ^~~~~~~~~~
+/work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/platform/platform.h:674:21: warning: 'double4' is deprecated: use double4_16a or double4_32a [-Wdeprecated-declarations]
+  674 | struct alignment_of<double4> {
+      |                     ^~~~~~~
+/usr/local/cuda/include/vector_types.h:561:104: note: declared here
+  561 | typedef __device_builtin__ struct double4 __VECTOR_TYPE_DEPRECATED__("use double4_16a or double4_32a") double4;
+      |                                                                                                        ^~~~~~~
+/work/sources/FlashMLA/csrc/api/sparse_decode.cpp: In function 'std::tuple<torch::stable::Tensor, torch::stable::Tensor, std::optional<torch::stable::Tensor>, std::optional<torch::stable::Tensor> > sparse_attn_decode_interface(const torch::stable::Tensor&, const torch::stable::Tensor&, const torch::stable::Tensor&, const std::optional<torch::stable::Tensor>&, const std::optional<torch::stable::Tensor>&, std::optional<torch::stable::Tensor>, std::optional<torch::stable::Tensor>, const std::optional<torch::stable::Tensor>&, const std::optional<torch::stable::Tensor>&, const std::optional<torch::stable::Tensor>&, int64_t, double, const std::optional<torch::stable::Tensor>&, bool)':
+/work/sources/FlashMLA/csrc/api/sparse_decode.cpp:597:34: warning: narrowing conversion of 'd_v' from 'int64_t' {aka 'long int'} to 'int' [-Wnarrowing]
+  597 |         b, s_q, h_q, h_kv, d_qk, d_v,
+      |                                  ^~~
+/work/sources/FlashMLA/csrc/api/sparse_decode.cpp:598:9: warning: narrowing conversion of 'sm_scale' from 'double' to 'float' [-Wnarrowing]
+  598 |         sm_scale, sm_scale * LOG_2_E,
+      |         ^~~~~~~~
+/work/sources/FlashMLA/csrc/api/sparse_decode.cpp:598:28: warning: narrowing conversion of '(sm_scale * ((double)((float)LOG_2_E)))' from 'double' to 'float' [-Wnarrowing]
+  598 |         sm_scale, sm_scale * LOG_2_E,
+      |                   ~~~~~~~~~^~~~~~~~~
+[5/64] Building CXX object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/api/fused_norm_rope_attn_rope_cast_fwd.cpp.o
+In file included from /work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/bfloat16.h:50,
+                 from /work/sources/FlashMLA/csrc/api/common.h:22,
+                 from /work/sources/FlashMLA/csrc/api/fused_norm_rope_attn_rope_cast_fwd.cpp:1:
+/work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/platform/platform.h:658:21: warning: 'long4' is deprecated: use long4_16a or long4_32a [-Wdeprecated-declarations]
+  658 | struct alignment_of<long4> {
+      |                     ^~~~~
+In file included from /usr/local/cuda/include/driver_types.h:61,
+                 from /usr/local/cuda/include/builtin_types.h:59,
+                 from /usr/local/cuda/include/cuda_runtime.h:90,
+                 from /work/sources/FlashMLA/csrc/api/common.h:6:
+/usr/local/cuda/include/vector_types.h:532:98: note: declared here
+  532 | typedef __device_builtin__ struct long4 __VECTOR_TYPE_DEPRECATED__("use long4_16a or long4_32a") long4;
+      |                                                                                                  ^~~~~
+/work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/platform/platform.h:662:21: warning: 'ulong4' is deprecated: use ulong4_16a or ulong4_32a [-Wdeprecated-declarations]
+  662 | struct alignment_of<ulong4> {
+      |                     ^~~~~~
+/usr/local/cuda/include/vector_types.h:533:101: note: declared here
+  533 | typedef __device_builtin__ struct ulong4 __VECTOR_TYPE_DEPRECATED__("use ulong4_16a or ulong4_32a") ulong4;
+      |                                                                                                     ^~~~~~
+/work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/platform/platform.h:666:21: warning: 'longlong4' is deprecated: use longlong4_16a or longlong4_32a [-Wdeprecated-declarations]
+  666 | struct alignment_of<longlong4> {
+      |                     ^~~~~~~~~
+/usr/local/cuda/include/vector_types.h:550:110: note: declared here
+  550 | typedef __device_builtin__ struct longlong4 __VECTOR_TYPE_DEPRECATED__("use longlong4_16a or longlong4_32a") longlong4;
+      |                                                                                                              ^~~~~~~~~
+/work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/platform/platform.h:670:21: warning: 'ulonglong4' is deprecated: use ulonglong4_16a or ulonglong4_32a [-Wdeprecated-declarations]
+  670 | struct alignment_of<ulonglong4> {
+      |                     ^~~~~~~~~~
+/usr/local/cuda/include/vector_types.h:551:113: note: declared here
+  551 | typedef __device_builtin__ struct ulonglong4 __VECTOR_TYPE_DEPRECATED__("use ulonglong4_16a or ulonglong4_32a") ulonglong4;
+      |                                                                                                                 ^~~~~~~~~~
+/work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/platform/platform.h:674:21: warning: 'double4' is deprecated: use double4_16a or double4_32a [-Wdeprecated-declarations]
+  674 | struct alignment_of<double4> {
+      |                     ^~~~~~~
+/usr/local/cuda/include/vector_types.h:561:104: note: declared here
+  561 | typedef __device_builtin__ struct double4 __VECTOR_TYPE_DEPRECATED__("use double4_16a or double4_32a") double4;
+      |                                                                                                        ^~~~~~~
+/work/sources/FlashMLA/csrc/api/fused_norm_rope_attn_rope_cast_fwd.cpp: In function 'std::vector<torch::stable::Tensor> fused_norm_rope_attn_rope_cast_fwd(const torch::stable::Tensor&, const torch::stable::Tensor&, const torch::stable::Tensor&, double, int64_t, const std::optional<torch::stable::Tensor>&, const std::optional<torch::stable::Tensor>&, bool, double, const torch::stable::Tensor&, bool, int64_t, const torch::stable::Tensor&, int64_t, int64_t, bool, bool, bool, const std::optional<torch::stable::Tensor>&, const std::optional<torch::stable::Tensor>&)':
+/work/sources/FlashMLA/csrc/api/fused_norm_rope_attn_rope_cast_fwd.cpp:202:37: warning: narrowing conversion of 'd_v' from 'int64_t' {aka 'long int'} to 'int' [-Wnarrowing]
+  202 |         s_q, s_kv, h_q, h_kv, d_qk, d_v, topk,
+      |                                     ^~~
+/work/sources/FlashMLA/csrc/api/fused_norm_rope_attn_rope_cast_fwd.cpp:203:9: warning: narrowing conversion of 'sm_scale' from 'double' to 'float' [-Wnarrowing]
+  203 |         sm_scale, sm_scale * LOG_2_E,
+      |         ^~~~~~~~
+/work/sources/FlashMLA/csrc/api/fused_norm_rope_attn_rope_cast_fwd.cpp:203:28: warning: narrowing conversion of '(sm_scale * ((double)((float)LOG_2_E)))' from 'double' to 'float' [-Wnarrowing]
+  203 |         sm_scale, sm_scale * LOG_2_E,
+      |                   ~~~~~~~~~^~~~~~~~~
+/work/sources/FlashMLA/csrc/api/fused_norm_rope_attn_rope_cast_fwd.cpp:227:9: warning: narrowing conversion of 'rms_norm_eps' from 'double' to 'float' [-Wnarrowing]
+  227 |         rms_norm_eps,
+      |         ^~~~~~~~~~~~
+/work/sources/FlashMLA/csrc/api/fused_norm_rope_attn_rope_cast_fwd.cpp:230:9: warning: narrowing conversion of 'rope_dim' from 'int64_t' {aka 'long int'} to 'uint32_t' {aka 'unsigned int'} [-Wnarrowing]
+  230 |         rope_dim,
+      |         ^~~~~~~~
+/work/sources/FlashMLA/csrc/api/fused_norm_rope_attn_rope_cast_fwd.cpp:233:9: warning: narrowing conversion of 'n_wv_group' from 'int64_t' {aka 'long int'} to 'uint32_t' {aka 'unsigned int'} [-Wnarrowing]
+  233 |         n_wv_group,
+      |         ^~~~~~~~~~
+/work/sources/FlashMLA/csrc/api/fused_norm_rope_attn_rope_cast_fwd.cpp:235:9: warning: narrowing conversion of 'num_per_channels' from 'int64_t' {aka 'long int'} to 'uint32_t' {aka 'unsigned int'} [-Wnarrowing]
+  235 |         num_per_channels,
+      |         ^~~~~~~~~~~~~~~~
+/work/sources/FlashMLA/csrc/api/fused_norm_rope_attn_rope_cast_fwd.cpp: In function 'std::vector<torch::stable::Tensor> fused_norm_rope_attn_rope_cast_decode(const torch::stable::Tensor&, const torch::stable::Tensor&, const torch::stable::Tensor&, double, int64_t, const std::optional<torch::stable::Tensor>&, const std::optional<torch::stable::Tensor>&, const std::optional<torch::stable::Tensor>&, const std::optional<torch::stable::Tensor>&, const std::optional<torch::stable::Tensor>&, bool, double, const torch::stable::Tensor&, bool, int64_t, const torch::stable::Tensor&, int64_t, int64_t, bool, bool, bool, const std::optional<torch::stable::Tensor>&, const std::optional<torch::stable::Tensor>&)':
+/work/sources/FlashMLA/csrc/api/fused_norm_rope_attn_rope_cast_fwd.cpp:412:42: warning: narrowing conversion of 'd_v' from 'int64_t' {aka 'long int'} to 'int' [-Wnarrowing]
+  412 |         1 /* b */, s_q, h_q, h_kv, d_qk, d_v,
+      |                                          ^~~
+/work/sources/FlashMLA/csrc/api/fused_norm_rope_attn_rope_cast_fwd.cpp:413:9: warning: narrowing conversion of 'sm_scale' from 'double' to 'float' [-Wnarrowing]
+  413 |         sm_scale, sm_scale * LOG_2_E,
+      |         ^~~~~~~~
+/work/sources/FlashMLA/csrc/api/fused_norm_rope_attn_rope_cast_fwd.cpp:413:28: warning: narrowing conversion of '(sm_scale * ((double)((float)LOG_2_E)))' from 'double' to 'float' [-Wnarrowing]
+  413 |         sm_scale, sm_scale * LOG_2_E,
+      |                   ~~~~~~~~~^~~~~~~~~
+/work/sources/FlashMLA/csrc/api/fused_norm_rope_attn_rope_cast_fwd.cpp:452:9: warning: narrowing conversion of 'rms_norm_eps' from 'double' to 'float' [-Wnarrowing]
+  452 |         rms_norm_eps,
+      |         ^~~~~~~~~~~~
+/work/sources/FlashMLA/csrc/api/fused_norm_rope_attn_rope_cast_fwd.cpp:455:9: warning: narrowing conversion of 'rope_dim' from 'int64_t' {aka 'long int'} to 'uint32_t' {aka 'unsigned int'} [-Wnarrowing]
+  455 |         rope_dim,
+      |         ^~~~~~~~
+/work/sources/FlashMLA/csrc/api/fused_norm_rope_attn_rope_cast_fwd.cpp:458:9: warning: narrowing conversion of 'n_wv_group' from 'int64_t' {aka 'long int'} to 'uint32_t' {aka 'unsigned int'} [-Wnarrowing]
+  458 |         n_wv_group,
+      |         ^~~~~~~~~~
+/work/sources/FlashMLA/csrc/api/fused_norm_rope_attn_rope_cast_fwd.cpp:460:9: warning: narrowing conversion of 'num_per_channels' from 'int64_t' {aka 'long int'} to 'uint32_t' {aka 'unsigned int'} [-Wnarrowing]
+  460 |         num_per_channels,
+      |         ^~~~~~~~~~~~~~~~
+[6/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/smxx/decode/get_decoding_sched_meta/get_decoding_sched_meta.cu.o
+[7/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/sm100/prefill/sparse/fwd_for_small_topk/head128/instantiations/phase1_k512.cu.o
+[8/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/sm100/prefill/sparse/fwd_for_small_topk/head128/instantiations/phase1_decode_k512_v41.cu.o
+[9/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/smxx/decode/combine/combine.cu.o
+[10/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/sm100/decode/sparse/head64/instantiations/v41_h64_no_split.cu.o
+[11/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/sm100/decode/sparse/head64/instantiations/v41_h64.cu.o
+[12/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/sm100/decode/sparse/head64/instantiations/v41fp4_h64.cu.o
+[13/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/sm100/prefill/sparse/fwd_for_small_topk/head128/instantiations/phase1_decode_k512_v41_splitkv.cu.o
+[14/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/sm100/prefill/sparse/fwd/head64/instantiations/phase1_h64_k512.cu.o
+[15/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/sm100/decode/sparse/head64/instantiations/v41fp4_h64_no_split.cu.o
+[16/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/sm100/prefill/sparse/fwd_for_small_topk/head128/instantiations/phase1_decode_k512_v41fp4.cu.o
+[17/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/sm100/prefill/sparse/fwd_for_small_topk/head128/instantiations/phase1_decode_k512_v41fp4_splitkv.cu.o
+[18/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/sm100/prefill/sparse/fwd/head128/instantiations/phase1_k512.cu.o
+[19/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/sm100/prefill/sparse/fused_norm_rope_attn_rope_cast_fwd/core_attn/instantiations/v41_h64_prefill_norm.cu.o
+[20/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/sm100/prefill/sparse/fused_norm_rope_attn_rope_cast_fwd/core_attn/instantiations/v41_h64_prefill_nonorm.cu.o
+[21/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/sm100/prefill/sparse/fused_norm_rope_attn_rope_cast_fwd/core_attn/instantiations/v41_h64_decode_norm.cu.o
+/work/sources/FlashMLA/csrc/cuda_kernels/sm100/prefill/sparse/fused_norm_rope_attn_rope_cast_fwd/core_attn/instantiations/../kernel.cuh(1614): warning #445-D: constant "MT" is not used in declaring the parameter types of function template "lambda [](__nv_bool, void *, int, int64_t, int)->std::pair<CUtensorMap, CUtensorMap>::operator auto (*)(__nv_bool, void *, int, signed long, int)->std::pair<CUtensorMap_st, CUtensorMap_st>"
+          auto make_kv_tensor_maps = []<ModelType MT>(bool is_extra, void *kv_ptr, int num_blocks, int64_t block_stride_bytes, int row_stride_bytes) -> std::pair<CUtensorMap, CUtensorMap> {
+                                                  ^
+          detected during:
+            instantiation of "void sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::Kernel<CONFIG>::run(const sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::Kernel<CONFIG>::Params &) [with CONFIG=sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::Config{SparseAttnFwdMode::Decode, ModelType::V41, ModelType::V41, 64U, true}]" at line 1681
+            instantiation of "void sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::run_fused_norm_rope_attn_rope_cast_fwd_kernel<CONFIG>(const sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::ParamT<<expression>> &) [with CONFIG=sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::Config{SparseAttnFwdMode::Decode, ModelType::V41, ModelType::V41, 64U, true}]" at line 6 of /work/sources/FlashMLA/csrc/cuda_kernels/sm100/prefill/sparse/fused_norm_rope_attn_rope_cast_fwd/core_attn/instantiations/v41_h64_decode_norm.cu
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+[22/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/sm100/prefill/sparse/fused_norm_rope_attn_rope_cast_fwd/core_attn/instantiations/v41_h64_decode_nonorm.cu.o
+/work/sources/FlashMLA/csrc/cuda_kernels/sm100/prefill/sparse/fused_norm_rope_attn_rope_cast_fwd/core_attn/instantiations/../kernel.cuh(1614): warning #445-D: constant "MT" is not used in declaring the parameter types of function template "lambda [](__nv_bool, void *, int, int64_t, int)->std::pair<CUtensorMap, CUtensorMap>::operator auto (*)(__nv_bool, void *, int, signed long, int)->std::pair<CUtensorMap_st, CUtensorMap_st>"
+          auto make_kv_tensor_maps = []<ModelType MT>(bool is_extra, void *kv_ptr, int num_blocks, int64_t block_stride_bytes, int row_stride_bytes) -> std::pair<CUtensorMap, CUtensorMap> {
+                                                  ^
+          detected during:
+            instantiation of "void sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::Kernel<CONFIG>::run(const sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::Kernel<CONFIG>::Params &) [with CONFIG=sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::Config{SparseAttnFwdMode::Decode, ModelType::V41, ModelType::V41, 64U, false}]" at line 1681
+            instantiation of "void sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::run_fused_norm_rope_attn_rope_cast_fwd_kernel<CONFIG>(const sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::ParamT<<expression>> &) [with CONFIG=sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::Config{SparseAttnFwdMode::Decode, ModelType::V41, ModelType::V41, 64U, false}]" at line 6 of /work/sources/FlashMLA/csrc/cuda_kernels/sm100/prefill/sparse/fused_norm_rope_attn_rope_cast_fwd/core_attn/instantiations/v41_h64_decode_nonorm.cu
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+[23/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/sm100/prefill/sparse/fused_norm_rope_attn_rope_cast_fwd/core_attn/instantiations/v41fp4_h64_decode_norm.cu.o
+/work/sources/FlashMLA/csrc/cuda_kernels/sm100/prefill/sparse/fused_norm_rope_attn_rope_cast_fwd/core_attn/instantiations/../kernel.cuh(1614): warning #445-D: constant "MT" is not used in declaring the parameter types of function template "lambda [](__nv_bool, void *, int, int64_t, int)->std::pair<CUtensorMap, CUtensorMap>::operator auto (*)(__nv_bool, void *, int, signed long, int)->std::pair<CUtensorMap_st, CUtensorMap_st>"
+          auto make_kv_tensor_maps = []<ModelType MT>(bool is_extra, void *kv_ptr, int num_blocks, int64_t block_stride_bytes, int row_stride_bytes) -> std::pair<CUtensorMap, CUtensorMap> {
+                                                  ^
+          detected during:
+            instantiation of "void sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::Kernel<CONFIG>::run(const sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::Kernel<CONFIG>::Params &) [with CONFIG=sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::Config{SparseAttnFwdMode::Decode, ModelType::V41, ModelType::V41_FP4, 64U, true}]" at line 1681
+            instantiation of "void sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::run_fused_norm_rope_attn_rope_cast_fwd_kernel<CONFIG>(const sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::ParamT<<expression>> &) [with CONFIG=sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::Config{SparseAttnFwdMode::Decode, ModelType::V41, ModelType::V41_FP4, 64U, true}]" at line 6 of /work/sources/FlashMLA/csrc/cuda_kernels/sm100/prefill/sparse/fused_norm_rope_attn_rope_cast_fwd/core_attn/instantiations/v41fp4_h64_decode_norm.cu
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+[24/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/sm100/prefill/sparse/fused_norm_rope_attn_rope_cast_fwd/core_attn/instantiations/v41fp4_h64_decode_nonorm.cu.o
+/work/sources/FlashMLA/csrc/cuda_kernels/sm100/prefill/sparse/fused_norm_rope_attn_rope_cast_fwd/core_attn/instantiations/../kernel.cuh(1614): warning #445-D: constant "MT" is not used in declaring the parameter types of function template "lambda [](__nv_bool, void *, int, int64_t, int)->std::pair<CUtensorMap, CUtensorMap>::operator auto (*)(__nv_bool, void *, int, signed long, int)->std::pair<CUtensorMap_st, CUtensorMap_st>"
+          auto make_kv_tensor_maps = []<ModelType MT>(bool is_extra, void *kv_ptr, int num_blocks, int64_t block_stride_bytes, int row_stride_bytes) -> std::pair<CUtensorMap, CUtensorMap> {
+                                                  ^
+          detected during:
+            instantiation of "void sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::Kernel<CONFIG>::run(const sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::Kernel<CONFIG>::Params &) [with CONFIG=sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::Config{SparseAttnFwdMode::Decode, ModelType::V41, ModelType::V41_FP4, 64U, false}]" at line 1681
+            instantiation of "void sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::run_fused_norm_rope_attn_rope_cast_fwd_kernel<CONFIG>(const sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::ParamT<<expression>> &) [with CONFIG=sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::Config{SparseAttnFwdMode::Decode, ModelType::V41, ModelType::V41_FP4, 64U, false}]" at line 6 of /work/sources/FlashMLA/csrc/cuda_kernels/sm100/prefill/sparse/fused_norm_rope_attn_rope_cast_fwd/core_attn/instantiations/v41fp4_h64_decode_nonorm.cu
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+[25/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/sm100/prefill/sparse/fused_norm_rope_attn_rope_cast_fwd/permute_q_b_proj/kernel.cu.o
+[26/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/sm100/prefill/sparse/fused_norm_rope_attn_rope_cast_fwd/core_attn/instantiations/v41_h128_prefill_norm.cu.o
+[27/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/sm100/prefill/sparse/fused_norm_rope_attn_rope_cast_fwd/permute_wv_proj/kernel.cu.o
+[28/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/sm100/prefill/sparse/fused_norm_rope_attn_rope_cast_fwd/core_attn/instantiations/v41_h128_prefill_nonorm.cu.o
+[29/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/legacy/smxx/decode/get_decoding_sched_meta/get_decoding_sched_meta.cu.o
+[30/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/sm100/prefill/sparse/fused_norm_rope_attn_rope_cast_fwd/core_attn/instantiations/v41_h128_decode_norm.cu.o
+/work/sources/FlashMLA/csrc/cuda_kernels/sm100/prefill/sparse/fused_norm_rope_attn_rope_cast_fwd/core_attn/instantiations/../kernel.cuh(1614): warning #445-D: constant "MT" is not used in declaring the parameter types of function template "lambda [](__nv_bool, void *, int, int64_t, int)->std::pair<CUtensorMap, CUtensorMap>::operator auto (*)(__nv_bool, void *, int, signed long, int)->std::pair<CUtensorMap_st, CUtensorMap_st>"
+          auto make_kv_tensor_maps = []<ModelType MT>(bool is_extra, void *kv_ptr, int num_blocks, int64_t block_stride_bytes, int row_stride_bytes) -> std::pair<CUtensorMap, CUtensorMap> {
+                                                  ^
+          detected during:
+            instantiation of "void sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::Kernel<CONFIG>::run(const sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::Kernel<CONFIG>::Params &) [with CONFIG=sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::Config{SparseAttnFwdMode::Decode, ModelType::V41, ModelType::V41, 128U, true}]" at line 1681
+            instantiation of "void sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::run_fused_norm_rope_attn_rope_cast_fwd_kernel<CONFIG>(const sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::ParamT<<expression>> &) [with CONFIG=sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::Config{SparseAttnFwdMode::Decode, ModelType::V41, ModelType::V41, 128U, true}]" at line 6 of /work/sources/FlashMLA/csrc/cuda_kernels/sm100/prefill/sparse/fused_norm_rope_attn_rope_cast_fwd/core_attn/instantiations/v41_h128_decode_norm.cu
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+[31/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/sm100/prefill/sparse/fused_norm_rope_attn_rope_cast_fwd/core_attn/instantiations/v41fp4_h128_decode_nonorm.cu.o
+/work/sources/FlashMLA/csrc/cuda_kernels/sm100/prefill/sparse/fused_norm_rope_attn_rope_cast_fwd/core_attn/instantiations/../kernel.cuh(1614): warning #445-D: constant "MT" is not used in declaring the parameter types of function template "lambda [](__nv_bool, void *, int, int64_t, int)->std::pair<CUtensorMap, CUtensorMap>::operator auto (*)(__nv_bool, void *, int, signed long, int)->std::pair<CUtensorMap_st, CUtensorMap_st>"
+          auto make_kv_tensor_maps = []<ModelType MT>(bool is_extra, void *kv_ptr, int num_blocks, int64_t block_stride_bytes, int row_stride_bytes) -> std::pair<CUtensorMap, CUtensorMap> {
+                                                  ^
+          detected during:
+            instantiation of "void sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::Kernel<CONFIG>::run(const sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::Kernel<CONFIG>::Params &) [with CONFIG=sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::Config{SparseAttnFwdMode::Decode, ModelType::V41, ModelType::V41_FP4, 128U, false}]" at line 1681
+            instantiation of "void sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::run_fused_norm_rope_attn_rope_cast_fwd_kernel<CONFIG>(const sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::ParamT<<expression>> &) [with CONFIG=sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::Config{SparseAttnFwdMode::Decode, ModelType::V41, ModelType::V41_FP4, 128U, false}]" at line 6 of /work/sources/FlashMLA/csrc/cuda_kernels/sm100/prefill/sparse/fused_norm_rope_attn_rope_cast_fwd/core_attn/instantiations/v41fp4_h128_decode_nonorm.cu
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+[32/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/sm100/prefill/sparse/fused_norm_rope_attn_rope_cast_fwd/core_attn/instantiations/v41_h128_decode_nonorm.cu.o
+/work/sources/FlashMLA/csrc/cuda_kernels/sm100/prefill/sparse/fused_norm_rope_attn_rope_cast_fwd/core_attn/instantiations/../kernel.cuh(1614): warning #445-D: constant "MT" is not used in declaring the parameter types of function template "lambda [](__nv_bool, void *, int, int64_t, int)->std::pair<CUtensorMap, CUtensorMap>::operator auto (*)(__nv_bool, void *, int, signed long, int)->std::pair<CUtensorMap_st, CUtensorMap_st>"
+          auto make_kv_tensor_maps = []<ModelType MT>(bool is_extra, void *kv_ptr, int num_blocks, int64_t block_stride_bytes, int row_stride_bytes) -> std::pair<CUtensorMap, CUtensorMap> {
+                                                  ^
+          detected during:
+            instantiation of "void sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::Kernel<CONFIG>::run(const sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::Kernel<CONFIG>::Params &) [with CONFIG=sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::Config{SparseAttnFwdMode::Decode, ModelType::V41, ModelType::V41, 128U, false}]" at line 1681
+            instantiation of "void sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::run_fused_norm_rope_attn_rope_cast_fwd_kernel<CONFIG>(const sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::ParamT<<expression>> &) [with CONFIG=sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::Config{SparseAttnFwdMode::Decode, ModelType::V41, ModelType::V41, 128U, false}]" at line 6 of /work/sources/FlashMLA/csrc/cuda_kernels/sm100/prefill/sparse/fused_norm_rope_attn_rope_cast_fwd/core_attn/instantiations/v41_h128_decode_nonorm.cu
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+[33/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/sm100/prefill/sparse/fused_norm_rope_attn_rope_cast_fwd/core_attn/instantiations/v41fp4_h128_decode_norm.cu.o
+/work/sources/FlashMLA/csrc/cuda_kernels/sm100/prefill/sparse/fused_norm_rope_attn_rope_cast_fwd/core_attn/instantiations/../kernel.cuh(1614): warning #445-D: constant "MT" is not used in declaring the parameter types of function template "lambda [](__nv_bool, void *, int, int64_t, int)->std::pair<CUtensorMap, CUtensorMap>::operator auto (*)(__nv_bool, void *, int, signed long, int)->std::pair<CUtensorMap_st, CUtensorMap_st>"
+          auto make_kv_tensor_maps = []<ModelType MT>(bool is_extra, void *kv_ptr, int num_blocks, int64_t block_stride_bytes, int row_stride_bytes) -> std::pair<CUtensorMap, CUtensorMap> {
+                                                  ^
+          detected during:
+            instantiation of "void sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::Kernel<CONFIG>::run(const sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::Kernel<CONFIG>::Params &) [with CONFIG=sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::Config{SparseAttnFwdMode::Decode, ModelType::V41, ModelType::V41_FP4, 128U, true}]" at line 1681
+            instantiation of "void sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::run_fused_norm_rope_attn_rope_cast_fwd_kernel<CONFIG>(const sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::ParamT<<expression>> &) [with CONFIG=sm100::prefill::fused_norm_rope_attn_rope_cast_fwd::core_attn::Config{SparseAttnFwdMode::Decode, ModelType::V41, ModelType::V41_FP4, 128U, true}]" at line 6 of /work/sources/FlashMLA/csrc/cuda_kernels/sm100/prefill/sparse/fused_norm_rope_attn_rope_cast_fwd/core_attn/instantiations/v41fp4_h128_decode_norm.cu
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+[34/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/legacy/smxx/decode/combine/combine.cu.o
+[35/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/sm100/prefill/dense/fmha_cutlass_fwd_sm100.cu.o
+/work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/gemm/collective/sm100_blockscaled_mma_array_warpspecialized_rcggemm.hpp(694): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/gemm/collective/sm100_blockscaled_sparse_mma_warpspecialized.hpp(902): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/gemm/collective/sm100_blockscaled_mma_warpspecialized.hpp(717): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/gemm/collective/sm100_blockscaled_mma_array_warpspecialized.hpp(727): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+/work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/gemm/collective/sm100_blockscaled_mma_mixed_tma_cpasync_warpspecialized.hpp(541): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/gemm/collective/sm103_blockscaled_mma_warpspecialized.hpp(682): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(params.layout_SFB));
+                            ^
+
+/work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/gemm/collective/sm103_blockscaled_mma_array_warpspecialized.hpp(810): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+[36/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/legacy/sm100/decode/sparse/head64/instantiations/v32_h64.cu.o
+[37/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/legacy/sm100/decode/sparse/head64/instantiations/v32_h64_no_split.cu.o
+[38/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/legacy/sm100/prefill/sparse/fwd/head128/instantiations/phase1_k576.cu.o
+[39/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/legacy/sm100/prefill/sparse/fwd/head64/instantiations/phase1_h64_k576.cu.o
+[40/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/legacy/sm100/decode/sparse/head64/instantiations/v4_h64.cu.o
+[41/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/legacy/sm100/decode/sparse/head64/instantiations/v4_h64_no_split.cu.o
+[42/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/legacy/sm100/prefill/sparse/fwd_for_small_topk/head128/instantiations/phase1_decode_k512.cu.o
+[43/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/legacy/sm100/prefill/sparse/fwd_for_small_topk/head128/instantiations/phase1_decode_k512_splitkv.cu.o
+[44/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/legacy/sm100/prefill/sparse/fused_norm_rope_attn_rope_cast_fwd/core_attn/instantiations/v4_h64_decode_norm.cu.o
+[45/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/legacy/sm100/prefill/sparse/fused_norm_rope_attn_rope_cast_fwd/core_attn/instantiations/v4_h64_decode_nonorm.cu.o
+[46/64] Building CXX object CMakeFiles/_flashmla_extension_C.dir/work/sources/FlashMLA/csrc/extension/torch_api.cpp.o
+[47/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/legacy/sm90/decode/sparse/instantiations/v4_persistent_h128.cu.o
+ptxas info    : (C7512) Potential Performance Loss: wgmma.mma_async instructions are serialized due to insufficient register resources for the function '_ZN6legacy4sm906decode6sparse39flash_fwd_splitkv_mla_fp8_sparse_kernelINS2_14KernelTemplateIL9ModelType1ELi128EEENS6_9TmaParamsIN4cute5tupleIJiiiiEEENS8_9TiledCopyINS8_9Copy_AtomIJNS8_11Copy_TraitsINS8_13SM90_TMA_LOADEJNS8_1CILi65536EEENS8_12AuxTmaParamsINS9_IJNS8_11ScaledBasisINSF_ILi1EEEJLi1EEEENSI_ISJ_JLi0EEEENSI_ISJ_JLi2EEEENSI_ISJ_JLi3EEEEEEERKNS8_6LayoutINS9_IJNSF_ILi64EEESQ_SJ_SJ_EEESO_EERKNS8_7SwizzleILi3ELi4ELi3EEEEEEEEN7cutlass10bfloat16_tEEEENSP_INS9_IJSJ_NS9_IJNS9_IJNS9_IJSQ_SQ_EEENSF_ILi8EEEEEEEEEEEENS9_IJNSF_ILi0EEENS9_IJNS9_IJNS9_IJSQ_SJ_EEENSF_ILi4096EEEEEEEEEEEEEENS9_IJSQ_NSF_ILi512EEEEEEEEEEEEv22SparseAttnDecodeParamsT0_'
+[48/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/legacy/sm90/decode/sparse/instantiations/v32_persistent_h64.cu.o
+ptxas info    : (C7512) Potential Performance Loss: wgmma.mma_async instructions are serialized due to insufficient register resources for the function '_ZN6legacy4sm906decode6sparse39flash_fwd_splitkv_mla_fp8_sparse_kernelINS2_14KernelTemplateIL9ModelType0ELi64EEENS6_9TmaParamsIN4cute5tupleIJiiiiEEENS8_9TiledCopyINS8_9Copy_AtomIJNS8_11Copy_TraitsINS8_13SM90_TMA_LOADEJNS8_1CILi65536EEENS8_12AuxTmaParamsINS9_IJNS8_11ScaledBasisINSF_ILi1EEEJLi1EEEENSI_ISJ_JLi0EEEENSI_ISJ_JLi2EEEENSI_ISJ_JLi3EEEEEEERKNS8_6LayoutINS9_IJNSF_ILi64EEESQ_SJ_SJ_EEESO_EERKNS8_7SwizzleILi3ELi4ELi3EEEEEEEEN7cutlass10bfloat16_tEEEENSP_INS9_IJSJ_NS9_IJNS9_IJNS9_IJSQ_SQ_EEENSF_ILi9EEEEEEEEEEEENS9_IJNSF_ILi0EEENS9_IJNS9_IJNS9_IJSQ_SJ_EEENSF_ILi4096EEEEEEEEEEEEEENS9_IJSQ_NSF_ILi576EEEEEEEEEEEEv22SparseAttnDecodeParamsT0_'
+[49/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/legacy/sm90/decode/sparse/instantiations/v4_persistent_h64.cu.o
+ptxas info    : (C7512) Potential Performance Loss: wgmma.mma_async instructions are serialized due to insufficient register resources for the function '_ZN6legacy4sm906decode6sparse39flash_fwd_splitkv_mla_fp8_sparse_kernelINS2_14KernelTemplateIL9ModelType1ELi64EEENS6_9TmaParamsIN4cute5tupleIJiiiiEEENS8_9TiledCopyINS8_9Copy_AtomIJNS8_11Copy_TraitsINS8_13SM90_TMA_LOADEJNS8_1CILi65536EEENS8_12AuxTmaParamsINS9_IJNS8_11ScaledBasisINSF_ILi1EEEJLi1EEEENSI_ISJ_JLi0EEEENSI_ISJ_JLi2EEEENSI_ISJ_JLi3EEEEEEERKNS8_6LayoutINS9_IJNSF_ILi64EEESQ_SJ_SJ_EEESO_EERKNS8_7SwizzleILi3ELi4ELi3EEEEEEEEN7cutlass10bfloat16_tEEEENSP_INS9_IJSJ_NS9_IJNS9_IJNS9_IJSQ_SQ_EEENSF_ILi8EEEEEEEEEEEENS9_IJNSF_ILi0EEENS9_IJNS9_IJNS9_IJSQ_SJ_EEENSF_ILi4096EEEEEEEEEEEEEENS9_IJSQ_NSF_ILi512EEEEEEEEEEEEv22SparseAttnDecodeParamsT0_'
+[50/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/legacy/sm100/decode/sparse/nvfp4_head64/instantiations/v32_nvfp4_fp8rope.cu.o
+[51/64] Building CXX object CMakeFiles/_flashmla_extension_C.dir/work/sources/FlashMLA/csrc/extension/sm90/dense_fp8/pybind.cpp.o
+In file included from /work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/integer_subbyte.h:46,
+                 from /work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/numeric_types.h:40,
+                 from /work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/functional.h:39,
+                 from /work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/array.h:38,
+                 from /work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/fast_math.h:44,
+                 from /work/sources/FlashMLA/csrc/extension/sm90/dense_fp8/pybind.cpp:17:
+/work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/platform/platform.h:658:21: warning: 'long4' is deprecated: use long4_16a or long4_32a [-Wdeprecated-declarations]
+  658 | struct alignment_of<long4> {
+      |                     ^~~~~
+In file included from /usr/local/cuda/include/driver_types.h:61,
+                 from /usr/local/cuda/include/builtin_types.h:59,
+                 from /usr/local/cuda/include/cuda_runtime.h:90,
+                 from /work/sources/FlashMLA/csrc/extension/sm90/dense_fp8/pybind.cpp:8:
+/usr/local/cuda/include/vector_types.h:532:98: note: declared here
+  532 | typedef __device_builtin__ struct long4 __VECTOR_TYPE_DEPRECATED__("use long4_16a or long4_32a") long4;
+      |                                                                                                  ^~~~~
+/work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/platform/platform.h:662:21: warning: 'ulong4' is deprecated: use ulong4_16a or ulong4_32a [-Wdeprecated-declarations]
+  662 | struct alignment_of<ulong4> {
+      |                     ^~~~~~
+/usr/local/cuda/include/vector_types.h:533:101: note: declared here
+  533 | typedef __device_builtin__ struct ulong4 __VECTOR_TYPE_DEPRECATED__("use ulong4_16a or ulong4_32a") ulong4;
+      |                                                                                                     ^~~~~~
+/work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/platform/platform.h:666:21: warning: 'longlong4' is deprecated: use longlong4_16a or longlong4_32a [-Wdeprecated-declarations]
+  666 | struct alignment_of<longlong4> {
+      |                     ^~~~~~~~~
+/usr/local/cuda/include/vector_types.h:550:110: note: declared here
+  550 | typedef __device_builtin__ struct longlong4 __VECTOR_TYPE_DEPRECATED__("use longlong4_16a or longlong4_32a") longlong4;
+      |                                                                                                              ^~~~~~~~~
+/work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/platform/platform.h:670:21: warning: 'ulonglong4' is deprecated: use ulonglong4_16a or ulonglong4_32a [-Wdeprecated-declarations]
+  670 | struct alignment_of<ulonglong4> {
+      |                     ^~~~~~~~~~
+/usr/local/cuda/include/vector_types.h:551:113: note: declared here
+  551 | typedef __device_builtin__ struct ulonglong4 __VECTOR_TYPE_DEPRECATED__("use ulonglong4_16a or ulonglong4_32a") ulonglong4;
+      |                                                                                                                 ^~~~~~~~~~
+/work/sources/FlashMLA/csrc/3rdparty/cutlass/include/cutlass/platform/platform.h:674:21: warning: 'double4' is deprecated: use double4_16a or double4_32a [-Wdeprecated-declarations]
+  674 | struct alignment_of<double4> {
+      |                     ^~~~~~~
+/usr/local/cuda/include/vector_types.h:561:104: note: declared here
+  561 | typedef __device_builtin__ struct double4 __VECTOR_TYPE_DEPRECATED__("use double4_16a or double4_32a") double4;
+      |                                                                                                        ^~~~~~~
+[52/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/legacy/sm90/decode/sparse/instantiations/v32_persistent_h128.cu.o
+ptxas info    : (C7512) Potential Performance Loss: wgmma.mma_async instructions are serialized due to insufficient register resources for the function '_ZN6legacy4sm906decode6sparse39flash_fwd_splitkv_mla_fp8_sparse_kernelINS2_14KernelTemplateIL9ModelType0ELi128EEENS6_9TmaParamsIN4cute5tupleIJiiiiEEENS8_9TiledCopyINS8_9Copy_AtomIJNS8_11Copy_TraitsINS8_13SM90_TMA_LOADEJNS8_1CILi65536EEENS8_12AuxTmaParamsINS9_IJNS8_11ScaledBasisINSF_ILi1EEEJLi1EEEENSI_ISJ_JLi0EEEENSI_ISJ_JLi2EEEENSI_ISJ_JLi3EEEEEEERKNS8_6LayoutINS9_IJNSF_ILi64EEESQ_SJ_SJ_EEESO_EERKNS8_7SwizzleILi3ELi4ELi3EEEEEEEEN7cutlass10bfloat16_tEEEENSP_INS9_IJSJ_NS9_IJNS9_IJNS9_IJSQ_SQ_EEENSF_ILi9EEEEEEEEEEEENS9_IJNSF_ILi0EEENS9_IJNS9_IJNS9_IJSQ_SJ_EEENSF_ILi4096EEEEEEEEEEEEEENS9_IJSQ_NSF_ILi576EEEEEEEEEEEEv22SparseAttnDecodeParamsT0_'
+[53/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/legacy/sm90/prefill/sparse/instantiations/phase1_k512.cu.o
+[54/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/legacy/sm90/prefill/sparse/instantiations/phase1_k576.cu.o
+[55/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/legacy/sm90/prefill/sparse/instantiations/phase1_k512_topklen.cu.o
+[56/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/legacy/sm90/prefill/sparse/instantiations/phase1_k576_topklen.cu.o
+[57/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/legacy/sm100/prefill/sparse/fused_norm_rope_attn_rope_cast_fwd/core_attn/instantiations/v4_h128_decode_norm.cu.o
+[58/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/legacy/sm100/prefill/sparse/fused_norm_rope_attn_rope_cast_fwd/core_attn/instantiations/v4_h128_decode_nonorm.cu.o
+[59/64] Building CUDA object CMakeFiles/_flashmla_extension_C.dir/work/sources/FlashMLA/csrc/extension/sm90/dense_fp8/flash_fwd_mla_metadata.cu.o
+[60/64] Building CUDA object CMakeFiles/_flashmla_extension_C.dir/work/sources/FlashMLA/csrc/extension/sm90/dense_fp8/flash_fwd_mla_fp8_sm90.cu.o
+[61/64] Linking CXX shared module _flashmla_extension_C.abi3.so
+[62/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/legacy/sm90/decode/dense/instantiations/fp16.cu.o
+[63/64] Building CUDA object CMakeFiles/_flashmla_C.dir/work/sources/FlashMLA/csrc/cuda_kernels/legacy/sm90/decode/dense/instantiations/bf16.cu.o
+[64/64] Linking CXX shared module _flashmla_C.abi3.so

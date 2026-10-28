@@ -1,0 +1,15 @@
+test_cache_copy_preserves_hub_symlink_and_reuses_completed_copy (test_allocated.AllocatedTests) ... ok
+test_launcher_storage_uses_real_current_data_device_and_rejects_other_run (test_allocated.AllocatedTests) ... ok
+test_model_snapshot_stats_shards_and_detects_change_without_body_hash (test_allocated.AllocatedTests) ... ok
+test_startup_client_sends_one_token_request_and_records_raw_response (test_allocated.AllocatedTests) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.633s
+
+OK
+test_real_git_source_allows_only_receipted_generated_files (test_pair.PairTests) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.175s
+
+OK

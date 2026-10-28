@@ -1,0 +1,64 @@
+{
+  "allocation": {
+    "gpu_name": "NVIDIA H20",
+    "gpu_uuids": [
+      "GPU-2d07aa32-9537-ded4-eb6b-3368e4a768f3",
+      "GPU-f63c68e4-43d3-aecc-818d-f11aaf2a29c8",
+      "GPU-1d3baff4-9f4f-6bf2-46ef-d27efbca1035",
+      "GPU-474870a5-e909-996f-53c2-ae440c92ad3d"
+    ],
+    "driver_version": "535.230.02",
+    "raw_nvidia_smi": "NVIDIA H20, GPU-2d07aa32-9537-ded4-eb6b-3368e4a768f3, 535.230.02\nNVIDIA H20, GPU-f63c68e4-43d3-aecc-818d-f11aaf2a29c8, 535.230.02\nNVIDIA H20, GPU-1d3baff4-9f4f-6bf2-46ef-d27efbca1035, 535.230.02\nNVIDIA H20, GPU-474870a5-e909-996f-53c2-ae440c92ad3d, 535.230.02\n"
+  },
+  "read_only_inputs": [
+    {
+      "path": "/native-runtime",
+      "mount": "/native-runtime",
+      "options": [
+        "ro",
+        "noatime"
+      ]
+    },
+    {
+      "path": "/model",
+      "mount": "/model",
+      "options": [
+        "ro",
+        "noatime"
+      ]
+    },
+    {
+      "path": "/evaluation/model-receipt-h20-01.json",
+      "mount": "/evaluation",
+      "options": [
+        "ro",
+        "noatime"
+      ]
+    },
+    {
+      "path": "/client",
+      "mount": "/client",
+      "options": [
+        "ro",
+        "noatime"
+      ]
+    },
+    {
+      "path": "/offline-cache",
+      "mount": "/offline-cache",
+      "options": [
+        "ro",
+        "noatime"
+      ]
+    },
+    {
+      "path": "/evaluation",
+      "mount": "/evaluation",
+      "options": [
+        "ro",
+        "noatime"
+      ]
+    }
+  ],
+  "launcher_receipt": "/work/unified-environment/sweep-unified-moe58986-f41ba688009b.json"
+}

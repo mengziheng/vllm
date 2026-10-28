@@ -1,0 +1,183 @@
+[
+  {
+    "name": "cutlass",
+    "repository": "nvidia/cutlass",
+    "ref": "v4.7.1",
+    "submodules_selected": [],
+    "submodules": [],
+    "transport": "official GitHub codeload; gitlink SHA from GitHub tree API"
+  },
+  {
+    "name": "deepgemm",
+    "repository": "vllm-project/DeepGEMM",
+    "ref": "e1f418c2a4f20818221f6b0e578b4c2f634d4c3f",
+    "submodules_selected": [
+      "third-party/cutlass",
+      "third-party/deep_jit"
+    ],
+    "submodules": [
+      {
+        "path": "third-party/cutlass",
+        "repository": "NVIDIA/cutlass",
+        "ref": "f3fde58372d33e9a5650ba7b80fc48b3b49d40c8",
+        "submodules_selected": null,
+        "submodules": [],
+        "transport": "official GitHub codeload; exact gitlink SHA from GitHub tree API or shallow blob-filtered official Git tree"
+      },
+      {
+        "path": "third-party/deep_jit",
+        "repository": "deepseek-ai/DeepJIT",
+        "ref": "e5bdee2bc4ca519eba00cfc5f0c6e950e6a96a16",
+        "submodules_selected": null,
+        "submodules": [],
+        "transport": "official GitHub codeload; exact gitlink SHA from GitHub tree API or shallow blob-filtered official Git tree"
+      }
+    ],
+    "transport": "official GitHub codeload; exact gitlink SHA from GitHub tree API or shallow blob-filtered official Git tree"
+  },
+  {
+    "name": "deepselect",
+    "repository": "vllm-project/DeepSelect",
+    "ref": "d96d33afe1fab0d6066da49cdc91e64c2bee65ea",
+    "submodules_selected": null,
+    "submodules": [
+      {
+        "path": "csrc/3rdparty/cutlass",
+        "repository": "NVIDIA/cutlass",
+        "ref": "ae6bccf341fb4410241f696ba06873023d5ce4ed",
+        "submodules_selected": null,
+        "submodules": [],
+        "transport": "official GitHub codeload; exact gitlink SHA from GitHub tree API or shallow blob-filtered official Git tree"
+      }
+    ],
+    "transport": "official GitHub codeload; exact gitlink SHA from GitHub tree API or shallow blob-filtered official Git tree"
+  },
+  {
+    "name": "flashmla",
+    "repository": "vllm-project/FlashMLA",
+    "ref": "0eee43b12f034b657133cf2afca6a72ebb6efccf",
+    "submodules_selected": null,
+    "submodules": [
+      {
+        "path": "csrc/cutlass",
+        "repository": "NVIDIA/cutlass",
+        "ref": "147f5673d0c1c3dcf66f78d677fd647e4a020219",
+        "submodules_selected": null,
+        "submodules": [],
+        "transport": "official GitHub codeload; exact gitlink SHA from GitHub tree API or shallow blob-filtered official Git tree"
+      }
+    ],
+    "transport": "official GitHub codeload; exact gitlink SHA from GitHub tree API or shallow blob-filtered official Git tree"
+  },
+  {
+    "name": "flashkda",
+    "repository": "vllm-project/FlashKDA",
+    "ref": "17a037d98da546deb4591e967cf961a43c034d8b",
+    "submodules_selected": [
+      "cutlass"
+    ],
+    "submodules": [
+      {
+        "path": "cutlass",
+        "repository": "NVIDIA/cutlass",
+        "ref": "5c149f52a436782210263fb2f19b354443a61c6a",
+        "submodules_selected": null,
+        "submodules": [],
+        "transport": "official GitHub codeload; exact gitlink SHA from GitHub tree API or shallow blob-filtered official Git tree"
+      }
+    ],
+    "transport": "official GitHub codeload; exact gitlink SHA from GitHub tree API or shallow blob-filtered official Git tree"
+  },
+  {
+    "name": "flashattn",
+    "repository": "vllm-project/flash-attention",
+    "ref": "9cd61de38763d712bb6ce56e2a02cc2bf718c89f",
+    "submodules_selected": null,
+    "submodules": [
+      {
+        "path": "csrc/cutlass",
+        "repository": "NVIDIA/cutlass",
+        "ref": "62750a2b75c802660e4894434dc55e839f322277",
+        "submodules_selected": null,
+        "submodules": [],
+        "transport": "official GitHub codeload; exact gitlink SHA from GitHub tree API or shallow blob-filtered official Git tree"
+      },
+      {
+        "path": "csrc/composable_kernel",
+        "repository": "ROCm/composable_kernel",
+        "ref": "c56c6750d0fc54ed771d532cc92c316423449614",
+        "submodules_selected": null,
+        "submodules": [],
+        "transport": "official GitHub codeload; exact gitlink SHA from GitHub tree API or shallow blob-filtered official Git tree"
+      },
+      {
+        "path": "third_party/aiter",
+        "repository": "ROCm/aiter",
+        "ref": "9bab8388c35936814a659b4ebd245c491e1b940a",
+        "submodules_selected": null,
+        "submodules": [
+          {
+            "path": "3rdparty/composable_kernel",
+            "repository": "ROCm/composable_kernel",
+            "ref": "af7118e342580ecd3f71edce7b1d0ba465012ecf",
+            "submodules_selected": null,
+            "submodules": [],
+            "transport": "official GitHub codeload; exact gitlink SHA from GitHub tree API or shallow blob-filtered official Git tree"
+          }
+        ],
+        "transport": "official GitHub codeload; exact gitlink SHA from GitHub tree API or shallow blob-filtered official Git tree"
+      }
+    ],
+    "transport": "official GitHub codeload; exact gitlink SHA from GitHub tree API or shallow blob-filtered official Git tree"
+  },
+  {
+    "name": "triton",
+    "repository": "triton-lang/triton",
+    "ref": "v3.5.1",
+    "submodules_selected": [],
+    "submodules": [],
+    "transport": "official GitHub codeload; exact gitlink SHA from GitHub tree API or shallow blob-filtered official Git tree"
+  },
+  {
+    "name": "qutlass",
+    "repository": "IST-DASLab/qutlass",
+    "ref": "e74319e3405ce6d71965732880f5dc1f52371f64",
+    "submodules_selected": null,
+    "submodules": [
+      {
+        "path": "third_party/cutlass",
+        "repository": "NVIDIA/cutlass",
+        "ref": "b2ca083d2bb96c41d9b3c5a930637c641f6669bf",
+        "submodules_selected": null,
+        "submodules": [],
+        "transport": "official GitHub codeload; exact gitlink SHA from GitHub tree API or shallow blob-filtered official Git tree"
+      }
+    ],
+    "transport": "official GitHub codeload; exact gitlink SHA from GitHub tree API or shallow blob-filtered official Git tree"
+  },
+  {
+    "name": "tml-fa4",
+    "repository": "vllm-project/tml-fa4",
+    "ref": "75765e76a9c2c012c1f6ecd64577eb646eb4d303",
+    "submodules_selected": null,
+    "submodules": [],
+    "transport": "official GitHub codeload; exact gitlink SHA from GitHub tree API or shallow blob-filtered official Git tree"
+  },
+  {
+    "name": "fmha-sm100",
+    "repository": "vllm-project/MSA",
+    "ref": "f355c37eb4e1413f21ee2ad8bbad25079e6bef9d",
+    "submodules_selected": null,
+    "submodules": [
+      {
+        "path": "python/fmha_sm100/cutlass",
+        "repository": "NVIDIA/cutlass",
+        "ref": "eb61c911471867a5fd2466bfd8f29306cea6ebf8",
+        "submodules_selected": null,
+        "submodules": [],
+        "transport": "official GitHub codeload; exact gitlink SHA from GitHub tree API or shallow blob-filtered official Git tree"
+      }
+    ],
+    "transport": "official GitHub codeload; exact gitlink SHA from GitHub tree API or shallow blob-filtered official Git tree"
+  }
+]

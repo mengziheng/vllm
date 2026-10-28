@@ -1,0 +1,38 @@
+
+===== SOURCE: baseline/accuracy-gsm8k/attempt-001/stdout.txt =====
+local-completions ({'model': '/model', 'tokenizer': '/model', 'base_url': 'http://127.0.0.1:8000/v1/completions', 'num_concurrent': 8, 'max_retries': 0, 'tokenized_requests': False, 'tokenizer_backend': 'huggingface', 'max_length': 40000, 'timeout': 7200, 'seed': 20261028}), gen_kwargs: ({'do_sample': False, 'temperature': 0.0, 'max_gen_toks': 256, 'until': ['Question:', '</s>', '<|im_end|>']}), limit: None, num_fewshot: 5, batch_size: 1
+|Tasks|Version|     Filter     |n-shot|  Metric   |   |Value |   |Stderr|
+|-----|------:|----------------|-----:|-----------|---|-----:|---|-----:|
+|gsm8k|      3|flexible-extract|     5|exact_match|↑  |0.9295|±  |0.0071|
+|     |       |strict-match    |     5|exact_match|↑  |0.9287|±  |0.0071|
+
+
+===== END SOURCE: baseline/accuracy-gsm8k/attempt-001/stdout.txt =====
+
+===== SOURCE: baseline/accuracy-aime25/attempt-001/stdout.txt =====
+local-chat-completions ({'model': '/model', 'tokenizer': '/model', 'base_url': 'http://127.0.0.1:8000/v1/chat/completions', 'num_concurrent': 8, 'max_retries': 0, 'tokenized_requests': False, 'tokenizer_backend': None, 'max_length': 40000, 'timeout': 7200, 'seed': 20261028}), gen_kwargs: ({'do_sample': False, 'temperature': 0.0, 'max_gen_toks': 32768, 'until': ['Question:', '</s>', '<|im_end|>', '<|eot_id|>']}), limit: None, num_fewshot: 0, batch_size: 1
+|Tasks |Version|Filter|n-shot|  Metric   |   |Value |   |Stderr|
+|------|------:|------|-----:|-----------|---|-----:|---|-----:|
+|aime25|      0|none  |     0|exact_match|↑  |0.6333|±  |0.0895|
+
+
+===== END SOURCE: baseline/accuracy-aime25/attempt-001/stdout.txt =====
+
+===== SOURCE: tuned/accuracy-gsm8k/attempt-001/stdout.txt =====
+local-completions ({'model': '/model', 'tokenizer': '/model', 'base_url': 'http://127.0.0.1:8000/v1/completions', 'num_concurrent': 8, 'max_retries': 0, 'tokenized_requests': False, 'tokenizer_backend': 'huggingface', 'max_length': 40000, 'timeout': 7200, 'seed': 20261028}), gen_kwargs: ({'do_sample': False, 'temperature': 0.0, 'max_gen_toks': 256, 'until': ['Question:', '</s>', '<|im_end|>']}), limit: None, num_fewshot: 5, batch_size: 1
+|Tasks|Version|     Filter     |n-shot|  Metric   |   |Value |   |Stderr|
+|-----|------:|----------------|-----:|-----------|---|-----:|---|-----:|
+|gsm8k|      3|flexible-extract|     5|exact_match|↑  |0.9249|±  |0.0073|
+|     |       |strict-match    |     5|exact_match|↑  |0.9242|±  |0.0073|
+
+
+===== END SOURCE: tuned/accuracy-gsm8k/attempt-001/stdout.txt =====
+
+===== SOURCE: tuned/accuracy-aime25/attempt-001/stdout.txt =====
+local-chat-completions ({'model': '/model', 'tokenizer': '/model', 'base_url': 'http://127.0.0.1:8000/v1/chat/completions', 'num_concurrent': 8, 'max_retries': 0, 'tokenized_requests': False, 'tokenizer_backend': None, 'max_length': 40000, 'timeout': 7200, 'seed': 20261028}), gen_kwargs: ({'do_sample': False, 'temperature': 0.0, 'max_gen_toks': 32768, 'until': ['Question:', '</s>', '<|im_end|>', '<|eot_id|>']}), limit: None, num_fewshot: 0, batch_size: 1
+|Tasks |Version|Filter|n-shot|  Metric   |   |Value|   |Stderr|
+|------|------:|------|-----:|-----------|---|----:|---|-----:|
+|aime25|      0|none  |     0|exact_match|↑  |  0.7|±  |0.0851|
+
+
+===== END SOURCE: tuned/accuracy-aime25/attempt-001/stdout.txt =====

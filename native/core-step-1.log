@@ -1,0 +1,702 @@
+[1/125] Building CXX object CMakeFiles/cumem_allocator.dir/csrc/cumem_allocator.cpp.o
+[2/125] Building CXX object CMakeFiles/spinloop.dir/csrc/spinloop.cpp.o
+[3/125] Building CXX object CMakeFiles/fs_io_C.dir/csrc/fs_io.cpp.o
+[4/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/cuda_utils_kernels.cu.o
+[5/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/cuda_view.cu.o
+[6/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/ngram_embedding_kernels.cu.o
+[7/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/muse_spark_mul_tanh_soft_cap_kernel.cu.o
+[8/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/vocab_parallel_embedding_kernels.cu.o
+[9/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/activation_kernels.cu.o
+[10/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/pos_encoding_kernels.cu.o
+[11/125] Building CXX object CMakeFiles/_C_stable_libtorch.dir/csrc/torch_bindings.cpp.o
+[12/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/activation_kernels.cu.o
+[13/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/attention/merge_attn_states.cu.o
+[14/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/fused_kernels/fused_silu_mul_block_quant.cu.o
+[15/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/w8a8/int8/scaled_quant.cu.o
+[16/125] Building CXX object CMakeFiles/_C_stable_libtorch.dir/csrc/custom_all_gather_reduce_scatter_ops.cpp.o
+[17/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/w8a8/fp8/common.cu.o
+[18/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/layernorm_quant_kernels.cu.o
+[19/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/fused_qknorm_rope_kernel.cu.o
+[20/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/gptq/q_gemm.cu.o
+[21/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/custom_all_reduce.cu.o
+[22/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/w8a8/fp8/per_token_group_quant.cu.o
+[23/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/custom_all_gather_reduce_scatter.cu.o
+[24/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/layernorm_kernels.cu.o
+[25/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/fused_kimi_k3_mla_key_concat_kv_cache_kernel.cu.o
+[26/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/sampler.cu.o
+[27/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/attention/dcp_utils/dcp_direct_a2a_lse_reduce.cu.o
+[28/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/cache_kernels.cu.o
+[29/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/hisparse_kernels.cu.o
+[30/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/attention/dcp_utils/dcp_direct_kv_gather.cu.o
+[31/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/attention/dcp_utils/dcp_direct_q_gather.cu.o
+[32/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/fp4/nvfp4_quant_entry.cu.o
+[33/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/w8a8/cutlass/scaled_mm_entry.cu.o
+[34/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/fp4/nvfp4_scaled_mm_entry.cu.o
+[35/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/cache_kernels_fused.cu.o
+[36/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/awq/gemm_kernels.cu.o
+[37/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/fused_deepseek_v4_qnorm_rope_kv_insert_kernel.cu.o
+[38/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/fused_kernels/fused_layernorm_dynamic_per_token_quant.cu.o
+[39/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/minimax_reduce_rms_kernel.cu.o
+[40/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/topk.cu.o
+[41/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/fused_qknorm_rope_cache_kernel.cu.o
+[42/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/machete/generated/machete_mm_dispatch.cu.o
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_array_warpspecialized_rcggemm.hpp(697): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_sparse_mma_warpspecialized.hpp(905): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_warpspecialized.hpp(721): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_array_warpspecialized.hpp(730): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_mixed_tma_cpasync_warpspecialized.hpp(562): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm103_blockscaled_mma_warpspecialized.hpp(685): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(params.layout_SFB));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm103_blockscaled_mma_array_warpspecialized.hpp(813): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+[43/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/machete/machete_pytorch.cu.o
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_array_warpspecialized_rcggemm.hpp(697): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_sparse_mma_warpspecialized.hpp(905): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_warpspecialized.hpp(721): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_array_warpspecialized.hpp(730): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_mixed_tma_cpasync_warpspecialized.hpp(562): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm103_blockscaled_mma_warpspecialized.hpp(685): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(params.layout_SFB));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm103_blockscaled_mma_array_warpspecialized.hpp(813): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+[44/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/fused_minimax_m3_qknorm_rope_kv_insert_kernel.cu.o
+[45/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/marlin/sm80_kernel_float16_fe2m1f_float16.cu.o
+[46/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/machete/generated/machete_prepack.cu.o
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_array_warpspecialized_rcggemm.hpp(697): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_sparse_mma_warpspecialized.hpp(905): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_warpspecialized.hpp(721): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_array_warpspecialized.hpp(730): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_mixed_tma_cpasync_warpspecialized.hpp(562): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm103_blockscaled_mma_warpspecialized.hpp(685): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(params.layout_SFB));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm103_blockscaled_mma_array_warpspecialized.hpp(813): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+[47/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/fused_muse_spark_qknorm_rope_kv_insert_kernel.cu.o
+[48/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/marlin/sm80_kernel_float16_fe4m3fn_float16.cu.o
+[49/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/cooperative_topk.cu.o
+[50/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/mamba/selective_scan_fwd.cu.o
+[51/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/marlin/sm80_kernel_s8_u4_float16.cu.o
+[52/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/marlin/sm80_kernel_float16_u4b8_float16.cu.o
+[53/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/marlin/sm80_kernel_s8_u4b8_float16.cu.o
+[54/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/marlin/sm80_kernel_float16_u4_float16.cu.o
+[55/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/marlin/sm80_kernel_bfloat16_fe2m1f_bfloat16.cu.o
+[56/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/marlin/sm80_kernel_float16_u8b128_float16.cu.o
+[57/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/marlin/marlin_int4_fp8_preprocess.cu.o
+[58/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/marlin/sm80_kernel_bfloat16_fe4m3fn_bfloat16.cu.o
+[59/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/marlin/marlin.cu.o
+[60/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/marlin/gptq_marlin_repack.cu.o
+[61/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/marlin/awq_marlin_repack.cu.o
+[62/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/fp32_router_gemm_entry.cu.o
+[63/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/dsv3_fused_a_gemm.cu.o
+[64/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/w8a8/cutlass/scaled_mm_c3x_sm90.cu.o
+[65/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/marlin/sm80_kernel_bfloat16_u4_bfloat16.cu.o
+[66/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/marlin/sm80_kernel_s8_u4b8_bfloat16.cu.o
+[67/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/marlin/sm80_kernel_s8_u4_bfloat16.cu.o
+[68/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/machete/generated/machete_mm_impl_part1.cu.o
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_array_warpspecialized_rcggemm.hpp(697): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_sparse_mma_warpspecialized.hpp(905): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_warpspecialized.hpp(721): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_array_warpspecialized.hpp(730): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_mixed_tma_cpasync_warpspecialized.hpp(562): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm103_blockscaled_mma_warpspecialized.hpp(685): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(params.layout_SFB));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm103_blockscaled_mma_array_warpspecialized.hpp(813): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+[69/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/machete/generated/machete_mm_impl_part4.cu.o
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_array_warpspecialized_rcggemm.hpp(697): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_sparse_mma_warpspecialized.hpp(905): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_warpspecialized.hpp(721): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_array_warpspecialized.hpp(730): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_mixed_tma_cpasync_warpspecialized.hpp(562): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm103_blockscaled_mma_warpspecialized.hpp(685): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(params.layout_SFB));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm103_blockscaled_mma_array_warpspecialized.hpp(813): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+[70/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/machete/generated/machete_mm_impl_part3.cu.o
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_array_warpspecialized_rcggemm.hpp(697): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_sparse_mma_warpspecialized.hpp(905): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_warpspecialized.hpp(721): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_array_warpspecialized.hpp(730): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_mixed_tma_cpasync_warpspecialized.hpp(562): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm103_blockscaled_mma_warpspecialized.hpp(685): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(params.layout_SFB));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm103_blockscaled_mma_array_warpspecialized.hpp(813): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+[71/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/machete/generated/machete_mm_impl_part2.cu.o
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_array_warpspecialized_rcggemm.hpp(697): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_sparse_mma_warpspecialized.hpp(905): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_warpspecialized.hpp(721): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_array_warpspecialized.hpp(730): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_mixed_tma_cpasync_warpspecialized.hpp(562): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm103_blockscaled_mma_warpspecialized.hpp(685): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(params.layout_SFB));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm103_blockscaled_mma_array_warpspecialized.hpp(813): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+[72/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/machete/generated/machete_mm_impl_part5.cu.o
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_array_warpspecialized_rcggemm.hpp(697): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_sparse_mma_warpspecialized.hpp(905): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_warpspecialized.hpp(721): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_array_warpspecialized.hpp(730): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_mixed_tma_cpasync_warpspecialized.hpp(562): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm103_blockscaled_mma_warpspecialized.hpp(685): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(params.layout_SFB));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm103_blockscaled_mma_array_warpspecialized.hpp(813): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+[73/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/w8a8/cutlass/moe/moe_data.cu.o
+[74/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/machete/generated/machete_mm_impl_part7.cu.o
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_array_warpspecialized_rcggemm.hpp(697): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_sparse_mma_warpspecialized.hpp(905): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_warpspecialized.hpp(721): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_array_warpspecialized.hpp(730): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_mixed_tma_cpasync_warpspecialized.hpp(562): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm103_blockscaled_mma_warpspecialized.hpp(685): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(params.layout_SFB));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm103_blockscaled_mma_array_warpspecialized.hpp(813): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+[75/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/marlin/sm80_kernel_bfloat16_u4b8_bfloat16.cu.o
+[76/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/machete/generated/machete_mm_impl_part8.cu.o
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_array_warpspecialized_rcggemm.hpp(697): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_sparse_mma_warpspecialized.hpp(905): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_warpspecialized.hpp(721): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_array_warpspecialized.hpp(730): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_mixed_tma_cpasync_warpspecialized.hpp(562): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm103_blockscaled_mma_warpspecialized.hpp(685): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(params.layout_SFB));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm103_blockscaled_mma_array_warpspecialized.hpp(813): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+[77/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/machete/generated/machete_mm_impl_part6.cu.o
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_array_warpspecialized_rcggemm.hpp(697): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_sparse_mma_warpspecialized.hpp(905): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_warpspecialized.hpp(721): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_array_warpspecialized.hpp(730): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_mixed_tma_cpasync_warpspecialized.hpp(562): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm103_blockscaled_mma_warpspecialized.hpp(685): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(params.layout_SFB));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm103_blockscaled_mma_array_warpspecialized.hpp(813): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+[78/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/cutlass_w4a8/w4a8_utils.cu.o
+[79/125] Building CXX object CMakeFiles/_moe_C_stable_libtorch.dir/csrc/moe/torch_bindings.cpp.o
+[80/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/marlin/sm80_kernel_bfloat16_u8b128_bfloat16.cu.o
+[81/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/gdn/fused_gdn_decode_kernel.cu.o
+[82/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/beam/allreduce_norm.cu.o
+[83/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/hadamard/hadacore/hadamard_transform_cuda.cu.o
+[84/125] Building CUDA object CMakeFiles/_moe_C_stable_libtorch.dir/csrc/moe/moe_wna16.cu.o
+[85/125] Building CUDA object CMakeFiles/_moe_C_stable_libtorch.dir/csrc/moe/fused_globalize_align_block_size.cu.o
+[86/125] Building CUDA object CMakeFiles/_moe_C_stable_libtorch.dir/csrc/moe/moe_align_sum_kernels.cu.o
+[87/125] Building CUDA object CMakeFiles/_moe_C_stable_libtorch.dir/csrc/moe/permute_unpermute_kernels/moe_permute_unpermute_kernel.cu.o
+[88/125] Building CUDA object CMakeFiles/_moe_C_stable_libtorch.dir/csrc/moe/moe_permute_unpermute_op.cu.o
+[89/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/kimi_k3/fused_kda_decode_kernel.cu.o
+[90/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/w8a8/cutlass/c3x/scaled_mm_blockwise_sm90_fp8.cu.o
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_array_warpspecialized_rcggemm.hpp(697): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_sparse_mma_warpspecialized.hpp(905): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_warpspecialized.hpp(721): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_array_warpspecialized.hpp(730): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_mixed_tma_cpasync_warpspecialized.hpp(562): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm103_blockscaled_mma_warpspecialized.hpp(685): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(params.layout_SFB));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm103_blockscaled_mma_array_warpspecialized.hpp(813): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+[91/125] Building CUDA object CMakeFiles/_moe_C_stable_libtorch.dir/csrc/moe/topk_softmax_kernels.cu.o
+[92/125] Building CUDA object CMakeFiles/_moe_C_stable_libtorch.dir/csrc/moe/marlin_moe_wna16/sm80_kernel_bfloat16_fe2m1f_bfloat16.cu.o
+[93/125] Building CUDA object CMakeFiles/_moe_C_stable_libtorch.dir/csrc/moe/marlin_moe_wna16/sm80_kernel_float16_fe2m1f_float16.cu.o
+[94/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/w8a8/cutlass/c3x/scaled_mm_sm90_int8.cu.o
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_array_warpspecialized_rcggemm.hpp(697): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_sparse_mma_warpspecialized.hpp(905): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_warpspecialized.hpp(721): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_array_warpspecialized.hpp(730): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_mixed_tma_cpasync_warpspecialized.hpp(562): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm103_blockscaled_mma_warpspecialized.hpp(685): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(params.layout_SFB));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm103_blockscaled_mma_array_warpspecialized.hpp(813): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+[95/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/w8a8/cutlass/moe/grouped_mm_c3x_sm90.cu.o
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_array_warpspecialized_rcggemm.hpp(697): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_sparse_mma_warpspecialized.hpp(905): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_warpspecialized.hpp(721): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_array_warpspecialized.hpp(730): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_mixed_tma_cpasync_warpspecialized.hpp(562): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm103_blockscaled_mma_warpspecialized.hpp(685): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(params.layout_SFB));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm103_blockscaled_mma_array_warpspecialized.hpp(813): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+[96/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/w8a8/cutlass/c3x/scaled_mm_azp_sm90_int8.cu.o
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_array_warpspecialized_rcggemm.hpp(697): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_sparse_mma_warpspecialized.hpp(905): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_warpspecialized.hpp(721): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_array_warpspecialized.hpp(730): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_mixed_tma_cpasync_warpspecialized.hpp(562): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm103_blockscaled_mma_warpspecialized.hpp(685): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(params.layout_SFB));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm103_blockscaled_mma_array_warpspecialized.hpp(813): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+[97/125] Building CUDA object CMakeFiles/_moe_C_stable_libtorch.dir/csrc/moe/marlin_moe_wna16/sm80_kernel_bfloat16_fe4m3fn_bfloat16.cu.o
+[98/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/w8a8/cutlass/c3x/scaled_mm_sm90_fp8.cu.o
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_array_warpspecialized_rcggemm.hpp(697): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_sparse_mma_warpspecialized.hpp(905): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_warpspecialized.hpp(721): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_array_warpspecialized.hpp(730): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_mixed_tma_cpasync_warpspecialized.hpp(562): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm103_blockscaled_mma_warpspecialized.hpp(685): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(params.layout_SFB));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm103_blockscaled_mma_array_warpspecialized.hpp(813): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+[99/125] Building CUDA object CMakeFiles/_moe_C_stable_libtorch.dir/csrc/moe/marlin_moe_wna16/sm80_kernel_float16_fe4m3fn_float16.cu.o
+[100/125] Building CUDA object CMakeFiles/_moe_C_stable_libtorch.dir/csrc/moe/grouped_topk_kernels.cu.o
+[101/125] Building CUDA object CMakeFiles/_moe_C_stable_libtorch.dir/csrc/moe/topk_softplus_sqrt_kernels.cu.o
+[102/125] Building CXX object CMakeFiles/_flashkda_C.dir/csrc/flashkda_registration.cpp.o
+[103/125] Building CUDA object CMakeFiles/_moe_C_stable_libtorch.dir/csrc/moe/marlin_moe_wna16/sm80_kernel_bfloat16_u4b8_bfloat16.cu.o
+[104/125] Building CUDA object CMakeFiles/_moe_C_stable_libtorch.dir/csrc/moe/marlin_moe_wna16/sm80_kernel_bfloat16_u4_bfloat16.cu.o
+[105/125] Linking CXX shared module spinloop.abi3.so
+[106/125] Building CXX object CMakeFiles/_flashkda_C.dir/dependencies/flashkda-17a037d98da546deb4591e967cf961a43c034d8b/csrc/flash_kda.cpp.o
+In file included from /dependencies/flashkda-17a037d98da546deb4591e967cf961a43c034d8b/cutlass/include/cutlass/bfloat16.h:50,
+                 from /dependencies/flashkda-17a037d98da546deb4591e967cf961a43c034d8b/csrc/fwd.h:4,
+                 from /dependencies/flashkda-17a037d98da546deb4591e967cf961a43c034d8b/csrc/flash_kda.cpp:6:
+/dependencies/flashkda-17a037d98da546deb4591e967cf961a43c034d8b/cutlass/include/cutlass/platform/platform.h:658:21: warning: 'long4' is deprecated: use long4_16a or long4_32a [-Wdeprecated-declarations]
+  658 | struct alignment_of<long4> {
+      |                     ^~~~~
+In file included from /usr/local/cuda/include/driver_types.h:61,
+                 from /usr/local/cuda/include/builtin_types.h:59,
+                 from /usr/local/cuda/include/cuda_runtime.h:90,
+                 from /dependencies/flashkda-17a037d98da546deb4591e967cf961a43c034d8b/csrc/fwd.h:2:
+/usr/local/cuda/include/vector_types.h:532:98: note: declared here
+  532 | typedef __device_builtin__ struct long4 __VECTOR_TYPE_DEPRECATED__("use long4_16a or long4_32a") long4;
+      |                                                                                                  ^~~~~
+/dependencies/flashkda-17a037d98da546deb4591e967cf961a43c034d8b/cutlass/include/cutlass/platform/platform.h:662:21: warning: 'ulong4' is deprecated: use ulong4_16a or ulong4_32a [-Wdeprecated-declarations]
+  662 | struct alignment_of<ulong4> {
+      |                     ^~~~~~
+/usr/local/cuda/include/vector_types.h:533:101: note: declared here
+  533 | typedef __device_builtin__ struct ulong4 __VECTOR_TYPE_DEPRECATED__("use ulong4_16a or ulong4_32a") ulong4;
+      |                                                                                                     ^~~~~~
+/dependencies/flashkda-17a037d98da546deb4591e967cf961a43c034d8b/cutlass/include/cutlass/platform/platform.h:666:21: warning: 'longlong4' is deprecated: use longlong4_16a or longlong4_32a [-Wdeprecated-declarations]
+  666 | struct alignment_of<longlong4> {
+      |                     ^~~~~~~~~
+/usr/local/cuda/include/vector_types.h:550:110: note: declared here
+  550 | typedef __device_builtin__ struct longlong4 __VECTOR_TYPE_DEPRECATED__("use longlong4_16a or longlong4_32a") longlong4;
+      |                                                                                                              ^~~~~~~~~
+/dependencies/flashkda-17a037d98da546deb4591e967cf961a43c034d8b/cutlass/include/cutlass/platform/platform.h:670:21: warning: 'ulonglong4' is deprecated: use ulonglong4_16a or ulonglong4_32a [-Wdeprecated-declarations]
+  670 | struct alignment_of<ulonglong4> {
+      |                     ^~~~~~~~~~
+/usr/local/cuda/include/vector_types.h:551:113: note: declared here
+  551 | typedef __device_builtin__ struct ulonglong4 __VECTOR_TYPE_DEPRECATED__("use ulonglong4_16a or ulonglong4_32a") ulonglong4;
+      |                                                                                                                 ^~~~~~~~~~
+/dependencies/flashkda-17a037d98da546deb4591e967cf961a43c034d8b/cutlass/include/cutlass/platform/platform.h:674:21: warning: 'double4' is deprecated: use double4_16a or double4_32a [-Wdeprecated-declarations]
+  674 | struct alignment_of<double4> {
+      |                     ^~~~~~~
+/usr/local/cuda/include/vector_types.h:561:104: note: declared here
+  561 | typedef __device_builtin__ struct double4 __VECTOR_TYPE_DEPRECATED__("use double4_16a or double4_32a") double4;
+      |                                                                                                        ^~~~~~~
+[107/125] Linking CXX shared module fs_io_C.abi3.so
+[108/125] Linking CXX shared module cumem_allocator.abi3.so
+[109/125] Building CUDA object CMakeFiles/_moe_C_stable_libtorch.dir/csrc/moe/marlin_moe_wna16/ops.cu.o
+[110/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/cutlass_w4a8/w4a8_mm_entry.cu.o
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_array_warpspecialized_rcggemm.hpp(697): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_sparse_mma_warpspecialized.hpp(905): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_warpspecialized.hpp(721): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_array_warpspecialized.hpp(730): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_mixed_tma_cpasync_warpspecialized.hpp(562): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm103_blockscaled_mma_warpspecialized.hpp(685): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(params.layout_SFB));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm103_blockscaled_mma_array_warpspecialized.hpp(813): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+[111/125] Building CUDA object CMakeFiles/_moe_C_stable_libtorch.dir/csrc/moe/marlin_moe_wna16/sm80_kernel_bfloat16_u8b128_bfloat16.cu.o
+[112/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/cutlass_w4a8/w4a8_grouped_mm_entry.cu.o
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_array_warpspecialized_rcggemm.hpp(697): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_sparse_mma_warpspecialized.hpp(905): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_warpspecialized.hpp(721): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_array_warpspecialized.hpp(730): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm100_blockscaled_mma_mixed_tma_cpasync_warpspecialized.hpp(562): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB_));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm103_blockscaled_mma_warpspecialized.hpp(685): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(params.layout_SFB));
+                            ^
+
+/dependencies/cutlass-v4.7.1/include/cutlass/gemm/collective/sm103_blockscaled_mma_array_warpspecialized.hpp(813): warning #2908-D: the implicit by-copy capture of "this" is deprecated
+          Tensor mSFB_tmp = observed_tma_load_sfb_->get_tma_tensor(shape(layout_SFB));
+                            ^
+
+[113/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/fp32_router_gemm.cu.o
+[114/125] Building CUDA object CMakeFiles/_moe_C_stable_libtorch.dir/csrc/moe/marlin_moe_wna16/sm80_kernel_s8_u4_bfloat16.cu.o
+[115/125] Building CUDA object CMakeFiles/_moe_C_stable_libtorch.dir/csrc/moe/marlin_moe_wna16/sm80_kernel_s8_u4_float16.cu.o
+[116/125] Building CUDA object CMakeFiles/_moe_C_stable_libtorch.dir/csrc/moe/marlin_moe_wna16/sm80_kernel_float16_u4b8_float16.cu.o
+[117/125] Building CUDA object CMakeFiles/_moe_C_stable_libtorch.dir/csrc/moe/marlin_moe_wna16/sm80_kernel_float16_u4_float16.cu.o
+[118/125] Building CUDA object CMakeFiles/_moe_C_stable_libtorch.dir/csrc/moe/marlin_moe_wna16/sm80_kernel_s8_u4b8_bfloat16.cu.o
+[119/125] Building CUDA object CMakeFiles/_moe_C_stable_libtorch.dir/csrc/moe/marlin_moe_wna16/sm80_kernel_s8_u4b8_float16.cu.o
+[120/125] Building CUDA object CMakeFiles/_moe_C_stable_libtorch.dir/csrc/moe/marlin_moe_wna16/sm80_kernel_float16_u8b128_float16.cu.o
+[121/125] Linking CXX shared module _moe_C_stable_libtorch.abi3.so
+[122/125] Building CUDA object CMakeFiles/_flashkda_C.dir/dependencies/flashkda-17a037d98da546deb4591e967cf961a43c034d8b/csrc/smxx/fwd_launch.cu.o
+[123/125] Linking CXX shared module _flashkda_C.abi3.so
+[124/125] Building CUDA object CMakeFiles/_C_stable_libtorch.dir/csrc/quantization/w8a8/cutlass/scaled_mm_c2x.cu.o
+[125/125] Linking CXX shared module _C_stable_libtorch.abi3.so

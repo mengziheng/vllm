@@ -1,0 +1,83 @@
++ export 'PS4=+ byted-entrypoint:${LINENO}: '
++ PS4='+ byted-entrypoint:${LINENO}: '
++ byted-entrypoint:9: [[ 0 == \1 ]]
++ byted-entrypoint:18: [[ 9 -eq 0 ]]
++ byted-entrypoint:22: exec python3 /common/bin/bootstrap.py --framework v032 --task moe58986 -- python3 /work/check_tokenizer_interface.py
+{
+  "interface_before_check": {
+    "started_at": "2026-10-28T07:29:20.406410+00:00",
+    "python_executable": "/usr/local/bin/python3",
+    "python": "3.12.13 (001c8cb:001c8cb, Sep 11 2026, 20:08:55) [GCC 12.2.0]",
+    "transformers_version": "5.19.0",
+    "run_id": "sweep-unified-moe58986-96741e4c4062",
+    "tokenizer_class": "TokenizersBackend",
+    "vocab_size": 154820,
+    "tokenizer_length": 154856,
+    "apply_chat_template_signature": "(conversation: 'list[dict[str, str]] | list[list[dict[str, str]]]', tools: 'list[dict | Callable] | None' = None, documents: 'list[dict[str, str]] | None' = None, chat_template: 'str | None' = None, add_generation_prompt: 'bool' = False, continue_final_message: 'bool | str' = False, tokenize: 'bool' = True, padding: 'bool | str | PaddingStrategy' = False, truncation: 'bool' = False, max_length: 'int | None' = None, return_tensors: 'str | TensorType | None' = None, return_dict: 'bool' = True, return_assistant_tokens_mask: 'bool' = False, tokenizer_kwargs: 'dict[str, Any] | None' = None, **kwargs) -> 'str | list[int] | list[str] | list[list[int]] | BatchEncoding'",
+    "return_dict_default": true,
+    "chat_template_sha256": "0c4099f3382d6c92700dfb99725025360966fd73032f0ecf32377c0d9e6309c5",
+    "scope": "First official evaluation question only, without few-shot examples; tokenizer API check, not final model inputs or evaluation results.",
+    "samples": {},
+    "model_loading_invoked": false,
+    "inference_invoked": false,
+    "scoring_invoked": false,
+    "datasets_or_TaskManager_loaded": false
+  }
+}
+{
+  "default_output_type": "transformers.tokenization_utils_base.BatchEncoding",
+  "default_output_keys": [
+    "input_ids",
+    "attention_mask"
+  ]
+}
+{
+  "started_at": "2026-10-28T07:29:20.406410+00:00",
+  "python_executable": "/usr/local/bin/python3",
+  "python": "3.12.13 (001c8cb:001c8cb, Sep 11 2026, 20:08:55) [GCC 12.2.0]",
+  "transformers_version": "5.19.0",
+  "run_id": "sweep-unified-moe58986-96741e4c4062",
+  "tokenizer_class": "TokenizersBackend",
+  "vocab_size": 154820,
+  "tokenizer_length": 154856,
+  "apply_chat_template_signature": "(conversation: 'list[dict[str, str]] | list[list[dict[str, str]]]', tools: 'list[dict | Callable] | None' = None, documents: 'list[dict[str, str]] | None' = None, chat_template: 'str | None' = None, add_generation_prompt: 'bool' = False, continue_final_message: 'bool | str' = False, tokenize: 'bool' = True, padding: 'bool | str | PaddingStrategy' = False, truncation: 'bool' = False, max_length: 'int | None' = None, return_tensors: 'str | TensorType | None' = None, return_dict: 'bool' = True, return_assistant_tokens_mask: 'bool' = False, tokenizer_kwargs: 'dict[str, Any] | None' = None, **kwargs) -> 'str | list[int] | list[str] | list[list[int]] | BatchEncoding'",
+  "return_dict_default": true,
+  "chat_template_sha256": "0c4099f3382d6c92700dfb99725025360966fd73032f0ecf32377c0d9e6309c5",
+  "scope": "First official evaluation question only, without few-shot examples; tokenizer API check, not final model inputs or evaluation results.",
+  "samples": {
+    "gsm8k": {
+      "task": "gsm8k",
+      "doc_index": 0,
+      "source_revision": "740312add88f781978c0658806c59bc2815b9866",
+      "num_fewshot": 0,
+      "input_token_count": 79,
+      "rendered_sha256": "5b528718ae13d67fd51958a397e39a83aa1fb84be775c41868d91baa0ff2700c",
+      "returned_list_of_int": true,
+      "direct_encoding_equal": true,
+      "decoded_text_equal": true
+    },
+    "aime25": {
+      "task": "aime25",
+      "doc_index": 0,
+      "source_revision": "563bb8404243c5f09de6ec262f2db674fe5bce9b",
+      "num_fewshot": 0,
+      "input_token_count": 43,
+      "rendered_sha256": "947db17c9559dcfd7a060599a04ffb8e0af13ae69f09e9261f826cb2583afc90",
+      "returned_list_of_int": true,
+      "direct_encoding_equal": true,
+      "decoded_text_equal": true
+    }
+  },
+  "model_loading_invoked": false,
+  "inference_invoked": false,
+  "scoring_invoked": false,
+  "datasets_or_TaskManager_loaded": false,
+  "default_output_type": "transformers.tokenization_utils_base.BatchEncoding",
+  "default_output_keys": [
+    "input_ids",
+    "attention_mask"
+  ],
+  "cuda_initialized": false,
+  "finished_at": "2026-10-28T07:29:20.470152+00:00",
+  "status": "passed"
+}

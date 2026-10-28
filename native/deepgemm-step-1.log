@@ -1,0 +1,26 @@
+[1/1] Building DeepGEMM _C_extension (abi3)
+[build_deepgemm_C] building in /work/sources/DeepGEMM-0820030756945b2daec208e8e8255268360f337d with /usr/local/bin/python3
+W1028 16:12:14.652000 85 site-packages/torch/utils/cpp_extension.py:178] No CUDA runtime is found, using CUDA_HOME='/usr/local/cuda'
+/usr/local/lib/python3.12/site-packages/wheel/bdist_wheel.py:4: FutureWarning: The 'wheel' package is no longer the canonical location of the 'bdist_wheel' command, and will be removed in a future release. Please update to setuptools v70.1 or later which contains an integrated version of this command.
+  warn(
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+running build_ext
+building 'deep_gemm._C_extension' extension
+creating build/temp.linux-x86_64-cpython-312/csrc
+/opt/byted/toolchain/bin/g++ -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall -fPIC -I/usr/local/cuda/include -I/usr/local/cuda/include/cccl -Ideep_gemm/include -Ithird-party/deep_jit/include -Ithird-party/cutlass/include -I/usr/local/lib/python3.12/site-packages/torch/include -I/usr/local/lib/python3.12/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda/include -I/usr/local/include/python3.12 -c csrc/python_api.cpp -o build/temp.linux-x86_64-cpython-312/csrc/python_api.o -std=c++20 -O3 -fPIC -Wno-psabi -Wno-deprecated-declarations -DPy_LIMITED_API=0x030a0000 -D_GLIBCXX_USE_CXX11_ABI=1 -DDJ_DISABLE_GIL=1 -DTORCH_TARGET_VERSION=0x020b000000000000 -DUSE_CUDA
+In file included from csrc/python_api.cpp:10:
+csrc/runtime/runtime.hpp:22:7: warning: 'deep_gemm::Runtime' declared with greater visibility than the type of its field 'deep_gemm::Runtime::cublaslt_workspaces' [-Wattributes]
+   22 | class Runtime {
+      |       ^~~~~~~
+csrc/runtime/runtime.hpp:22:7: warning: 'deep_gemm::Runtime' declared with greater visibility than the type of its field 'deep_gemm::Runtime::sm_locality_domains' [-Wattributes]
+csrc/runtime/runtime.hpp:22:7: warning: 'deep_gemm::Runtime' declared with greater visibility than the type of its field 'deep_gemm::Runtime::balanced_sm_locality_domains' [-Wattributes]
+In file included from csrc/apis/epilogue_class.hpp:9,
+                 from csrc/python_api.cpp:12:
+csrc/apis/../jit_kernels/impls/epilogue_class.hpp:68:7: warning: 'deep_gemm::FP8QuantizationEpilogue' declared with greater visibility than the type of its field 'deep_gemm::FP8QuantizationEpilogue::sfd' [-Wattributes]
+   68 | class FP8QuantizationEpilogue final: public EpilogueClass {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~
+creating build/lib.linux-x86_64-cpython-312/deep_gemm
+/opt/byted/toolchain/bin/g++ -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall -shared build/temp.linux-x86_64-cpython-312/csrc/python_api.o -L/usr/local/cuda/lib64 -L/usr/local/lib/python3.12/site-packages/torch/lib -L/usr/local/cuda/lib64 -L/usr/local/lib -lcudart -lc10 -ltorch -ltorch_cpu -lcudart -lc10_cuda -ltorch_cuda -o build/lib.linux-x86_64-cpython-312/deep_gemm/_C_extension.abi3.so
+copying build/lib.linux-x86_64-cpython-312/deep_gemm/_C_extension.abi3.so -> deep_gemm
+[build_deepgemm_C] installed _C_extension.abi3.so -> /work/build/core/deepgemm_C

@@ -1,0 +1,12 @@
+{
+  "attempt": "attempt-001",
+  "audit": {
+    "task": "aime25",
+    "samples": 30,
+    "full_dataset": true,
+    "logged_sample_rows": 30,
+    "filters": {
+      "none": 30
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "ssh",
+    "-T",
+    "h20-01",
+    "python3",
+    "-",
+    "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair"
+  ],
+  "stdin": "/Users/bytedance/Documents/ChatGPT/b200优化/review-20261028-native-runtime/analysis/gsm8k_discordance.py",
+  "stdin_sha256": "b63faac5fa099b21530ba3fb464ce9e0b17f75247a5dcc26898aff7b2fb413ec",
+  "stdout": "/Users/bytedance/Documents/ChatGPT/b200优化/review-20261028-native-runtime/evidence/pair2-gsm8k-discordance.json",
+  "stderr": "/Users/bytedance/Documents/ChatGPT/b200优化/review-20261028-native-runtime/evidence/pair2-gsm8k-discordance.stderr.txt",
+  "remote_actions": "stdlib reads of two completed official sample files; existing scores only; no model/scorer requests or source/config writes"
+}

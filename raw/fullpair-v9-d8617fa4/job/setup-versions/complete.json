@@ -1,0 +1,9 @@
+{
+  "attempt": "attempt-001",
+  "audit": {
+    "lm_eval": "0.4.13",
+    "vllm": "0.32.0+byted.cu130.1",
+    "transformers": "5.19.0",
+    "datasets": "5.1.0"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "python": "3.12.13 (001c8cb:001c8cb, Sep 11 2026, 20:08:55) [GCC 12.2.0]",
+  "python_executable": "/usr/local/bin/python3",
+  "storage": {
+    "output_device": 66310,
+    "cache_device": 66310,
+    "output_free_bytes": 207888437248,
+    "output_free_inodes": 221965537
+  },
+  "actual_mountinfo": [
+    "1811 1792 259:6 /tiger/vllm_pr58986_evalprep_20261028_eb34e115/input/evaluation-v5 /evaluation ro,noatime - ext4 /dev/nvme2n1p1 rw",
+    "1812 1792 259:6 /tiger/vllm_pr58986_evaldata_20261028/.cache/unified/huggingface /offline-cache ro,noatime - ext4 /dev/nvme2n1p1 rw",
+    "1813 1792 259:6 /tiger/vllm_pr58986_evalprep_20261028_eb34e115/unified-environment/runtime/sweep-unified-moe58986-12d67483203d/tmp /tmp rw,noatime - ext4 /dev/nvme2n1p1 rw",
+    "1814 1792 259:6 /tiger/vllm_pr58986_evalprep_20261028_eb34e115 /work rw,noatime - ext4 /dev/nvme2n1p1 rw",
+    "1815 1792 259:6 /tiger/vllm_pr58986_evalprep_20261028_eb34e115/unified-environment/runtime/sweep-unified-moe58986-12d67483203d/home /sweep-home rw,noatime - ext4 /dev/nvme2n1p1 rw",
+    "1816 1792 259:6 /tiger/vllm_pr58986_cpu_20261028_4c1cbbe/client /client ro,noatime - ext4 /dev/nvme2n1p1 rw",
+    "1817 1792 259:7 /tiger/byted_vllm_cuda12/models/GLM-5.3-Flash /model ro,noatime - ext4 /dev/nvme3n1p1 rw"
+  ],
+  "gpu_work_submitted": false,
+  "old_tests_repeated": false,
+  "full_dataset_reload": false,
+  "tests_reused_from": "/work/results-cpu-attempt003/new-tests"
+}

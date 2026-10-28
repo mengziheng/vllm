@@ -1,0 +1,8 @@
+test_failed_job_preserves_attempt_and_requires_explicit_resume (test_pair.PairTests) ... ok
+test_completed_job_is_reused_without_running_or_overwriting (test_pair.PairTests) ... ok
+test_completed_job_rejects_changed_command (test_pair.PairTests) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.479s
+
+OK

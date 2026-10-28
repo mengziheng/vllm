@@ -1,0 +1,9 @@
+-- Install configuration: "Release"
+-- Installing: /work/package/native/vllm/vllm_flash_attn/_vllm_fa3_C.abi3.so
+-- Set non-toolchain portion of runtime path of "/work/package/native/vllm/vllm_flash_attn/_vllm_fa3_C.abi3.so" to ""
+-- Up-to-date: /work/package/native/vllm/vllm_flash_attn
+-- Installing: /work/package/native/vllm/vllm_flash_attn/ops
+-- Installing: /work/package/native/vllm/vllm_flash_attn/ops/triton
+-- Installing: /work/package/native/vllm/vllm_flash_attn/ops/triton/rotary.py
+-- Installing: /work/package/native/vllm/vllm_flash_attn/layers
+-- Installing: /work/package/native/vllm/vllm_flash_attn/layers/rotary.py

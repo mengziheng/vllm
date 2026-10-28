@@ -1,0 +1,584 @@
+{
+  "status": "paired-raw-results-reaudited",
+  "pair_id": "glm53-h20-pr58986-eb34e115-native-full-mtp3-20261028-pair2",
+  "commit": "eb34e115d041ac685fa38eadf8eae6c51d61dc23",
+  "accuracy": {
+    "gsm8k": {
+      "baseline": {
+        "metrics": {
+          "exact_match,strict-match": 0.9287338893100834,
+          "exact_match,flexible-extract": 0.9294920394238059
+        },
+        "stderr": {
+          "exact_match_stderr,strict-match": 0.007086462127954491,
+          "exact_match_stderr,flexible-extract": 0.0070515438139836135
+        },
+        "n_samples": {
+          "original": 1319,
+          "effective": 1319
+        },
+        "result_file": "baseline/accuracy-gsm8k/attempt-001/results/__model/results_2026-10-28T17-45-31.058863.json",
+        "samples_file": "baseline/accuracy-gsm8k/attempt-001/results/__model/samples_gsm8k_2026-10-28T17-45-31.058863.jsonl",
+        "sample_log": {
+          "physical_log_rows": 2638,
+          "unique_docs": 1319,
+          "filter_counts": {
+            "strict-match": 1319,
+            "flexible-extract": 1319
+          }
+        },
+        "protocol": {
+          "api_mode": "local-completions",
+          "fewshot": 5,
+          "count": 1319,
+          "max_gen_toks": 256,
+          "until": [
+            "Question:",
+            "</s>",
+            "<|im_end|>"
+          ]
+        }
+      },
+      "tuned": {
+        "metrics": {
+          "exact_match,strict-match": 0.9241849886277483,
+          "exact_match,flexible-extract": 0.9249431387414708
+        },
+        "stderr": {
+          "exact_match_stderr,strict-match": 0.007291205723162595,
+          "exact_match_stderr,flexible-extract": 0.007257633145486643
+        },
+        "n_samples": {
+          "original": 1319,
+          "effective": 1319
+        },
+        "result_file": "tuned/accuracy-gsm8k/attempt-001/results/__model/results_2026-10-28T18-30-33.450263.json",
+        "samples_file": "tuned/accuracy-gsm8k/attempt-001/results/__model/samples_gsm8k_2026-10-28T18-30-33.450263.jsonl",
+        "sample_log": {
+          "physical_log_rows": 2638,
+          "unique_docs": 1319,
+          "filter_counts": {
+            "strict-match": 1319,
+            "flexible-extract": 1319
+          }
+        },
+        "protocol": {
+          "api_mode": "local-completions",
+          "fewshot": 5,
+          "count": 1319,
+          "max_gen_toks": 256,
+          "until": [
+            "Question:",
+            "</s>",
+            "<|im_end|>"
+          ]
+        }
+      },
+      "input_audit": {
+        "status": "matched-by-doc_id",
+        "samples": 1319,
+        "sources": {
+          "doc_hash": [
+            "official:doc_hash"
+          ],
+          "prompt_hash": [
+            "official:prompt_hash"
+          ],
+          "target_hash": [
+            "official:target_hash"
+          ]
+        },
+        "matched_inputs_sha256": "926787ccedb0f828e26cff67b8871883042aba0bab63204c46243bd482717cd3"
+      }
+    },
+    "aime25": {
+      "baseline": {
+        "metrics": {
+          "exact_match,none": 0.6333333333333333
+        },
+        "stderr": {
+          "exact_match_stderr,none": 0.08948554539839963
+        },
+        "n_samples": {
+          "original": 30,
+          "effective": 30
+        },
+        "result_file": "baseline/accuracy-aime25/attempt-001/results/__model/results_2026-10-28T17-58-20.822678.json",
+        "samples_file": "baseline/accuracy-aime25/attempt-001/results/__model/samples_aime25_2026-10-28T17-58-20.822678.jsonl",
+        "sample_log": {
+          "physical_log_rows": 30,
+          "unique_docs": 30,
+          "filter_counts": {
+            "none": 30
+          }
+        },
+        "protocol": {
+          "api_mode": "local-chat-completions",
+          "fewshot": 0,
+          "count": 30,
+          "max_gen_toks": 32768,
+          "until": [
+            "Question:",
+            "</s>",
+            "<|im_end|>",
+            "<|eot_id|>"
+          ]
+        }
+      },
+      "tuned": {
+        "metrics": {
+          "exact_match,none": 0.7
+        },
+        "stderr": {
+          "exact_match_stderr,none": 0.08509629433967632
+        },
+        "n_samples": {
+          "original": 30,
+          "effective": 30
+        },
+        "result_file": "tuned/accuracy-aime25/attempt-001/results/__model/results_2026-10-28T18-43-17.919283.json",
+        "samples_file": "tuned/accuracy-aime25/attempt-001/results/__model/samples_aime25_2026-10-28T18-43-17.919283.jsonl",
+        "sample_log": {
+          "physical_log_rows": 30,
+          "unique_docs": 30,
+          "filter_counts": {
+            "none": 30
+          }
+        },
+        "protocol": {
+          "api_mode": "local-chat-completions",
+          "fewshot": 0,
+          "count": 30,
+          "max_gen_toks": 32768,
+          "until": [
+            "Question:",
+            "</s>",
+            "<|im_end|>",
+            "<|eot_id|>"
+          ]
+        }
+      },
+      "input_audit": {
+        "status": "matched-by-doc_id",
+        "samples": 30,
+        "sources": {
+          "doc_hash": [
+            "official:doc_hash"
+          ],
+          "prompt_hash": [
+            "official:prompt_hash"
+          ],
+          "target_hash": [
+            "official:target_hash"
+          ]
+        },
+        "matched_inputs_sha256": "84f7e04ac8e14a5a0a3becf9fa77a50939b79be4d39343fc308e53d78db97b19"
+      }
+    }
+  },
+  "benchmarks": {
+    "8192-1": {
+      "baseline": {
+        "runs": [
+          {
+            "repeat": 1,
+            "request_throughput": 0.8280979714861194,
+            "output_throughput": 0.8280979714861194,
+            "total_token_throughput": 6784.606680385777,
+            "duration_seconds": 154.57108265860006,
+            "result_file": "baseline/bench-r1-8192-1/attempt-001/results/benchmark.json"
+          },
+          {
+            "repeat": 2,
+            "request_throughput": 0.8289830777568359,
+            "output_throughput": 0.8289830777568359,
+            "total_token_throughput": 6791.858356061757,
+            "duration_seconds": 154.40604691999033,
+            "result_file": "baseline/bench-r2-8192-1/attempt-001/results/benchmark.json"
+          },
+          {
+            "repeat": 3,
+            "request_throughput": 0.83242094484707,
+            "output_throughput": 0.83242094484707,
+            "total_token_throughput": 6820.024801132044,
+            "duration_seconds": 153.76835577283055,
+            "result_file": "baseline/bench-r3-8192-1/attempt-001/results/benchmark.json"
+          }
+        ],
+        "request_throughput": {
+          "median": 0.8289830777568359,
+          "min": 0.8280979714861194,
+          "max": 0.83242094484707
+        },
+        "output_throughput": {
+          "median": 0.8289830777568359,
+          "min": 0.8280979714861194,
+          "max": 0.83242094484707
+        },
+        "total_token_throughput": {
+          "median": 6791.858356061757,
+          "min": 6784.606680385777,
+          "max": 6820.024801132044
+        }
+      },
+      "tuned": {
+        "runs": [
+          {
+            "repeat": 1,
+            "request_throughput": 0.8182662075968365,
+            "output_throughput": 0.8182662075968365,
+            "total_token_throughput": 6704.055038840882,
+            "duration_seconds": 156.4283100189641,
+            "result_file": "tuned/bench-r1-8192-1/attempt-001/results/benchmark.json"
+          },
+          {
+            "repeat": 2,
+            "request_throughput": 0.8259147368249179,
+            "output_throughput": 0.8259147368249179,
+            "total_token_throughput": 6766.719438806553,
+            "duration_seconds": 154.97967803804204,
+            "result_file": "tuned/bench-r2-8192-1/attempt-001/results/benchmark.json"
+          },
+          {
+            "repeat": 3,
+            "request_throughput": 0.8245148298971391,
+            "output_throughput": 0.8245148298971391,
+            "total_token_throughput": 6755.250001347261,
+            "duration_seconds": 155.24281111592427,
+            "result_file": "tuned/bench-r3-8192-1/attempt-001/results/benchmark.json"
+          }
+        ],
+        "request_throughput": {
+          "median": 0.8245148298971391,
+          "min": 0.8182662075968365,
+          "max": 0.8259147368249179
+        },
+        "output_throughput": {
+          "median": 0.8245148298971391,
+          "min": 0.8182662075968365,
+          "max": 0.8259147368249179
+        },
+        "total_token_throughput": {
+          "median": 6755.250001347261,
+          "min": 6704.055038840882,
+          "max": 6766.719438806553
+        }
+      },
+      "median_tuned_over_baseline_percent": {
+        "request_throughput": 99.46099649322305,
+        "output_throughput": 99.46099649322305,
+        "total_token_throughput": 99.46099649322305
+      },
+      "median_change_percent": {
+        "request_throughput": -0.5390035067769472,
+        "output_throughput": -0.5390035067769472,
+        "total_token_throughput": -0.5390035067769472
+      }
+    },
+    "2048-512": {
+      "baseline": {
+        "runs": [
+          {
+            "repeat": 1,
+            "request_throughput": 1.393502336326607,
+            "output_throughput": 713.4731961992228,
+            "total_token_throughput": 3567.3659809961136,
+            "duration_seconds": 91.85488726012409,
+            "result_file": "baseline/bench-r1-2048-512/attempt-001/results/benchmark.json"
+          },
+          {
+            "repeat": 2,
+            "request_throughput": 1.3875757007244711,
+            "output_throughput": 710.4387587709292,
+            "total_token_throughput": 3552.193793854646,
+            "duration_seconds": 92.24721932876855,
+            "result_file": "baseline/bench-r2-2048-512/attempt-001/results/benchmark.json"
+          },
+          {
+            "repeat": 3,
+            "request_throughput": 1.4016759287250673,
+            "output_throughput": 717.6580755072345,
+            "total_token_throughput": 3588.2903775361724,
+            "duration_seconds": 91.31925388518721,
+            "result_file": "baseline/bench-r3-2048-512/attempt-001/results/benchmark.json"
+          }
+        ],
+        "request_throughput": {
+          "median": 1.393502336326607,
+          "min": 1.3875757007244711,
+          "max": 1.4016759287250673
+        },
+        "output_throughput": {
+          "median": 713.4731961992228,
+          "min": 710.4387587709292,
+          "max": 717.6580755072345
+        },
+        "total_token_throughput": {
+          "median": 3567.3659809961136,
+          "min": 3552.193793854646,
+          "max": 3588.2903775361724
+        }
+      },
+      "tuned": {
+        "runs": [
+          {
+            "repeat": 1,
+            "request_throughput": 1.6878620145515917,
+            "output_throughput": 864.1853514504149,
+            "total_token_throughput": 4320.926757252075,
+            "duration_seconds": 75.83558306097984,
+            "result_file": "tuned/bench-r1-2048-512/attempt-001/results/benchmark.json"
+          },
+          {
+            "repeat": 2,
+            "request_throughput": 1.551381858161475,
+            "output_throughput": 794.3075113786751,
+            "total_token_throughput": 3971.5375568933755,
+            "duration_seconds": 82.50708832684904,
+            "result_file": "tuned/bench-r2-2048-512/attempt-001/results/benchmark.json"
+          },
+          {
+            "repeat": 3,
+            "request_throughput": 1.6006697086559811,
+            "output_throughput": 819.5428908318623,
+            "total_token_throughput": 4097.714454159312,
+            "duration_seconds": 79.9665285772644,
+            "result_file": "tuned/bench-r3-2048-512/attempt-001/results/benchmark.json"
+          }
+        ],
+        "request_throughput": {
+          "median": 1.6006697086559811,
+          "min": 1.551381858161475,
+          "max": 1.6878620145515917
+        },
+        "output_throughput": {
+          "median": 819.5428908318623,
+          "min": 794.3075113786751,
+          "max": 864.1853514504149
+        },
+        "total_token_throughput": {
+          "median": 4097.714454159312,
+          "min": 3971.5375568933755,
+          "max": 4320.926757252075
+        }
+      },
+      "median_tuned_over_baseline_percent": {
+        "request_throughput": 114.86666846038345,
+        "output_throughput": 114.86666846038345,
+        "total_token_throughput": 114.86666846038345
+      },
+      "median_change_percent": {
+        "request_throughput": 14.866668460383448,
+        "output_throughput": 14.866668460383448,
+        "total_token_throughput": 14.866668460383448
+      }
+    },
+    "512-1024": {
+      "baseline": {
+        "runs": [
+          {
+            "repeat": 1,
+            "request_throughput": 1.2425427605623787,
+            "output_throughput": 1272.3637868158758,
+            "total_token_throughput": 1908.5456802238136,
+            "duration_seconds": 103.01456341193989,
+            "result_file": "baseline/bench-r1-512-1024/attempt-001/results/benchmark.json"
+          },
+          {
+            "repeat": 2,
+            "request_throughput": 1.1851996142226873,
+            "output_throughput": 1213.6444049640318,
+            "total_token_throughput": 1820.4666074460474,
+            "duration_seconds": 107.99868516996503,
+            "result_file": "baseline/bench-r2-512-1024/attempt-001/results/benchmark.json"
+          },
+          {
+            "repeat": 3,
+            "request_throughput": 1.2446912909417651,
+            "output_throughput": 1274.5638819243675,
+            "total_token_throughput": 1911.8458228865513,
+            "duration_seconds": 102.83674428472295,
+            "result_file": "baseline/bench-r3-512-1024/attempt-001/results/benchmark.json"
+          }
+        ],
+        "request_throughput": {
+          "median": 1.2425427605623787,
+          "min": 1.1851996142226873,
+          "max": 1.2446912909417651
+        },
+        "output_throughput": {
+          "median": 1272.3637868158758,
+          "min": 1213.6444049640318,
+          "max": 1274.5638819243675
+        },
+        "total_token_throughput": {
+          "median": 1908.5456802238136,
+          "min": 1820.4666074460474,
+          "max": 1911.8458228865513
+        }
+      },
+      "tuned": {
+        "runs": [
+          {
+            "repeat": 1,
+            "request_throughput": 1.5049928125755485,
+            "output_throughput": 1541.1126400773617,
+            "total_token_throughput": 2311.6689601160424,
+            "duration_seconds": 85.05024006124586,
+            "result_file": "tuned/bench-r1-512-1024/attempt-001/results/benchmark.json"
+          },
+          {
+            "repeat": 2,
+            "request_throughput": 1.4988137396638763,
+            "output_throughput": 1534.7852694158094,
+            "total_token_throughput": 2302.177904123714,
+            "duration_seconds": 85.40087177790701,
+            "result_file": "tuned/bench-r2-512-1024/attempt-001/results/benchmark.json"
+          },
+          {
+            "repeat": 3,
+            "request_throughput": 1.4256774399870897,
+            "output_throughput": 1459.89369854678,
+            "total_token_throughput": 2189.84054782017,
+            "duration_seconds": 89.78187941387296,
+            "result_file": "tuned/bench-r3-512-1024/attempt-001/results/benchmark.json"
+          }
+        ],
+        "request_throughput": {
+          "median": 1.4988137396638763,
+          "min": 1.4256774399870897,
+          "max": 1.5049928125755485
+        },
+        "output_throughput": {
+          "median": 1534.7852694158094,
+          "min": 1459.89369854678,
+          "max": 1541.1126400773617
+        },
+        "total_token_throughput": {
+          "median": 2302.177904123714,
+          "min": 2189.84054782017,
+          "max": 2311.6689601160424
+        }
+      },
+      "median_tuned_over_baseline_percent": {
+        "request_throughput": 120.62472111507121,
+        "output_throughput": 120.62472111507121,
+        "total_token_throughput": 120.62472111507121
+      },
+      "median_change_percent": {
+        "request_throughput": 20.62472111507121,
+        "output_throughput": 20.62472111507121,
+        "total_token_throughput": 20.62472111507121
+      }
+    },
+    "512-128": {
+      "baseline": {
+        "runs": [
+          {
+            "repeat": 1,
+            "request_throughput": 6.143564996056816,
+            "output_throughput": 786.3763194952725,
+            "total_token_throughput": 3931.8815974763625,
+            "duration_seconds": 20.83480846742168,
+            "result_file": "baseline/bench-r1-512-128/attempt-001/results/benchmark.json"
+          },
+          {
+            "repeat": 2,
+            "request_throughput": 6.249038423686656,
+            "output_throughput": 799.876918231892,
+            "total_token_throughput": 3999.3845911594603,
+            "duration_seconds": 20.48315137811005,
+            "result_file": "baseline/bench-r2-512-128/attempt-001/results/benchmark.json"
+          },
+          {
+            "repeat": 3,
+            "request_throughput": 6.237561774863351,
+            "output_throughput": 798.4079071825089,
+            "total_token_throughput": 3992.0395359125446,
+            "duration_seconds": 20.520838850177824,
+            "result_file": "baseline/bench-r3-512-128/attempt-001/results/benchmark.json"
+          }
+        ],
+        "request_throughput": {
+          "median": 6.237561774863351,
+          "min": 6.143564996056816,
+          "max": 6.249038423686656
+        },
+        "output_throughput": {
+          "median": 798.4079071825089,
+          "min": 786.3763194952725,
+          "max": 799.876918231892
+        },
+        "total_token_throughput": {
+          "median": 3992.0395359125446,
+          "min": 3931.8815974763625,
+          "max": 3999.3845911594603
+        }
+      },
+      "tuned": {
+        "runs": [
+          {
+            "repeat": 1,
+            "request_throughput": 7.501255684750912,
+            "output_throughput": 960.1607276481168,
+            "total_token_throughput": 4800.8036382405835,
+            "duration_seconds": 17.063809764571488,
+            "result_file": "tuned/bench-r1-512-128/attempt-001/results/benchmark.json"
+          },
+          {
+            "repeat": 2,
+            "request_throughput": 7.318128896241856,
+            "output_throughput": 936.7204987189575,
+            "total_token_throughput": 4683.602493594788,
+            "duration_seconds": 17.490809715818614,
+            "result_file": "tuned/bench-r2-512-128/attempt-001/results/benchmark.json"
+          },
+          {
+            "repeat": 3,
+            "request_throughput": 7.173342002939182,
+            "output_throughput": 918.1877763762153,
+            "total_token_throughput": 4590.938881881077,
+            "duration_seconds": 17.843844605144113,
+            "result_file": "tuned/bench-r3-512-128/attempt-001/results/benchmark.json"
+          }
+        ],
+        "request_throughput": {
+          "median": 7.318128896241856,
+          "min": 7.173342002939182,
+          "max": 7.501255684750912
+        },
+        "output_throughput": {
+          "median": 936.7204987189575,
+          "min": 918.1877763762153,
+          "max": 960.1607276481168
+        },
+        "total_token_throughput": {
+          "median": 4683.602493594788,
+          "min": 4590.938881881077,
+          "max": 4800.8036382405835
+        }
+      },
+      "median_tuned_over_baseline_percent": {
+        "request_throughput": 117.32354981610065,
+        "output_throughput": 117.32354981610065,
+        "total_token_throughput": 117.32354981610067
+      },
+      "median_change_percent": {
+        "request_throughput": 17.32354981610065,
+        "output_throughput": 17.32354981610065,
+        "total_token_throughput": 17.32354981610067
+      }
+    }
+  },
+  "throughput_units": {
+    "request_throughput": "requests/s",
+    "output_throughput": "output tokens/s",
+    "total_token_throughput": "input + output tokens/s"
+  },
+  "benchmark_protocol": {
+    "repeats": 3,
+    "measured_requests_per_run": 128,
+    "warmups_per_run": 16
+  },
+  "comparison": "Percent changes compare the three-run medians; they are not confidence intervals."
+}

@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "/Users/bytedance/Documents/ChatGPT/b200\u4f18\u5316/.venv/bin/python",
+    "/Users/bytedance/Documents/ChatGPT/b200\u4f18\u5316/review-20261028-native-runtime/publication/analysis/collect_selected_stdout.py",
+    "/Users/bytedance/Documents/ChatGPT/b200\u4f18\u5316/review-20261028-native-runtime/publication/raw/fullpair-v10-pair2-48781766/job/pair",
+    "--kind",
+    "benchmark",
+    "--output",
+    "/Users/bytedance/Documents/ChatGPT/b200\u4f18\u5316/review-20261028-native-runtime/publication/reports/official-bench-stdout-all.txt"
+  ],
+  "cwd": "/Users/bytedance/Documents/ChatGPT/b200\u4f18\u5316/review-20261028-native-runtime"
+}

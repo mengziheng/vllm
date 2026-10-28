@@ -1,0 +1,336 @@
+{
+  "pool_attempt": "a80de6bd25f844fa84207519322998ea-af733ded",
+  "routing": {
+    "node": "h20-01",
+    "policy_sha256": "76aea52780c46d1240dbb53413f6b9d7a645e140991cfa042577b05cb8f9bd2b"
+  },
+  "name": "sweep-unified-moe58986-f41ba688009b",
+  "image_id": "sha256:45ec8bfe593206f8f157be556eb506958762716c98f6e1116be2225657586167",
+  "dependency_manifest_sha256": "7c0f9cfeec3ad0787f23e64902f258dcc025f82ed5ccfe18fd0dbd83677444e0",
+  "framework": "v032",
+  "command": [
+    "docker",
+    "run",
+    "--name",
+    "sweep-unified-moe58986-f41ba688009b",
+    "--label",
+    "operator-sweep.task=moe58986",
+    "--label",
+    "operator-sweep.environment=20261023-v1",
+    "--label",
+    "operator-sweep.run-id=sweep-unified-moe58986-f41ba688009b",
+    "--init",
+    "--network",
+    "none",
+    "--cpus",
+    "16",
+    "--memory",
+    "512g",
+    "--pids-limit",
+    "2048",
+    "--shm-size",
+    "32g",
+    "--log-driver",
+    "local",
+    "--log-opt",
+    "max-size=20m",
+    "--log-opt",
+    "max-file=3",
+    "--mount",
+    "type=bind,src=/data03/tiger/operator_sweep_common/20261023-v1,dst=/common,readonly",
+    "--mount",
+    "type=bind,src=/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad,dst=/work",
+    "--workdir",
+    "/work",
+    "-e",
+    "PYTHONPATH=/common/frameworks/v032:/common/site-packages:/work",
+    "-e",
+    "PYTHONDONTWRITEBYTECODE=1",
+    "-e",
+    "PYTHONNOUSERSITE=1",
+    "-e",
+    "VLLM_PLUGINS=",
+    "-e",
+    "OMP_NUM_THREADS=1",
+    "-e",
+    "TRITON_CACHE_DIR=/work/.cache/unified/triton",
+    "-e",
+    "FLASHINFER_WORKSPACE_BASE=/work/.cache/unified/flashinfer",
+    "--mount",
+    "type=bind,src=/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/unified-environment/runtime/sweep-unified-moe58986-f41ba688009b/tmp,dst=/tmp",
+    "--mount",
+    "type=bind,src=/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/unified-environment/runtime/sweep-unified-moe58986-f41ba688009b/var-tmp,dst=/var/tmp",
+    "--mount",
+    "type=bind,src=/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/unified-environment/runtime/sweep-unified-moe58986-f41ba688009b/home,dst=/sweep-home",
+    "-e",
+    "HOME=/sweep-home",
+    "-e",
+    "TMPDIR=/tmp",
+    "-e",
+    "TMP=/tmp",
+    "-e",
+    "TEMP=/tmp",
+    "-e",
+    "XDG_CACHE_HOME=/work/.cache/unified/xdg",
+    "-e",
+    "XDG_CONFIG_HOME=/sweep-home/.config",
+    "-e",
+    "TORCH_HOME=/work/.cache/unified/torch",
+    "-e",
+    "TORCH_EXTENSIONS_DIR=/work/.cache/unified/torch-extensions",
+    "-e",
+    "TORCHINDUCTOR_CACHE_DIR=/work/.cache/unified/torchinductor",
+    "-e",
+    "VLLM_CACHE_ROOT=/work/.cache/unified/vllm",
+    "-e",
+    "CUDA_CACHE_PATH=/work/.cache/unified/cuda",
+    "-e",
+    "HF_HOME=/work/.cache/unified/huggingface",
+    "-e",
+    "HF_HUB_OFFLINE=1",
+    "-e",
+    "PIP_CACHE_DIR=/work/.cache/unified/pip",
+    "-e",
+    "CCACHE_DIR=/work/.cache/unified/ccache",
+    "-e",
+    "CUTE_DSL_CACHE_DIR=/work/.cache/unified/cute",
+    "-e",
+    "TVM_CACHE_DIR=/work/.cache/unified/tvm",
+    "-e",
+    "OPERATOR_SWEEP_STORAGE_CHECK=1",
+    "-e",
+    "OPERATOR_SWEEP_RUN_ID=sweep-unified-moe58986-f41ba688009b",
+    "--gpus",
+    "\"device=GPU-2d07aa32-9537-ded4-eb6b-3368e4a768f3,GPU-f63c68e4-43d3-aecc-818d-f11aaf2a29c8,GPU-1d3baff4-9f4f-6bf2-46ef-d27efbca1035,GPU-474870a5-e909-996f-53c2-ae440c92ad3d\"",
+    "-e",
+    "CUDA_VISIBLE_DEVICES=0,1,2,3",
+    "--mount",
+    "type=bind,src=/data03/tiger/vllm_pr58986_native_20261028_eb34e115,dst=/native-runtime,readonly",
+    "--mount",
+    "type=bind,src=/data03/tiger/vllm_pr58986_evalprep_20261028_eb34e115/input/evaluation-v10,dst=/evaluation,readonly",
+    "--mount",
+    "type=bind,src=/data03/tiger/vllm_pr58986_cpu_20261028_4c1cbbe/client,dst=/client,readonly",
+    "--mount",
+    "type=bind,src=/data03/tiger/vllm_pr58986_evaldata_20261028/.cache/unified/huggingface,dst=/offline-cache,readonly",
+    "--mount",
+    "type=bind,src=/data02/tiger/byted_vllm_cuda12/models/GLM-5.3-Flash,dst=/model,readonly",
+    "sha256:45ec8bfe593206f8f157be556eb506958762716c98f6e1116be2225657586167",
+    "python3",
+    "/common/bin/bootstrap.py",
+    "--framework",
+    "v032",
+    "--task",
+    "moe58986",
+    "--",
+    "python3",
+    "/evaluation/allocated_pair.py",
+    "--runtime-root",
+    "/native-runtime",
+    "--baseline-repo",
+    "/native-runtime/assembled/baseline",
+    "--tuned-repo",
+    "/native-runtime/assembled/tuned",
+    "--native-receipt",
+    "/native-runtime/receipts/native-receipt.json",
+    "--model",
+    "/model",
+    "--model-receipt",
+    "/evaluation/model-receipt-h20-01.json",
+    "--client",
+    "/client",
+    "--cache",
+    "/offline-cache",
+    "--output",
+    "/work/pr58986-native-fullpair-eb34e115-mtp3",
+    "--pair-id",
+    "glm53-h20-pr58986-eb34e115-native-full-mtp3-20261028",
+    "--dependency-path",
+    "/common/site-packages",
+    "--dependency-path",
+    "/common/frameworks/v032",
+    "--budget-gib",
+    "32",
+    "--headroom-gib",
+    "20"
+  ],
+  "storage": {
+    "storage_ready": true,
+    "docker_storage": {
+      "root": "/data00/docker",
+      "device": 66305,
+      "available_gib": 120.21635437011719,
+      "available_inodes": 223901177,
+      "free_bytes": 129081327616,
+      "free_inodes": 223901177
+    },
+    "data_storage": {
+      "root": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad",
+      "device": 66310,
+      "available_gib": 191.45744705200195,
+      "available_inodes": 221933451,
+      "free_bytes": 205575868416,
+      "free_inodes": 221933451
+    },
+    "storage_budget_gib": 32.0,
+    "output_inodes": 50000
+  },
+  "log_retention": {
+    "max_bytes": 20971520,
+    "backups": 2,
+    "automatic_result_deletion": false
+  },
+  "started_at": "2026-10-28T09:21:03.955005+00:00",
+  "status": "failed",
+  "resource_lock_paths": [
+    "/tmp/operator-sweep-gpu-GPU-1d3baff4-9f4f-6bf2-46ef-d27efbca1035.lock",
+    "/tmp/operator-sweep-gpu-GPU-2d07aa32-9537-ded4-eb6b-3368e4a768f3.lock",
+    "/tmp/operator-sweep-gpu-GPU-474870a5-e909-996f-53c2-ae440c92ad3d.lock",
+    "/tmp/operator-sweep-gpu-GPU-f63c68e4-43d3-aecc-818d-f11aaf2a29c8.lock"
+  ],
+  "resource_scope": "target_gpus",
+  "gpu_before": {
+    "uuid": "GPU-2d07aa32-9537-ded4-eb6b-3368e4a768f3,GPU-f63c68e4-43d3-aecc-818d-f11aaf2a29c8,GPU-1d3baff4-9f4f-6bf2-46ef-d27efbca1035,GPU-474870a5-e909-996f-53c2-ae440c92ad3d",
+    "sampled_at": "2026-10-28T09:21:07.894284+00:00",
+    "query_seconds": 0.9161640289239585,
+    "devices": [
+      {
+        "uuid": "GPU-2d07aa32-9537-ded4-eb6b-3368e4a768f3",
+        "memory_mib": 3.0,
+        "utilization": 0.0
+      },
+      {
+        "uuid": "GPU-f63c68e4-43d3-aecc-818d-f11aaf2a29c8",
+        "memory_mib": 3.0,
+        "utilization": 0.0
+      },
+      {
+        "uuid": "GPU-1d3baff4-9f4f-6bf2-46ef-d27efbca1035",
+        "memory_mib": 3.0,
+        "utilization": 0.0
+      },
+      {
+        "uuid": "GPU-474870a5-e909-996f-53c2-ae440c92ad3d",
+        "memory_mib": 125.0,
+        "utilization": 0.0
+      }
+    ],
+    "memory_mib": 134.0,
+    "utilization": 0.0,
+    "pids": [],
+    "provenance": {},
+    "idle_confirmation": [
+      {
+        "uuid": "GPU-2d07aa32-9537-ded4-eb6b-3368e4a768f3,GPU-f63c68e4-43d3-aecc-818d-f11aaf2a29c8,GPU-1d3baff4-9f4f-6bf2-46ef-d27efbca1035,GPU-474870a5-e909-996f-53c2-ae440c92ad3d",
+        "sampled_at": "2026-10-28T09:21:03.996807+00:00",
+        "query_seconds": 0.8540421701036394,
+        "devices": [
+          {
+            "uuid": "GPU-2d07aa32-9537-ded4-eb6b-3368e4a768f3",
+            "memory_mib": 3.0,
+            "utilization": 0.0
+          },
+          {
+            "uuid": "GPU-f63c68e4-43d3-aecc-818d-f11aaf2a29c8",
+            "memory_mib": 3.0,
+            "utilization": 0.0
+          },
+          {
+            "uuid": "GPU-1d3baff4-9f4f-6bf2-46ef-d27efbca1035",
+            "memory_mib": 3.0,
+            "utilization": 0.0
+          },
+          {
+            "uuid": "GPU-474870a5-e909-996f-53c2-ae440c92ad3d",
+            "memory_mib": 125.0,
+            "utilization": 0.0
+          }
+        ],
+        "memory_mib": 134.0,
+        "utilization": 0.0,
+        "pids": [],
+        "provenance": {}
+      },
+      {
+        "uuid": "GPU-2d07aa32-9537-ded4-eb6b-3368e4a768f3,GPU-f63c68e4-43d3-aecc-818d-f11aaf2a29c8,GPU-1d3baff4-9f4f-6bf2-46ef-d27efbca1035,GPU-474870a5-e909-996f-53c2-ae440c92ad3d",
+        "sampled_at": "2026-10-28T09:21:05.851976+00:00",
+        "query_seconds": 1.0409972271881998,
+        "devices": [
+          {
+            "uuid": "GPU-2d07aa32-9537-ded4-eb6b-3368e4a768f3",
+            "memory_mib": 3.0,
+            "utilization": 0.0
+          },
+          {
+            "uuid": "GPU-f63c68e4-43d3-aecc-818d-f11aaf2a29c8",
+            "memory_mib": 3.0,
+            "utilization": 0.0
+          },
+          {
+            "uuid": "GPU-1d3baff4-9f4f-6bf2-46ef-d27efbca1035",
+            "memory_mib": 3.0,
+            "utilization": 0.0
+          },
+          {
+            "uuid": "GPU-474870a5-e909-996f-53c2-ae440c92ad3d",
+            "memory_mib": 125.0,
+            "utilization": 0.0
+          }
+        ],
+        "memory_mib": 134.0,
+        "utilization": 0.0,
+        "pids": [],
+        "provenance": {}
+      },
+      {
+        "uuid": "GPU-2d07aa32-9537-ded4-eb6b-3368e4a768f3,GPU-f63c68e4-43d3-aecc-818d-f11aaf2a29c8,GPU-1d3baff4-9f4f-6bf2-46ef-d27efbca1035,GPU-474870a5-e909-996f-53c2-ae440c92ad3d",
+        "sampled_at": "2026-10-28T09:21:07.894284+00:00",
+        "query_seconds": 0.9161640289239585,
+        "devices": [
+          {
+            "uuid": "GPU-2d07aa32-9537-ded4-eb6b-3368e4a768f3",
+            "memory_mib": 3.0,
+            "utilization": 0.0
+          },
+          {
+            "uuid": "GPU-f63c68e4-43d3-aecc-818d-f11aaf2a29c8",
+            "memory_mib": 3.0,
+            "utilization": 0.0
+          },
+          {
+            "uuid": "GPU-1d3baff4-9f4f-6bf2-46ef-d27efbca1035",
+            "memory_mib": 3.0,
+            "utilization": 0.0
+          },
+          {
+            "uuid": "GPU-474870a5-e909-996f-53c2-ae440c92ad3d",
+            "memory_mib": 125.0,
+            "utilization": 0.0
+          }
+        ],
+        "memory_mib": 134.0,
+        "utilization": 0.0,
+        "pids": [],
+        "provenance": {}
+      }
+    ]
+  },
+  "gpu_samples": [],
+  "owned_exit": {
+    "id": "3a5ff8f17d634ad6373b4f447e1032afbd0c994a2230da5e71f4089451d8a9b8",
+    "state": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 1,
+      "Error": "",
+      "StartedAt": "2026-10-28T09:21:09.513517867Z",
+      "FinishedAt": "2026-10-28T09:21:09.875520138Z"
+    }
+  },
+  "exit_code": 1,
+  "finished_at": "2026-10-28T09:21:10.918209+00:00"
+}

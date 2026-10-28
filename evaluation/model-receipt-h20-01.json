@@ -1,0 +1,456 @@
+{
+  "schema_version": 1,
+  "node": "h20-01",
+  "model_path": "/data02/tiger/byted_vllm_cuda12/models/GLM-5.3-Flash",
+  "verified_at": "2026-10-23T17:27:15.630635",
+  "evidence_source": "/Users/bytedance/.codex/.chatgpt-projects/g-p-6ac8d3f87e388191bd7a2fba93516f11/artifacts/h20-gpu-pool-20261023/model-cache/validated-h20-01.json",
+  "verification_scope": "Safetensors header hashes, indexed tensor-key presence, metadata hashes, and actual file lengths matching headers. No full tensor-body hash. Reuse of established immutable checkpoint copy; model execution was not part of this structural receipt.",
+  "files": {
+    "model-00001-of-00062.safetensors": {
+      "size": 5365306704,
+      "expected_from_header": 5365306704,
+      "tensor_count": 664,
+      "missing_indexed_tensors": [],
+      "header_sha256": "6fd2ba5ed07911987a792342e35971e2c11ffc2dccc3b8c8af203f5e7ac2fd97"
+    },
+    "model-00002-of-00062.safetensors": {
+      "size": 5320647824,
+      "expected_from_header": 5320647824,
+      "tensor_count": 1151,
+      "missing_indexed_tensors": [],
+      "header_sha256": "648ef484ae73bed5e0fde33c0e7da8f2e9ca8765b16c6d2670d771fdb40e5ab9"
+    },
+    "model-00003-of-00062.safetensors": {
+      "size": 5363467432,
+      "expected_from_header": 5363467432,
+      "tensor_count": 1242,
+      "missing_indexed_tensors": [],
+      "header_sha256": "7d841f71ba8dbad10db508d02c43ec03fc066b8e5c8cad53ad5ee78d6238aaa4"
+    },
+    "model-00004-of-00062.safetensors": {
+      "size": 5364342296,
+      "expected_from_header": 5364342296,
+      "tensor_count": 1237,
+      "missing_indexed_tensors": [],
+      "header_sha256": "58329be2e2450e1e8c0b00108918f5bf4f7c60392fcaddc07d9a2c87a8929d32"
+    },
+    "model-00005-of-00062.safetensors": {
+      "size": 5363915920,
+      "expected_from_header": 5363915920,
+      "tensor_count": 1270,
+      "missing_indexed_tensors": [],
+      "header_sha256": "2c7164795cc4bf9183cf2e58f757f24ce2096c2355a165c32d6fc18d2fa50bc0"
+    },
+    "model-00006-of-00062.safetensors": {
+      "size": 5361809384,
+      "expected_from_header": 5361809384,
+      "tensor_count": 1278,
+      "missing_indexed_tensors": [],
+      "header_sha256": "4ab7678f59ecd484e961663e513de300c86ea2d3ea651769b54fe17696fc5645"
+    },
+    "model-00007-of-00062.safetensors": {
+      "size": 5364342528,
+      "expected_from_header": 5364342528,
+      "tensor_count": 1237,
+      "missing_indexed_tensors": [],
+      "header_sha256": "1aa2d2676025004256730b79b01c1176b30c7407252d3e6ff04a9d1e0dad2c9c"
+    },
+    "model-00008-of-00062.safetensors": {
+      "size": 5364342304,
+      "expected_from_header": 5364342304,
+      "tensor_count": 1237,
+      "missing_indexed_tensors": [],
+      "header_sha256": "f10ccc5ba5df84d34c48f11d10c269e4e1b611123cfb78924572a4380976efa0"
+    },
+    "model-00009-of-00062.safetensors": {
+      "size": 5364169856,
+      "expected_from_header": 5364169856,
+      "tensor_count": 1280,
+      "missing_indexed_tensors": [],
+      "header_sha256": "51c7e3b9033bf688315e0c777a833ecab6d6aedad1b5fe02844644bc4fa7ad5f"
+    },
+    "model-00010-of-00062.safetensors": {
+      "size": 5361982080,
+      "expected_from_header": 5361982080,
+      "tensor_count": 1235,
+      "missing_indexed_tensors": [],
+      "header_sha256": "1c3a8775db449e9fa0326fdd8f426f611a036d102c556822181eac101694167f"
+    },
+    "model-00011-of-00062.safetensors": {
+      "size": 5363915912,
+      "expected_from_header": 5363915912,
+      "tensor_count": 1270,
+      "missing_indexed_tensors": [],
+      "header_sha256": "b02cd5f3a3ff3b819d8cffc0e4cb3908296bdcaa05f65519816b742b542725d3"
+    },
+    "model-00012-of-00062.safetensors": {
+      "size": 5364342288,
+      "expected_from_header": 5364342288,
+      "tensor_count": 1237,
+      "missing_indexed_tensors": [],
+      "header_sha256": "f6760a1021d8c4364446bd25306dd2534bc962ef0939f4ef463bb4e51ae73388"
+    },
+    "model-00013-of-00062.safetensors": {
+      "size": 5361809408,
+      "expected_from_header": 5361809408,
+      "tensor_count": 1278,
+      "missing_indexed_tensors": [],
+      "header_sha256": "d1b10a12d1d797781794af17c51a5b264c453184400792191d062e275f7f1d97"
+    },
+    "model-00014-of-00062.safetensors": {
+      "size": 5364342504,
+      "expected_from_header": 5364342504,
+      "tensor_count": 1237,
+      "missing_indexed_tensors": [],
+      "header_sha256": "41a17acdaf3336a200c99fa7431a851078f569a6fcd0ca4a0df55dfb4282bfc8"
+    },
+    "model-00015-of-00062.safetensors": {
+      "size": 5364342304,
+      "expected_from_header": 5364342304,
+      "tensor_count": 1237,
+      "missing_indexed_tensors": [],
+      "header_sha256": "8f3f924f8e8274add0f74567c0c247e05333f3ac5a13cea84c1560b1b51f5888"
+    },
+    "model-00016-of-00062.safetensors": {
+      "size": 5361809176,
+      "expected_from_header": 5361809176,
+      "tensor_count": 1278,
+      "missing_indexed_tensors": [],
+      "header_sha256": "93d4b0a70eb579d5b104ab458d0aa41a64fab6adc6e44030ebd5499648f17ec0"
+    },
+    "model-00017-of-00062.safetensors": {
+      "size": 5364084560,
+      "expected_from_header": 5364084560,
+      "tensor_count": 1197,
+      "missing_indexed_tensors": [],
+      "header_sha256": "94cb1f664d124eb6ec17a059c9718115940c82174de899b390410412c7060cb5"
+    },
+    "model-00018-of-00062.safetensors": {
+      "size": 5364342304,
+      "expected_from_header": 5364342304,
+      "tensor_count": 1237,
+      "missing_indexed_tensors": [],
+      "header_sha256": "03d070a3b3fff425f0ce9e0a37adc4bc269a05d44ecabc04c18baedb8c45b23f"
+    },
+    "model-00019-of-00062.safetensors": {
+      "size": 5364342272,
+      "expected_from_header": 5364342272,
+      "tensor_count": 1237,
+      "missing_indexed_tensors": [],
+      "header_sha256": "77cd5c8eac5c77a4dc496fac773f9b5f46126196b76628f0df9b2b7e7b29b515"
+    },
+    "model-00020-of-00062.safetensors": {
+      "size": 5361809528,
+      "expected_from_header": 5361809528,
+      "tensor_count": 1278,
+      "missing_indexed_tensors": [],
+      "header_sha256": "fad4d4353749620850884b440ac361a38385f4810893aff62d60ad54d4705c83"
+    },
+    "model-00021-of-00062.safetensors": {
+      "size": 5364342376,
+      "expected_from_header": 5364342376,
+      "tensor_count": 1237,
+      "missing_indexed_tensors": [],
+      "header_sha256": "768bbd61012c1d82f657c9b85755d3c11fceb9bea8ccea9f0c943df035fca859"
+    },
+    "model-00022-of-00062.safetensors": {
+      "size": 5363915936,
+      "expected_from_header": 5363915936,
+      "tensor_count": 1270,
+      "missing_indexed_tensors": [],
+      "header_sha256": "e96dacbf6dd1e4d3d62ed71b6a647d8dd6c4ab494ee3feafb494482b684111a0"
+    },
+    "model-00023-of-00062.safetensors": {
+      "size": 5361809264,
+      "expected_from_header": 5361809264,
+      "tensor_count": 1278,
+      "missing_indexed_tensors": [],
+      "header_sha256": "50b3ccda1d5ab41a99186410181ef0ed221a8caa7f504f0988a4a1d8a24bf993"
+    },
+    "model-00024-of-00062.safetensors": {
+      "size": 5364342640,
+      "expected_from_header": 5364342640,
+      "tensor_count": 1237,
+      "missing_indexed_tensors": [],
+      "header_sha256": "40cffd6fe0a93bd548a6df376ceef1d3287a9afc02af49feaef0463ec97f68d5"
+    },
+    "model-00025-of-00062.safetensors": {
+      "size": 5364342304,
+      "expected_from_header": 5364342304,
+      "tensor_count": 1237,
+      "missing_indexed_tensors": [],
+      "header_sha256": "266a08ff08a94e40775454cc5a427a3173e71fa0bc9a14714d7dc7e8f1a08482"
+    },
+    "model-00026-of-00062.safetensors": {
+      "size": 5364342272,
+      "expected_from_header": 5364342272,
+      "tensor_count": 1237,
+      "missing_indexed_tensors": [],
+      "header_sha256": "51bf7d6c1320166e71822dbdccd8e1773d542938ca606f220b2be5c4de0b34cd"
+    },
+    "model-00027-of-00062.safetensors": {
+      "size": 5361809560,
+      "expected_from_header": 5361809560,
+      "tensor_count": 1278,
+      "missing_indexed_tensors": [],
+      "header_sha256": "922040c0234fea9468bbf2676d926b5802ff99511dd429fe393445453f6017ef"
+    },
+    "model-00028-of-00062.safetensors": {
+      "size": 5363915976,
+      "expected_from_header": 5363915976,
+      "tensor_count": 1270,
+      "missing_indexed_tensors": [],
+      "header_sha256": "9679b545ab25b56ef29bfc89a121c95dcd3e259578d7da46a741069e4ceea422"
+    },
+    "model-00029-of-00062.safetensors": {
+      "size": 5364342304,
+      "expected_from_header": 5364342304,
+      "tensor_count": 1237,
+      "missing_indexed_tensors": [],
+      "header_sha256": "23c5b3cc93ad5d486365f9753b7be667175c4fbc331047bd4c3c96b89153641c"
+    },
+    "model-00030-of-00062.safetensors": {
+      "size": 5361809296,
+      "expected_from_header": 5361809296,
+      "tensor_count": 1278,
+      "missing_indexed_tensors": [],
+      "header_sha256": "2c9b92bfdf047f7bd88a4aab2ecdaba5e5a723964144c65ef204abff58d06fa3"
+    },
+    "model-00031-of-00062.safetensors": {
+      "size": 5364341544,
+      "expected_from_header": 5364341544,
+      "tensor_count": 1237,
+      "missing_indexed_tensors": [],
+      "header_sha256": "836c44e5c0f0e4076f4dac910b95289ffb97ee36be7dce97c383d5aa4a902ea7"
+    },
+    "model-00032-of-00062.safetensors": {
+      "size": 5363915232,
+      "expected_from_header": 5363915232,
+      "tensor_count": 1270,
+      "missing_indexed_tensors": [],
+      "header_sha256": "2eecc4b1197933054b1975e61889ca6f377fdbc83cea2f8ba89a90d98dc5cd04"
+    },
+    "model-00033-of-00062.safetensors": {
+      "size": 5364342272,
+      "expected_from_header": 5364342272,
+      "tensor_count": 1237,
+      "missing_indexed_tensors": [],
+      "header_sha256": "5061c68985a146c6d30fb4c05975e55d4350d3a2d2022b26a4db1cef9c58b838"
+    },
+    "model-00034-of-00062.safetensors": {
+      "size": 5361809552,
+      "expected_from_header": 5361809552,
+      "tensor_count": 1278,
+      "missing_indexed_tensors": [],
+      "header_sha256": "200e4775dc831d18d279d9a8f9fa8bd8c681358981a38a6e2711bc671233916d"
+    },
+    "model-00035-of-00062.safetensors": {
+      "size": 5363915984,
+      "expected_from_header": 5363915984,
+      "tensor_count": 1270,
+      "missing_indexed_tensors": [],
+      "header_sha256": "03da06726863f5aed2f7eb2a99f9a6a114c062a3b06498011383c27d4e0a0f70"
+    },
+    "model-00036-of-00062.safetensors": {
+      "size": 5364342304,
+      "expected_from_header": 5364342304,
+      "tensor_count": 1237,
+      "missing_indexed_tensors": [],
+      "header_sha256": "e73c31b4a792dada0762735f54f7ecfaf3cef320f3b780028224420cc2248f90"
+    },
+    "model-00037-of-00062.safetensors": {
+      "size": 5361809288,
+      "expected_from_header": 5361809288,
+      "tensor_count": 1278,
+      "missing_indexed_tensors": [],
+      "header_sha256": "6cc7aa6d1782f1c61bdc62ce039703871d9672b5ebdd4821a14e960c3dce5e6e"
+    },
+    "model-00038-of-00062.safetensors": {
+      "size": 5364342624,
+      "expected_from_header": 5364342624,
+      "tensor_count": 1237,
+      "missing_indexed_tensors": [],
+      "header_sha256": "3c216f46e01859de7ecbd0623ebbd9e1acb58aaed5616fd76ddfafbcd53287aa"
+    },
+    "model-00039-of-00062.safetensors": {
+      "size": 5364342296,
+      "expected_from_header": 5364342296,
+      "tensor_count": 1237,
+      "missing_indexed_tensors": [],
+      "header_sha256": "f6e5eac0bdcc339d5f082a8401387a9305805a0b331daf63c90831fd0bc25044"
+    },
+    "model-00040-of-00062.safetensors": {
+      "size": 5363915912,
+      "expected_from_header": 5363915912,
+      "tensor_count": 1270,
+      "missing_indexed_tensors": [],
+      "header_sha256": "5e91524de2883f9203b2b0c6d28f92cd83252122e8510b8a0d0a52173238a665"
+    },
+    "model-00041-of-00062.safetensors": {
+      "size": 5361809552,
+      "expected_from_header": 5361809552,
+      "tensor_count": 1278,
+      "missing_indexed_tensors": [],
+      "header_sha256": "8dca9df46968c07d50291098b1da086e9118bd42b51c186807b7454a472e73ed"
+    },
+    "model-00042-of-00062.safetensors": {
+      "size": 5364342368,
+      "expected_from_header": 5364342368,
+      "tensor_count": 1237,
+      "missing_indexed_tensors": [],
+      "header_sha256": "5e7741db8b3e312a0b9ead1945356ea3319f4d590e43fa54737ab2a8058ef5f3"
+    },
+    "model-00043-of-00062.safetensors": {
+      "size": 5364342296,
+      "expected_from_header": 5364342296,
+      "tensor_count": 1237,
+      "missing_indexed_tensors": [],
+      "header_sha256": "c038094aabd6289280305da024891c63866c9187cb09850476583ed66a69bcb0"
+    },
+    "model-00044-of-00062.safetensors": {
+      "size": 5361809312,
+      "expected_from_header": 5361809312,
+      "tensor_count": 1278,
+      "missing_indexed_tensors": [],
+      "header_sha256": "041f82bdd9cd09ddb4448af8c63bcf382fa342f3d64a79a49b289a174db355a8"
+    },
+    "model-00045-of-00062.safetensors": {
+      "size": 5364342600,
+      "expected_from_header": 5364342600,
+      "tensor_count": 1237,
+      "missing_indexed_tensors": [],
+      "header_sha256": "5edcf32c4ff79ab353fcc529a6e78059bd1587a7318f8dc5c8976c4e9a02c85d"
+    },
+    "model-00046-of-00062.safetensors": {
+      "size": 5363915368,
+      "expected_from_header": 5363915368,
+      "tensor_count": 1270,
+      "missing_indexed_tensors": [],
+      "header_sha256": "08ca06016505c30afb3b07be1940ea48e38df1d47d6064deaffe2b007a4bfbd9"
+    },
+    "model-00047-of-00062.safetensors": {
+      "size": 5364341072,
+      "expected_from_header": 5364341072,
+      "tensor_count": 1237,
+      "missing_indexed_tensors": [],
+      "header_sha256": "35d7e71bebfaa1ceec59418cf05848e0a29241534a7e0d0bbaf9154bd3fc9406"
+    },
+    "model-00048-of-00062.safetensors": {
+      "size": 5361809576,
+      "expected_from_header": 5361809576,
+      "tensor_count": 1278,
+      "missing_indexed_tensors": [],
+      "header_sha256": "7e40f0e46af2e1323d32f1e577e1570ee3aae9b208088a2b521f31af838af7b6"
+    },
+    "model-00049-of-00062.safetensors": {
+      "size": 5364342344,
+      "expected_from_header": 5364342344,
+      "tensor_count": 1237,
+      "missing_indexed_tensors": [],
+      "header_sha256": "cc9ea69fe80b852549c4920cc5b534d9f460b0221cfb78f46b1fd2148bea3809"
+    },
+    "model-00050-of-00062.safetensors": {
+      "size": 5364342312,
+      "expected_from_header": 5364342312,
+      "tensor_count": 1237,
+      "missing_indexed_tensors": [],
+      "header_sha256": "41974c3dcd62c0b4159be8b54d07ea77256429e36ea287ba81c4db409226190a"
+    },
+    "model-00051-of-00062.safetensors": {
+      "size": 5361809336,
+      "expected_from_header": 5361809336,
+      "tensor_count": 1278,
+      "missing_indexed_tensors": [],
+      "header_sha256": "ceaa12dc5cafb1f69217bff2d04db5a559135951386f45eae73b985c75f02c4b"
+    },
+    "model-00052-of-00062.safetensors": {
+      "size": 5364342576,
+      "expected_from_header": 5364342576,
+      "tensor_count": 1237,
+      "missing_indexed_tensors": [],
+      "header_sha256": "70f2035808eb1fd87e39e61b1d2eafe5916eef56aa8fd3ab7396bfcfa7c6807d"
+    },
+    "model-00053-of-00062.safetensors": {
+      "size": 5363915936,
+      "expected_from_header": 5363915936,
+      "tensor_count": 1270,
+      "missing_indexed_tensors": [],
+      "header_sha256": "06e1ad952ed52d483fd8eac14659ad79a767b9907bf409af401e877ecc193462"
+    },
+    "model-00054-of-00062.safetensors": {
+      "size": 5364342272,
+      "expected_from_header": 5364342272,
+      "tensor_count": 1237,
+      "missing_indexed_tensors": [],
+      "header_sha256": "79619fc369237e4f34cf853e40930049224301bc67e1fe57947428781d16e97f"
+    },
+    "model-00055-of-00062.safetensors": {
+      "size": 5361808304,
+      "expected_from_header": 5361808304,
+      "tensor_count": 1278,
+      "missing_indexed_tensors": [],
+      "header_sha256": "4a83b06af927cb411f4dc41b947194883f736077cee08f249748287ba2ccf971"
+    },
+    "model-00056-of-00062.safetensors": {
+      "size": 5364341080,
+      "expected_from_header": 5364341080,
+      "tensor_count": 1237,
+      "missing_indexed_tensors": [],
+      "header_sha256": "bf037603c9ca4a239cb725a68ef7ab4d9e1abdaf1530dfda83a6d50fc1dcb00a"
+    },
+    "model-00057-of-00062.safetensors": {
+      "size": 5364341048,
+      "expected_from_header": 5364341048,
+      "tensor_count": 1237,
+      "missing_indexed_tensors": [],
+      "header_sha256": "8a9ddcbd55d020531c122605fab2f08fa1d1874cafe116cc16cd4eff4b12a620"
+    },
+    "model-00058-of-00062.safetensors": {
+      "size": 5361808088,
+      "expected_from_header": 5361808088,
+      "tensor_count": 1278,
+      "missing_indexed_tensors": [],
+      "header_sha256": "e46780d82471ed40949dfa2e2aa6c5e8fa409fcd335d59f46b77eeaf82b60f7e"
+    },
+    "model-00059-of-00062.safetensors": {
+      "size": 5363914912,
+      "expected_from_header": 5363914912,
+      "tensor_count": 1270,
+      "missing_indexed_tensors": [],
+      "header_sha256": "32692f46057b04637120cacb9970af0c9fd631ebd427528d6c934c8a196b82ec"
+    },
+    "model-00060-of-00062.safetensors": {
+      "size": 5364341064,
+      "expected_from_header": 5364341064,
+      "tensor_count": 1237,
+      "missing_indexed_tensors": [],
+      "header_sha256": "c4f31d08b10952cffea4e3d27b029fb575164032e3e2e5289374cbaab2a5769a"
+    },
+    "model-00061-of-00062.safetensors": {
+      "size": 5303993768,
+      "expected_from_header": 5303993768,
+      "tensor_count": 1245,
+      "missing_indexed_tensors": [],
+      "header_sha256": "d9ca46de839c119611bc5d41e59b0f8720361e666918dde0fa26b8f56dc5ca0a"
+    },
+    "model-00062-of-00062.safetensors": {
+      "size": 1261584968,
+      "expected_from_header": 1261584968,
+      "tensor_count": 351,
+      "missing_indexed_tensors": [],
+      "header_sha256": "b4fdbc13b81a9616d6cb323e2a7a025b11ce58527a0d723ccafde730dd1c8433"
+    }
+  },
+  "errors": [],
+  "metadata_sha256": {
+    "generation_config.json": "230c30609ecbbb9e6583bedde8e7bdda0c6eb8fe5fad0eaeb3d1b293d751cb4f",
+    "config.json": "bb8f01c42cb92a52ca72e65afb4d5bd8d11aef083cd210e8de25dfb904f23e9f",
+    "processor_config.json": "aae38374c94b08cc9b0547c6e64f05b951bd9735cea571c6988f5ed552bed3ed",
+    "configuration.json": "8fa209ef18ac53dea0c47cf8d6f4e92c907565a4971bee413c1772e314a251fa",
+    "tokenizer_config.json": "98b1271574f41abf89427ae2dda030d94dc9478f0edc5a8bd240db213c6fd5fc"
+  },
+  "indexed_file_bytes": 328337455672,
+  "index_metadata": {
+    "total_size": 328326771576
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "kind": "benchmark",
+  "files": [
+    {
+      "source_relative_to_pair": "baseline/bench-r1-8192-1/attempt-001/stdout.txt",
+      "payload_offset": 69,
+      "payload_bytes": 4649
+    },
+    {
+      "source_relative_to_pair": "baseline/bench-r1-2048-512/attempt-001/stdout.txt",
+      "payload_offset": 4862,
+      "payload_bytes": 5155
+    },
+    {
+      "source_relative_to_pair": "baseline/bench-r1-512-1024/attempt-001/stdout.txt",
+      "payload_offset": 10163,
+      "payload_bytes": 5155
+    },
+    {
+      "source_relative_to_pair": "baseline/bench-r1-512-128/attempt-001/stdout.txt",
+      "payload_offset": 15463,
+      "payload_bytes": 5150
+    },
+    {
+      "source_relative_to_pair": "baseline/bench-r2-8192-1/attempt-001/stdout.txt",
+      "payload_offset": 20756,
+      "payload_bytes": 4649
+    },
+    {
+      "source_relative_to_pair": "baseline/bench-r2-2048-512/attempt-001/stdout.txt",
+      "payload_offset": 25549,
+      "payload_bytes": 5155
+    },
+    {
+      "source_relative_to_pair": "baseline/bench-r2-512-1024/attempt-001/stdout.txt",
+      "payload_offset": 30850,
+      "payload_bytes": 5155
+    },
+    {
+      "source_relative_to_pair": "baseline/bench-r2-512-128/attempt-001/stdout.txt",
+      "payload_offset": 36150,
+      "payload_bytes": 5150
+    },
+    {
+      "source_relative_to_pair": "baseline/bench-r3-8192-1/attempt-001/stdout.txt",
+      "payload_offset": 41443,
+      "payload_bytes": 4649
+    },
+    {
+      "source_relative_to_pair": "baseline/bench-r3-2048-512/attempt-001/stdout.txt",
+      "payload_offset": 46236,
+      "payload_bytes": 5155
+    },
+    {
+      "source_relative_to_pair": "baseline/bench-r3-512-1024/attempt-001/stdout.txt",
+      "payload_offset": 51537,
+      "payload_bytes": 5155
+    },
+    {
+      "source_relative_to_pair": "baseline/bench-r3-512-128/attempt-001/stdout.txt",
+      "payload_offset": 56837,
+      "payload_bytes": 5150
+    },
+    {
+      "source_relative_to_pair": "tuned/bench-r1-8192-1/attempt-001/stdout.txt",
+      "payload_offset": 62127,
+      "payload_bytes": 4646
+    },
+    {
+      "source_relative_to_pair": "tuned/bench-r1-2048-512/attempt-001/stdout.txt",
+      "payload_offset": 66911,
+      "payload_bytes": 5152
+    },
+    {
+      "source_relative_to_pair": "tuned/bench-r1-512-1024/attempt-001/stdout.txt",
+      "payload_offset": 72203,
+      "payload_bytes": 5152
+    },
+    {
+      "source_relative_to_pair": "tuned/bench-r1-512-128/attempt-001/stdout.txt",
+      "payload_offset": 77494,
+      "payload_bytes": 5147
+    },
+    {
+      "source_relative_to_pair": "tuned/bench-r2-8192-1/attempt-001/stdout.txt",
+      "payload_offset": 82778,
+      "payload_bytes": 4646
+    },
+    {
+      "source_relative_to_pair": "tuned/bench-r2-2048-512/attempt-001/stdout.txt",
+      "payload_offset": 87562,
+      "payload_bytes": 5152
+    },
+    {
+      "source_relative_to_pair": "tuned/bench-r2-512-1024/attempt-001/stdout.txt",
+      "payload_offset": 92854,
+      "payload_bytes": 5152
+    },
+    {
+      "source_relative_to_pair": "tuned/bench-r2-512-128/attempt-001/stdout.txt",
+      "payload_offset": 98145,
+      "payload_bytes": 5147
+    },
+    {
+      "source_relative_to_pair": "tuned/bench-r3-8192-1/attempt-001/stdout.txt",
+      "payload_offset": 103429,
+      "payload_bytes": 4646
+    },
+    {
+      "source_relative_to_pair": "tuned/bench-r3-2048-512/attempt-001/stdout.txt",
+      "payload_offset": 108213,
+      "payload_bytes": 5152
+    },
+    {
+      "source_relative_to_pair": "tuned/bench-r3-512-1024/attempt-001/stdout.txt",
+      "payload_offset": 113505,
+      "payload_bytes": 5152
+    },
+    {
+      "source_relative_to_pair": "tuned/bench-r3-512-128/attempt-001/stdout.txt",
+      "payload_offset": 118796,
+      "payload_bytes": 5147
+    }
+  ]
+}

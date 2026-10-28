@@ -1,0 +1,69 @@
+{
+  "scope": "Provenance collection only; existing immutable preparation results reused; no dataset/cache/body hash or model/test rerun",
+  "primary_dataset_manifest": {
+    "original_remote_path": "/data03/tiger/vllm_pr58986_evaldata_20261028/official-data-manifest.json",
+    "local_file": "official-data-manifest.json",
+    "prepared_at": "2026-10-28T07:22:21.760841+00:00",
+    "completed_at": "2026-10-28T07:22:42.633531+00:00"
+  },
+  "initial_offline_check": {
+    "run_id": "sweep-unified-moe58986-89567e69958a",
+    "exit_code": 1,
+    "data_loading_scope": "All three official splits loaded, row counts and canonical row digests matched before the later tokenizer assertion",
+    "failure_scope": "Validation script incorrectly expected list[int] from apply_chat_template(tokenize=True) with default return_dict=True",
+    "raw_receipt": "sweep-unified-moe58986-89567e69958a.json",
+    "raw_log": "sweep-unified-moe58986-89567e69958a.log"
+  },
+  "tokenizer_resolution": {
+    "run_id": "sweep-unified-moe58986-96741e4c4062",
+    "exit_code": 0,
+    "status": "passed",
+    "default_output_type": "transformers.tokenization_utils_base.BatchEncoding",
+    "return_dict_default": true,
+    "correction": "Explicit return_dict=False when the checker requires list[int]",
+    "verification": "Two official first-question inputs: list[int], direct encoding equality and exact rendered-text decoding; no full dataset reload/model/inference/scoring",
+    "cuda_initialized": false,
+    "raw_receipt": "sweep-unified-moe58986-96741e4c4062.json",
+    "raw_log": "sweep-unified-moe58986-96741e4c4062.log",
+    "report": "tokenizer-interface-report.json"
+  },
+  "later_api_contract": {
+    "run_id": "sweep-unified-moe58986-12d67483203d",
+    "exit_code": 0,
+    "scope": "Real lm_eval 0.4.13 constructors, CLI/YAML and API payload contract. This is additional API evidence; the explicit tokenizer return_dict=False correction is evidenced by 96741e4c4062 above.",
+    "existing_receipt": "../evaluation-cpu/unified-environment/sweep-unified-moe58986-12d67483203d.json",
+    "existing_report": "../evaluation-cpu/results-cpu-attempt004/contract-probe.json"
+  },
+  "canonical_rows_format": {
+    "algorithm": "SHA256",
+    "order": "Original dataset row order. For complete lm_eval outputs: deduplicate filter copies, validate equal doc objects, order integer doc_id 0..count-1, then use each row[doc].",
+    "serialization": "json.dumps(doc, ensure_ascii=False, sort_keys=True, separators=(comma, colon)).encode(utf-8), followed by byte 0x0a after EVERY row including the last",
+    "python_expression": "json.dumps(doc, ensure_ascii=False, sort_keys=True, separators=(\",\", \":\")).encode(\"utf-8\") + b\"\\n\"",
+    "exclude": "Do not hash the sample envelope, doc_id/filter/response/metric fields or official doc_hash string; do not strip/normalize source document strings.",
+    "source": "check_offline_tasks.py lines 47-50",
+    "train_limit": "GSM8K train digest cannot be reconstructed from test-sample doc objects; reuse the established preparation check for train."
+  },
+  "expected_splits": [
+    {
+      "repo_id": "openai/gsm8k",
+      "revision": "740312add88f781978c0658806c59bc2815b9866",
+      "split": "train",
+      "rows": 7473,
+      "canonical_rows_sha256": "dca449882e67a1e7716b5da453650a7b16588a1f2d1a0d82394a43d75ea7e9ca"
+    },
+    {
+      "repo_id": "openai/gsm8k",
+      "revision": "740312add88f781978c0658806c59bc2815b9866",
+      "split": "test",
+      "rows": 1319,
+      "canonical_rows_sha256": "32c548f08195e19e33408b844dd7be6aa4bcae457d957bc05909ff4bd4a00595"
+    },
+    {
+      "repo_id": "math-ai/aime25",
+      "revision": "563bb8404243c5f09de6ec262f2db674fe5bce9b",
+      "split": "test",
+      "rows": 30,
+      "canonical_rows_sha256": "93226328a3bc794c9b7cf8ccd90beb65491bafa0ac58b132f3c11fe9976131b9"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "status": "ready_for_gpu_smoke",
+  "frozen_at": "2026-10-28T08:34:41.772776+00:00",
+  "native_receipt_sha256": "0ae2bd08b07775dbfcf3716adff67c43de387c72699a1480e6d87805952b7ff9",
+  "probe_receipt_sha256": "f38ca152157652c63f707a2457a8be856cc401c016c86343cd89b91a460a9a5a",
+  "source_checks": {
+    "baseline": {
+      "commit": "eb34e115d041ac685fa38eadf8eae6c51d61dc23",
+      "common_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "target_diff": "D\tvllm/model_executor/layers/fused_moe/configs/E=288,N=512,device_name=NVIDIA_H20,dtype=fp8_w8a8,block_shape=[128,128].json\n"
+    },
+    "tuned": {
+      "commit": "eb34e115d041ac685fa38eadf8eae6c51d61dc23",
+      "common_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "target_diff": ""
+    }
+  },
+  "host_root": "/data03/tiger/vllm_pr58986_native_20261028_eb34e115",
+  "readonly_bind": "/data03/tiger/vllm_pr58986_native_20261028_eb34e115:/native-runtime",
+  "native_receipt": "/native-runtime/receipts/native-receipt.json",
+  "gpu_execution_verified": false
+}

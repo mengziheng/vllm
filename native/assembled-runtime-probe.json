@@ -1,0 +1,132 @@
+{
+  "subject": "/work/assembled/tuned",
+  "modules": {
+    "vllm._C_stable_libtorch": "/work/assembled/tuned/vllm/_C_stable_libtorch.abi3.so",
+    "vllm._moe_C_stable_libtorch": "/work/assembled/tuned/vllm/_moe_C_stable_libtorch.abi3.so",
+    "vllm._flashkda_C": "/work/assembled/tuned/vllm/_flashkda_C.abi3.so",
+    "vllm._flashmla_extension_C": "/work/assembled/tuned/vllm/_flashmla_extension_C.abi3.so",
+    "vllm.third_party.flashmla.flash_mla_interface": "/work/assembled/tuned/vllm/third_party/flashmla/flash_mla_interface.py",
+    "vllm.vllm_flash_attn": "/work/assembled/tuned/vllm/vllm_flash_attn/__init__.py",
+    "vllm.vllm_flash_attn.flash_attn_interface": "/work/assembled/tuned/vllm/vllm_flash_attn/flash_attn_interface.py",
+    "vllm._custom_ops": "/work/assembled/tuned/vllm/_custom_ops.py",
+    "deep_gemm_lazy_loader": "/work/assembled/tuned/vllm/third_party/deep_gemm/__init__.py",
+    "vllm._flashmla_C": "/work/assembled/tuned/vllm/_flashmla_C.abi3.so",
+    "vllm.vllm_flash_attn._vllm_fa3_C": "/work/assembled/tuned/vllm/vllm_flash_attn/_vllm_fa3_C.abi3.so",
+    "vllm.third_party.deep_gemm._C": "/work/assembled/tuned/vllm/third_party/deep_gemm/_C.py"
+  },
+  "load_library": [
+    "/work/assembled/tuned/vllm/third_party/deep_gemm/_C_extension.abi3.so"
+  ],
+  "loaded_libraries_before": [],
+  "schemas": {
+    "_flashmla_C::sparse_decode_fwd": {
+      "schema": "_flashmla_C::sparse_decode_fwd(Tensor q, Tensor kv, Tensor indices, Tensor? topk_length, Tensor? attn_sink, Tensor(a)? tile_scheduler_metadata, Tensor(b)? num_splits, Tensor? extra_kv, Tensor? extra_indices, Tensor? extra_topk_length, int d_v, float sm_scale, Tensor(c!)? out_=None, bool enable_batch_invariant=False) -> (Tensor(c!), Tensor, Tensor(a)?, Tensor(b)?)",
+      "argument_count": 14
+    },
+    "_C_cache_ops::concat_and_cache_mla": {
+      "schema": "_C_cache_ops::concat_and_cache_mla(Tensor kv_c, Tensor k_pe, Tensor($0! -> ) kv_cache, Tensor slot_mapping, str kv_cache_dtype, Tensor scale, bool skip_scale=False) -> ()",
+      "argument_count": 7
+    },
+    "_moe_C::moe_align_block_size": {
+      "schema": "_moe_C::moe_align_block_size(Tensor topk_ids, int num_experts, int block_size, Tensor($0! -> ) sorted_token_ids, Tensor($1! -> ) experts_ids, Tensor($2! -> ) num_tokens_post_pad, Tensor? maybe_expert_map, Tensor(a!)? scatter_idx=None) -> ()",
+      "argument_count": 8
+    },
+    "_moe_C::moe_sum": {
+      "schema": "_moe_C::moe_sum(Tensor input, Tensor($0! -> ) output, Tensor? topk_ids=None, Tensor? expert_map=None) -> ()",
+      "argument_count": 4
+    },
+    "_moe_C::grouped_topk": {
+      "schema": "_moe_C::grouped_topk(Tensor scores, int n_group, int topk_group, int topk, bool renormalize, float routed_scaling_factor, Tensor bias, int scoring_func) -> (Tensor, Tensor)",
+      "argument_count": 8
+    },
+    "_flashkda_C::fwd": {
+      "schema": "_flashkda_C::fwd(Tensor q, Tensor k, Tensor v, Tensor g, Tensor beta, float scale, Tensor(a!) out, Tensor(c!) workspace, Tensor A_log, Tensor dt_bias, float lower_bound, Tensor? initial_state=None, Tensor(b!)? final_state=None, Tensor? cu_seqlens=None, Tensor(d!)? checkpoint_state=None, Tensor? checkpoint_offsets=None) -> ()",
+      "argument_count": 16
+    },
+    "_flashkda_C::get_workspace_size": {
+      "schema": "_flashkda_C::get_workspace_size(int T_total, int H, int N=1) -> int",
+      "argument_count": 3
+    },
+    "_flashmla_extension_C::get_mla_decoding_metadata_dense_fp8": {
+      "schema": "_flashmla_extension_C::get_mla_decoding_metadata_dense_fp8(Tensor seqlens_k, int num_heads_per_head_k, int num_heads_k) -> Tensor[]",
+      "argument_count": 3
+    },
+    "_flashmla_extension_C::fwd_kvcache_mla_fp8": {
+      "schema": "_flashmla_extension_C::fwd_kvcache_mla_fp8(Tensor q, Tensor kcache, int head_size_v, Tensor seqlens_k, Tensor block_table, float softmax_scale, bool is_causal, Tensor tile_scheduler_metadata, Tensor num_splits, Tensor? descale_q, Tensor? descale_k) -> Tensor[]",
+      "argument_count": 11
+    },
+    "_C::cooperative_topk": {
+      "schema": "_C::cooperative_topk(Tensor logits, Tensor lengths, Tensor($0! -> ) output, Tensor workspace, int k, int max_seq_len) -> ()",
+      "argument_count": 6
+    },
+    "_C::persistent_topk": {
+      "schema": "_C::persistent_topk(Tensor logits, Tensor lengths, Tensor($0! -> ) output, Tensor workspace, int k, int max_seq_len) -> ()",
+      "argument_count": 6
+    },
+    "deep_gemm::fp8_fp4_mqa_logits": {
+      "schema": "deep_gemm::fp8_fp4_mqa_logits(Tensor q, Tensor? q_sf, Tensor kv, Tensor kv_sf, Tensor weights, Tensor cu_seq_len_k_start, Tensor cu_seq_len_k_end, int max_seqlen_k, Tensor? schedule_meta=None) -> Tensor",
+      "argument_count": 9
+    },
+    "deep_gemm::fp8_fp4_paged_mqa_logits": {
+      "schema": "deep_gemm::fp8_fp4_paged_mqa_logits(Tensor q, Tensor? q_sf, Tensor kv_cache, Tensor weights, Tensor context_lens, Tensor block_table, Tensor schedule_meta, int max_context_len, Tensor? indices=None) -> Tensor",
+      "argument_count": 9
+    }
+  },
+  "status": "passed",
+  "vllm": "/work/assembled/tuned/vllm/__init__.py",
+  "vllm_python_version": "dev",
+  "cuda_initialized": false,
+  "loaded_libraries_after": [
+    "/work/assembled/tuned/vllm/third_party/deep_gemm/_C_extension.abi3.so"
+  ],
+  "native_maps": [
+    "7f2fed0eb000-7f2fed10c000 r--p 00000000 103:06 215250989                 /work/assembled/tuned/vllm/third_party/deep_gemm/_C_extension.abi3.so",
+    "7f2fed10c000-7f2fed228000 r-xp 00021000 103:06 215250989                 /work/assembled/tuned/vllm/third_party/deep_gemm/_C_extension.abi3.so",
+    "7f2fed228000-7f2fed263000 r--p 0013d000 103:06 215250989                 /work/assembled/tuned/vllm/third_party/deep_gemm/_C_extension.abi3.so",
+    "7f2fed263000-7f2fed265000 r--p 00177000 103:06 215250989                 /work/assembled/tuned/vllm/third_party/deep_gemm/_C_extension.abi3.so",
+    "7f2fed265000-7f2fed267000 rw-p 00179000 103:06 215250989                 /work/assembled/tuned/vllm/third_party/deep_gemm/_C_extension.abi3.so",
+    "7f2ff006f000-7f2ff012e000 r--p 00000000 103:06 215252793                 /work/assembled/tuned/vllm/vllm_flash_attn/_vllm_fa3_C.abi3.so",
+    "7f2ff012e000-7f2ff1dd0000 r-xp 000bf000 103:06 215252793                 /work/assembled/tuned/vllm/vllm_flash_attn/_vllm_fa3_C.abi3.so",
+    "7f2ff1dd0000-7f2ff9ee8000 r--p 01d61000 103:06 215252793                 /work/assembled/tuned/vllm/vllm_flash_attn/_vllm_fa3_C.abi3.so",
+    "7f2ff9ee8000-7f2ff9ee9000 r--p 09e79000 103:06 215252793                 /work/assembled/tuned/vllm/vllm_flash_attn/_vllm_fa3_C.abi3.so",
+    "7f2ff9ee9000-7f2ff9ef1000 rw-p 09e7a000 103:06 215252793                 /work/assembled/tuned/vllm/vllm_flash_attn/_vllm_fa3_C.abi3.so",
+    "7f2ff9ef9000-7f2ff9f0f000 r--p 00000000 103:06 215250975                 /work/assembled/tuned/vllm/_flashmla_C.abi3.so",
+    "7f2ff9f0f000-7f2ffa01b000 r-xp 00016000 103:06 215250975                 /work/assembled/tuned/vllm/_flashmla_C.abi3.so",
+    "7f2ffa01b000-7f2ffa0ca000 r--p 00122000 103:06 215250975                 /work/assembled/tuned/vllm/_flashmla_C.abi3.so",
+    "7f2ffa0ca000-7f2ffa0cc000 r--p 001d0000 103:06 215250975                 /work/assembled/tuned/vllm/_flashmla_C.abi3.so",
+    "7f2ffa0cc000-7f2ffa0cd000 rw-p 001d2000 103:06 215250975                 /work/assembled/tuned/vllm/_flashmla_C.abi3.so",
+    "7f2ffa0ce000-7f2ffa0d5000 r--p 00000000 103:06 215250973                 /work/assembled/tuned/vllm/_flashkda_C.abi3.so",
+    "7f2ffa0d5000-7f2ffa344000 r-xp 00007000 103:06 215250973                 /work/assembled/tuned/vllm/_flashkda_C.abi3.so",
+    "7f2ffa344000-7f2ffa3b4000 r--p 00276000 103:06 215250973                 /work/assembled/tuned/vllm/_flashkda_C.abi3.so",
+    "7f2ffa3b4000-7f2ffa3b5000 r--p 002e6000 103:06 215250973                 /work/assembled/tuned/vllm/_flashkda_C.abi3.so",
+    "7f2ffa3b5000-7f2ffa3b6000 rw-p 002e7000 103:06 215250973                 /work/assembled/tuned/vllm/_flashkda_C.abi3.so",
+    "7f2ffa3b7000-7f2ffa3c5000 r--p 00000000 103:06 215250979                 /work/assembled/tuned/vllm/_moe_C_stable_libtorch.abi3.so",
+    "7f2ffa3c5000-7f2ffa694000 r-xp 0000e000 103:06 215250979                 /work/assembled/tuned/vllm/_moe_C_stable_libtorch.abi3.so",
+    "7f2ffa694000-7f2ffb904000 r--p 002dd000 103:06 215250979                 /work/assembled/tuned/vllm/_moe_C_stable_libtorch.abi3.so",
+    "7f2ffb904000-7f2ffb905000 r--p 0154c000 103:06 215250979                 /work/assembled/tuned/vllm/_moe_C_stable_libtorch.abi3.so",
+    "7f2ffb905000-7f2ffb908000 rw-p 0154d000 103:06 215250979                 /work/assembled/tuned/vllm/_moe_C_stable_libtorch.abi3.so",
+    "7f2ffb916000-7f2ffbaa5000 r--p 00000000 103:06 215250971                 /work/assembled/tuned/vllm/_C_stable_libtorch.abi3.so",
+    "7f2ffbaa5000-7f2ffc4c3000 r-xp 0018f000 103:06 215250971                 /work/assembled/tuned/vllm/_C_stable_libtorch.abi3.so",
+    "7f2ffc4c3000-7f2ffdd0e000 r--p 00bad000 103:06 215250971                 /work/assembled/tuned/vllm/_C_stable_libtorch.abi3.so",
+    "7f2ffdd0e000-7f2ffdd14000 r--p 023f7000 103:06 215250971                 /work/assembled/tuned/vllm/_C_stable_libtorch.abi3.so",
+    "7f2ffdd14000-7f2ffdd1a000 rw-p 023fd000 103:06 215250971                 /work/assembled/tuned/vllm/_C_stable_libtorch.abi3.so",
+    "7f3013ab2000-7f3013ab7000 r--p 00000000 103:06 215250977                 /work/assembled/tuned/vllm/_flashmla_extension_C.abi3.so",
+    "7f3013ab7000-7f3013ac5000 r-xp 00005000 103:06 215250977                 /work/assembled/tuned/vllm/_flashmla_extension_C.abi3.so",
+    "7f3013ac5000-7f3013ad4000 r--p 00013000 103:06 215250977                 /work/assembled/tuned/vllm/_flashmla_extension_C.abi3.so",
+    "7f3013ad4000-7f3013ad5000 r--p 00022000 103:06 215250977                 /work/assembled/tuned/vllm/_flashmla_extension_C.abi3.so",
+    "7f3013ad5000-7f3013ad6000 rw-p 00023000 103:06 215250977                 /work/assembled/tuned/vllm/_flashmla_extension_C.abi3.so"
+  ],
+  "pins": {
+    "vllm": "eb34e115d041ac685fa38eadf8eae6c51d61dc23",
+    "flashmla": "e2afa5fd8c220fbd05fe03fc24c9d5e64c24641b",
+    "flashmla_cutlass": "4faf1a1568cf1e4ad8ff71846a13e16f2a6a6f6b",
+    "flashkda": "17a037d98da546deb4591e967cf961a43c034d8b",
+    "flashkda_cutlass": "5c149f52a436782210263fb2f19b354443a61c6a",
+    "deepgemm": "0820030756945b2daec208e8e8255268360f337d",
+    "deepgemm_cutlass": "f3fde58372d33e9a5650ba7b80fc48b3b49d40c8",
+    "deepjit": "3732a3b9a0a2e5126396908a362ba5abdf043b2f",
+    "flashattention": "b273a02621d3c94bc747df67204f591b67f38fae",
+    "flashattention_cutlass": "62750a2b75c802660e4894434dc55e839f322277",
+    "core_cutlass_revision": "v4.7.1"
+  }
+}

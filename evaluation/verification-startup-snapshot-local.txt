@@ -1,0 +1,6 @@
+test_startup_snapshot_keeps_captured_bytes_when_live_log_appends (test_pair.PairTests) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.041s
+
+OK

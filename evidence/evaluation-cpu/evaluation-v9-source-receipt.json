@@ -1,0 +1,6 @@
+{
+  "frozen_source_host": "/data03/tiger/vllm_pr58986_evalprep_20261028_eb34e115/input/evaluation-v9",
+  "archive_sha256": "6295cdb07f947228adb1dad81c97bf2377c8278e466b22ea72258d886ea88690",
+  "delta_from_v8": "OMP_NUM_THREADS/MKL_NUM_THREADS/OPENBLAS_NUM_THREADS explicitly 1; protocol unchanged",
+  "gpu_work_submitted": false
+}

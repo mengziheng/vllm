@@ -1,0 +1,68 @@
+{
+  "source_commit": "eb34e115d041ac685fa38eadf8eae6c51d61dc23",
+  "flashattention_commit": "b273a02621d3c94bc747df67204f591b67f38fae",
+  "cutlass_commit": "62750a2b75c802660e4894434dc55e839f322277",
+  "scope": "Current FA3 target; FA2 and FA4 are not built for this H20 model path",
+  "commands": [
+    {
+      "command": [
+        "cmake",
+        "-S",
+        "/work/driver-core",
+        "-B",
+        "/work/build/core",
+        "-G",
+        "Ninja",
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
+        "-DVLLM_PYTHON_EXECUTABLE=/usr/local/bin/python3",
+        "-DCMAKE_INSTALL_PREFIX=/work/package/native",
+        "-DCMAKE_CUDA_COMPILER=/usr/local/cuda/bin/nvcc",
+        "-DCMAKE_CXX_COMPILER=/opt/byted/toolchain/bin/g++",
+        "-DNVCC_THREADS=1"
+      ],
+      "log": "/work/logs/flashattn-step-0.log",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "cmake",
+        "--build",
+        "/work/build/core",
+        "--parallel",
+        "16",
+        "--target",
+        "_vllm_fa3_C"
+      ],
+      "log": "/work/logs/flashattn-step-1.log",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "cmake",
+        "--install",
+        "/work/build/core",
+        "--component",
+        "_vllm_fa3_C"
+      ],
+      "log": "/work/logs/flashattn-step-2.log",
+      "exit_code": 0
+    }
+  ],
+  "started_at": "2026-10-28T08:13:22.822644+00:00",
+  "source_files": {
+    "cmake/external_projects/vllm_flash_attn.cmake": "ab64a32d61096f6ed57e9ca966339d29964d0d5bbae7ed7a69b25b96f9ee1530"
+  },
+  "environment": {
+    "TORCH_CUDA_ARCH_LIST": "9.0",
+    "CUDA_HOME": "/usr/local/cuda",
+    "VLLM_FLASH_ATTN_SRC_DIR": "/work/sources/flash-attention-b273a02621d3c94bc747df67204f591b67f38fae",
+    "TMPDIR": "/work/tmp"
+  },
+  "finished_at": "2026-10-28T08:34:00.545279+00:00",
+  "artifacts": {
+    "vllm/vllm_flash_attn/_vllm_fa3_C.abi3.so": "c7c422c75b6a095ec46b36bd975d235075bd03d79a2151172c98b87bde65c160",
+    "vllm/vllm_flash_attn/layers/rotary.py": "b826cc3339488815b26f974135a8f53d44149d019b4c82e1ad4240a6ec0e28c4",
+    "vllm/vllm_flash_attn/ops/triton/rotary.py": "f1f4bf9a0b28cc544fa882b60628d74b8923e8b47e1f8438a7af43fa7b5061e4"
+  }
+}

@@ -1,0 +1,2072 @@
+{
+  "captured_utc": "2026-10-28T11:05:13.057007+00:00",
+  "job_id": "48781766ecb1491487388e1ad00fe7c5",
+  "original_output": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2",
+  "original_launcher": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/unified-environment/sweep-unified-moe58986-bbbd3419b670.json",
+  "scope": "all root metadata, pair/**, setup*/**, runner*/**, actual launcher artifacts and existing hardware/maps; no metric redaction",
+  "excluded_dirs": [
+    "__pycache__",
+    "binaries",
+    "cache",
+    "hf-cache",
+    "hf-cache.partial",
+    "home",
+    "locks",
+    "tmp",
+    "weights"
+  ],
+  "excluded_suffixes": [
+    ".so",
+    ".a",
+    ".o",
+    ".cubin",
+    ".ptx",
+    ".bin",
+    ".safetensors",
+    ".arrow",
+    ".parquet",
+    ".pt",
+    ".pth",
+    ".npy",
+    ".npz",
+    ".pkl",
+    ".pyc"
+  ],
+  "skipped": [
+    {
+      "path": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/cache",
+      "reason": "outside-result-scope"
+    },
+    {
+      "path": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/current-launcher-receipt.json",
+      "reason": "symlink"
+    },
+    {
+      "path": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/hf-cache",
+      "reason": "outside-result-scope"
+    },
+    {
+      "path": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/home",
+      "reason": "outside-result-scope"
+    },
+    {
+      "path": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/runner.lock",
+      "reason": "lock-or-binary"
+    },
+    {
+      "path": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/client/cache",
+      "reason": "cache-or-symlink-directory"
+    },
+    {
+      "path": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/client/tmp",
+      "reason": "cache-or-symlink-directory"
+    }
+  ],
+  "terminal_checks": {
+    "pair_audit": {
+      "status": "paired-audits-passed",
+      "pair_id": "glm53-h20-pr58986-eb34e115-native-full-mtp3-20261028-pair2"
+    },
+    "arms": {
+      "baseline": {
+        "status": {
+          "status": "passed",
+          "jobs": 14
+        },
+        "complete_receipts": 14,
+        "server_exits": {
+          "pair/baseline/server-001/exit.json": {
+            "returncode": 0,
+            "started_unix": 1793179474.7192297,
+            "ended_unix": 1793182894.675694
+          }
+        }
+      },
+      "tuned": {
+        "status": {
+          "status": "passed",
+          "jobs": 14
+        },
+        "complete_receipts": 14,
+        "server_exits": {
+          "pair/tuned/server-001/exit.json": {
+            "returncode": 0,
+            "started_unix": 1793182894.6912363,
+            "ended_unix": 1793185487.9742057
+          }
+        }
+      }
+    },
+    "runner_exits": {
+      "runner-001/exit.json": {
+        "returncode": 0,
+        "reason": null,
+        "started_unix": 1793179459.4326847,
+        "ended_unix": 1793185488.0857244
+      }
+    },
+    "launcher": {
+      "path": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/unified-environment/sweep-unified-moe58986-bbbd3419b670.json",
+      "status": "passed",
+      "exit_code": 0,
+      "owned_exit": {
+        "id": "55650f5d82ea8e65cb1198451d9f5237e9ac541e13c0c3d0e9b5ca2b6c0a972f",
+        "state": {
+          "Status": "exited",
+          "Running": false,
+          "Paused": false,
+          "Restarting": false,
+          "OOMKilled": false,
+          "Dead": false,
+          "Pid": 0,
+          "ExitCode": 0,
+          "Error": "",
+          "StartedAt": "2026-10-28T09:24:18.924374761Z",
+          "FinishedAt": "2026-10-28T11:04:48.683533957Z"
+        }
+      }
+    }
+  },
+  "files": [
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/allocation-sweep-unified-moe58986-bbbd3419b670.json",
+      "archive_path": "job/allocation-sweep-unified-moe58986-bbbd3419b670.json",
+      "bytes": 1533
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/hf-cache.copy-owner.json",
+      "archive_path": "job/hf-cache.copy-owner.json",
+      "bytes": 192
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/hf-cache.copy.json",
+      "archive_path": "job/hf-cache.copy.json",
+      "bytes": 192
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/manifest.json",
+      "archive_path": "job/manifest.json",
+      "bytes": 27395
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/identity.json",
+      "archive_path": "job/pair/identity.json",
+      "bytes": 29119
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/pair-audit.json",
+      "archive_path": "job/pair/pair-audit.json",
+      "bytes": 254049
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/plan.json",
+      "archive_path": "job/pair/plan.json",
+      "bytes": 50483
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/storage-preflight.json",
+      "archive_path": "job/pair/storage-preflight.json",
+      "bytes": 216
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/audit.json",
+      "archive_path": "job/pair/baseline/audit.json",
+      "bytes": 120071
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/status.json",
+      "archive_path": "job/pair/baseline/status.json",
+      "bytes": 39
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/accuracy-aime25/complete.json",
+      "archive_path": "job/pair/baseline/accuracy-aime25/complete.json",
+      "bytes": 186
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/accuracy-aime25/identity.json",
+      "archive_path": "job/pair/baseline/accuracy-aime25/identity.json",
+      "bytes": 3781
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/accuracy-aime25/attempt-001/actual-environment.json",
+      "archive_path": "job/pair/baseline/accuracy-aime25/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/accuracy-aime25/attempt-001/command.json",
+      "archive_path": "job/pair/baseline/accuracy-aime25/attempt-001/command.json",
+      "bytes": 3808
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/accuracy-aime25/attempt-001/environment-capture.json",
+      "archive_path": "job/pair/baseline/accuracy-aime25/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/accuracy-aime25/attempt-001/exit.json",
+      "archive_path": "job/pair/baseline/accuracy-aime25/attempt-001/exit.json",
+      "bytes": 113
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/accuracy-aime25/attempt-001/server-context.json",
+      "archive_path": "job/pair/baseline/accuracy-aime25/attempt-001/server-context.json",
+      "bytes": 189
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/accuracy-aime25/attempt-001/stderr.txt",
+      "archive_path": "job/pair/baseline/accuracy-aime25/attempt-001/stderr.txt",
+      "bytes": 5404
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/accuracy-aime25/attempt-001/stdout.txt",
+      "archive_path": "job/pair/baseline/accuracy-aime25/attempt-001/stdout.txt",
+      "bytes": 658
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/accuracy-aime25/attempt-001/results/__model/results_2026-10-28T17-58-20.822678.json",
+      "archive_path": "job/pair/baseline/accuracy-aime25/attempt-001/results/__model/results_2026-10-28T17-58-20.822678.json",
+      "bytes": 9612
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/accuracy-aime25/attempt-001/results/__model/samples_aime25_2026-10-28T17-58-20.822678.jsonl",
+      "archive_path": "job/pair/baseline/accuracy-aime25/attempt-001/results/__model/samples_aime25_2026-10-28T17-58-20.822678.jsonl",
+      "bytes": 2084205
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/accuracy-gsm8k/complete.json",
+      "archive_path": "job/pair/baseline/accuracy-gsm8k/complete.json",
+      "bytes": 231
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/accuracy-gsm8k/identity.json",
+      "archive_path": "job/pair/baseline/accuracy-gsm8k/identity.json",
+      "bytes": 3733
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/accuracy-gsm8k/attempt-001/actual-environment.json",
+      "archive_path": "job/pair/baseline/accuracy-gsm8k/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/accuracy-gsm8k/attempt-001/command.json",
+      "archive_path": "job/pair/baseline/accuracy-gsm8k/attempt-001/command.json",
+      "bytes": 3760
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/accuracy-gsm8k/attempt-001/environment-capture.json",
+      "archive_path": "job/pair/baseline/accuracy-gsm8k/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/accuracy-gsm8k/attempt-001/exit.json",
+      "archive_path": "job/pair/baseline/accuracy-gsm8k/attempt-001/exit.json",
+      "bytes": 114
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/accuracy-gsm8k/attempt-001/server-context.json",
+      "archive_path": "job/pair/baseline/accuracy-gsm8k/attempt-001/server-context.json",
+      "bytes": 189
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/accuracy-gsm8k/attempt-001/stderr.txt",
+      "archive_path": "job/pair/baseline/accuracy-gsm8k/attempt-001/stderr.txt",
+      "bytes": 72472
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/accuracy-gsm8k/attempt-001/stdout.txt",
+      "archive_path": "job/pair/baseline/accuracy-gsm8k/attempt-001/stdout.txt",
+      "bytes": 745
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/accuracy-gsm8k/attempt-001/results/__model/results_2026-10-28T17-45-31.058863.json",
+      "archive_path": "job/pair/baseline/accuracy-gsm8k/attempt-001/results/__model/results_2026-10-28T17-45-31.058863.json",
+      "bytes": 9808
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/accuracy-gsm8k/attempt-001/results/__model/samples_gsm8k_2026-10-28T17-45-31.058863.jsonl",
+      "archive_path": "job/pair/baseline/accuracy-gsm8k/attempt-001/results/__model/samples_gsm8k_2026-10-28T17-45-31.058863.jsonl",
+      "bytes": 12411589
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-2048-512/complete.json",
+      "archive_path": "job/pair/baseline/bench-r1-2048-512/complete.json",
+      "bytes": 9682
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-2048-512/identity.json",
+      "archive_path": "job/pair/baseline/bench-r1-2048-512/identity.json",
+      "bytes": 3995
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-2048-512/attempt-001/actual-environment.json",
+      "archive_path": "job/pair/baseline/bench-r1-2048-512/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-2048-512/attempt-001/command.json",
+      "archive_path": "job/pair/baseline/bench-r1-2048-512/attempt-001/command.json",
+      "bytes": 4034
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-2048-512/attempt-001/environment-capture.json",
+      "archive_path": "job/pair/baseline/bench-r1-2048-512/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-2048-512/attempt-001/exit.json",
+      "archive_path": "job/pair/baseline/bench-r1-2048-512/attempt-001/exit.json",
+      "bytes": 113
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-2048-512/attempt-001/server-context.json",
+      "archive_path": "job/pair/baseline/bench-r1-2048-512/attempt-001/server-context.json",
+      "bytes": 189
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-2048-512/attempt-001/stderr.txt",
+      "archive_path": "job/pair/baseline/bench-r1-2048-512/attempt-001/stderr.txt",
+      "bytes": 5795
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-2048-512/attempt-001/stdout.txt",
+      "archive_path": "job/pair/baseline/bench-r1-2048-512/attempt-001/stdout.txt",
+      "bytes": 5155
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-2048-512/attempt-001/results/benchmark.json",
+      "archive_path": "job/pair/baseline/bench-r1-2048-512/attempt-001/results/benchmark.json",
+      "bytes": 756621
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-2048-512/attempt-001/results/input-receipt.json",
+      "archive_path": "job/pair/baseline/bench-r1-2048-512/attempt-001/results/input-receipt.json",
+      "bytes": 37206
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-512-1024/complete.json",
+      "archive_path": "job/pair/baseline/bench-r1-512-1024/complete.json",
+      "bytes": 9682
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-512-1024/identity.json",
+      "archive_path": "job/pair/baseline/bench-r1-512-1024/identity.json",
+      "bytes": 3995
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-512-1024/attempt-001/actual-environment.json",
+      "archive_path": "job/pair/baseline/bench-r1-512-1024/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-512-1024/attempt-001/command.json",
+      "archive_path": "job/pair/baseline/bench-r1-512-1024/attempt-001/command.json",
+      "bytes": 4034
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-512-1024/attempt-001/environment-capture.json",
+      "archive_path": "job/pair/baseline/bench-r1-512-1024/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-512-1024/attempt-001/exit.json",
+      "archive_path": "job/pair/baseline/bench-r1-512-1024/attempt-001/exit.json",
+      "bytes": 114
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-512-1024/attempt-001/server-context.json",
+      "archive_path": "job/pair/baseline/bench-r1-512-1024/attempt-001/server-context.json",
+      "bytes": 189
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-512-1024/attempt-001/stderr.txt",
+      "archive_path": "job/pair/baseline/bench-r1-512-1024/attempt-001/stderr.txt",
+      "bytes": 5820
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-512-1024/attempt-001/stdout.txt",
+      "archive_path": "job/pair/baseline/bench-r1-512-1024/attempt-001/stdout.txt",
+      "bytes": 5155
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-512-1024/attempt-001/results/benchmark.json",
+      "archive_path": "job/pair/baseline/bench-r1-512-1024/attempt-001/results/benchmark.json",
+      "bytes": 1594840
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-512-1024/attempt-001/results/input-receipt.json",
+      "archive_path": "job/pair/baseline/bench-r1-512-1024/attempt-001/results/input-receipt.json",
+      "bytes": 37206
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-512-128/complete.json",
+      "archive_path": "job/pair/baseline/bench-r1-512-128/complete.json",
+      "bytes": 9681
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-512-128/identity.json",
+      "archive_path": "job/pair/baseline/bench-r1-512-128/identity.json",
+      "bytes": 3991
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-512-128/attempt-001/actual-environment.json",
+      "archive_path": "job/pair/baseline/bench-r1-512-128/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-512-128/attempt-001/command.json",
+      "archive_path": "job/pair/baseline/bench-r1-512-128/attempt-001/command.json",
+      "bytes": 4030
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-512-128/attempt-001/environment-capture.json",
+      "archive_path": "job/pair/baseline/bench-r1-512-128/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-512-128/attempt-001/exit.json",
+      "archive_path": "job/pair/baseline/bench-r1-512-128/attempt-001/exit.json",
+      "bytes": 114
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-512-128/attempt-001/server-context.json",
+      "archive_path": "job/pair/baseline/bench-r1-512-128/attempt-001/server-context.json",
+      "bytes": 189
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-512-128/attempt-001/stderr.txt",
+      "archive_path": "job/pair/baseline/bench-r1-512-128/attempt-001/stderr.txt",
+      "bytes": 4204
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-512-128/attempt-001/stdout.txt",
+      "archive_path": "job/pair/baseline/bench-r1-512-128/attempt-001/stdout.txt",
+      "bytes": 5150
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-512-128/attempt-001/results/benchmark.json",
+      "archive_path": "job/pair/baseline/bench-r1-512-128/attempt-001/results/benchmark.json",
+      "bytes": 219745
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-512-128/attempt-001/results/input-receipt.json",
+      "archive_path": "job/pair/baseline/bench-r1-512-128/attempt-001/results/input-receipt.json",
+      "bytes": 37078
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-8192-1/complete.json",
+      "archive_path": "job/pair/baseline/bench-r1-8192-1/complete.json",
+      "bytes": 9680
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-8192-1/identity.json",
+      "archive_path": "job/pair/baseline/bench-r1-8192-1/identity.json",
+      "bytes": 3987
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-8192-1/attempt-001/actual-environment.json",
+      "archive_path": "job/pair/baseline/bench-r1-8192-1/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-8192-1/attempt-001/command.json",
+      "archive_path": "job/pair/baseline/bench-r1-8192-1/attempt-001/command.json",
+      "bytes": 4026
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-8192-1/attempt-001/environment-capture.json",
+      "archive_path": "job/pair/baseline/bench-r1-8192-1/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-8192-1/attempt-001/exit.json",
+      "archive_path": "job/pair/baseline/bench-r1-8192-1/attempt-001/exit.json",
+      "bytes": 113
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-8192-1/attempt-001/server-context.json",
+      "archive_path": "job/pair/baseline/bench-r1-8192-1/attempt-001/server-context.json",
+      "bytes": 189
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-8192-1/attempt-001/stderr.txt",
+      "archive_path": "job/pair/baseline/bench-r1-8192-1/attempt-001/stderr.txt",
+      "bytes": 8585
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-8192-1/attempt-001/stdout.txt",
+      "archive_path": "job/pair/baseline/bench-r1-8192-1/attempt-001/stdout.txt",
+      "bytes": 4649
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-8192-1/attempt-001/results/benchmark.json",
+      "archive_path": "job/pair/baseline/bench-r1-8192-1/attempt-001/results/benchmark.json",
+      "bytes": 14287
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r1-8192-1/attempt-001/results/input-receipt.json",
+      "archive_path": "job/pair/baseline/bench-r1-8192-1/attempt-001/results/input-receipt.json",
+      "bytes": 36950
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-2048-512/complete.json",
+      "archive_path": "job/pair/baseline/bench-r2-2048-512/complete.json",
+      "bytes": 9682
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-2048-512/identity.json",
+      "archive_path": "job/pair/baseline/bench-r2-2048-512/identity.json",
+      "bytes": 3995
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-2048-512/attempt-001/actual-environment.json",
+      "archive_path": "job/pair/baseline/bench-r2-2048-512/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-2048-512/attempt-001/command.json",
+      "archive_path": "job/pair/baseline/bench-r2-2048-512/attempt-001/command.json",
+      "bytes": 4034
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-2048-512/attempt-001/environment-capture.json",
+      "archive_path": "job/pair/baseline/bench-r2-2048-512/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-2048-512/attempt-001/exit.json",
+      "archive_path": "job/pair/baseline/bench-r2-2048-512/attempt-001/exit.json",
+      "bytes": 114
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-2048-512/attempt-001/server-context.json",
+      "archive_path": "job/pair/baseline/bench-r2-2048-512/attempt-001/server-context.json",
+      "bytes": 189
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-2048-512/attempt-001/stderr.txt",
+      "archive_path": "job/pair/baseline/bench-r2-2048-512/attempt-001/stderr.txt",
+      "bytes": 5574
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-2048-512/attempt-001/stdout.txt",
+      "archive_path": "job/pair/baseline/bench-r2-2048-512/attempt-001/stdout.txt",
+      "bytes": 5155
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-2048-512/attempt-001/results/benchmark.json",
+      "archive_path": "job/pair/baseline/bench-r2-2048-512/attempt-001/results/benchmark.json",
+      "bytes": 759041
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-2048-512/attempt-001/results/input-receipt.json",
+      "archive_path": "job/pair/baseline/bench-r2-2048-512/attempt-001/results/input-receipt.json",
+      "bytes": 37206
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-512-1024/complete.json",
+      "archive_path": "job/pair/baseline/bench-r2-512-1024/complete.json",
+      "bytes": 9682
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-512-1024/identity.json",
+      "archive_path": "job/pair/baseline/bench-r2-512-1024/identity.json",
+      "bytes": 3995
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-512-1024/attempt-001/actual-environment.json",
+      "archive_path": "job/pair/baseline/bench-r2-512-1024/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-512-1024/attempt-001/command.json",
+      "archive_path": "job/pair/baseline/bench-r2-512-1024/attempt-001/command.json",
+      "bytes": 4034
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-512-1024/attempt-001/environment-capture.json",
+      "archive_path": "job/pair/baseline/bench-r2-512-1024/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-512-1024/attempt-001/exit.json",
+      "archive_path": "job/pair/baseline/bench-r2-512-1024/attempt-001/exit.json",
+      "bytes": 114
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-512-1024/attempt-001/server-context.json",
+      "archive_path": "job/pair/baseline/bench-r2-512-1024/attempt-001/server-context.json",
+      "bytes": 189
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-512-1024/attempt-001/stderr.txt",
+      "archive_path": "job/pair/baseline/bench-r2-512-1024/attempt-001/stderr.txt",
+      "bytes": 5604
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-512-1024/attempt-001/stdout.txt",
+      "archive_path": "job/pair/baseline/bench-r2-512-1024/attempt-001/stdout.txt",
+      "bytes": 5155
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-512-1024/attempt-001/results/benchmark.json",
+      "archive_path": "job/pair/baseline/bench-r2-512-1024/attempt-001/results/benchmark.json",
+      "bytes": 1723952
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-512-1024/attempt-001/results/input-receipt.json",
+      "archive_path": "job/pair/baseline/bench-r2-512-1024/attempt-001/results/input-receipt.json",
+      "bytes": 37206
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-512-128/complete.json",
+      "archive_path": "job/pair/baseline/bench-r2-512-128/complete.json",
+      "bytes": 9681
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-512-128/identity.json",
+      "archive_path": "job/pair/baseline/bench-r2-512-128/identity.json",
+      "bytes": 3991
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-512-128/attempt-001/actual-environment.json",
+      "archive_path": "job/pair/baseline/bench-r2-512-128/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-512-128/attempt-001/command.json",
+      "archive_path": "job/pair/baseline/bench-r2-512-128/attempt-001/command.json",
+      "bytes": 4030
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-512-128/attempt-001/environment-capture.json",
+      "archive_path": "job/pair/baseline/bench-r2-512-128/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-512-128/attempt-001/exit.json",
+      "archive_path": "job/pair/baseline/bench-r2-512-128/attempt-001/exit.json",
+      "bytes": 113
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-512-128/attempt-001/server-context.json",
+      "archive_path": "job/pair/baseline/bench-r2-512-128/attempt-001/server-context.json",
+      "bytes": 189
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-512-128/attempt-001/stderr.txt",
+      "archive_path": "job/pair/baseline/bench-r2-512-128/attempt-001/stderr.txt",
+      "bytes": 3719
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-512-128/attempt-001/stdout.txt",
+      "archive_path": "job/pair/baseline/bench-r2-512-128/attempt-001/stdout.txt",
+      "bytes": 5150
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-512-128/attempt-001/results/benchmark.json",
+      "archive_path": "job/pair/baseline/bench-r2-512-128/attempt-001/results/benchmark.json",
+      "bytes": 254952
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-512-128/attempt-001/results/input-receipt.json",
+      "archive_path": "job/pair/baseline/bench-r2-512-128/attempt-001/results/input-receipt.json",
+      "bytes": 37078
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-8192-1/complete.json",
+      "archive_path": "job/pair/baseline/bench-r2-8192-1/complete.json",
+      "bytes": 9680
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-8192-1/identity.json",
+      "archive_path": "job/pair/baseline/bench-r2-8192-1/identity.json",
+      "bytes": 3987
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-8192-1/attempt-001/actual-environment.json",
+      "archive_path": "job/pair/baseline/bench-r2-8192-1/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-8192-1/attempt-001/command.json",
+      "archive_path": "job/pair/baseline/bench-r2-8192-1/attempt-001/command.json",
+      "bytes": 4026
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-8192-1/attempt-001/environment-capture.json",
+      "archive_path": "job/pair/baseline/bench-r2-8192-1/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-8192-1/attempt-001/exit.json",
+      "archive_path": "job/pair/baseline/bench-r2-8192-1/attempt-001/exit.json",
+      "bytes": 113
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-8192-1/attempt-001/server-context.json",
+      "archive_path": "job/pair/baseline/bench-r2-8192-1/attempt-001/server-context.json",
+      "bytes": 189
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-8192-1/attempt-001/stderr.txt",
+      "archive_path": "job/pair/baseline/bench-r2-8192-1/attempt-001/stderr.txt",
+      "bytes": 8535
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-8192-1/attempt-001/stdout.txt",
+      "archive_path": "job/pair/baseline/bench-r2-8192-1/attempt-001/stdout.txt",
+      "bytes": 4649
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-8192-1/attempt-001/results/benchmark.json",
+      "archive_path": "job/pair/baseline/bench-r2-8192-1/attempt-001/results/benchmark.json",
+      "bytes": 125678
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r2-8192-1/attempt-001/results/input-receipt.json",
+      "archive_path": "job/pair/baseline/bench-r2-8192-1/attempt-001/results/input-receipt.json",
+      "bytes": 36950
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-2048-512/complete.json",
+      "archive_path": "job/pair/baseline/bench-r3-2048-512/complete.json",
+      "bytes": 9682
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-2048-512/identity.json",
+      "archive_path": "job/pair/baseline/bench-r3-2048-512/identity.json",
+      "bytes": 3995
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-2048-512/attempt-001/actual-environment.json",
+      "archive_path": "job/pair/baseline/bench-r3-2048-512/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-2048-512/attempt-001/command.json",
+      "archive_path": "job/pair/baseline/bench-r3-2048-512/attempt-001/command.json",
+      "bytes": 4034
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-2048-512/attempt-001/environment-capture.json",
+      "archive_path": "job/pair/baseline/bench-r3-2048-512/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-2048-512/attempt-001/exit.json",
+      "archive_path": "job/pair/baseline/bench-r3-2048-512/attempt-001/exit.json",
+      "bytes": 113
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-2048-512/attempt-001/server-context.json",
+      "archive_path": "job/pair/baseline/bench-r3-2048-512/attempt-001/server-context.json",
+      "bytes": 189
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-2048-512/attempt-001/stderr.txt",
+      "archive_path": "job/pair/baseline/bench-r3-2048-512/attempt-001/stderr.txt",
+      "bytes": 7035
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-2048-512/attempt-001/stdout.txt",
+      "archive_path": "job/pair/baseline/bench-r3-2048-512/attempt-001/stdout.txt",
+      "bytes": 5155
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-2048-512/attempt-001/results/benchmark.json",
+      "archive_path": "job/pair/baseline/bench-r3-2048-512/attempt-001/results/benchmark.json",
+      "bytes": 865447
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-2048-512/attempt-001/results/input-receipt.json",
+      "archive_path": "job/pair/baseline/bench-r3-2048-512/attempt-001/results/input-receipt.json",
+      "bytes": 37206
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-512-1024/complete.json",
+      "archive_path": "job/pair/baseline/bench-r3-512-1024/complete.json",
+      "bytes": 9682
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-512-1024/identity.json",
+      "archive_path": "job/pair/baseline/bench-r3-512-1024/identity.json",
+      "bytes": 3995
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-512-1024/attempt-001/actual-environment.json",
+      "archive_path": "job/pair/baseline/bench-r3-512-1024/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-512-1024/attempt-001/command.json",
+      "archive_path": "job/pair/baseline/bench-r3-512-1024/attempt-001/command.json",
+      "bytes": 4034
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-512-1024/attempt-001/environment-capture.json",
+      "archive_path": "job/pair/baseline/bench-r3-512-1024/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-512-1024/attempt-001/exit.json",
+      "archive_path": "job/pair/baseline/bench-r3-512-1024/attempt-001/exit.json",
+      "bytes": 113
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-512-1024/attempt-001/server-context.json",
+      "archive_path": "job/pair/baseline/bench-r3-512-1024/attempt-001/server-context.json",
+      "bytes": 189
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-512-1024/attempt-001/stderr.txt",
+      "archive_path": "job/pair/baseline/bench-r3-512-1024/attempt-001/stderr.txt",
+      "bytes": 5633
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-512-1024/attempt-001/stdout.txt",
+      "archive_path": "job/pair/baseline/bench-r3-512-1024/attempt-001/stdout.txt",
+      "bytes": 5155
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-512-1024/attempt-001/results/benchmark.json",
+      "archive_path": "job/pair/baseline/bench-r3-512-1024/attempt-001/results/benchmark.json",
+      "bytes": 1689773
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-512-1024/attempt-001/results/input-receipt.json",
+      "archive_path": "job/pair/baseline/bench-r3-512-1024/attempt-001/results/input-receipt.json",
+      "bytes": 37206
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-512-128/complete.json",
+      "archive_path": "job/pair/baseline/bench-r3-512-128/complete.json",
+      "bytes": 9681
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-512-128/identity.json",
+      "archive_path": "job/pair/baseline/bench-r3-512-128/identity.json",
+      "bytes": 3991
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-512-128/attempt-001/actual-environment.json",
+      "archive_path": "job/pair/baseline/bench-r3-512-128/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-512-128/attempt-001/command.json",
+      "archive_path": "job/pair/baseline/bench-r3-512-128/attempt-001/command.json",
+      "bytes": 4030
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-512-128/attempt-001/environment-capture.json",
+      "archive_path": "job/pair/baseline/bench-r3-512-128/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-512-128/attempt-001/exit.json",
+      "archive_path": "job/pair/baseline/bench-r3-512-128/attempt-001/exit.json",
+      "bytes": 114
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-512-128/attempt-001/server-context.json",
+      "archive_path": "job/pair/baseline/bench-r3-512-128/attempt-001/server-context.json",
+      "bytes": 189
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-512-128/attempt-001/stderr.txt",
+      "archive_path": "job/pair/baseline/bench-r3-512-128/attempt-001/stderr.txt",
+      "bytes": 4071
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-512-128/attempt-001/stdout.txt",
+      "archive_path": "job/pair/baseline/bench-r3-512-128/attempt-001/stdout.txt",
+      "bytes": 5150
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-512-128/attempt-001/results/benchmark.json",
+      "archive_path": "job/pair/baseline/bench-r3-512-128/attempt-001/results/benchmark.json",
+      "bytes": 234969
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-512-128/attempt-001/results/input-receipt.json",
+      "archive_path": "job/pair/baseline/bench-r3-512-128/attempt-001/results/input-receipt.json",
+      "bytes": 37078
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-8192-1/complete.json",
+      "archive_path": "job/pair/baseline/bench-r3-8192-1/complete.json",
+      "bytes": 9680
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-8192-1/identity.json",
+      "archive_path": "job/pair/baseline/bench-r3-8192-1/identity.json",
+      "bytes": 3987
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-8192-1/attempt-001/actual-environment.json",
+      "archive_path": "job/pair/baseline/bench-r3-8192-1/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-8192-1/attempt-001/command.json",
+      "archive_path": "job/pair/baseline/bench-r3-8192-1/attempt-001/command.json",
+      "bytes": 4026
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-8192-1/attempt-001/environment-capture.json",
+      "archive_path": "job/pair/baseline/bench-r3-8192-1/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-8192-1/attempt-001/exit.json",
+      "archive_path": "job/pair/baseline/bench-r3-8192-1/attempt-001/exit.json",
+      "bytes": 114
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-8192-1/attempt-001/server-context.json",
+      "archive_path": "job/pair/baseline/bench-r3-8192-1/attempt-001/server-context.json",
+      "bytes": 189
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-8192-1/attempt-001/stderr.txt",
+      "archive_path": "job/pair/baseline/bench-r3-8192-1/attempt-001/stderr.txt",
+      "bytes": 8528
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-8192-1/attempt-001/stdout.txt",
+      "archive_path": "job/pair/baseline/bench-r3-8192-1/attempt-001/stdout.txt",
+      "bytes": 4649
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-8192-1/attempt-001/results/benchmark.json",
+      "archive_path": "job/pair/baseline/bench-r3-8192-1/attempt-001/results/benchmark.json",
+      "bytes": 68665
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/bench-r3-8192-1/attempt-001/results/input-receipt.json",
+      "archive_path": "job/pair/baseline/bench-r3-8192-1/attempt-001/results/input-receipt.json",
+      "bytes": 36950
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/server-001/command.json",
+      "archive_path": "job/pair/baseline/server-001/command.json",
+      "bytes": 3438
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/server-001/exit.json",
+      "archive_path": "job/pair/baseline/server-001/exit.json",
+      "bytes": 95
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/server-001/launch-confirmations.json",
+      "archive_path": "job/pair/baseline/server-001/launch-confirmations.json",
+      "bytes": 467
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/server-001/process.json",
+      "archive_path": "job/pair/baseline/server-001/process.json",
+      "bytes": 46
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/server-001/proof.json",
+      "archive_path": "job/pair/baseline/server-001/proof.json",
+      "bytes": 7573
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/server-001/server.log",
+      "archive_path": "job/pair/baseline/server-001/server.log",
+      "bytes": 408689
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/server-001/startup-log.snapshot.txt",
+      "archive_path": "job/pair/baseline/server-001/startup-log.snapshot.txt",
+      "bytes": 75334
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/server-001/startup-request/complete.json",
+      "archive_path": "job/pair/baseline/server-001/startup-request/complete.json",
+      "bytes": 107
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/server-001/startup-request/identity.json",
+      "archive_path": "job/pair/baseline/server-001/startup-request/identity.json",
+      "bytes": 3041
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/server-001/startup-request/attempt-001/actual-environment.json",
+      "archive_path": "job/pair/baseline/server-001/startup-request/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/server-001/startup-request/attempt-001/command.json",
+      "archive_path": "job/pair/baseline/server-001/startup-request/attempt-001/command.json",
+      "bytes": 3056
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/server-001/startup-request/attempt-001/environment-capture.json",
+      "archive_path": "job/pair/baseline/server-001/startup-request/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/server-001/startup-request/attempt-001/exit.json",
+      "archive_path": "job/pair/baseline/server-001/startup-request/attempt-001/exit.json",
+      "bytes": 114
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/server-001/startup-request/attempt-001/server-context.json",
+      "archive_path": "job/pair/baseline/server-001/startup-request/attempt-001/server-context.json",
+      "bytes": 114
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/server-001/startup-request/attempt-001/stderr.txt",
+      "archive_path": "job/pair/baseline/server-001/startup-request/attempt-001/stderr.txt",
+      "bytes": 0
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/baseline/server-001/startup-request/attempt-001/stdout.txt",
+      "archive_path": "job/pair/baseline/server-001/startup-request/attempt-001/stdout.txt",
+      "bytes": 816
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/client-version/complete.json",
+      "archive_path": "job/pair/client-version/complete.json",
+      "bytes": 145324
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/client-version/identity.json",
+      "archive_path": "job/pair/client-version/identity.json",
+      "bytes": 3253
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/client-version/attempt-001/actual-environment.json",
+      "archive_path": "job/pair/client-version/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/client-version/attempt-001/command.json",
+      "archive_path": "job/pair/client-version/attempt-001/command.json",
+      "bytes": 3280
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/client-version/attempt-001/environment-capture.json",
+      "archive_path": "job/pair/client-version/attempt-001/environment-capture.json",
+      "bytes": 30
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/client-version/attempt-001/exit.json",
+      "archive_path": "job/pair/client-version/attempt-001/exit.json",
+      "bytes": 114
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/client-version/attempt-001/stderr.txt",
+      "archive_path": "job/pair/client-version/attempt-001/stderr.txt",
+      "bytes": 329
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/client-version/attempt-001/stdout.txt",
+      "archive_path": "job/pair/client-version/attempt-001/stdout.txt",
+      "bytes": 143425
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/client-version/attempt-001/results/client-provenance.json",
+      "archive_path": "job/pair/client-version/attempt-001/results/client-provenance.json",
+      "bytes": 143424
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/audit.json",
+      "archive_path": "job/pair/tuned/audit.json",
+      "bytes": 120071
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/status.json",
+      "archive_path": "job/pair/tuned/status.json",
+      "bytes": 39
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/accuracy-aime25/complete.json",
+      "archive_path": "job/pair/tuned/accuracy-aime25/complete.json",
+      "bytes": 186
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/accuracy-aime25/identity.json",
+      "archive_path": "job/pair/tuned/accuracy-aime25/identity.json",
+      "bytes": 3778
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/accuracy-aime25/attempt-001/actual-environment.json",
+      "archive_path": "job/pair/tuned/accuracy-aime25/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/accuracy-aime25/attempt-001/command.json",
+      "archive_path": "job/pair/tuned/accuracy-aime25/attempt-001/command.json",
+      "bytes": 3805
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/accuracy-aime25/attempt-001/environment-capture.json",
+      "archive_path": "job/pair/tuned/accuracy-aime25/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/accuracy-aime25/attempt-001/exit.json",
+      "archive_path": "job/pair/tuned/accuracy-aime25/attempt-001/exit.json",
+      "bytes": 112
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/accuracy-aime25/attempt-001/server-context.json",
+      "archive_path": "job/pair/tuned/accuracy-aime25/attempt-001/server-context.json",
+      "bytes": 186
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/accuracy-aime25/attempt-001/stderr.txt",
+      "archive_path": "job/pair/tuned/accuracy-aime25/attempt-001/stderr.txt",
+      "bytes": 5401
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/accuracy-aime25/attempt-001/stdout.txt",
+      "archive_path": "job/pair/tuned/accuracy-aime25/attempt-001/stdout.txt",
+      "bytes": 655
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/accuracy-aime25/attempt-001/results/__model/results_2026-10-28T18-43-17.919283.json",
+      "archive_path": "job/pair/tuned/accuracy-aime25/attempt-001/results/__model/results_2026-10-28T18-43-17.919283.json",
+      "bytes": 9598
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/accuracy-aime25/attempt-001/results/__model/samples_aime25_2026-10-28T18-43-17.919283.jsonl",
+      "archive_path": "job/pair/tuned/accuracy-aime25/attempt-001/results/__model/samples_aime25_2026-10-28T18-43-17.919283.jsonl",
+      "bytes": 2022871
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/accuracy-gsm8k/complete.json",
+      "archive_path": "job/pair/tuned/accuracy-gsm8k/complete.json",
+      "bytes": 231
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/accuracy-gsm8k/identity.json",
+      "archive_path": "job/pair/tuned/accuracy-gsm8k/identity.json",
+      "bytes": 3730
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/accuracy-gsm8k/attempt-001/actual-environment.json",
+      "archive_path": "job/pair/tuned/accuracy-gsm8k/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/accuracy-gsm8k/attempt-001/command.json",
+      "archive_path": "job/pair/tuned/accuracy-gsm8k/attempt-001/command.json",
+      "bytes": 3757
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/accuracy-gsm8k/attempt-001/environment-capture.json",
+      "archive_path": "job/pair/tuned/accuracy-gsm8k/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/accuracy-gsm8k/attempt-001/exit.json",
+      "archive_path": "job/pair/tuned/accuracy-gsm8k/attempt-001/exit.json",
+      "bytes": 112
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/accuracy-gsm8k/attempt-001/server-context.json",
+      "archive_path": "job/pair/tuned/accuracy-gsm8k/attempt-001/server-context.json",
+      "bytes": 186
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/accuracy-gsm8k/attempt-001/stderr.txt",
+      "archive_path": "job/pair/tuned/accuracy-gsm8k/attempt-001/stderr.txt",
+      "bytes": 72795
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/accuracy-gsm8k/attempt-001/stdout.txt",
+      "archive_path": "job/pair/tuned/accuracy-gsm8k/attempt-001/stdout.txt",
+      "bytes": 745
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/accuracy-gsm8k/attempt-001/results/__model/results_2026-10-28T18-30-33.450263.json",
+      "archive_path": "job/pair/tuned/accuracy-gsm8k/attempt-001/results/__model/results_2026-10-28T18-30-33.450263.json",
+      "bytes": 9807
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/accuracy-gsm8k/attempt-001/results/__model/samples_gsm8k_2026-10-28T18-30-33.450263.jsonl",
+      "archive_path": "job/pair/tuned/accuracy-gsm8k/attempt-001/results/__model/samples_gsm8k_2026-10-28T18-30-33.450263.jsonl",
+      "bytes": 12418581
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-2048-512/complete.json",
+      "archive_path": "job/pair/tuned/bench-r1-2048-512/complete.json",
+      "bytes": 9682
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-2048-512/identity.json",
+      "archive_path": "job/pair/tuned/bench-r1-2048-512/identity.json",
+      "bytes": 3989
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-2048-512/attempt-001/actual-environment.json",
+      "archive_path": "job/pair/tuned/bench-r1-2048-512/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-2048-512/attempt-001/command.json",
+      "archive_path": "job/pair/tuned/bench-r1-2048-512/attempt-001/command.json",
+      "bytes": 4028
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-2048-512/attempt-001/environment-capture.json",
+      "archive_path": "job/pair/tuned/bench-r1-2048-512/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-2048-512/attempt-001/exit.json",
+      "archive_path": "job/pair/tuned/bench-r1-2048-512/attempt-001/exit.json",
+      "bytes": 112
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-2048-512/attempt-001/server-context.json",
+      "archive_path": "job/pair/tuned/bench-r1-2048-512/attempt-001/server-context.json",
+      "bytes": 186
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-2048-512/attempt-001/stderr.txt",
+      "archive_path": "job/pair/tuned/bench-r1-2048-512/attempt-001/stderr.txt",
+      "bytes": 5104
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-2048-512/attempt-001/stdout.txt",
+      "archive_path": "job/pair/tuned/bench-r1-2048-512/attempt-001/stdout.txt",
+      "bytes": 5152
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-2048-512/attempt-001/results/benchmark.json",
+      "archive_path": "job/pair/tuned/bench-r1-2048-512/attempt-001/results/benchmark.json",
+      "bytes": 724031
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-2048-512/attempt-001/results/input-receipt.json",
+      "archive_path": "job/pair/tuned/bench-r1-2048-512/attempt-001/results/input-receipt.json",
+      "bytes": 37206
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-512-1024/complete.json",
+      "archive_path": "job/pair/tuned/bench-r1-512-1024/complete.json",
+      "bytes": 9682
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-512-1024/identity.json",
+      "archive_path": "job/pair/tuned/bench-r1-512-1024/identity.json",
+      "bytes": 3989
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-512-1024/attempt-001/actual-environment.json",
+      "archive_path": "job/pair/tuned/bench-r1-512-1024/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-512-1024/attempt-001/command.json",
+      "archive_path": "job/pair/tuned/bench-r1-512-1024/attempt-001/command.json",
+      "bytes": 4028
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-512-1024/attempt-001/environment-capture.json",
+      "archive_path": "job/pair/tuned/bench-r1-512-1024/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-512-1024/attempt-001/exit.json",
+      "archive_path": "job/pair/tuned/bench-r1-512-1024/attempt-001/exit.json",
+      "bytes": 114
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-512-1024/attempt-001/server-context.json",
+      "archive_path": "job/pair/tuned/bench-r1-512-1024/attempt-001/server-context.json",
+      "bytes": 186
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-512-1024/attempt-001/stderr.txt",
+      "archive_path": "job/pair/tuned/bench-r1-512-1024/attempt-001/stderr.txt",
+      "bytes": 5672
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-512-1024/attempt-001/stdout.txt",
+      "archive_path": "job/pair/tuned/bench-r1-512-1024/attempt-001/stdout.txt",
+      "bytes": 5152
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-512-1024/attempt-001/results/benchmark.json",
+      "archive_path": "job/pair/tuned/bench-r1-512-1024/attempt-001/results/benchmark.json",
+      "bytes": 1615926
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-512-1024/attempt-001/results/input-receipt.json",
+      "archive_path": "job/pair/tuned/bench-r1-512-1024/attempt-001/results/input-receipt.json",
+      "bytes": 37206
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-512-128/complete.json",
+      "archive_path": "job/pair/tuned/bench-r1-512-128/complete.json",
+      "bytes": 9681
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-512-128/identity.json",
+      "archive_path": "job/pair/tuned/bench-r1-512-128/identity.json",
+      "bytes": 3985
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-512-128/attempt-001/actual-environment.json",
+      "archive_path": "job/pair/tuned/bench-r1-512-128/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-512-128/attempt-001/command.json",
+      "archive_path": "job/pair/tuned/bench-r1-512-128/attempt-001/command.json",
+      "bytes": 4024
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-512-128/attempt-001/environment-capture.json",
+      "archive_path": "job/pair/tuned/bench-r1-512-128/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-512-128/attempt-001/exit.json",
+      "archive_path": "job/pair/tuned/bench-r1-512-128/attempt-001/exit.json",
+      "bytes": 114
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-512-128/attempt-001/server-context.json",
+      "archive_path": "job/pair/tuned/bench-r1-512-128/attempt-001/server-context.json",
+      "bytes": 186
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-512-128/attempt-001/stderr.txt",
+      "archive_path": "job/pair/tuned/bench-r1-512-128/attempt-001/stderr.txt",
+      "bytes": 3420
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-512-128/attempt-001/stdout.txt",
+      "archive_path": "job/pair/tuned/bench-r1-512-128/attempt-001/stdout.txt",
+      "bytes": 5147
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-512-128/attempt-001/results/benchmark.json",
+      "archive_path": "job/pair/tuned/bench-r1-512-128/attempt-001/results/benchmark.json",
+      "bytes": 227339
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-512-128/attempt-001/results/input-receipt.json",
+      "archive_path": "job/pair/tuned/bench-r1-512-128/attempt-001/results/input-receipt.json",
+      "bytes": 37078
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-8192-1/complete.json",
+      "archive_path": "job/pair/tuned/bench-r1-8192-1/complete.json",
+      "bytes": 9680
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-8192-1/identity.json",
+      "archive_path": "job/pair/tuned/bench-r1-8192-1/identity.json",
+      "bytes": 3981
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-8192-1/attempt-001/actual-environment.json",
+      "archive_path": "job/pair/tuned/bench-r1-8192-1/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-8192-1/attempt-001/command.json",
+      "archive_path": "job/pair/tuned/bench-r1-8192-1/attempt-001/command.json",
+      "bytes": 4020
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-8192-1/attempt-001/environment-capture.json",
+      "archive_path": "job/pair/tuned/bench-r1-8192-1/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-8192-1/attempt-001/exit.json",
+      "archive_path": "job/pair/tuned/bench-r1-8192-1/attempt-001/exit.json",
+      "bytes": 114
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-8192-1/attempt-001/server-context.json",
+      "archive_path": "job/pair/tuned/bench-r1-8192-1/attempt-001/server-context.json",
+      "bytes": 186
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-8192-1/attempt-001/stderr.txt",
+      "archive_path": "job/pair/tuned/bench-r1-8192-1/attempt-001/stderr.txt",
+      "bytes": 8585
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-8192-1/attempt-001/stdout.txt",
+      "archive_path": "job/pair/tuned/bench-r1-8192-1/attempt-001/stdout.txt",
+      "bytes": 4646
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-8192-1/attempt-001/results/benchmark.json",
+      "archive_path": "job/pair/tuned/bench-r1-8192-1/attempt-001/results/benchmark.json",
+      "bytes": 14316
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r1-8192-1/attempt-001/results/input-receipt.json",
+      "archive_path": "job/pair/tuned/bench-r1-8192-1/attempt-001/results/input-receipt.json",
+      "bytes": 36950
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-2048-512/complete.json",
+      "archive_path": "job/pair/tuned/bench-r2-2048-512/complete.json",
+      "bytes": 9682
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-2048-512/identity.json",
+      "archive_path": "job/pair/tuned/bench-r2-2048-512/identity.json",
+      "bytes": 3989
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-2048-512/attempt-001/actual-environment.json",
+      "archive_path": "job/pair/tuned/bench-r2-2048-512/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-2048-512/attempt-001/command.json",
+      "archive_path": "job/pair/tuned/bench-r2-2048-512/attempt-001/command.json",
+      "bytes": 4028
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-2048-512/attempt-001/environment-capture.json",
+      "archive_path": "job/pair/tuned/bench-r2-2048-512/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-2048-512/attempt-001/exit.json",
+      "archive_path": "job/pair/tuned/bench-r2-2048-512/attempt-001/exit.json",
+      "bytes": 113
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-2048-512/attempt-001/server-context.json",
+      "archive_path": "job/pair/tuned/bench-r2-2048-512/attempt-001/server-context.json",
+      "bytes": 186
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-2048-512/attempt-001/stderr.txt",
+      "archive_path": "job/pair/tuned/bench-r2-2048-512/attempt-001/stderr.txt",
+      "bytes": 6414
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-2048-512/attempt-001/stdout.txt",
+      "archive_path": "job/pair/tuned/bench-r2-2048-512/attempt-001/stdout.txt",
+      "bytes": 5152
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-2048-512/attempt-001/results/benchmark.json",
+      "archive_path": "job/pair/tuned/bench-r2-2048-512/attempt-001/results/benchmark.json",
+      "bytes": 787985
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-2048-512/attempt-001/results/input-receipt.json",
+      "archive_path": "job/pair/tuned/bench-r2-2048-512/attempt-001/results/input-receipt.json",
+      "bytes": 37206
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-512-1024/complete.json",
+      "archive_path": "job/pair/tuned/bench-r2-512-1024/complete.json",
+      "bytes": 9682
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-512-1024/identity.json",
+      "archive_path": "job/pair/tuned/bench-r2-512-1024/identity.json",
+      "bytes": 3989
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-512-1024/attempt-001/actual-environment.json",
+      "archive_path": "job/pair/tuned/bench-r2-512-1024/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-512-1024/attempt-001/command.json",
+      "archive_path": "job/pair/tuned/bench-r2-512-1024/attempt-001/command.json",
+      "bytes": 4028
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-512-1024/attempt-001/environment-capture.json",
+      "archive_path": "job/pair/tuned/bench-r2-512-1024/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-512-1024/attempt-001/exit.json",
+      "archive_path": "job/pair/tuned/bench-r2-512-1024/attempt-001/exit.json",
+      "bytes": 113
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-512-1024/attempt-001/server-context.json",
+      "archive_path": "job/pair/tuned/bench-r2-512-1024/attempt-001/server-context.json",
+      "bytes": 186
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-512-1024/attempt-001/stderr.txt",
+      "archive_path": "job/pair/tuned/bench-r2-512-1024/attempt-001/stderr.txt",
+      "bytes": 5810
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-512-1024/attempt-001/stdout.txt",
+      "archive_path": "job/pair/tuned/bench-r2-512-1024/attempt-001/stdout.txt",
+      "bytes": 5152
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-512-1024/attempt-001/results/benchmark.json",
+      "archive_path": "job/pair/tuned/bench-r2-512-1024/attempt-001/results/benchmark.json",
+      "bytes": 1722992
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-512-1024/attempt-001/results/input-receipt.json",
+      "archive_path": "job/pair/tuned/bench-r2-512-1024/attempt-001/results/input-receipt.json",
+      "bytes": 37206
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-512-128/complete.json",
+      "archive_path": "job/pair/tuned/bench-r2-512-128/complete.json",
+      "bytes": 9681
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-512-128/identity.json",
+      "archive_path": "job/pair/tuned/bench-r2-512-128/identity.json",
+      "bytes": 3985
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-512-128/attempt-001/actual-environment.json",
+      "archive_path": "job/pair/tuned/bench-r2-512-128/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-512-128/attempt-001/command.json",
+      "archive_path": "job/pair/tuned/bench-r2-512-128/attempt-001/command.json",
+      "bytes": 4024
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-512-128/attempt-001/environment-capture.json",
+      "archive_path": "job/pair/tuned/bench-r2-512-128/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-512-128/attempt-001/exit.json",
+      "archive_path": "job/pair/tuned/bench-r2-512-128/attempt-001/exit.json",
+      "bytes": 113
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-512-128/attempt-001/server-context.json",
+      "archive_path": "job/pair/tuned/bench-r2-512-128/attempt-001/server-context.json",
+      "bytes": 186
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-512-128/attempt-001/stderr.txt",
+      "archive_path": "job/pair/tuned/bench-r2-512-128/attempt-001/stderr.txt",
+      "bytes": 3775
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-512-128/attempt-001/stdout.txt",
+      "archive_path": "job/pair/tuned/bench-r2-512-128/attempt-001/stdout.txt",
+      "bytes": 5147
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-512-128/attempt-001/results/benchmark.json",
+      "archive_path": "job/pair/tuned/bench-r2-512-128/attempt-001/results/benchmark.json",
+      "bytes": 243293
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-512-128/attempt-001/results/input-receipt.json",
+      "archive_path": "job/pair/tuned/bench-r2-512-128/attempt-001/results/input-receipt.json",
+      "bytes": 37078
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-8192-1/complete.json",
+      "archive_path": "job/pair/tuned/bench-r2-8192-1/complete.json",
+      "bytes": 9680
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-8192-1/identity.json",
+      "archive_path": "job/pair/tuned/bench-r2-8192-1/identity.json",
+      "bytes": 3981
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-8192-1/attempt-001/actual-environment.json",
+      "archive_path": "job/pair/tuned/bench-r2-8192-1/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-8192-1/attempt-001/command.json",
+      "archive_path": "job/pair/tuned/bench-r2-8192-1/attempt-001/command.json",
+      "bytes": 4020
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-8192-1/attempt-001/environment-capture.json",
+      "archive_path": "job/pair/tuned/bench-r2-8192-1/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-8192-1/attempt-001/exit.json",
+      "archive_path": "job/pair/tuned/bench-r2-8192-1/attempt-001/exit.json",
+      "bytes": 113
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-8192-1/attempt-001/server-context.json",
+      "archive_path": "job/pair/tuned/bench-r2-8192-1/attempt-001/server-context.json",
+      "bytes": 186
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-8192-1/attempt-001/stderr.txt",
+      "archive_path": "job/pair/tuned/bench-r2-8192-1/attempt-001/stderr.txt",
+      "bytes": 8585
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-8192-1/attempt-001/stdout.txt",
+      "archive_path": "job/pair/tuned/bench-r2-8192-1/attempt-001/stdout.txt",
+      "bytes": 4646
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-8192-1/attempt-001/results/benchmark.json",
+      "archive_path": "job/pair/tuned/bench-r2-8192-1/attempt-001/results/benchmark.json",
+      "bytes": 125798
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r2-8192-1/attempt-001/results/input-receipt.json",
+      "archive_path": "job/pair/tuned/bench-r2-8192-1/attempt-001/results/input-receipt.json",
+      "bytes": 36950
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-2048-512/complete.json",
+      "archive_path": "job/pair/tuned/bench-r3-2048-512/complete.json",
+      "bytes": 9682
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-2048-512/identity.json",
+      "archive_path": "job/pair/tuned/bench-r3-2048-512/identity.json",
+      "bytes": 3989
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-2048-512/attempt-001/actual-environment.json",
+      "archive_path": "job/pair/tuned/bench-r3-2048-512/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-2048-512/attempt-001/command.json",
+      "archive_path": "job/pair/tuned/bench-r3-2048-512/attempt-001/command.json",
+      "bytes": 4028
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-2048-512/attempt-001/environment-capture.json",
+      "archive_path": "job/pair/tuned/bench-r3-2048-512/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-2048-512/attempt-001/exit.json",
+      "archive_path": "job/pair/tuned/bench-r3-2048-512/attempt-001/exit.json",
+      "bytes": 114
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-2048-512/attempt-001/server-context.json",
+      "archive_path": "job/pair/tuned/bench-r3-2048-512/attempt-001/server-context.json",
+      "bytes": 186
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-2048-512/attempt-001/stderr.txt",
+      "archive_path": "job/pair/tuned/bench-r3-2048-512/attempt-001/stderr.txt",
+      "bytes": 6310
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-2048-512/attempt-001/stdout.txt",
+      "archive_path": "job/pair/tuned/bench-r3-2048-512/attempt-001/stdout.txt",
+      "bytes": 5152
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-2048-512/attempt-001/results/benchmark.json",
+      "archive_path": "job/pair/tuned/bench-r3-2048-512/attempt-001/results/benchmark.json",
+      "bytes": 848743
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-2048-512/attempt-001/results/input-receipt.json",
+      "archive_path": "job/pair/tuned/bench-r3-2048-512/attempt-001/results/input-receipt.json",
+      "bytes": 37206
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-512-1024/complete.json",
+      "archive_path": "job/pair/tuned/bench-r3-512-1024/complete.json",
+      "bytes": 9682
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-512-1024/identity.json",
+      "archive_path": "job/pair/tuned/bench-r3-512-1024/identity.json",
+      "bytes": 3989
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-512-1024/attempt-001/actual-environment.json",
+      "archive_path": "job/pair/tuned/bench-r3-512-1024/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-512-1024/attempt-001/command.json",
+      "archive_path": "job/pair/tuned/bench-r3-512-1024/attempt-001/command.json",
+      "bytes": 4028
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-512-1024/attempt-001/environment-capture.json",
+      "archive_path": "job/pair/tuned/bench-r3-512-1024/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-512-1024/attempt-001/exit.json",
+      "archive_path": "job/pair/tuned/bench-r3-512-1024/attempt-001/exit.json",
+      "bytes": 113
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-512-1024/attempt-001/server-context.json",
+      "archive_path": "job/pair/tuned/bench-r3-512-1024/attempt-001/server-context.json",
+      "bytes": 186
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-512-1024/attempt-001/stderr.txt",
+      "archive_path": "job/pair/tuned/bench-r3-512-1024/attempt-001/stderr.txt",
+      "bytes": 6238
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-512-1024/attempt-001/stdout.txt",
+      "archive_path": "job/pair/tuned/bench-r3-512-1024/attempt-001/stdout.txt",
+      "bytes": 5152
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-512-1024/attempt-001/results/benchmark.json",
+      "archive_path": "job/pair/tuned/bench-r3-512-1024/attempt-001/results/benchmark.json",
+      "bytes": 1671007
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-512-1024/attempt-001/results/input-receipt.json",
+      "archive_path": "job/pair/tuned/bench-r3-512-1024/attempt-001/results/input-receipt.json",
+      "bytes": 37206
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-512-128/complete.json",
+      "archive_path": "job/pair/tuned/bench-r3-512-128/complete.json",
+      "bytes": 9681
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-512-128/identity.json",
+      "archive_path": "job/pair/tuned/bench-r3-512-128/identity.json",
+      "bytes": 3985
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-512-128/attempt-001/actual-environment.json",
+      "archive_path": "job/pair/tuned/bench-r3-512-128/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-512-128/attempt-001/command.json",
+      "archive_path": "job/pair/tuned/bench-r3-512-128/attempt-001/command.json",
+      "bytes": 4024
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-512-128/attempt-001/environment-capture.json",
+      "archive_path": "job/pair/tuned/bench-r3-512-128/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-512-128/attempt-001/exit.json",
+      "archive_path": "job/pair/tuned/bench-r3-512-128/attempt-001/exit.json",
+      "bytes": 114
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-512-128/attempt-001/server-context.json",
+      "archive_path": "job/pair/tuned/bench-r3-512-128/attempt-001/server-context.json",
+      "bytes": 186
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-512-128/attempt-001/stderr.txt",
+      "archive_path": "job/pair/tuned/bench-r3-512-128/attempt-001/stderr.txt",
+      "bytes": 3903
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-512-128/attempt-001/stdout.txt",
+      "archive_path": "job/pair/tuned/bench-r3-512-128/attempt-001/stdout.txt",
+      "bytes": 5147
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-512-128/attempt-001/results/benchmark.json",
+      "archive_path": "job/pair/tuned/bench-r3-512-128/attempt-001/results/benchmark.json",
+      "bytes": 231681
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-512-128/attempt-001/results/input-receipt.json",
+      "archive_path": "job/pair/tuned/bench-r3-512-128/attempt-001/results/input-receipt.json",
+      "bytes": 37078
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-8192-1/complete.json",
+      "archive_path": "job/pair/tuned/bench-r3-8192-1/complete.json",
+      "bytes": 9680
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-8192-1/identity.json",
+      "archive_path": "job/pair/tuned/bench-r3-8192-1/identity.json",
+      "bytes": 3981
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-8192-1/attempt-001/actual-environment.json",
+      "archive_path": "job/pair/tuned/bench-r3-8192-1/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-8192-1/attempt-001/command.json",
+      "archive_path": "job/pair/tuned/bench-r3-8192-1/attempt-001/command.json",
+      "bytes": 4020
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-8192-1/attempt-001/environment-capture.json",
+      "archive_path": "job/pair/tuned/bench-r3-8192-1/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-8192-1/attempt-001/exit.json",
+      "archive_path": "job/pair/tuned/bench-r3-8192-1/attempt-001/exit.json",
+      "bytes": 114
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-8192-1/attempt-001/server-context.json",
+      "archive_path": "job/pair/tuned/bench-r3-8192-1/attempt-001/server-context.json",
+      "bytes": 186
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-8192-1/attempt-001/stderr.txt",
+      "archive_path": "job/pair/tuned/bench-r3-8192-1/attempt-001/stderr.txt",
+      "bytes": 8535
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-8192-1/attempt-001/stdout.txt",
+      "archive_path": "job/pair/tuned/bench-r3-8192-1/attempt-001/stdout.txt",
+      "bytes": 4646
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-8192-1/attempt-001/results/benchmark.json",
+      "archive_path": "job/pair/tuned/bench-r3-8192-1/attempt-001/results/benchmark.json",
+      "bytes": 68639
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/bench-r3-8192-1/attempt-001/results/input-receipt.json",
+      "archive_path": "job/pair/tuned/bench-r3-8192-1/attempt-001/results/input-receipt.json",
+      "bytes": 36950
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/server-001/command.json",
+      "archive_path": "job/pair/tuned/server-001/command.json",
+      "bytes": 3435
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/server-001/exit.json",
+      "archive_path": "job/pair/tuned/server-001/exit.json",
+      "bytes": 96
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/server-001/launch-confirmations.json",
+      "archive_path": "job/pair/tuned/server-001/launch-confirmations.json",
+      "bytes": 467
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/server-001/process.json",
+      "archive_path": "job/pair/tuned/server-001/process.json",
+      "bytes": 48
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/server-001/proof.json",
+      "archive_path": "job/pair/tuned/server-001/proof.json",
+      "bytes": 7759
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/server-001/server.log",
+      "archive_path": "job/pair/tuned/server-001/server.log",
+      "bytes": 383234
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/server-001/startup-log.snapshot.txt",
+      "archive_path": "job/pair/tuned/server-001/startup-log.snapshot.txt",
+      "bytes": 55504
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/server-001/startup-request/complete.json",
+      "archive_path": "job/pair/tuned/server-001/startup-request/complete.json",
+      "bytes": 107
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/server-001/startup-request/identity.json",
+      "archive_path": "job/pair/tuned/server-001/startup-request/identity.json",
+      "bytes": 3041
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/server-001/startup-request/attempt-001/actual-environment.json",
+      "archive_path": "job/pair/tuned/server-001/startup-request/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/server-001/startup-request/attempt-001/command.json",
+      "archive_path": "job/pair/tuned/server-001/startup-request/attempt-001/command.json",
+      "bytes": 3056
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/server-001/startup-request/attempt-001/environment-capture.json",
+      "archive_path": "job/pair/tuned/server-001/startup-request/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/server-001/startup-request/attempt-001/exit.json",
+      "archive_path": "job/pair/tuned/server-001/startup-request/attempt-001/exit.json",
+      "bytes": 113
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/server-001/startup-request/attempt-001/server-context.json",
+      "archive_path": "job/pair/tuned/server-001/startup-request/attempt-001/server-context.json",
+      "bytes": 111
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/server-001/startup-request/attempt-001/stderr.txt",
+      "archive_path": "job/pair/tuned/server-001/startup-request/attempt-001/stderr.txt",
+      "bytes": 0
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/pair/tuned/server-001/startup-request/attempt-001/stdout.txt",
+      "archive_path": "job/pair/tuned/server-001/startup-request/attempt-001/stdout.txt",
+      "bytes": 816
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/runner-001/actual-environment.json",
+      "archive_path": "job/runner-001/actual-environment.json",
+      "bytes": 2836
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/runner-001/command.json",
+      "archive_path": "job/runner-001/command.json",
+      "bytes": 3396
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/runner-001/environment-capture.json",
+      "archive_path": "job/runner-001/environment-capture.json",
+      "bytes": 30
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/runner-001/exit.json",
+      "archive_path": "job/runner-001/exit.json",
+      "bytes": 114
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/runner-001/stderr.txt",
+      "archive_path": "job/runner-001/stderr.txt",
+      "bytes": 0
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/runner-001/stdout.txt",
+      "archive_path": "job/runner-001/stdout.txt",
+      "bytes": 71
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/setup-versions/complete.json",
+      "archive_path": "job/setup-versions/complete.json",
+      "bytes": 164
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/setup-versions/identity.json",
+      "archive_path": "job/setup-versions/identity.json",
+      "bytes": 3067
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/setup-versions/attempt-001/actual-environment.json",
+      "archive_path": "job/setup-versions/attempt-001/actual-environment.json",
+      "bytes": 2770
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/setup-versions/attempt-001/command.json",
+      "archive_path": "job/setup-versions/attempt-001/command.json",
+      "bytes": 3082
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/setup-versions/attempt-001/environment-capture.json",
+      "archive_path": "job/setup-versions/attempt-001/environment-capture.json",
+      "bytes": 29
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/setup-versions/attempt-001/exit.json",
+      "archive_path": "job/setup-versions/attempt-001/exit.json",
+      "bytes": 113
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/setup-versions/attempt-001/stderr.txt",
+      "archive_path": "job/setup-versions/attempt-001/stderr.txt",
+      "bytes": 0
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/setup-versions/attempt-001/stdout.txt",
+      "archive_path": "job/setup-versions/attempt-001/stdout.txt",
+      "bytes": 101
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/pr58986-native-fullpair-eb34e115-mtp3-pair2/storage-sweep-unified-moe58986-bbbd3419b670.json",
+      "archive_path": "job/storage-sweep-unified-moe58986-bbbd3419b670.json",
+      "bytes": 216
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/unified-environment/sweep-unified-moe58986-bbbd3419b670.json",
+      "archive_path": "launcher/sweep-unified-moe58986-bbbd3419b670.json",
+      "bytes": 11486896
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/unified-environment/sweep-unified-moe58986-bbbd3419b670.log",
+      "archive_path": "launcher/sweep-unified-moe58986-bbbd3419b670.log",
+      "bytes": 836
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/unified-environment/sweep-unified-moe58986-bbbd3419b670.mounts.json",
+      "archive_path": "launcher/sweep-unified-moe58986-bbbd3419b670.mounts.json",
+      "bytes": 881
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/hardware-before-bench-48781766.command.json",
+      "archive_path": "live-process-evidence/hardware-before-bench-48781766.command.json",
+      "bytes": 653
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/hardware-before-bench-48781766.csv",
+      "archive_path": "live-process-evidence/hardware-before-bench-48781766.csv",
+      "bytes": 380
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/hardware-before-bench-48781766.stderr.txt",
+      "archive_path": "live-process-evidence/hardware-before-bench-48781766.stderr.txt",
+      "bytes": 0
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/native-maps-baseline-48781766.command.json",
+      "archive_path": "live-process-evidence/native-maps-baseline-48781766.command.json",
+      "bytes": 1354
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/native-maps-baseline-48781766.json",
+      "archive_path": "live-process-evidence/native-maps-baseline-48781766.json",
+      "bytes": 29157
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/native-maps-baseline-48781766.stderr.txt",
+      "archive_path": "live-process-evidence/native-maps-baseline-48781766.stderr.txt",
+      "bytes": 0
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/native-maps-tuned-48781766.command.json",
+      "archive_path": "live-process-evidence/native-maps-tuned-48781766.command.json",
+      "bytes": 1348
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/native-maps-tuned-48781766.json",
+      "archive_path": "live-process-evidence/native-maps-tuned-48781766.json",
+      "bytes": 28621
+    },
+    {
+      "source": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad/native-maps-tuned-48781766.stderr.txt",
+      "archive_path": "live-process-evidence/native-maps-tuned-48781766.stderr.txt",
+      "bytes": 0
+    }
+  ]
+}

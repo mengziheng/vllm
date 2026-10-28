@@ -1,0 +1,715 @@
+{
+  "schema_version": 1,
+  "pair_id": "glm53-h20-pr58986-eb34e115-native-full-mtp3-20261028",
+  "shared": {
+    "commit": "eb34e115d041ac685fa38eadf8eae6c51d61dc23",
+    "common_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "native_receipt_sha256": "0ae2bd08b07775dbfcf3716adff67c43de387c72699a1480e6d87805952b7ff9",
+    "model_revision": "structural-receipt-sha256:a6626dd92d59c25876a4e888f131a7318bb12b82038518b526ac92f214339dc3",
+    "hardware": {
+      "gpu_name": "NVIDIA H20",
+      "gpu_uuids": [
+        "GPU-8c7611ec-5a57-4056-8517-8c07042c9b5b",
+        "GPU-6f6189b6-09ca-3f9d-e2cc-78b041c7b869",
+        "GPU-826ae8df-7a0c-1bf5-29b0-f82a0121a1fb",
+        "GPU-565027d1-f831-c63e-a4a0-428058b9d387"
+      ],
+      "driver_version": "535.230.02"
+    },
+    "server_args": [
+      "--max-model-len",
+      "40000",
+      "--seed",
+      "20261028",
+      "--max-num-seqs",
+      "32",
+      "--max-num-batched-tokens",
+      "4096",
+      "--gpu-memory-utilization",
+      "0.92",
+      "--language-model-only",
+      "--speculative-config",
+      "{\"method\":\"mtp\",\"num_speculative_tokens\":3}"
+    ]
+  },
+  "target_configs": [
+    "vllm/model_executor/layers/fused_moe/configs/E=288,N=512,device_name=NVIDIA_H20,dtype=fp8_w8a8,block_shape=[128,128].json"
+  ],
+  "tuned_config_sha256": {
+    "vllm/model_executor/layers/fused_moe/configs/E=288,N=512,device_name=NVIDIA_H20,dtype=fp8_w8a8,block_shape=[128,128].json": "1fa43070725ba035b0427a0574a1d13ad0f5ea6b2dbbf134376d5706fafede91"
+  },
+  "arms": {
+    "baseline": {
+      "repo": "/native-runtime/assembled/baseline",
+      "python": "/usr/local/bin/python3",
+      "package_root": "/native-runtime/assembled/baseline/vllm",
+      "env": {
+        "PATH": "/opt/byted/toolchain/bin:/root/.cargo/bin:/usr/local/cuda/bin:/usr/local/bin:/home/tiger/system_op/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "LD_LIBRARY_PATH": "/usr/local/cuda-compat:/opt/byted/gcc/lib:/usr/lib64:/usr/local/lib:/usr/local/cuda/lib",
+        "CUDA_HOME": "/usr/local/cuda",
+        "HOME": "/work/pr58986-native-fullpair-eb34e115-mtp3/home",
+        "LANG": "C.UTF-8",
+        "LC_ALL": "C.UTF-8",
+        "PYTHONCOERCECLOCALE": "0",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "VLLM_PLUGINS": "",
+        "VLLM_BATCH_INVARIANT": "0",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "HF_HOME": "/work/pr58986-native-fullpair-eb34e115-mtp3/hf-cache",
+        "HF_HUB_CACHE": "/work/pr58986-native-fullpair-eb34e115-mtp3/hf-cache/hub",
+        "HF_DATASETS_CACHE": "/work/pr58986-native-fullpair-eb34e115-mtp3/hf-cache/datasets",
+        "HF_HUB_OFFLINE": "1",
+        "HF_DATASETS_OFFLINE": "1",
+        "TRANSFORMERS_OFFLINE": "1",
+        "HF_HUB_DISABLE_TELEMETRY": "1",
+        "TOKENIZERS_PARALLELISM": "false",
+        "CUDA_VISIBLE_DEVICES": "0,1,2,3",
+        "PYTHONPATH": "/client:/common/site-packages:/common/frameworks/v032",
+        "TMPDIR": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/tmp",
+        "XDG_CACHE_HOME": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/xdg",
+        "XDG_CONFIG_HOME": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/config",
+        "TRITON_CACHE_DIR": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/triton",
+        "TORCHINDUCTOR_CACHE_DIR": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/torchinductor",
+        "VLLM_CACHE_ROOT": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/vllm",
+        "CUDA_CACHE_PATH": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/cuda",
+        "TORCH_HOME": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/torch",
+        "TORCH_EXTENSIONS_DIR": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/torch-extensions",
+        "CCACHE_DIR": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/ccache",
+        "DG_JIT_CACHE_DIR": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/deep-gemm",
+        "DJ_JIT_CACHE_DIR": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/deep-jit",
+        "FLASHINFER_WORKSPACE_BASE": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/flashinfer",
+        "CUTE_DSL_CACHE_DIR": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/cute",
+        "TVM_CACHE_DIR": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/tvm",
+        "HF_MODULES_CACHE": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/hf-modules",
+        "TMP": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/tmp",
+        "TEMP": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/tmp"
+      },
+      "proof": "/work/pr58986-native-fullpair-eb34e115-mtp3/baseline/proof.json"
+    },
+    "tuned": {
+      "repo": "/native-runtime/assembled/tuned",
+      "python": "/usr/local/bin/python3",
+      "package_root": "/native-runtime/assembled/tuned/vllm",
+      "env": {
+        "PATH": "/opt/byted/toolchain/bin:/root/.cargo/bin:/usr/local/cuda/bin:/usr/local/bin:/home/tiger/system_op/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "LD_LIBRARY_PATH": "/usr/local/cuda-compat:/opt/byted/gcc/lib:/usr/lib64:/usr/local/lib:/usr/local/cuda/lib",
+        "CUDA_HOME": "/usr/local/cuda",
+        "HOME": "/work/pr58986-native-fullpair-eb34e115-mtp3/home",
+        "LANG": "C.UTF-8",
+        "LC_ALL": "C.UTF-8",
+        "PYTHONCOERCECLOCALE": "0",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "VLLM_PLUGINS": "",
+        "VLLM_BATCH_INVARIANT": "0",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "HF_HOME": "/work/pr58986-native-fullpair-eb34e115-mtp3/hf-cache",
+        "HF_HUB_CACHE": "/work/pr58986-native-fullpair-eb34e115-mtp3/hf-cache/hub",
+        "HF_DATASETS_CACHE": "/work/pr58986-native-fullpair-eb34e115-mtp3/hf-cache/datasets",
+        "HF_HUB_OFFLINE": "1",
+        "HF_DATASETS_OFFLINE": "1",
+        "TRANSFORMERS_OFFLINE": "1",
+        "HF_HUB_DISABLE_TELEMETRY": "1",
+        "TOKENIZERS_PARALLELISM": "false",
+        "CUDA_VISIBLE_DEVICES": "0,1,2,3",
+        "PYTHONPATH": "/client:/common/site-packages:/common/frameworks/v032",
+        "TMPDIR": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/tmp",
+        "XDG_CACHE_HOME": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/xdg",
+        "XDG_CONFIG_HOME": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/config",
+        "TRITON_CACHE_DIR": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/triton",
+        "TORCHINDUCTOR_CACHE_DIR": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/torchinductor",
+        "VLLM_CACHE_ROOT": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/vllm",
+        "CUDA_CACHE_PATH": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/cuda",
+        "TORCH_HOME": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/torch",
+        "TORCH_EXTENSIONS_DIR": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/torch-extensions",
+        "CCACHE_DIR": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/ccache",
+        "DG_JIT_CACHE_DIR": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/deep-gemm",
+        "DJ_JIT_CACHE_DIR": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/deep-jit",
+        "FLASHINFER_WORKSPACE_BASE": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/flashinfer",
+        "CUTE_DSL_CACHE_DIR": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/cute",
+        "TVM_CACHE_DIR": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/tvm",
+        "HF_MODULES_CACHE": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/hf-modules",
+        "TMP": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/tmp",
+        "TEMP": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/tmp"
+      },
+      "proof": "/work/pr58986-native-fullpair-eb34e115-mtp3/tuned/proof.json"
+    }
+  },
+  "client_python": "/usr/local/bin/python3",
+  "client_versions": {
+    "lm_eval": "0.4.13",
+    "vllm": "0.32.0+byted.cu130.1",
+    "transformers": "5.19.0",
+    "datasets": "5.1.0"
+  },
+  "dataset_cache": "/work/pr58986-native-fullpair-eb34e115-mtp3/hf-cache",
+  "storage": {
+    "data_root": "/work",
+    "launcher_receipt": "/work/pr58986-native-fullpair-eb34e115-mtp3/current-launcher-receipt.json",
+    "budget_bytes": 34359738368,
+    "min_free_bytes": 21474836480,
+    "retention_days": 14
+  },
+  "client_env": {
+    "PATH": "/opt/byted/toolchain/bin:/root/.cargo/bin:/usr/local/cuda/bin:/usr/local/bin:/home/tiger/system_op/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+    "LD_LIBRARY_PATH": "/usr/local/cuda-compat:/opt/byted/gcc/lib:/usr/lib64:/usr/local/lib:/usr/local/cuda/lib",
+    "CUDA_HOME": "/usr/local/cuda",
+    "HOME": "/work/pr58986-native-fullpair-eb34e115-mtp3/home",
+    "LANG": "C.UTF-8",
+    "LC_ALL": "C.UTF-8",
+    "PYTHONCOERCECLOCALE": "0",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONNOUSERSITE": "1",
+    "VLLM_PLUGINS": "",
+    "VLLM_BATCH_INVARIANT": "0",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "HF_HOME": "/work/pr58986-native-fullpair-eb34e115-mtp3/hf-cache",
+    "HF_HUB_CACHE": "/work/pr58986-native-fullpair-eb34e115-mtp3/hf-cache/hub",
+    "HF_DATASETS_CACHE": "/work/pr58986-native-fullpair-eb34e115-mtp3/hf-cache/datasets",
+    "HF_HUB_OFFLINE": "1",
+    "HF_DATASETS_OFFLINE": "1",
+    "TRANSFORMERS_OFFLINE": "1",
+    "HF_HUB_DISABLE_TELEMETRY": "1",
+    "TOKENIZERS_PARALLELISM": "false",
+    "CUDA_VISIBLE_DEVICES": "",
+    "PYTHONPATH": "/native-runtime/assembled/tuned:/client:/common/site-packages:/common/frameworks/v032",
+    "TMPDIR": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/tmp",
+    "XDG_CACHE_HOME": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/xdg",
+    "XDG_CONFIG_HOME": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/config",
+    "TRITON_CACHE_DIR": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/triton",
+    "TORCHINDUCTOR_CACHE_DIR": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/torchinductor",
+    "VLLM_CACHE_ROOT": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/vllm",
+    "CUDA_CACHE_PATH": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/cuda",
+    "TORCH_HOME": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/torch",
+    "TORCH_EXTENSIONS_DIR": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/torch-extensions",
+    "CCACHE_DIR": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/ccache",
+    "DG_JIT_CACHE_DIR": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/deep-gemm",
+    "DJ_JIT_CACHE_DIR": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/deep-jit",
+    "FLASHINFER_WORKSPACE_BASE": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/flashinfer",
+    "CUTE_DSL_CACHE_DIR": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/cute",
+    "TVM_CACHE_DIR": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/tvm",
+    "HF_MODULES_CACHE": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/hf-modules",
+    "TMP": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/tmp",
+    "TEMP": "/work/pr58986-native-fullpair-eb34e115-mtp3/cache/tmp"
+  },
+  "hf_hub_cache": "/work/pr58986-native-fullpair-eb34e115-mtp3/hf-cache/hub",
+  "hf_datasets_cache": "/work/pr58986-native-fullpair-eb34e115-mtp3/hf-cache/datasets",
+  "accuracy_protocol": {
+    "gsm8k": {
+      "api_mode": "local-completions",
+      "fewshot": 5,
+      "count": 1319,
+      "max_gen_toks": 256,
+      "until": [
+        "Question:",
+        "</s>",
+        "<|im_end|>"
+      ]
+    },
+    "aime25": {
+      "api_mode": "local-chat-completions",
+      "fewshot": 0,
+      "count": 30,
+      "max_gen_toks": 32768,
+      "until": [
+        "Question:",
+        "</s>",
+        "<|im_end|>",
+        "<|eot_id|>"
+      ]
+    }
+  },
+  "client_source_repo": "/native-runtime/assembled/tuned",
+  "client_package_root": "/native-runtime/assembled/tuned/vllm",
+  "model_identity": {
+    "model": "/model",
+    "structural_receipt_sha256": "a6626dd92d59c25876a4e888f131a7318bb12b82038518b526ac92f214339dc3",
+    "files": {
+      "model-00001-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944770,
+        "size": 5365306704,
+        "mtime_ns": 1789380491755112527,
+        "ctime_ns": 1791962249676045139
+      },
+      "model-00002-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944768,
+        "size": 5320647824,
+        "mtime_ns": 1789380485952932530,
+        "ctime_ns": 1791962249676045139
+      },
+      "model-00003-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944771,
+        "size": 5363467432,
+        "mtime_ns": 1789380485871930017,
+        "ctime_ns": 1791962249676045139
+      },
+      "model-00004-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944769,
+        "size": 5364342296,
+        "mtime_ns": 1789380492049121648,
+        "ctime_ns": 1791962249676045139
+      },
+      "model-00005-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944774,
+        "size": 5363915920,
+        "mtime_ns": 1789380514840828699,
+        "ctime_ns": 1791962249676045139
+      },
+      "model-00006-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944775,
+        "size": 5361809384,
+        "mtime_ns": 1789380520600007362,
+        "ctime_ns": 1791962249676045139
+      },
+      "model-00007-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944778,
+        "size": 5364342528,
+        "mtime_ns": 1789380522714072945,
+        "ctime_ns": 1791962249676045139
+      },
+      "model-00008-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944779,
+        "size": 5364342304,
+        "mtime_ns": 1789380520711010806,
+        "ctime_ns": 1791962249676045139
+      },
+      "model-00009-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944781,
+        "size": 5364169856,
+        "mtime_ns": 1789380540124613060,
+        "ctime_ns": 1791962249676045139
+      },
+      "model-00010-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944785,
+        "size": 5361982080,
+        "mtime_ns": 1789380547228833449,
+        "ctime_ns": 1791962249676045139
+      },
+      "model-00011-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944786,
+        "size": 5363915912,
+        "mtime_ns": 1789380549758911938,
+        "ctime_ns": 1791962249676045139
+      },
+      "model-00012-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944787,
+        "size": 5364342288,
+        "mtime_ns": 1789380551861977180,
+        "ctime_ns": 1791962249676045139
+      },
+      "model-00013-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944789,
+        "size": 5361809408,
+        "mtime_ns": 1789380568423490956,
+        "ctime_ns": 1791962249676045139
+      },
+      "model-00014-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944791,
+        "size": 5364342504,
+        "mtime_ns": 1789380575305704458,
+        "ctime_ns": 1791962249676045139
+      },
+      "model-00015-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944793,
+        "size": 5364342304,
+        "mtime_ns": 1789380583261951279,
+        "ctime_ns": 1791962249676045139
+      },
+      "model-00016-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944795,
+        "size": 5361809176,
+        "mtime_ns": 1789380578023788779,
+        "ctime_ns": 1791962249676045139
+      },
+      "model-00017-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944797,
+        "size": 5364084560,
+        "mtime_ns": 1789380595756338884,
+        "ctime_ns": 1791962249676045139
+      },
+      "model-00018-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944799,
+        "size": 5364342304,
+        "mtime_ns": 1789380607356698753,
+        "ctime_ns": 1791962249676045139
+      },
+      "model-00019-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944801,
+        "size": 5364342272,
+        "mtime_ns": 1789380606939685816,
+        "ctime_ns": 1791962249677045170
+      },
+      "model-00020-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944803,
+        "size": 5361809528,
+        "mtime_ns": 1789380611328821978,
+        "ctime_ns": 1791962249677045170
+      },
+      "model-00021-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944805,
+        "size": 5364342376,
+        "mtime_ns": 1789380621578139935,
+        "ctime_ns": 1791962249677045170
+      },
+      "model-00022-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944808,
+        "size": 5363915936,
+        "mtime_ns": 1789380635239563744,
+        "ctime_ns": 1791962249677045170
+      },
+      "model-00023-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944809,
+        "size": 5361809264,
+        "mtime_ns": 1789380638789673876,
+        "ctime_ns": 1791962249677045170
+      },
+      "model-00024-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944811,
+        "size": 5364342640,
+        "mtime_ns": 1789380640237718798,
+        "ctime_ns": 1791962249677045170
+      },
+      "model-00025-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944813,
+        "size": 5364342304,
+        "mtime_ns": 1789380650522037841,
+        "ctime_ns": 1791962249677045170
+      },
+      "model-00026-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944815,
+        "size": 5364342272,
+        "mtime_ns": 1789380661462377236,
+        "ctime_ns": 1791962249677045170
+      },
+      "model-00027-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944818,
+        "size": 5361809560,
+        "mtime_ns": 1789380667576566912,
+        "ctime_ns": 1791962249677045170
+      },
+      "model-00028-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944819,
+        "size": 5363915976,
+        "mtime_ns": 1789380665852513428,
+        "ctime_ns": 1791962249677045170
+      },
+      "model-00029-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944821,
+        "size": 5364342304,
+        "mtime_ns": 1789380682318024226,
+        "ctime_ns": 1791962249677045170
+      },
+      "model-00030-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944823,
+        "size": 5361809296,
+        "mtime_ns": 1789380692663345161,
+        "ctime_ns": 1791962249677045170
+      },
+      "model-00031-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944826,
+        "size": 5364341544,
+        "mtime_ns": 1789380692472339235,
+        "ctime_ns": 1791962249677045170
+      },
+      "model-00032-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944827,
+        "size": 5363915232,
+        "mtime_ns": 1789380694602405315,
+        "ctime_ns": 1791962249677045170
+      },
+      "model-00033-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944829,
+        "size": 5364342272,
+        "mtime_ns": 1789380709661872494,
+        "ctime_ns": 1791962249677045170
+      },
+      "model-00034-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944833,
+        "size": 5361809552,
+        "mtime_ns": 1789380718682152324,
+        "ctime_ns": 1791962249677045170
+      },
+      "model-00035-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944834,
+        "size": 5363915984,
+        "mtime_ns": 1789380723814311535,
+        "ctime_ns": 1791962249677045170
+      },
+      "model-00036-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944835,
+        "size": 5364342304,
+        "mtime_ns": 1789380719489177360,
+        "ctime_ns": 1791962249677045170
+      },
+      "model-00037-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944837,
+        "size": 5361809288,
+        "mtime_ns": 1789380738105754957,
+        "ctime_ns": 1791962249677045170
+      },
+      "model-00038-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944840,
+        "size": 5364342624,
+        "mtime_ns": 1789380752191192378,
+        "ctime_ns": 1791962249677045170
+      },
+      "model-00039-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944841,
+        "size": 5364342296,
+        "mtime_ns": 1789380749291102316,
+        "ctime_ns": 1791962249677045170
+      },
+      "model-00040-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944843,
+        "size": 5363915912,
+        "mtime_ns": 1789380754911276850,
+        "ctime_ns": 1791962249677045170
+      },
+      "model-00041-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944845,
+        "size": 5361809552,
+        "mtime_ns": 1789380765360601353,
+        "ctime_ns": 1791962249677045170
+      },
+      "model-00042-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944847,
+        "size": 5364342368,
+        "mtime_ns": 1789380782022118774,
+        "ctime_ns": 1791962249677045170
+      },
+      "model-00043-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944849,
+        "size": 5364342296,
+        "mtime_ns": 1789380780042057283,
+        "ctime_ns": 1791962249677045170
+      },
+      "model-00044-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944851,
+        "size": 5361809312,
+        "mtime_ns": 1789380781781111290,
+        "ctime_ns": 1791962249677045170
+      },
+      "model-00045-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944853,
+        "size": 5364342600,
+        "mtime_ns": 1789380794813516009,
+        "ctime_ns": 1791962249677045170
+      },
+      "model-00046-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944857,
+        "size": 5363915368,
+        "mtime_ns": 1789380813171086102,
+        "ctime_ns": 1791962249677045170
+      },
+      "model-00047-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944858,
+        "size": 5364341072,
+        "mtime_ns": 1789380814508127623,
+        "ctime_ns": 1791962249677045170
+      },
+      "model-00048-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944859,
+        "size": 5361809576,
+        "mtime_ns": 1789380812346060480,
+        "ctime_ns": 1791962249677045170
+      },
+      "model-00049-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944861,
+        "size": 5364342344,
+        "mtime_ns": 1789380824558439735,
+        "ctime_ns": 1791962249677045170
+      },
+      "model-00050-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944865,
+        "size": 5364342312,
+        "mtime_ns": 1789380840061921194,
+        "ctime_ns": 1791962249677045170
+      },
+      "model-00051-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944866,
+        "size": 5361809336,
+        "mtime_ns": 1789380843620031690,
+        "ctime_ns": 1791962249677045170
+      },
+      "model-00052-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944867,
+        "size": 5364342576,
+        "mtime_ns": 1789380842861008119,
+        "ctime_ns": 1791962249677045170
+      },
+      "model-00053-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944869,
+        "size": 5363915936,
+        "mtime_ns": 1789380856242423677,
+        "ctime_ns": 1791962249678045201
+      },
+      "model-00054-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944871,
+        "size": 5364342272,
+        "mtime_ns": 1789380869761843521,
+        "ctime_ns": 1791962249678045201
+      },
+      "model-00055-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944874,
+        "size": 5361808304,
+        "mtime_ns": 1789380873877971347,
+        "ctime_ns": 1791962249678045201
+      },
+      "model-00056-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944875,
+        "size": 5364341080,
+        "mtime_ns": 1789380876219044049,
+        "ctime_ns": 1791962249678045201
+      },
+      "model-00057-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944877,
+        "size": 5364341048,
+        "mtime_ns": 1789380883736277496,
+        "ctime_ns": 1791962249678045201
+      },
+      "model-00058-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944879,
+        "size": 5361808088,
+        "mtime_ns": 1789380903271884172,
+        "ctime_ns": 1791962249678045201
+      },
+      "model-00059-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944881,
+        "size": 5363914912,
+        "mtime_ns": 1789380906831994731,
+        "ctime_ns": 1791962249678045201
+      },
+      "model-00060-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944883,
+        "size": 5364341064,
+        "mtime_ns": 1789380907119003644,
+        "ctime_ns": 1791962249678045201
+      },
+      "model-00061-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944885,
+        "size": 5303993768,
+        "mtime_ns": 1789380917064312494,
+        "ctime_ns": 1791962249678045201
+      },
+      "model-00062-of-00062.safetensors": {
+        "device": 66311,
+        "inode": 159944887,
+        "size": 1261584968,
+        "mtime_ns": 1789380912097158240,
+        "ctime_ns": 1791962249678045201
+      },
+      "generation_config.json": {
+        "device": 66311,
+        "inode": 159944754,
+        "size": 194,
+        "mtime_ns": 1789380456256011265,
+        "ctime_ns": 1791962249676045139
+      },
+      "config.json": {
+        "device": 66311,
+        "inode": 159944753,
+        "size": 69416,
+        "mtime_ns": 1789380455965002237,
+        "ctime_ns": 1791962249676045139
+      },
+      "processor_config.json": {
+        "device": 66311,
+        "inode": 159944761,
+        "size": 909,
+        "mtime_ns": 1789380458929094189,
+        "ctime_ns": 1791962249678045201
+      },
+      "configuration.json": {
+        "device": 66311,
+        "inode": 159944752,
+        "size": 29,
+        "mtime_ns": 1789380455968002330,
+        "ctime_ns": 1789380456374014925
+      },
+      "tokenizer_config.json": {
+        "device": 66311,
+        "inode": 159944763,
+        "size": 761,
+        "mtime_ns": 1789380459311106040,
+        "ctime_ns": 1791962249678045201
+      }
+    },
+    "verification_scope": "Safetensors header hashes, indexed tensor-key presence, metadata hashes, and actual file lengths matching headers. No full tensor-body hash. Reuse of established immutable checkpoint copy; model execution was not part of this structural receipt.",
+    "full_weight_body_hash_repeated": false
+  },
+  "model_structural_receipt": "/evaluation/model-receipt-h20-01.json",
+  "offline_cache_copy": {
+    "source": "/offline-cache",
+    "source_inventory_sha256": "5e7d335ef3d846e5698ed0ff9d839f1f232d7b4a7c109d6ba7b02efd5223dfa1",
+    "source_file_bytes": 10649947,
+    "symlinks_preserved": true
+  }
+}

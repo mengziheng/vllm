@@ -1,0 +1,17 @@
+{
+  "moe_backend": "triton",
+  "tensor_parallel_size": 4,
+  "VLLM_BATCH_INVARIANT": "0",
+  "gpu_name": "NVIDIA H20",
+  "gpu_uuids": [
+    "GPU-8c7611ec-5a57-4056-8517-8c07042c9b5b",
+    "GPU-6f6189b6-09ca-3f9d-e2cc-78b041c7b869",
+    "GPU-826ae8df-7a0c-1bf5-29b0-f82a0121a1fb",
+    "GPU-565027d1-f831-c63e-a4a0-428058b9d387"
+  ],
+  "evidence": [
+    "actual /proc argv/environment",
+    "actual nvidia-smi selected GPUs",
+    "actual backend/config server log"
+  ]
+}

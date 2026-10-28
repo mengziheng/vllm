@@ -1,0 +1,2504 @@
+{
+  "snapshot_utc": "2026-10-28T11:17:17.519514+00:00",
+  "excludes": [
+    ".git/**",
+    "CANDIDATE-FILES.json",
+    "local scan state"
+  ],
+  "listed_files": 623,
+  "listed_bytes": 80081820,
+  "files": [
+    {
+      "file": "ATTRIBUTION.md",
+      "bytes": 1311
+    },
+    {
+      "file": "INCREMENTAL-CHECKS.json",
+      "bytes": 30283
+    },
+    {
+      "file": "LICENSE",
+      "bytes": 11357
+    },
+    {
+      "file": "PUBLICATION-CHECKS.json",
+      "bytes": 10812
+    },
+    {
+      "file": "README.md",
+      "bytes": 6392
+    },
+    {
+      "file": "analysis/README.md",
+      "bytes": 3957
+    },
+    {
+      "file": "analysis/audit_logged_docs.py",
+      "bytes": 5800
+    },
+    {
+      "file": "analysis/collect_selected_stdout.py",
+      "bytes": 2460
+    },
+    {
+      "file": "analysis/gsm8k_discordance.py",
+      "bytes": 4105
+    },
+    {
+      "file": "analysis/summarize_pair.py",
+      "bytes": 10050
+    },
+    {
+      "file": "analysis/test_audit_logged_docs.py",
+      "bytes": 2739
+    },
+    {
+      "file": "analysis/test_summarize_pair.py",
+      "bytes": 15951
+    },
+    {
+      "file": "build-scripts/assemble_runtime.py",
+      "bytes": 4553
+    },
+    {
+      "file": "build-scripts/build_core.py",
+      "bytes": 3852
+    },
+    {
+      "file": "build-scripts/build_deepgemm.py",
+      "bytes": 3895
+    },
+    {
+      "file": "build-scripts/build_flashattn.py",
+      "bytes": 3853
+    },
+    {
+      "file": "build-scripts/build_flashmla.py",
+      "bytes": 4120
+    },
+    {
+      "file": "build-scripts/check_native_schemas.py",
+      "bytes": 2333
+    },
+    {
+      "file": "build-scripts/complete_runtime.py",
+      "bytes": 2528
+    },
+    {
+      "file": "build-scripts/probe_assembled_runtime.py",
+      "bytes": 3725
+    },
+    {
+      "file": "build-scripts/probe_toolchain.py",
+      "bytes": 1860
+    },
+    {
+      "file": "evaluation/README.md",
+      "bytes": 13671
+    },
+    {
+      "file": "evaluation/V10-CHANGES.md",
+      "bytes": 2371
+    },
+    {
+      "file": "evaluation/allocated-plan-final.exit.json",
+      "bytes": 69
+    },
+    {
+      "file": "evaluation/allocated-plan-final.json",
+      "bytes": 1521
+    },
+    {
+      "file": "evaluation/allocated-plan-local.json",
+      "bytes": 1477
+    },
+    {
+      "file": "evaluation/allocated_pair.py",
+      "bytes": 12403
+    },
+    {
+      "file": "evaluation/bench_record.py",
+      "bytes": 3587
+    },
+    {
+      "file": "evaluation/client_probe.py",
+      "bytes": 1299
+    },
+    {
+      "file": "evaluation/compare.py",
+      "bytes": 32341
+    },
+    {
+      "file": "evaluation/contract_probe.py",
+      "bytes": 4307
+    },
+    {
+      "file": "evaluation/cpu_prepare.py",
+      "bytes": 4268
+    },
+    {
+      "file": "evaluation/manifest.example.json",
+      "bytes": 6593
+    },
+    {
+      "file": "evaluation/model-receipt-h20-01.json",
+      "bytes": 18098
+    },
+    {
+      "file": "evaluation/pool-submit-argv.json",
+      "bytes": 1860
+    },
+    {
+      "file": "evaluation/pool-submit-smoke-argv.json",
+      "bytes": 1873
+    },
+    {
+      "file": "evaluation/run_pair.py",
+      "bytes": 22152
+    },
+    {
+      "file": "evaluation/smoke_request.py",
+      "bytes": 1190
+    },
+    {
+      "file": "evaluation/tests/test_accuracy_schema.py",
+      "bytes": 3540
+    },
+    {
+      "file": "evaluation/tests/test_allocated.py",
+      "bytes": 5193
+    },
+    {
+      "file": "evaluation/tests/test_pair.py",
+      "bytes": 14459
+    },
+    {
+      "file": "evaluation/tests/test_reaudit_resume.py",
+      "bytes": 5190
+    },
+    {
+      "file": "evaluation/verification-accuracy-schema.txt",
+      "bytes": 736
+    },
+    {
+      "file": "evaluation/verification-allocated-local.txt",
+      "bytes": 716
+    },
+    {
+      "file": "evaluation/verification-local.txt",
+      "bytes": 1501
+    },
+    {
+      "file": "evaluation/verification-reaudit-resume.txt",
+      "bytes": 543
+    },
+    {
+      "file": "evaluation/verification-resume-regression.txt",
+      "bytes": 351
+    },
+    {
+      "file": "evaluation/verification-startup-snapshot-local.txt",
+      "bytes": 191
+    },
+    {
+      "file": "evidence/evaluation-cpu/evaluation-v9-source-receipt.json",
+      "bytes": 331
+    },
+    {
+      "file": "evidence/evaluation-cpu/evidence-files.json",
+      "bytes": 8389
+    },
+    {
+      "file": "evidence/evaluation-cpu/launch-commands.json",
+      "bytes": 4150
+    },
+    {
+      "file": "evidence/evaluation-cpu/results-cpu-attempt003/new-tests/exit.json",
+      "bytes": 114
+    },
+    {
+      "file": "evidence/evaluation-cpu/results-cpu-attempt003/new-tests/stderr.txt",
+      "bytes": 2346
+    },
+    {
+      "file": "evidence/evaluation-cpu/results-cpu-attempt004/client-contract/environment-capture.json",
+      "bytes": 29
+    },
+    {
+      "file": "evidence/evaluation-cpu/results-cpu-attempt004/client-contract/exit.json",
+      "bytes": 113
+    },
+    {
+      "file": "evidence/evaluation-cpu/results-cpu-attempt004/client-contract/stdout.txt",
+      "bytes": 2631
+    },
+    {
+      "file": "evidence/evaluation-cpu/results-cpu-attempt004/contract-probe.json",
+      "bytes": 2630
+    },
+    {
+      "file": "evidence/evaluation-cpu/results-cpu-attempt004/cpu-receipt.json",
+      "bytes": 1470
+    },
+    {
+      "file": "evidence/evaluation-cpu/unified-environment/sweep-unified-moe58986-12d67483203d.json",
+      "bytes": 5660
+    },
+    {
+      "file": "evidence/evaluation-cpu/unified-environment/sweep-unified-moe58986-12d67483203d.log",
+      "bytes": 2049
+    },
+    {
+      "file": "evidence/offline-dataset-preparation/README.md",
+      "bytes": 3024
+    },
+    {
+      "file": "evidence/offline-dataset-preparation/check_offline_tasks.py",
+      "bytes": 6031
+    },
+    {
+      "file": "evidence/offline-dataset-preparation/official-data-manifest.json",
+      "bytes": 7127
+    },
+    {
+      "file": "evidence/offline-dataset-preparation/official-task-definitions/aime25.yaml",
+      "bytes": 594
+    },
+    {
+      "file": "evidence/offline-dataset-preparation/official-task-definitions/gsm8k.yaml",
+      "bytes": 1014
+    },
+    {
+      "file": "evidence/offline-dataset-preparation/provenance-and-tokenizer-resolution.json",
+      "bytes": 3855
+    },
+    {
+      "file": "evidence/offline-dataset-preparation/sweep-unified-moe58986-89567e69958a.json",
+      "bytes": 4932
+    },
+    {
+      "file": "evidence/offline-dataset-preparation/sweep-unified-moe58986-89567e69958a.log",
+      "bytes": 5540
+    },
+    {
+      "file": "evidence/offline-dataset-preparation/sweep-unified-moe58986-89567e69958a.mounts.json",
+      "bytes": 881
+    },
+    {
+      "file": "evidence/offline-dataset-preparation/sweep-unified-moe58986-96741e4c4062.json",
+      "bytes": 4938
+    },
+    {
+      "file": "evidence/offline-dataset-preparation/sweep-unified-moe58986-96741e4c4062.log",
+      "bytes": 4551
+    },
+    {
+      "file": "evidence/offline-dataset-preparation/tokenizer-interface-report.json",
+      "bytes": 2535
+    },
+    {
+      "file": "evidence/pair2-baseline-service-proof.json",
+      "bytes": 7573
+    },
+    {
+      "file": "evidence/pair2-target-config-source-check.json",
+      "bytes": 557
+    },
+    {
+      "file": "evidence/pair2-tuned-service-proof.json",
+      "bytes": 7759
+    },
+    {
+      "file": "evidence/pr-target-config-source.json",
+      "bytes": 370
+    },
+    {
+      "file": "evidence/sweep-unified-moe58986-8dd50e9bc7e6.json",
+      "bytes": 4752
+    },
+    {
+      "file": "native/FROZEN.json",
+      "bytes": 1098
+    },
+    {
+      "file": "native/assembled-runtime-probe.json",
+      "bytes": 10768
+    },
+    {
+      "file": "native/common-v032-build.json",
+      "bytes": 1492
+    },
+    {
+      "file": "native/core-CMakeCache.txt",
+      "bytes": 54483
+    },
+    {
+      "file": "native/core-build.json",
+      "bytes": 4016
+    },
+    {
+      "file": "native/core-compile_commands.json",
+      "bytes": 215583
+    },
+    {
+      "file": "native/core-driver-CMakeLists.txt",
+      "bytes": 72265
+    },
+    {
+      "file": "native/core-step-0.log",
+      "bytes": 6224
+    },
+    {
+      "file": "native/core-step-1.log",
+      "bytes": 57439
+    },
+    {
+      "file": "native/core-step-2.log",
+      "bytes": 213
+    },
+    {
+      "file": "native/core-step-3.log",
+      "bytes": 221
+    },
+    {
+      "file": "native/core-step-4.log",
+      "bytes": 199
+    },
+    {
+      "file": "native/core-step-5.log",
+      "bytes": 207
+    },
+    {
+      "file": "native/core-step-6.log",
+      "bytes": 193
+    },
+    {
+      "file": "native/core-step-7.log",
+      "bytes": 191
+    },
+    {
+      "file": "native/deepgemm-CMakeCache.txt",
+      "bytes": 54812
+    },
+    {
+      "file": "native/deepgemm-build.json",
+      "bytes": 141958
+    },
+    {
+      "file": "native/deepgemm-compile_commands.json",
+      "bytes": 338169
+    },
+    {
+      "file": "native/deepgemm-driver-CMakeLists.txt",
+      "bytes": 72410
+    },
+    {
+      "file": "native/deepgemm-step-0.log",
+      "bytes": 7356
+    },
+    {
+      "file": "native/deepgemm-step-1.log",
+      "bytes": 3239
+    },
+    {
+      "file": "native/deepgemm-step-2.log",
+      "bytes": 111139
+    },
+    {
+      "file": "native/flashattn-CMakeCache.txt",
+      "bytes": 55450
+    },
+    {
+      "file": "native/flashattn-build.json",
+      "bytes": 2207
+    },
+    {
+      "file": "native/flashattn-compile_commands.json",
+      "bytes": 978062
+    },
+    {
+      "file": "native/flashattn-driver-CMakeLists.txt",
+      "bytes": 72490
+    },
+    {
+      "file": "native/flashattn-step-0.log",
+      "bytes": 7954
+    },
+    {
+      "file": "native/flashattn-step-1.log",
+      "bytes": 1029565
+    },
+    {
+      "file": "native/flashattn-step-2.log",
+      "bytes": 633
+    },
+    {
+      "file": "native/flashmla-CMakeCache.txt",
+      "bytes": 54812
+    },
+    {
+      "file": "native/flashmla-build.json",
+      "bytes": 3268
+    },
+    {
+      "file": "native/flashmla-compile_commands.json",
+      "bytes": 338169
+    },
+    {
+      "file": "native/flashmla-driver-CMakeLists.txt",
+      "bytes": 72337
+    },
+    {
+      "file": "native/flashmla-step-0.log",
+      "bytes": 7148
+    },
+    {
+      "file": "native/flashmla-step-1.log",
+      "bytes": 60795
+    },
+    {
+      "file": "native/flashmla-step-2.log",
+      "bytes": 284
+    },
+    {
+      "file": "native/flashmla-step-3.log",
+      "bytes": 219
+    },
+    {
+      "file": "native/model-receipt-h20-01.json",
+      "bytes": 18098
+    },
+    {
+      "file": "native/native-receipt.json",
+      "bytes": 347554
+    },
+    {
+      "file": "native/native-schemas-before.json",
+      "bytes": 8092
+    },
+    {
+      "file": "native/reused-dependency-sources.json",
+      "bytes": 6997
+    },
+    {
+      "file": "native/toolchain.json",
+      "bytes": 10830
+    },
+    {
+      "file": "pool-admission/README.md",
+      "bytes": 1681
+    },
+    {
+      "file": "pool-admission/full-pair-v10-compat-submit-argv.json",
+      "bytes": 1876
+    },
+    {
+      "file": "pool-admission/full-pair-v10-compat-submit.stderr",
+      "bytes": 0
+    },
+    {
+      "file": "pool-admission/full-pair-v10-compat-submit.stdout",
+      "bytes": 64
+    },
+    {
+      "file": "pool-admission/full-pair-v10-pair2-compat-submit-argv.json",
+      "bytes": 1870
+    },
+    {
+      "file": "pool-admission/full-pair-v10-pair2-compat-submit.stderr",
+      "bytes": 0
+    },
+    {
+      "file": "pool-admission/full-pair-v10-pair2-compat-submit.stdout",
+      "bytes": 64
+    },
+    {
+      "file": "pool-admission/legacy-admission-proof.redacted.json",
+      "bytes": 2745
+    },
+    {
+      "file": "pool-admission/legacy-admission-test-green.log",
+      "bytes": 106
+    },
+    {
+      "file": "pool-admission/legacy-admission-test-red.log",
+      "bytes": 7128
+    },
+    {
+      "file": "pool-admission/pool_legacy_admission.py",
+      "bytes": 2950
+    },
+    {
+      "file": "pool-admission/test_legacy_pool_admission.py",
+      "bytes": 3025
+    },
+    {
+      "file": "preparation-reports/evaluation-cpu-preparation.md",
+      "bytes": 9446
+    },
+    {
+      "file": "preparation-reports/native-runtime-build.md",
+      "bytes": 8269
+    },
+    {
+      "file": "publication-tooling/check_candidates.py",
+      "bytes": 9387
+    },
+    {
+      "file": "publication-tooling/collect_pair2_raw.py",
+      "bytes": 11587
+    },
+    {
+      "file": "publication-tooling/pair2-final-raw-collect-command.json",
+      "bytes": 1295
+    },
+    {
+      "file": "raw/fullpair-v10-a80de6bd/job/allocation-sweep-unified-moe58986-f41ba688009b.json",
+      "bytes": 1533
+    },
+    {
+      "file": "raw/fullpair-v10-a80de6bd/job/hf-cache.copy.json",
+      "bytes": 192
+    },
+    {
+      "file": "raw/fullpair-v10-a80de6bd/job/manifest.json",
+      "bytes": 26957
+    },
+    {
+      "file": "raw/fullpair-v10-a80de6bd/job/storage-sweep-unified-moe58986-f41ba688009b.json",
+      "bytes": 210
+    },
+    {
+      "file": "raw/fullpair-v10-a80de6bd/launcher/sweep-unified-moe58986-f41ba688009b.json",
+      "bytes": 10814
+    },
+    {
+      "file": "raw/fullpair-v10-a80de6bd/launcher/sweep-unified-moe58986-f41ba688009b.log",
+      "bytes": 933
+    },
+    {
+      "file": "raw/fullpair-v10-a80de6bd/launcher/sweep-unified-moe58986-f41ba688009b.mounts.json",
+      "bytes": 881
+    },
+    {
+      "file": "raw/fullpair-v10-a80de6bd/pool-job-status.json",
+      "bytes": 9364
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/collection-manifest.json",
+      "bytes": 122621
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/allocation-sweep-unified-moe58986-bbbd3419b670.json",
+      "bytes": 1533
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/hf-cache.copy-owner.json",
+      "bytes": 192
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/hf-cache.copy.json",
+      "bytes": 192
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/manifest.json",
+      "bytes": 27395
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/accuracy-aime25/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/accuracy-aime25/attempt-001/command.json",
+      "bytes": 3808
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/accuracy-aime25/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/accuracy-aime25/attempt-001/exit.json",
+      "bytes": 113
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/accuracy-aime25/attempt-001/results/__model/results_2026-10-28T17-58-20.822678.json",
+      "bytes": 9612
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/accuracy-aime25/attempt-001/results/__model/samples_aime25_2026-10-28T17-58-20.822678.jsonl",
+      "bytes": 2084205
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/accuracy-aime25/attempt-001/server-context.json",
+      "bytes": 189
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/accuracy-aime25/attempt-001/stderr.txt",
+      "bytes": 5404
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/accuracy-aime25/attempt-001/stdout.txt",
+      "bytes": 658
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/accuracy-aime25/complete.json",
+      "bytes": 186
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/accuracy-aime25/identity.json",
+      "bytes": 3781
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/accuracy-gsm8k/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/accuracy-gsm8k/attempt-001/command.json",
+      "bytes": 3760
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/accuracy-gsm8k/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/accuracy-gsm8k/attempt-001/exit.json",
+      "bytes": 114
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/accuracy-gsm8k/attempt-001/results/__model/results_2026-10-28T17-45-31.058863.json",
+      "bytes": 9808
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/accuracy-gsm8k/attempt-001/results/__model/samples_gsm8k_2026-10-28T17-45-31.058863.jsonl",
+      "bytes": 12411589
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/accuracy-gsm8k/attempt-001/server-context.json",
+      "bytes": 189
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/accuracy-gsm8k/attempt-001/stderr.txt",
+      "bytes": 72472
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/accuracy-gsm8k/attempt-001/stdout.txt",
+      "bytes": 745
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/accuracy-gsm8k/complete.json",
+      "bytes": 231
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/accuracy-gsm8k/identity.json",
+      "bytes": 3733
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/audit.json",
+      "bytes": 120071
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-2048-512/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-2048-512/attempt-001/command.json",
+      "bytes": 4034
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-2048-512/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-2048-512/attempt-001/exit.json",
+      "bytes": 113
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-2048-512/attempt-001/results/benchmark.json",
+      "bytes": 756621
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-2048-512/attempt-001/results/input-receipt.json",
+      "bytes": 37206
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-2048-512/attempt-001/server-context.json",
+      "bytes": 189
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-2048-512/attempt-001/stderr.txt",
+      "bytes": 5795
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-2048-512/attempt-001/stdout.txt",
+      "bytes": 5155
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-2048-512/complete.json",
+      "bytes": 9682
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-2048-512/identity.json",
+      "bytes": 3995
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-512-1024/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-512-1024/attempt-001/command.json",
+      "bytes": 4034
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-512-1024/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-512-1024/attempt-001/exit.json",
+      "bytes": 114
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-512-1024/attempt-001/results/benchmark.json",
+      "bytes": 1594840
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-512-1024/attempt-001/results/input-receipt.json",
+      "bytes": 37206
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-512-1024/attempt-001/server-context.json",
+      "bytes": 189
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-512-1024/attempt-001/stderr.txt",
+      "bytes": 5820
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-512-1024/attempt-001/stdout.txt",
+      "bytes": 5155
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-512-1024/complete.json",
+      "bytes": 9682
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-512-1024/identity.json",
+      "bytes": 3995
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-512-128/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-512-128/attempt-001/command.json",
+      "bytes": 4030
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-512-128/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-512-128/attempt-001/exit.json",
+      "bytes": 114
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-512-128/attempt-001/results/benchmark.json",
+      "bytes": 219745
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-512-128/attempt-001/results/input-receipt.json",
+      "bytes": 37078
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-512-128/attempt-001/server-context.json",
+      "bytes": 189
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-512-128/attempt-001/stderr.txt",
+      "bytes": 4204
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-512-128/attempt-001/stdout.txt",
+      "bytes": 5150
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-512-128/complete.json",
+      "bytes": 9681
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-512-128/identity.json",
+      "bytes": 3991
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-8192-1/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-8192-1/attempt-001/command.json",
+      "bytes": 4026
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-8192-1/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-8192-1/attempt-001/exit.json",
+      "bytes": 113
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-8192-1/attempt-001/results/benchmark.json",
+      "bytes": 14287
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-8192-1/attempt-001/results/input-receipt.json",
+      "bytes": 36950
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-8192-1/attempt-001/server-context.json",
+      "bytes": 189
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-8192-1/attempt-001/stderr.txt",
+      "bytes": 8585
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-8192-1/attempt-001/stdout.txt",
+      "bytes": 4649
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-8192-1/complete.json",
+      "bytes": 9680
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-8192-1/identity.json",
+      "bytes": 3987
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-2048-512/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-2048-512/attempt-001/command.json",
+      "bytes": 4034
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-2048-512/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-2048-512/attempt-001/exit.json",
+      "bytes": 114
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-2048-512/attempt-001/results/benchmark.json",
+      "bytes": 759041
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-2048-512/attempt-001/results/input-receipt.json",
+      "bytes": 37206
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-2048-512/attempt-001/server-context.json",
+      "bytes": 189
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-2048-512/attempt-001/stderr.txt",
+      "bytes": 5574
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-2048-512/attempt-001/stdout.txt",
+      "bytes": 5155
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-2048-512/complete.json",
+      "bytes": 9682
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-2048-512/identity.json",
+      "bytes": 3995
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-512-1024/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-512-1024/attempt-001/command.json",
+      "bytes": 4034
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-512-1024/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-512-1024/attempt-001/exit.json",
+      "bytes": 114
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-512-1024/attempt-001/results/benchmark.json",
+      "bytes": 1723952
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-512-1024/attempt-001/results/input-receipt.json",
+      "bytes": 37206
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-512-1024/attempt-001/server-context.json",
+      "bytes": 189
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-512-1024/attempt-001/stderr.txt",
+      "bytes": 5604
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-512-1024/attempt-001/stdout.txt",
+      "bytes": 5155
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-512-1024/complete.json",
+      "bytes": 9682
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-512-1024/identity.json",
+      "bytes": 3995
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-512-128/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-512-128/attempt-001/command.json",
+      "bytes": 4030
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-512-128/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-512-128/attempt-001/exit.json",
+      "bytes": 113
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-512-128/attempt-001/results/benchmark.json",
+      "bytes": 254952
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-512-128/attempt-001/results/input-receipt.json",
+      "bytes": 37078
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-512-128/attempt-001/server-context.json",
+      "bytes": 189
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-512-128/attempt-001/stderr.txt",
+      "bytes": 3719
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-512-128/attempt-001/stdout.txt",
+      "bytes": 5150
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-512-128/complete.json",
+      "bytes": 9681
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-512-128/identity.json",
+      "bytes": 3991
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-8192-1/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-8192-1/attempt-001/command.json",
+      "bytes": 4026
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-8192-1/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-8192-1/attempt-001/exit.json",
+      "bytes": 113
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-8192-1/attempt-001/results/benchmark.json",
+      "bytes": 125678
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-8192-1/attempt-001/results/input-receipt.json",
+      "bytes": 36950
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-8192-1/attempt-001/server-context.json",
+      "bytes": 189
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-8192-1/attempt-001/stderr.txt",
+      "bytes": 8535
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-8192-1/attempt-001/stdout.txt",
+      "bytes": 4649
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-8192-1/complete.json",
+      "bytes": 9680
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-8192-1/identity.json",
+      "bytes": 3987
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-2048-512/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-2048-512/attempt-001/command.json",
+      "bytes": 4034
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-2048-512/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-2048-512/attempt-001/exit.json",
+      "bytes": 113
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-2048-512/attempt-001/results/benchmark.json",
+      "bytes": 865447
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-2048-512/attempt-001/results/input-receipt.json",
+      "bytes": 37206
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-2048-512/attempt-001/server-context.json",
+      "bytes": 189
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-2048-512/attempt-001/stderr.txt",
+      "bytes": 7035
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-2048-512/attempt-001/stdout.txt",
+      "bytes": 5155
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-2048-512/complete.json",
+      "bytes": 9682
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-2048-512/identity.json",
+      "bytes": 3995
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-512-1024/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-512-1024/attempt-001/command.json",
+      "bytes": 4034
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-512-1024/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-512-1024/attempt-001/exit.json",
+      "bytes": 113
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-512-1024/attempt-001/results/benchmark.json",
+      "bytes": 1689773
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-512-1024/attempt-001/results/input-receipt.json",
+      "bytes": 37206
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-512-1024/attempt-001/server-context.json",
+      "bytes": 189
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-512-1024/attempt-001/stderr.txt",
+      "bytes": 5633
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-512-1024/attempt-001/stdout.txt",
+      "bytes": 5155
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-512-1024/complete.json",
+      "bytes": 9682
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-512-1024/identity.json",
+      "bytes": 3995
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-512-128/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-512-128/attempt-001/command.json",
+      "bytes": 4030
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-512-128/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-512-128/attempt-001/exit.json",
+      "bytes": 114
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-512-128/attempt-001/results/benchmark.json",
+      "bytes": 234969
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-512-128/attempt-001/results/input-receipt.json",
+      "bytes": 37078
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-512-128/attempt-001/server-context.json",
+      "bytes": 189
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-512-128/attempt-001/stderr.txt",
+      "bytes": 4071
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-512-128/attempt-001/stdout.txt",
+      "bytes": 5150
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-512-128/complete.json",
+      "bytes": 9681
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-512-128/identity.json",
+      "bytes": 3991
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-8192-1/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-8192-1/attempt-001/command.json",
+      "bytes": 4026
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-8192-1/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-8192-1/attempt-001/exit.json",
+      "bytes": 114
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-8192-1/attempt-001/results/benchmark.json",
+      "bytes": 68665
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-8192-1/attempt-001/results/input-receipt.json",
+      "bytes": 36950
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-8192-1/attempt-001/server-context.json",
+      "bytes": 189
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-8192-1/attempt-001/stderr.txt",
+      "bytes": 8528
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-8192-1/attempt-001/stdout.txt",
+      "bytes": 4649
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-8192-1/complete.json",
+      "bytes": 9680
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-8192-1/identity.json",
+      "bytes": 3987
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/server-001/command.json",
+      "bytes": 3438
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/server-001/exit.json",
+      "bytes": 95
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/server-001/launch-confirmations.json",
+      "bytes": 467
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/server-001/process.json",
+      "bytes": 46
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/server-001/proof.json",
+      "bytes": 7573
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/server-001/server.log",
+      "bytes": 408689
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/server-001/startup-log.snapshot.txt",
+      "bytes": 75334
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/server-001/startup-request/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/server-001/startup-request/attempt-001/command.json",
+      "bytes": 3056
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/server-001/startup-request/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/server-001/startup-request/attempt-001/exit.json",
+      "bytes": 114
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/server-001/startup-request/attempt-001/server-context.json",
+      "bytes": 114
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/server-001/startup-request/attempt-001/stderr.txt",
+      "bytes": 0
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/server-001/startup-request/attempt-001/stdout.txt",
+      "bytes": 816
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/server-001/startup-request/complete.json",
+      "bytes": 107
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/server-001/startup-request/identity.json",
+      "bytes": 3041
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/status.json",
+      "bytes": 39
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/client-version/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/client-version/attempt-001/command.json",
+      "bytes": 3280
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/client-version/attempt-001/environment-capture.json",
+      "bytes": 30
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/client-version/attempt-001/exit.json",
+      "bytes": 114
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/client-version/attempt-001/results/client-provenance.json",
+      "bytes": 143424
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/client-version/attempt-001/stderr.txt",
+      "bytes": 329
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/client-version/attempt-001/stdout.txt",
+      "bytes": 143425
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/client-version/complete.json",
+      "bytes": 145324
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/client-version/identity.json",
+      "bytes": 3253
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/identity.json",
+      "bytes": 29119
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/pair-audit.json",
+      "bytes": 254049
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/plan.json",
+      "bytes": 50483
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/storage-preflight.json",
+      "bytes": 216
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/accuracy-aime25/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/accuracy-aime25/attempt-001/command.json",
+      "bytes": 3805
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/accuracy-aime25/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/accuracy-aime25/attempt-001/exit.json",
+      "bytes": 112
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/accuracy-aime25/attempt-001/results/__model/results_2026-10-28T18-43-17.919283.json",
+      "bytes": 9598
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/accuracy-aime25/attempt-001/results/__model/samples_aime25_2026-10-28T18-43-17.919283.jsonl",
+      "bytes": 2022871
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/accuracy-aime25/attempt-001/server-context.json",
+      "bytes": 186
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/accuracy-aime25/attempt-001/stderr.txt",
+      "bytes": 5401
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/accuracy-aime25/attempt-001/stdout.txt",
+      "bytes": 655
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/accuracy-aime25/complete.json",
+      "bytes": 186
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/accuracy-aime25/identity.json",
+      "bytes": 3778
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/accuracy-gsm8k/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/accuracy-gsm8k/attempt-001/command.json",
+      "bytes": 3757
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/accuracy-gsm8k/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/accuracy-gsm8k/attempt-001/exit.json",
+      "bytes": 112
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/accuracy-gsm8k/attempt-001/results/__model/results_2026-10-28T18-30-33.450263.json",
+      "bytes": 9807
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/accuracy-gsm8k/attempt-001/results/__model/samples_gsm8k_2026-10-28T18-30-33.450263.jsonl",
+      "bytes": 12418581
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/accuracy-gsm8k/attempt-001/server-context.json",
+      "bytes": 186
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/accuracy-gsm8k/attempt-001/stderr.txt",
+      "bytes": 72795
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/accuracy-gsm8k/attempt-001/stdout.txt",
+      "bytes": 745
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/accuracy-gsm8k/complete.json",
+      "bytes": 231
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/accuracy-gsm8k/identity.json",
+      "bytes": 3730
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/audit.json",
+      "bytes": 120071
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-2048-512/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-2048-512/attempt-001/command.json",
+      "bytes": 4028
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-2048-512/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-2048-512/attempt-001/exit.json",
+      "bytes": 112
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-2048-512/attempt-001/results/benchmark.json",
+      "bytes": 724031
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-2048-512/attempt-001/results/input-receipt.json",
+      "bytes": 37206
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-2048-512/attempt-001/server-context.json",
+      "bytes": 186
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-2048-512/attempt-001/stderr.txt",
+      "bytes": 5104
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-2048-512/attempt-001/stdout.txt",
+      "bytes": 5152
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-2048-512/complete.json",
+      "bytes": 9682
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-2048-512/identity.json",
+      "bytes": 3989
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-512-1024/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-512-1024/attempt-001/command.json",
+      "bytes": 4028
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-512-1024/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-512-1024/attempt-001/exit.json",
+      "bytes": 114
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-512-1024/attempt-001/results/benchmark.json",
+      "bytes": 1615926
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-512-1024/attempt-001/results/input-receipt.json",
+      "bytes": 37206
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-512-1024/attempt-001/server-context.json",
+      "bytes": 186
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-512-1024/attempt-001/stderr.txt",
+      "bytes": 5672
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-512-1024/attempt-001/stdout.txt",
+      "bytes": 5152
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-512-1024/complete.json",
+      "bytes": 9682
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-512-1024/identity.json",
+      "bytes": 3989
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-512-128/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-512-128/attempt-001/command.json",
+      "bytes": 4024
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-512-128/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-512-128/attempt-001/exit.json",
+      "bytes": 114
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-512-128/attempt-001/results/benchmark.json",
+      "bytes": 227339
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-512-128/attempt-001/results/input-receipt.json",
+      "bytes": 37078
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-512-128/attempt-001/server-context.json",
+      "bytes": 186
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-512-128/attempt-001/stderr.txt",
+      "bytes": 3420
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-512-128/attempt-001/stdout.txt",
+      "bytes": 5147
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-512-128/complete.json",
+      "bytes": 9681
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-512-128/identity.json",
+      "bytes": 3985
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-8192-1/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-8192-1/attempt-001/command.json",
+      "bytes": 4020
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-8192-1/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-8192-1/attempt-001/exit.json",
+      "bytes": 114
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-8192-1/attempt-001/results/benchmark.json",
+      "bytes": 14316
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-8192-1/attempt-001/results/input-receipt.json",
+      "bytes": 36950
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-8192-1/attempt-001/server-context.json",
+      "bytes": 186
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-8192-1/attempt-001/stderr.txt",
+      "bytes": 8585
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-8192-1/attempt-001/stdout.txt",
+      "bytes": 4646
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-8192-1/complete.json",
+      "bytes": 9680
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-8192-1/identity.json",
+      "bytes": 3981
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-2048-512/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-2048-512/attempt-001/command.json",
+      "bytes": 4028
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-2048-512/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-2048-512/attempt-001/exit.json",
+      "bytes": 113
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-2048-512/attempt-001/results/benchmark.json",
+      "bytes": 787985
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-2048-512/attempt-001/results/input-receipt.json",
+      "bytes": 37206
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-2048-512/attempt-001/server-context.json",
+      "bytes": 186
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-2048-512/attempt-001/stderr.txt",
+      "bytes": 6414
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-2048-512/attempt-001/stdout.txt",
+      "bytes": 5152
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-2048-512/complete.json",
+      "bytes": 9682
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-2048-512/identity.json",
+      "bytes": 3989
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-512-1024/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-512-1024/attempt-001/command.json",
+      "bytes": 4028
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-512-1024/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-512-1024/attempt-001/exit.json",
+      "bytes": 113
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-512-1024/attempt-001/results/benchmark.json",
+      "bytes": 1722992
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-512-1024/attempt-001/results/input-receipt.json",
+      "bytes": 37206
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-512-1024/attempt-001/server-context.json",
+      "bytes": 186
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-512-1024/attempt-001/stderr.txt",
+      "bytes": 5810
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-512-1024/attempt-001/stdout.txt",
+      "bytes": 5152
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-512-1024/complete.json",
+      "bytes": 9682
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-512-1024/identity.json",
+      "bytes": 3989
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-512-128/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-512-128/attempt-001/command.json",
+      "bytes": 4024
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-512-128/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-512-128/attempt-001/exit.json",
+      "bytes": 113
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-512-128/attempt-001/results/benchmark.json",
+      "bytes": 243293
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-512-128/attempt-001/results/input-receipt.json",
+      "bytes": 37078
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-512-128/attempt-001/server-context.json",
+      "bytes": 186
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-512-128/attempt-001/stderr.txt",
+      "bytes": 3775
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-512-128/attempt-001/stdout.txt",
+      "bytes": 5147
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-512-128/complete.json",
+      "bytes": 9681
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-512-128/identity.json",
+      "bytes": 3985
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-8192-1/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-8192-1/attempt-001/command.json",
+      "bytes": 4020
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-8192-1/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-8192-1/attempt-001/exit.json",
+      "bytes": 113
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-8192-1/attempt-001/results/benchmark.json",
+      "bytes": 125798
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-8192-1/attempt-001/results/input-receipt.json",
+      "bytes": 36950
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-8192-1/attempt-001/server-context.json",
+      "bytes": 186
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-8192-1/attempt-001/stderr.txt",
+      "bytes": 8585
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-8192-1/attempt-001/stdout.txt",
+      "bytes": 4646
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-8192-1/complete.json",
+      "bytes": 9680
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-8192-1/identity.json",
+      "bytes": 3981
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-2048-512/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-2048-512/attempt-001/command.json",
+      "bytes": 4028
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-2048-512/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-2048-512/attempt-001/exit.json",
+      "bytes": 114
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-2048-512/attempt-001/results/benchmark.json",
+      "bytes": 848743
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-2048-512/attempt-001/results/input-receipt.json",
+      "bytes": 37206
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-2048-512/attempt-001/server-context.json",
+      "bytes": 186
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-2048-512/attempt-001/stderr.txt",
+      "bytes": 6310
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-2048-512/attempt-001/stdout.txt",
+      "bytes": 5152
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-2048-512/complete.json",
+      "bytes": 9682
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-2048-512/identity.json",
+      "bytes": 3989
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-512-1024/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-512-1024/attempt-001/command.json",
+      "bytes": 4028
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-512-1024/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-512-1024/attempt-001/exit.json",
+      "bytes": 113
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-512-1024/attempt-001/results/benchmark.json",
+      "bytes": 1671007
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-512-1024/attempt-001/results/input-receipt.json",
+      "bytes": 37206
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-512-1024/attempt-001/server-context.json",
+      "bytes": 186
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-512-1024/attempt-001/stderr.txt",
+      "bytes": 6238
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-512-1024/attempt-001/stdout.txt",
+      "bytes": 5152
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-512-1024/complete.json",
+      "bytes": 9682
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-512-1024/identity.json",
+      "bytes": 3989
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-512-128/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-512-128/attempt-001/command.json",
+      "bytes": 4024
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-512-128/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-512-128/attempt-001/exit.json",
+      "bytes": 114
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-512-128/attempt-001/results/benchmark.json",
+      "bytes": 231681
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-512-128/attempt-001/results/input-receipt.json",
+      "bytes": 37078
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-512-128/attempt-001/server-context.json",
+      "bytes": 186
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-512-128/attempt-001/stderr.txt",
+      "bytes": 3903
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-512-128/attempt-001/stdout.txt",
+      "bytes": 5147
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-512-128/complete.json",
+      "bytes": 9681
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-512-128/identity.json",
+      "bytes": 3985
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-8192-1/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-8192-1/attempt-001/command.json",
+      "bytes": 4020
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-8192-1/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-8192-1/attempt-001/exit.json",
+      "bytes": 114
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-8192-1/attempt-001/results/benchmark.json",
+      "bytes": 68639
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-8192-1/attempt-001/results/input-receipt.json",
+      "bytes": 36950
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-8192-1/attempt-001/server-context.json",
+      "bytes": 186
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-8192-1/attempt-001/stderr.txt",
+      "bytes": 8535
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-8192-1/attempt-001/stdout.txt",
+      "bytes": 4646
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-8192-1/complete.json",
+      "bytes": 9680
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-8192-1/identity.json",
+      "bytes": 3981
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/server-001/command.json",
+      "bytes": 3435
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/server-001/exit.json",
+      "bytes": 96
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/server-001/launch-confirmations.json",
+      "bytes": 467
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/server-001/process.json",
+      "bytes": 48
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/server-001/proof.json",
+      "bytes": 7759
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/server-001/server.log",
+      "bytes": 383234
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/server-001/startup-log.snapshot.txt",
+      "bytes": 55504
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/server-001/startup-request/attempt-001/actual-environment.json",
+      "bytes": 2784
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/server-001/startup-request/attempt-001/command.json",
+      "bytes": 3056
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/server-001/startup-request/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/server-001/startup-request/attempt-001/exit.json",
+      "bytes": 113
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/server-001/startup-request/attempt-001/server-context.json",
+      "bytes": 111
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/server-001/startup-request/attempt-001/stderr.txt",
+      "bytes": 0
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/server-001/startup-request/attempt-001/stdout.txt",
+      "bytes": 816
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/server-001/startup-request/complete.json",
+      "bytes": 107
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/server-001/startup-request/identity.json",
+      "bytes": 3041
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/status.json",
+      "bytes": 39
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/runner-001/actual-environment.json",
+      "bytes": 2836
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/runner-001/command.json",
+      "bytes": 3396
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/runner-001/environment-capture.json",
+      "bytes": 30
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/runner-001/exit.json",
+      "bytes": 114
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/runner-001/stderr.txt",
+      "bytes": 0
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/runner-001/stdout.txt",
+      "bytes": 71
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/setup-versions/attempt-001/actual-environment.json",
+      "bytes": 2770
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/setup-versions/attempt-001/command.json",
+      "bytes": 3082
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/setup-versions/attempt-001/environment-capture.json",
+      "bytes": 29
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/setup-versions/attempt-001/exit.json",
+      "bytes": 113
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/setup-versions/attempt-001/stderr.txt",
+      "bytes": 0
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/setup-versions/attempt-001/stdout.txt",
+      "bytes": 101
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/setup-versions/complete.json",
+      "bytes": 164
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/setup-versions/identity.json",
+      "bytes": 3067
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/storage-sweep-unified-moe58986-bbbd3419b670.json",
+      "bytes": 216
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/launcher/sweep-unified-moe58986-bbbd3419b670.json",
+      "bytes": 11486896
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/launcher/sweep-unified-moe58986-bbbd3419b670.log",
+      "bytes": 836
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/launcher/sweep-unified-moe58986-bbbd3419b670.mounts.json",
+      "bytes": 881
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/live-process-evidence/hardware-before-bench-48781766.command.json",
+      "bytes": 653
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/live-process-evidence/hardware-before-bench-48781766.csv",
+      "bytes": 380
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/live-process-evidence/hardware-before-bench-48781766.stderr.txt",
+      "bytes": 0
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/live-process-evidence/native-maps-baseline-48781766.command.json",
+      "bytes": 1354
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/live-process-evidence/native-maps-baseline-48781766.json",
+      "bytes": 29157
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/live-process-evidence/native-maps-baseline-48781766.stderr.txt",
+      "bytes": 0
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/live-process-evidence/native-maps-tuned-48781766.command.json",
+      "bytes": 1348
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/live-process-evidence/native-maps-tuned-48781766.json",
+      "bytes": 28621
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/live-process-evidence/native-maps-tuned-48781766.stderr.txt",
+      "bytes": 0
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/pool-job-status.json",
+      "bytes": 9385
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/pool-status-command.json",
+      "bytes": 275
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/pool-status.stderr.txt",
+      "bytes": 0
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/pool-status.stdout.txt",
+      "bytes": 9907
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/allocation-sweep-unified-moe58986-035b24897262.json",
+      "bytes": 1533
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/hf-cache.copy-owner.json",
+      "bytes": 192
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/hf-cache.copy.json",
+      "bytes": 192
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/manifest.json",
+      "bytes": 26957
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/accuracy-gsm8k/attempt-001/actual-environment.json",
+      "bytes": 2652
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/accuracy-gsm8k/attempt-001/command.json",
+      "bytes": 3622
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/accuracy-gsm8k/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/accuracy-gsm8k/attempt-001/exit.json",
+      "bytes": 114
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/accuracy-gsm8k/attempt-001/results/__model/results_2026-10-28T17-04-57.880448.json",
+      "bytes": 9805
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/accuracy-gsm8k/attempt-001/results/__model/samples_gsm8k_2026-10-28T17-04-57.880448.jsonl",
+      "bytes": 12413581
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/accuracy-gsm8k/attempt-001/server-context.json",
+      "bytes": 183
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/accuracy-gsm8k/attempt-001/stderr.txt",
+      "bytes": 73568
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/accuracy-gsm8k/attempt-001/stdout.txt",
+      "bytes": 745
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/accuracy-gsm8k/identity.json",
+      "bytes": 3595
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/server-001/command.json",
+      "bytes": 3306
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/server-001/exit.json",
+      "bytes": 96
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/server-001/launch-confirmations.json",
+      "bytes": 467
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/server-001/process.json",
+      "bytes": 46
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/server-001/proof.json",
+      "bytes": 7291
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/server-001/server.log",
+      "bytes": 186134
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/server-001/startup-log.snapshot.txt",
+      "bytes": 76182
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/server-001/startup-request/attempt-001/actual-environment.json",
+      "bytes": 2652
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/server-001/startup-request/attempt-001/command.json",
+      "bytes": 2924
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/server-001/startup-request/attempt-001/environment-capture.json",
+      "bytes": 32
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/server-001/startup-request/attempt-001/exit.json",
+      "bytes": 114
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/server-001/startup-request/attempt-001/server-context.json",
+      "bytes": 108
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/server-001/startup-request/attempt-001/stderr.txt",
+      "bytes": 0
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/server-001/startup-request/attempt-001/stdout.txt",
+      "bytes": 816
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/server-001/startup-request/complete.json",
+      "bytes": 107
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/server-001/startup-request/identity.json",
+      "bytes": 2909
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/client-version/attempt-001/actual-environment.json",
+      "bytes": 2652
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/client-version/attempt-001/command.json",
+      "bytes": 3136
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/client-version/attempt-001/environment-capture.json",
+      "bytes": 30
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/client-version/attempt-001/exit.json",
+      "bytes": 114
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/client-version/attempt-001/results/client-provenance.json",
+      "bytes": 143424
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/client-version/attempt-001/stderr.txt",
+      "bytes": 329
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/client-version/attempt-001/stdout.txt",
+      "bytes": 143425
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/client-version/complete.json",
+      "bytes": 145324
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/client-version/identity.json",
+      "bytes": 3109
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/identity.json",
+      "bytes": 28681
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/plan.json",
+      "bytes": 49907
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/storage-preflight.json",
+      "bytes": 210
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/runner-001/actual-environment.json",
+      "bytes": 2704
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/runner-001/command.json",
+      "bytes": 3252
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/runner-001/environment-capture.json",
+      "bytes": 30
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/runner-001/exit.json",
+      "bytes": 112
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/runner-001/stderr.txt",
+      "bytes": 40
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/runner-001/stdout.txt",
+      "bytes": 0
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/setup-versions/attempt-001/actual-environment.json",
+      "bytes": 2638
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/setup-versions/attempt-001/command.json",
+      "bytes": 2950
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/setup-versions/attempt-001/environment-capture.json",
+      "bytes": 29
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/setup-versions/attempt-001/exit.json",
+      "bytes": 112
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/setup-versions/attempt-001/stderr.txt",
+      "bytes": 0
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/setup-versions/attempt-001/stdout.txt",
+      "bytes": 101
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/setup-versions/complete.json",
+      "bytes": 164
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/setup-versions/identity.json",
+      "bytes": 2935
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/storage-sweep-unified-moe58986-035b24897262.json",
+      "bytes": 210
+    },
+    {
+      "file": "reports/PR-description-before-native-validation.md",
+      "bytes": 41813
+    },
+    {
+      "file": "reports/official-accuracy-stdout-all.command.json",
+      "bytes": 660
+    },
+    {
+      "file": "reports/official-accuracy-stdout-all.exit.json",
+      "bytes": 94
+    },
+    {
+      "file": "reports/official-accuracy-stdout-all.sources.json",
+      "bytes": 647
+    },
+    {
+      "file": "reports/official-accuracy-stdout-all.stderr.txt",
+      "bytes": 0
+    },
+    {
+      "file": "reports/official-accuracy-stdout-all.stdout.txt",
+      "bytes": 58
+    },
+    {
+      "file": "reports/official-accuracy-stdout-all.txt",
+      "bytes": 3355
+    },
+    {
+      "file": "reports/official-bench-stdout-all.command.json",
+      "bytes": 658
+    },
+    {
+      "file": "reports/official-bench-stdout-all.exit.json",
+      "bytes": 95
+    },
+    {
+      "file": "reports/official-bench-stdout-all.sources.json",
+      "bytes": 3781
+    },
+    {
+      "file": "reports/official-bench-stdout-all.stderr.txt",
+      "bytes": 0
+    },
+    {
+      "file": "reports/official-bench-stdout-all.stdout.txt",
+      "bytes": 61
+    },
+    {
+      "file": "reports/official-bench-stdout-all.txt",
+      "bytes": 124014
+    },
+    {
+      "file": "reports/pair2-gsm8k-discordance.command.json",
+      "bytes": 826
+    },
+    {
+      "file": "reports/pair2-gsm8k-discordance.command.sh",
+      "bytes": 501
+    },
+    {
+      "file": "reports/pair2-gsm8k-discordance.json",
+      "bytes": 644281
+    },
+    {
+      "file": "reports/pair2-gsm8k-discordance.stderr.txt",
+      "bytes": 105
+    },
+    {
+      "file": "reports/pair2-logged-doc-audit.command.json",
+      "bytes": 619
+    },
+    {
+      "file": "reports/pair2-logged-doc-audit.exit.json",
+      "bytes": 96
+    },
+    {
+      "file": "reports/pair2-logged-doc-audit.json",
+      "bytes": 3684
+    },
+    {
+      "file": "reports/pair2-logged-doc-audit.stderr.txt",
+      "bytes": 0
+    },
+    {
+      "file": "reports/pair2-logged-doc-audit.stdout.txt",
+      "bytes": 0
+    },
+    {
+      "file": "reports/pair2-summary.command.json",
+      "bytes": 607
+    },
+    {
+      "file": "reports/pair2-summary.exit.json",
+      "bytes": 94
+    },
+    {
+      "file": "reports/pair2-summary.json",
+      "bytes": 20118
+    },
+    {
+      "file": "reports/pair2-summary.stderr.txt",
+      "bytes": 0
+    },
+    {
+      "file": "reports/pair2-summary.stdout.txt",
+      "bytes": 0
+    },
+    {
+      "file": "third-party-licenses/GSM8K-MIT.txt",
+      "bytes": 1062
+    },
+    {
+      "file": "third-party-licenses/GSM8K-source.json",
+      "bytes": 253
+    }
+  ]
+}

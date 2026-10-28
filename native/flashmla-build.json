@@ -1,0 +1,89 @@
+{
+  "source_commit": "eb34e115d041ac685fa38eadf8eae6c51d61dc23",
+  "flashmla_commit": "e2afa5fd8c220fbd05fe03fc24c9d5e64c24641b",
+  "scope": "Incremental FlashMLA targets added after the exact current main native CMake sections; reuses the completed current core build cache",
+  "commands": [
+    {
+      "command": [
+        "cmake",
+        "-S",
+        "/work/driver-core",
+        "-B",
+        "/work/build/core",
+        "-G",
+        "Ninja",
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
+        "-DVLLM_PYTHON_EXECUTABLE=/usr/local/bin/python3",
+        "-DCMAKE_INSTALL_PREFIX=/work/package/native",
+        "-DCMAKE_CUDA_COMPILER=/usr/local/cuda/bin/nvcc",
+        "-DCMAKE_CXX_COMPILER=/opt/byted/toolchain/bin/g++",
+        "-DNVCC_THREADS=1"
+      ],
+      "log": "/work/logs/flashmla-step-0.log",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "cmake",
+        "--build",
+        "/work/build/core",
+        "--parallel",
+        "16",
+        "--target",
+        "_flashmla_C",
+        "_flashmla_extension_C"
+      ],
+      "log": "/work/logs/flashmla-step-1.log",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "cmake",
+        "--install",
+        "/work/build/core",
+        "--component",
+        "_flashmla_C"
+      ],
+      "log": "/work/logs/flashmla-step-2.log",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "cmake",
+        "--install",
+        "/work/build/core",
+        "--component",
+        "_flashmla_extension_C"
+      ],
+      "log": "/work/logs/flashmla-step-3.log",
+      "exit_code": 0
+    }
+  ],
+  "started_at": "2026-10-28T08:08:50.176929+00:00",
+  "source_files": {
+    "CMakeLists.txt": "07d01f5beeda9b73adcb490e999b85c2e634a1d9a6dabb8ab6da47024cc776ad",
+    "cmake/utils.cmake": "c982391e700eb61eb3d2fde56cfd2a50c8eb135746b3d8559b300943f2e7c476",
+    "cmake/external_projects/flashmla.cmake": "2225bd6870276c1c7d0a3350ca095911f1840fab672440327de1e9d113f6ba23"
+  },
+  "environment": {
+    "TORCH_CUDA_ARCH_LIST": "9.0",
+    "CUDA_HOME": "/usr/local/cuda",
+    "FLASH_MLA_SRC_DIR": "/work/sources/FlashMLA",
+    "TMPDIR": "/work/tmp",
+    "CUDA_CACHE_PATH": "/work/cache/cuda",
+    "CCACHE_DIR": "/work/cache/ccache"
+  },
+  "finished_at": "2026-10-28T08:11:11.901825+00:00",
+  "artifacts": {
+    "vllm/_C_stable_libtorch.abi3.so": "3562f443c7bf3a523c333276057736d37ef58a7ac72bf4653e2b2902420837a0",
+    "vllm/spinloop.abi3.so": "89ea867934c2fc8efd37ffbb82abbedbe421b07a48b2cf4d976bae90d22844de",
+    "vllm/fs_io_C.abi3.so": "fad905759296c9ec65cdcf01f68cc87f3a368f0637df438908ce48ccfa9fcc7a",
+    "vllm/_flashmla_C.abi3.so": "fbf5cbab07d68a5c6ef5a430972a0fb56b94add00cd77ae7e53fc814b74e58e5",
+    "vllm/_moe_C_stable_libtorch.abi3.so": "fa393aca248538b71d666967468cec8bde3055a57ec8ef1207c50566bcf013b2",
+    "vllm/cumem_allocator.abi3.so": "a370228f46351c0e46bf75f8ca127506034de0de9b9c44430a93514dbb222f26",
+    "vllm/_flashmla_extension_C.abi3.so": "55bdf33eda1f646aad7f2f3c71fab61332f232206e5fa6712ab85028c9f94ba2",
+    "vllm/_flashkda_C.abi3.so": "47efbb43b69deec602a2b0c71fdcc8c024acbf13234ec0fa40ed3faac9aaaf8a",
+    "vllm/third_party/flashmla/flash_mla_interface.py": "957e28d93624f83d6a53c1a713caa205227ce058f6785c140eb47a995b697f7f"
+  }
+}

@@ -1,0 +1,4 @@
+-- Install configuration: "Release"
+-- Installing: /work/package/native/vllm/third_party/flashmla/flash_mla_interface.py
+-- Installing: /work/package/native/vllm/_flashmla_C.abi3.so
+-- Set non-toolchain portion of runtime path of "/work/package/native/vllm/_flashmla_C.abi3.so" to ""

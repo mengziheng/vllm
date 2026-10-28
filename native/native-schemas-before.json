@@ -1,0 +1,157 @@
+{
+  "vllm": "/work/package/current/vllm/__init__.py",
+  "modules": {
+    "_C_stable_libtorch": {
+      "path": "/work/package/current/vllm/_C_stable_libtorch.abi3.so"
+    },
+    "_moe_C_stable_libtorch": {
+      "path": "/work/package/current/vllm/_moe_C_stable_libtorch.abi3.so"
+    },
+    "_flashmla_C": {
+      "path": "/work/package/current/vllm/_flashmla_C.abi3.so"
+    },
+    "_flashmla_extension_C": {
+      "path": "/work/package/current/vllm/_flashmla_extension_C.abi3.so"
+    },
+    "_flashkda_C": {
+      "path": "/work/package/current/vllm/_flashkda_C.abi3.so"
+    }
+  },
+  "schemas": {
+    "_moe_C::moe_align_block_size": {
+      "schema": "_moe_C::moe_align_block_size(Tensor topk_ids, int num_experts, int block_size, Tensor($0! -> ) sorted_token_ids, Tensor($1! -> ) experts_ids, Tensor($2! -> ) num_tokens_post_pad, Tensor? maybe_expert_map, Tensor(a!)? scatter_idx=None) -> ()",
+      "argument_count": 8,
+      "expected_count": 8,
+      "count_matches": true
+    },
+    "_moe_C::moe_sum": {
+      "schema": "_moe_C::moe_sum(Tensor input, Tensor($0! -> ) output, Tensor? topk_ids=None, Tensor? expert_map=None) -> ()",
+      "argument_count": 4,
+      "expected_count": 4,
+      "count_matches": true
+    },
+    "_moe_C::grouped_topk": {
+      "schema": "_moe_C::grouped_topk(Tensor scores, int n_group, int topk_group, int topk, bool renormalize, float routed_scaling_factor, Tensor bias, int scoring_func) -> (Tensor, Tensor)",
+      "argument_count": 8,
+      "expected_count": 8,
+      "count_matches": true
+    },
+    "_flashkda_C::get_workspace_size": {
+      "schema": "_flashkda_C::get_workspace_size(int T_total, int H, int N=1) -> int",
+      "argument_count": 3,
+      "expected_count": 3,
+      "count_matches": true
+    },
+    "_flashkda_C::fwd": {
+      "schema": "_flashkda_C::fwd(Tensor q, Tensor k, Tensor v, Tensor g, Tensor beta, float scale, Tensor(a!) out, Tensor(c!) workspace, Tensor A_log, Tensor dt_bias, float lower_bound, Tensor? initial_state=None, Tensor(b!)? final_state=None, Tensor? cu_seqlens=None, Tensor(d!)? checkpoint_state=None, Tensor? checkpoint_offsets=None) -> ()",
+      "argument_count": 16,
+      "expected_count": 16,
+      "count_matches": true
+    },
+    "_flashmla_C::sparse_decode_fwd": {
+      "schema": "_flashmla_C::sparse_decode_fwd(Tensor q, Tensor kv, Tensor indices, Tensor? topk_length, Tensor? attn_sink, Tensor(a)? tile_scheduler_metadata, Tensor(b)? num_splits, Tensor? extra_kv, Tensor? extra_indices, Tensor? extra_topk_length, int d_v, float sm_scale, Tensor(c!)? out_) -> (Tensor(c!), Tensor, Tensor(a)?, Tensor(b)?)",
+      "argument_count": 13,
+      "expected_count": 14,
+      "count_matches": false
+    },
+    "_flashmla_C::dense_decode_fwd": {
+      "schema": "_flashmla_C::dense_decode_fwd(Tensor q, Tensor kcache, int head_size_v, Tensor seqlens_k, Tensor block_table, float softmax_scale, bool is_causal, Tensor(a)? tile_scheduler_metadata, Tensor(b)? num_splits, Tensor(c!)? out_) -> (Tensor(c!), Tensor, Tensor(a)?, Tensor(b)?)",
+      "argument_count": 10,
+      "expected_count": 10,
+      "count_matches": true
+    },
+    "_flashmla_C::sparse_prefill_fwd": {
+      "schema": "_flashmla_C::sparse_prefill_fwd(Tensor q, Tensor kv, Tensor indices, float sm_scale, int d_v, Tensor? attn_sink, Tensor? topk_length, Tensor(a!)? out_) -> Tensor[]",
+      "argument_count": 8,
+      "expected_count": 8,
+      "count_matches": true
+    },
+    "_flashmla_C::dense_prefill_fwd": {
+      "schema": "_flashmla_C::dense_prefill_fwd(Tensor workspace_buffer, Tensor q, Tensor k, Tensor v, Tensor cumulative_seqlen_q, Tensor cumulative_seqlen_kv, Tensor(a!) o, Tensor(b!) lse, int mask_mode_code, float softmax_scale, int max_seqlen_q, int max_seqlen_kv, bool is_varlen) -> ()",
+      "argument_count": 13,
+      "expected_count": 13,
+      "count_matches": true
+    },
+    "_C::cooperative_topk": {
+      "schema": "_C::cooperative_topk(Tensor logits, Tensor lengths, Tensor($0! -> ) output, Tensor workspace, int k, int max_seq_len) -> ()",
+      "argument_count": 6,
+      "expected_count": 6,
+      "count_matches": true
+    },
+    "_C::persistent_topk": {
+      "schema": "_C::persistent_topk(Tensor logits, Tensor lengths, Tensor($0! -> ) output, Tensor workspace, int k, int max_seq_len) -> ()",
+      "argument_count": 6,
+      "expected_count": 6,
+      "count_matches": true
+    },
+    "_C::top_k_per_row_prefill": {
+      "schema": "_C::top_k_per_row_prefill(Tensor logits, Tensor rowStarts, Tensor rowEnds, Tensor($0! -> ) indices, int numRows, int stride0, int stride1, int topK) -> ()",
+      "argument_count": 8,
+      "expected_count": 8,
+      "count_matches": true
+    },
+    "_C::top_k_per_row_decode": {
+      "schema": "_C::top_k_per_row_decode(Tensor logits, int next_n, Tensor seq_lens, Tensor($0! -> ) indices, int numRows, int stride0, int stride1, int topK) -> ()",
+      "argument_count": 8,
+      "expected_count": 8,
+      "count_matches": true
+    },
+    "_C_cache_ops::concat_and_cache_mla": {
+      "schema": "_C_cache_ops::concat_and_cache_mla(Tensor kv_c, Tensor k_pe, Tensor($0! -> ) kv_cache, Tensor slot_mapping, str kv_cache_dtype, Tensor scale) -> ()",
+      "argument_count": 6,
+      "expected_count": 7,
+      "count_matches": false
+    },
+    "_C_cache_ops::cp_gather_and_upconvert_fp8_kv_cache": {
+      "schema": "_C_cache_ops::cp_gather_and_upconvert_fp8_kv_cache(Tensor src_cache, Tensor($0! -> ) dst, Tensor block_table, Tensor workspace_starts, int batch_size, Tensor? seq_starts, Tensor? host_cache=None, Tensor? host_row_ids=None, Tensor? device_row_ids=None) -> ()",
+      "argument_count": 9,
+      "expected_count": 9,
+      "count_matches": true
+    },
+    "_C::merge_attn_states": {
+      "schema": "_C::merge_attn_states(Tensor($0! -> ) output, Tensor($1! -> )? output_lse, Tensor prefix_output, Tensor prefix_lse, Tensor suffix_output, Tensor suffix_lse, int($2! -> )? prefill_tokens_with_context, Tensor? output_scale=None) -> ()",
+      "argument_count": 8
+    },
+    "_C::rms_norm": {
+      "schema": "_C::rms_norm(Tensor($0! -> ) result, Tensor input, Tensor? weight, float epsilon) -> ()",
+      "argument_count": 4
+    },
+    "_C::fused_add_rms_norm": {
+      "schema": "_C::fused_add_rms_norm(Tensor($0! -> ) input, Tensor($1! -> ) residual, Tensor? weight, float epsilon) -> ()",
+      "argument_count": 4
+    },
+    "_C::rotary_embedding": {
+      "schema": "_C::rotary_embedding(Tensor positions, Tensor($0! -> ) query, Tensor($1! -> )? key, int head_size, Tensor cos_sin_cache, bool is_neox, int rope_dim_offset=0, bool inverse=False) -> ()",
+      "argument_count": 8
+    },
+    "_C::silu_and_mul": {
+      "schema": "_C::silu_and_mul(Tensor($0! -> ) result, Tensor input) -> ()",
+      "argument_count": 2
+    },
+    "_C::silu_and_mul_with_clamp": {
+      "schema": "_C::silu_and_mul_with_clamp(Tensor($0! -> ) result, Tensor input, float limit, float alpha=1., float beta=0.) -> ()",
+      "argument_count": 5
+    },
+    "_C::fp32_router_gemm": {
+      "schema": "_C::fp32_router_gemm(Tensor($0! -> ) output, Tensor mat_a, Tensor mat_b) -> ()",
+      "argument_count": 3
+    },
+    "_C_cache_ops::concat_mla_q": {
+      "schema": "_C_cache_ops::concat_mla_q(Tensor ql_nope, Tensor q_pe, Tensor($0! -> ) q_out) -> ()",
+      "argument_count": 3
+    },
+    "_C_cache_ops::indexer_k_quant_and_cache": {
+      "schema": "_C_cache_ops::indexer_k_quant_and_cache(Tensor k, Tensor($0! -> ) kv_cache, Tensor slot_mapping, int quant_block_size, str kv_cache_dtype) -> ()",
+      "argument_count": 5
+    },
+    "_C_cache_ops::cp_gather_indexer_k_quant_cache": {
+      "schema": "_C_cache_ops::cp_gather_indexer_k_quant_cache(Tensor kv_cache, Tensor($0! -> ) dst_k, Tensor($1! -> ) dst_scale, Tensor block_table, Tensor cu_seq_lens) -> ()",
+      "argument_count": 5
+    },
+    "_C_cache_ops::cp_gather_cache": {
+      "schema": "_C_cache_ops::cp_gather_cache(Tensor src_cache, Tensor($0! -> ) dst, Tensor block_table, Tensor cu_seq_lens, int batch_size, Tensor? seq_starts) -> ()",
+      "argument_count": 6
+    }
+  },
+  "cuda_initialized": false
+}

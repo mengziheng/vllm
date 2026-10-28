@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "pair_id": "glm53-h20-pr58986-eb34e115-20261028",
+  "shared": {
+    "commit": "eb34e115d041ac685fa38eadf8eae6c51d61dc23",
+    "common_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "native_receipt_sha256": "REPLACE_WITH_NATIVE_RECEIPT_SHA256",
+    "model_revision": "REPLACE_WITH_EXISTING_MODEL_SNAPSHOT_RECEIPT",
+    "hardware": {
+      "gpu_name": "NVIDIA H20",
+      "gpu_uuids": [
+        "REPLACE_GPU_0",
+        "REPLACE_GPU_1",
+        "REPLACE_GPU_2",
+        "REPLACE_GPU_3"
+      ]
+    },
+    "server_args": [
+      "--max-model-len",
+      "40000",
+      "--seed",
+      "20261028",
+      "--max-num-seqs",
+      "32",
+      "--max-num-batched-tokens",
+      "4096",
+      "--gpu-memory-utilization",
+      "0.92",
+      "--language-model-only",
+      "--speculative-config",
+      "{\"method\":\"mtp\",\"num_speculative_tokens\":3}"
+    ]
+  },
+  "target_configs": [
+    "vllm/model_executor/layers/fused_moe/configs/E=288,N=512,device_name=NVIDIA_H20,dtype=fp8_w8a8,block_shape=[128,128].json"
+  ],
+  "tuned_config_sha256": {
+    "vllm/model_executor/layers/fused_moe/configs/E=288,N=512,device_name=NVIDIA_H20,dtype=fp8_w8a8,block_shape=[128,128].json": "1fa43070725ba035b0427a0574a1d13ad0f5ea6b2dbbf134376d5706fafede91"
+  },
+  "arms": {
+    "baseline": {
+      "repo": "/data/validation-h20/baseline/vllm",
+      "python": "/data/validation-h20/baseline/.venv/bin/python",
+      "package_root": "/data/validation-h20/baseline/vllm/vllm",
+      "env": {
+        "VLLM_BATCH_INVARIANT": "0",
+        "CUDA_VISIBLE_DEVICES": "0,1,2,3",
+        "TMPDIR": "/data/validation-h20/tmp",
+        "HF_HOME": "/data/validation-h20/hf",
+        "VLLM_CACHE_ROOT": "/data/validation-h20/vllm-cache",
+        "TRITON_CACHE_DIR": "/data/validation-h20/triton-cache",
+        "TORCHINDUCTOR_CACHE_DIR": "/data/validation-h20/torchinductor",
+        "CUDA_CACHE_PATH": "/data/validation-h20/cuda-cache",
+        "XDG_CACHE_HOME": "/data/validation-h20/xdg-cache",
+        "HF_HUB_OFFLINE": "1",
+        "HF_DATASETS_OFFLINE": "1",
+        "PATH": "/usr/local/bin:/usr/bin:/bin",
+        "HOME": "/data/validation-h20/home",
+        "LANG": "C.UTF-8",
+        "OMP_NUM_THREADS": "1",
+        "HF_HUB_CACHE": "/data/validation-h20/hf/hub",
+        "HF_DATASETS_CACHE": "/data/validation-h20/hf/datasets",
+        "TRANSFORMERS_OFFLINE": "1",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "DG_JIT_CACHE_DIR": "/data/validation-h20/cache/deep-gemm",
+        "DJ_JIT_CACHE_DIR": "/data/validation-h20/cache/deep-jit",
+        "TORCH_HOME": "/data/validation-h20/cache/torch",
+        "TORCH_EXTENSIONS_DIR": "/data/validation-h20/cache/torch-extensions",
+        "CCACHE_DIR": "/data/validation-h20/cache/ccache",
+        "FLASHINFER_WORKSPACE_BASE": "/data/validation-h20/cache/flashinfer",
+        "CUTE_DSL_CACHE_DIR": "/data/validation-h20/cache/cute",
+        "TVM_CACHE_DIR": "/data/validation-h20/cache/tvm",
+        "TMP": "/data/validation-h20/tmp",
+        "TEMP": "/data/validation-h20/tmp",
+        "MKL_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1"
+      },
+      "proof": "/data/validation-h20/baseline/proof.json"
+    },
+    "tuned": {
+      "repo": "/data/validation-h20/tuned/vllm",
+      "python": "/data/validation-h20/tuned/.venv/bin/python",
+      "package_root": "/data/validation-h20/tuned/vllm/vllm",
+      "env": {
+        "VLLM_BATCH_INVARIANT": "0",
+        "CUDA_VISIBLE_DEVICES": "0,1,2,3",
+        "TMPDIR": "/data/validation-h20/tmp",
+        "HF_HOME": "/data/validation-h20/hf",
+        "VLLM_CACHE_ROOT": "/data/validation-h20/vllm-cache",
+        "TRITON_CACHE_DIR": "/data/validation-h20/triton-cache",
+        "TORCHINDUCTOR_CACHE_DIR": "/data/validation-h20/torchinductor",
+        "CUDA_CACHE_PATH": "/data/validation-h20/cuda-cache",
+        "XDG_CACHE_HOME": "/data/validation-h20/xdg-cache",
+        "HF_HUB_OFFLINE": "1",
+        "HF_DATASETS_OFFLINE": "1",
+        "PATH": "/usr/local/bin:/usr/bin:/bin",
+        "HOME": "/data/validation-h20/home",
+        "LANG": "C.UTF-8",
+        "OMP_NUM_THREADS": "1",
+        "HF_HUB_CACHE": "/data/validation-h20/hf/hub",
+        "HF_DATASETS_CACHE": "/data/validation-h20/hf/datasets",
+        "TRANSFORMERS_OFFLINE": "1",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "DG_JIT_CACHE_DIR": "/data/validation-h20/cache/deep-gemm",
+        "DJ_JIT_CACHE_DIR": "/data/validation-h20/cache/deep-jit",
+        "TORCH_HOME": "/data/validation-h20/cache/torch",
+        "TORCH_EXTENSIONS_DIR": "/data/validation-h20/cache/torch-extensions",
+        "CCACHE_DIR": "/data/validation-h20/cache/ccache",
+        "FLASHINFER_WORKSPACE_BASE": "/data/validation-h20/cache/flashinfer",
+        "CUTE_DSL_CACHE_DIR": "/data/validation-h20/cache/cute",
+        "TVM_CACHE_DIR": "/data/validation-h20/cache/tvm",
+        "TMP": "/data/validation-h20/tmp",
+        "TEMP": "/data/validation-h20/tmp",
+        "MKL_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1"
+      },
+      "proof": "/data/validation-h20/tuned/proof.json"
+    }
+  },
+  "client_python": "/data/validation-h20/client/.venv/bin/python",
+  "client_versions": {
+    "lm_eval": "0.4.13",
+    "vllm": "REPLACE_ACTUAL_VERSION",
+    "transformers": "REPLACE_ACTUAL_VERSION",
+    "datasets": "REPLACE_ACTUAL_VERSION"
+  },
+  "dataset_cache": "/data/validation-h20/hf",
+  "storage": {
+    "data_root": "/data",
+    "docker_root": "/var/lib/docker",
+    "budget_bytes": 10737418240,
+    "min_free_bytes": 21474836480,
+    "retention_days": 14
+  },
+  "client_env": {
+    "PATH": "/usr/local/bin:/usr/bin:/bin",
+    "HOME": "/data/validation-h20/client-home",
+    "LANG": "C.UTF-8",
+    "OMP_NUM_THREADS": "1",
+    "PYTHONPATH": "/data/validation-h20/tuned/vllm:/data/validation-h20/client:/common/site-packages",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "hf_hub_cache": "/data/validation-h20/hf/hub",
+  "hf_datasets_cache": "/data/validation-h20/hf/datasets",
+  "accuracy_protocol": {
+    "gsm8k": {
+      "api_mode": "local-completions",
+      "fewshot": 5,
+      "count": 1319,
+      "max_gen_toks": 256,
+      "until": [
+        "Question:",
+        "</s>",
+        "<|im_end|>"
+      ]
+    },
+    "aime25": {
+      "api_mode": "local-chat-completions",
+      "fewshot": 0,
+      "count": 30,
+      "max_gen_toks": 32768,
+      "until": [
+        "Question:",
+        "</s>",
+        "<|im_end|>",
+        "<|eot_id|>"
+      ]
+    }
+  },
+  "client_source_repo": "/data/validation-h20/tuned/vllm",
+  "client_package_root": "/data/validation-h20/tuned/vllm/vllm"
+}

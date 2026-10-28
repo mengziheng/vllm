@@ -1,0 +1,100 @@
+{
+  "lm_eval": "0.4.13",
+  "lm_eval_path": "/client/lm_eval/__init__.py",
+  "default_max_gen_toks": 256,
+  "tasks": {
+    "gsm8k": {
+      "official_yaml": "/client/lm_eval/tasks/gsm8k/gsm8k.yaml",
+      "yaml_sha256": "82eb1780b263bc040729032b3e076990c7933f42163c91e359f38820dd1d8833",
+      "mode": "local-completions",
+      "fewshot": 5,
+      "apply_chat_template": false,
+      "model_args": {
+        "model": "/model",
+        "tokenizer": "/model",
+        "base_url": "http://127.0.0.1:8000/v1/completions",
+        "num_concurrent": 8,
+        "max_retries": 0,
+        "tokenized_requests": false,
+        "tokenizer_backend": "huggingface",
+        "max_length": 40000,
+        "timeout": 7200,
+        "seed": 20261028
+      },
+      "generation_kwargs": {
+        "do_sample": false,
+        "temperature": 0.0,
+        "max_gen_toks": 256,
+        "until": [
+          "Question:",
+          "</s>",
+          "<|im_end|>"
+        ]
+      },
+      "actual_payload": {
+        "prompt": "Question: CPU contract only\nAnswer:",
+        "model": "/model",
+        "max_tokens": 256,
+        "temperature": 0.0,
+        "stop": [
+          "Question:",
+          "</s>",
+          "<|im_end|>"
+        ],
+        "seed": 20261028
+      }
+    },
+    "aime25": {
+      "official_yaml": "/client/lm_eval/tasks/aime/aime25.yaml",
+      "yaml_sha256": "7c0fda485c9f5f8bc52027d6f3100b7359457f4025f5838b21289848c689b988",
+      "mode": "local-chat-completions",
+      "fewshot": 0,
+      "apply_chat_template": true,
+      "model_args": {
+        "model": "/model",
+        "tokenizer": "/model",
+        "base_url": "http://127.0.0.1:8000/v1/chat/completions",
+        "num_concurrent": 8,
+        "max_retries": 0,
+        "tokenized_requests": false,
+        "tokenizer_backend": null,
+        "max_length": 40000,
+        "timeout": 7200,
+        "seed": 20261028
+      },
+      "generation_kwargs": {
+        "do_sample": false,
+        "temperature": 0.0,
+        "max_gen_toks": 32768,
+        "until": [
+          "Question:",
+          "</s>",
+          "<|im_end|>",
+          "<|eot_id|>"
+        ]
+      },
+      "actual_payload": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "CPU contract only"
+          }
+        ],
+        "model": "/model",
+        "max_tokens": 32768,
+        "temperature": 0.0,
+        "stop": [
+          "Question:",
+          "</s>",
+          "<|im_end|>",
+          "<|eot_id|>"
+        ],
+        "seed": 20261028
+      }
+    }
+  },
+  "cuda_initialized": false,
+  "requests_sent": 0,
+  "dataset_loaded": false,
+  "scores_generated": false
+}

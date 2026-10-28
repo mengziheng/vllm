@@ -1,0 +1,1066 @@
+{
+  "snapshot_utc": "2026-10-28T11:17:17.519514+00:00",
+  "policy_version": 2,
+  "status": "passed",
+  "new_or_changed_files_scanned": 3,
+  "unchanged_file_results_reused": 619,
+  "removed_cached_files": 0,
+  "blocking_findings": [],
+  "broken_local_markdown_links": [],
+  "findings": [
+    {
+      "file": "build-scripts/assemble_runtime.py",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "build-scripts/complete_runtime.py",
+      "categories": {
+        "local_path_metadata": 2
+      }
+    },
+    {
+      "file": "evaluation/model-receipt-h20-01.json",
+      "categories": {
+        "local_path_metadata": 2
+      }
+    },
+    {
+      "file": "evaluation/pool-submit-argv.json",
+      "categories": {
+        "local_path_metadata": 7
+      }
+    },
+    {
+      "file": "evaluation/pool-submit-smoke-argv.json",
+      "categories": {
+        "local_path_metadata": 7
+      }
+    },
+    {
+      "file": "evidence/evaluation-cpu/evaluation-v9-source-receipt.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "evidence/evaluation-cpu/launch-commands.json",
+      "categories": {
+        "local_path_metadata": 30
+      }
+    },
+    {
+      "file": "evidence/evaluation-cpu/unified-environment/sweep-unified-moe58986-12d67483203d.json",
+      "categories": {
+        "local_path_metadata": 11
+      }
+    },
+    {
+      "file": "evidence/offline-dataset-preparation/official-data-manifest.json",
+      "categories": {
+        "local_path_metadata": 6
+      }
+    },
+    {
+      "file": "evidence/offline-dataset-preparation/provenance-and-tokenizer-resolution.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "evidence/offline-dataset-preparation/sweep-unified-moe58986-89567e69958a.json",
+      "categories": {
+        "local_path_metadata": 9
+      }
+    },
+    {
+      "file": "evidence/offline-dataset-preparation/sweep-unified-moe58986-96741e4c4062.json",
+      "categories": {
+        "local_path_metadata": 9
+      }
+    },
+    {
+      "file": "evidence/pair2-baseline-service-proof.json",
+      "categories": {
+        "local_path_metadata": 2
+      }
+    },
+    {
+      "file": "evidence/pair2-tuned-service-proof.json",
+      "categories": {
+        "local_path_metadata": 2
+      }
+    },
+    {
+      "file": "evidence/sweep-unified-moe58986-8dd50e9bc7e6.json",
+      "categories": {
+        "local_path_metadata": 7
+      }
+    },
+    {
+      "file": "native/FROZEN.json",
+      "categories": {
+        "local_path_metadata": 2
+      }
+    },
+    {
+      "file": "native/model-receipt-h20-01.json",
+      "categories": {
+        "local_path_metadata": 2
+      }
+    },
+    {
+      "file": "native/native-receipt.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "native/toolchain.json",
+      "categories": {
+        "local_path_metadata": 44
+      }
+    },
+    {
+      "file": "pool-admission/full-pair-v10-compat-submit-argv.json",
+      "categories": {
+        "local_path_metadata": 7
+      }
+    },
+    {
+      "file": "pool-admission/full-pair-v10-pair2-compat-submit-argv.json",
+      "categories": {
+        "local_path_metadata": 7
+      }
+    },
+    {
+      "file": "pool-admission/legacy-admission-proof.redacted.json",
+      "categories": {
+        "local_path_metadata": 8
+      }
+    },
+    {
+      "file": "pool-admission/legacy-admission-test-red.log",
+      "categories": {
+        "local_path_metadata": 20
+      }
+    },
+    {
+      "file": "pool-admission/pool_legacy_admission.py",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "pool-admission/test_legacy_pool_admission.py",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "preparation-reports/evaluation-cpu-preparation.md",
+      "categories": {
+        "local_path_metadata": 2
+      }
+    },
+    {
+      "file": "preparation-reports/native-runtime-build.md",
+      "categories": {
+        "local_path_metadata": 3
+      }
+    },
+    {
+      "file": "publication-tooling/collect_pair2_raw.py",
+      "categories": {
+        "local_path_metadata": 4
+      }
+    },
+    {
+      "file": "publication-tooling/pair2-final-raw-collect-command.json",
+      "categories": {
+        "local_path_metadata": 6
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-a80de6bd/job/manifest.json",
+      "categories": {
+        "local_path_metadata": 3
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-a80de6bd/launcher/sweep-unified-moe58986-f41ba688009b.json",
+      "categories": {
+        "local_path_metadata": 12
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-a80de6bd/pool-job-status.json",
+      "categories": {
+        "local_path_metadata": 24
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/collection-manifest.json",
+      "categories": {
+        "local_path_metadata": 398
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/manifest.json",
+      "categories": {
+        "local_path_metadata": 3
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/accuracy-aime25/attempt-001/actual-environment.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/accuracy-aime25/attempt-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/accuracy-aime25/attempt-001/results/__model/results_2026-10-28T17-58-20.822678.json",
+      "categories": {
+        "package_version_ip_shape": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/accuracy-aime25/identity.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/accuracy-gsm8k/attempt-001/actual-environment.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/accuracy-gsm8k/attempt-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/accuracy-gsm8k/attempt-001/results/__model/results_2026-10-28T17-45-31.058863.json",
+      "categories": {
+        "package_version_ip_shape": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/accuracy-gsm8k/identity.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-2048-512/attempt-001/actual-environment.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-2048-512/attempt-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-2048-512/identity.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-512-1024/attempt-001/actual-environment.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-512-1024/attempt-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-512-1024/identity.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-512-128/attempt-001/actual-environment.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-512-128/attempt-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-512-128/identity.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-8192-1/attempt-001/actual-environment.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-8192-1/attempt-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r1-8192-1/identity.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-2048-512/attempt-001/actual-environment.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-2048-512/attempt-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-2048-512/identity.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-512-1024/attempt-001/actual-environment.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-512-1024/attempt-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-512-1024/identity.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-512-128/attempt-001/actual-environment.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-512-128/attempt-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-512-128/identity.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-8192-1/attempt-001/actual-environment.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-8192-1/attempt-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r2-8192-1/identity.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-2048-512/attempt-001/actual-environment.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-2048-512/attempt-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-2048-512/identity.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-512-1024/attempt-001/actual-environment.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-512-1024/attempt-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-512-1024/identity.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-512-128/attempt-001/actual-environment.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-512-128/attempt-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-512-128/identity.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-8192-1/attempt-001/actual-environment.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-8192-1/attempt-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/bench-r3-8192-1/identity.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/server-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/server-001/proof.json",
+      "categories": {
+        "local_path_metadata": 2
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/server-001/startup-request/attempt-001/actual-environment.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/server-001/startup-request/attempt-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/baseline/server-001/startup-request/identity.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/client-version/attempt-001/actual-environment.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/client-version/attempt-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/client-version/identity.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/identity.json",
+      "categories": {
+        "local_path_metadata": 3
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/plan.json",
+      "categories": {
+        "local_path_metadata": 2
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/accuracy-aime25/attempt-001/actual-environment.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/accuracy-aime25/attempt-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/accuracy-aime25/attempt-001/results/__model/results_2026-10-28T18-43-17.919283.json",
+      "categories": {
+        "package_version_ip_shape": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/accuracy-aime25/identity.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/accuracy-gsm8k/attempt-001/actual-environment.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/accuracy-gsm8k/attempt-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/accuracy-gsm8k/attempt-001/results/__model/results_2026-10-28T18-30-33.450263.json",
+      "categories": {
+        "package_version_ip_shape": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/accuracy-gsm8k/identity.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-2048-512/attempt-001/actual-environment.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-2048-512/attempt-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-2048-512/identity.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-512-1024/attempt-001/actual-environment.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-512-1024/attempt-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-512-1024/identity.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-512-128/attempt-001/actual-environment.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-512-128/attempt-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-512-128/identity.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-8192-1/attempt-001/actual-environment.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-8192-1/attempt-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r1-8192-1/identity.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-2048-512/attempt-001/actual-environment.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-2048-512/attempt-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-2048-512/identity.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-512-1024/attempt-001/actual-environment.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-512-1024/attempt-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-512-1024/identity.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-512-128/attempt-001/actual-environment.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-512-128/attempt-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-512-128/identity.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-8192-1/attempt-001/actual-environment.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-8192-1/attempt-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r2-8192-1/identity.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-2048-512/attempt-001/actual-environment.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-2048-512/attempt-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-2048-512/identity.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-512-1024/attempt-001/actual-environment.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-512-1024/attempt-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-512-1024/identity.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-512-128/attempt-001/actual-environment.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-512-128/attempt-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-512-128/identity.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-8192-1/attempt-001/actual-environment.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-8192-1/attempt-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/bench-r3-8192-1/identity.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/server-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/server-001/proof.json",
+      "categories": {
+        "local_path_metadata": 2
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/server-001/startup-request/attempt-001/actual-environment.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/server-001/startup-request/attempt-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/pair/tuned/server-001/startup-request/identity.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/runner-001/actual-environment.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/runner-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/setup-versions/attempt-001/actual-environment.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/setup-versions/attempt-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/job/setup-versions/identity.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/launcher/sweep-unified-moe58986-bbbd3419b670.json",
+      "categories": {
+        "local_path_metadata": 12
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/pool-job-status.json",
+      "categories": {
+        "local_path_metadata": 24
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/pool-status-command.json",
+      "categories": {
+        "local_path_metadata": 2
+      }
+    },
+    {
+      "file": "raw/fullpair-v10-pair2-48781766/pool-status.stdout.txt",
+      "categories": {
+        "local_path_metadata": 24
+      }
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/manifest.json",
+      "categories": {
+        "local_path_metadata": 3
+      }
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/accuracy-gsm8k/attempt-001/actual-environment.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/accuracy-gsm8k/attempt-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/accuracy-gsm8k/attempt-001/results/__model/results_2026-10-28T17-04-57.880448.json",
+      "categories": {
+        "package_version_ip_shape": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/accuracy-gsm8k/identity.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/server-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/server-001/proof.json",
+      "categories": {
+        "local_path_metadata": 2
+      }
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/server-001/startup-request/attempt-001/actual-environment.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/server-001/startup-request/attempt-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/baseline/server-001/startup-request/identity.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/client-version/attempt-001/actual-environment.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/client-version/attempt-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/client-version/identity.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/identity.json",
+      "categories": {
+        "local_path_metadata": 3
+      }
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/pair/plan.json",
+      "categories": {
+        "local_path_metadata": 2
+      }
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/runner-001/actual-environment.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/runner-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/setup-versions/attempt-001/actual-environment.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/setup-versions/attempt-001/command.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "raw/fullpair-v9-d8617fa4/job/setup-versions/identity.json",
+      "categories": {
+        "local_path_metadata": 1
+      }
+    },
+    {
+      "file": "reports/official-accuracy-stdout-all.command.json",
+      "categories": {
+        "local_path_metadata": 5
+      }
+    },
+    {
+      "file": "reports/official-bench-stdout-all.command.json",
+      "categories": {
+        "local_path_metadata": 5
+      }
+    },
+    {
+      "file": "reports/pair2-gsm8k-discordance.command.json",
+      "categories": {
+        "local_path_metadata": 4
+      }
+    },
+    {
+      "file": "reports/pair2-gsm8k-discordance.command.sh",
+      "categories": {
+        "local_path_metadata": 4
+      }
+    },
+    {
+      "file": "reports/pair2-gsm8k-discordance.json",
+      "categories": {
+        "local_path_metadata": 3
+      }
+    },
+    {
+      "file": "reports/pair2-logged-doc-audit.command.json",
+      "categories": {
+        "local_path_metadata": 5
+      }
+    },
+    {
+      "file": "reports/pair2-summary.command.json",
+      "categories": {
+        "local_path_metadata": 5
+      }
+    },
+    {
+      "file": "reports/pair2-summary.json",
+      "categories": {
+        "token_throughput_unit_label": 1
+      }
+    }
+  ],
+  "scope": "Literal/key checks on candidate text; stat reuse; no source hashes or matched values.",
+  "generated_files_excluded_from_content_scan": [
+    "CANDIDATE-FILES.json",
+    "INCREMENTAL-CHECKS.json"
+  ],
+  "inventory_excludes": [
+    ".git/**",
+    "CANDIDATE-FILES.json",
+    "local scan state if placed inside root"
+  ]
+}

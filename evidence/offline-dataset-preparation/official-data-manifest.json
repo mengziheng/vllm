@@ -1,0 +1,148 @@
+{
+  "prepared_at": "2026-10-28T07:22:21.760841+00:00",
+  "python": "3.12.14 (main, Sep  1 2026, 14:09:38) [Clang 22.1.3 ]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "packages": {
+    "datasets": "5.1.0",
+    "pyarrow": "26.0.0",
+    "huggingface_hub": "2.3.0"
+  },
+  "hf_home": "/Users/bytedance/Documents/ChatGPT/b200优化/review-20261028/evidence/offline-eval-data/payload/.cache/unified/huggingface",
+  "datasets": [
+    {
+      "repo_id": "openai/gsm8k",
+      "dataset_name": "main",
+      "revision": "740312add88f781978c0658806c59bc2815b9866",
+      "source_page": "https://huggingface.co/datasets/openai/gsm8k/tree/740312add88f781978c0658806c59bc2815b9866",
+      "snapshot_path": "/Users/bytedance/Documents/ChatGPT/b200优化/review-20261028/evidence/offline-eval-data/payload/.cache/unified/huggingface/hub/datasets--openai--gsm8k/snapshots/740312add88f781978c0658806c59bc2815b9866",
+      "source_files": [
+        {
+          "path": ".gitattributes",
+          "bytes": 1610,
+          "sha256": "0209b6c969d1b93c1fc521b6da74b1561d6933e6be7b3a223c3aa9ef6a3f6dbc",
+          "source_url": "https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/.gitattributes"
+        },
+        {
+          "path": "README.md",
+          "bytes": 7935,
+          "sha256": "a17e882503578c9e324560630e31017617714ee025c87cf4fea6fd916895f3c1",
+          "source_url": "https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/README.md"
+        },
+        {
+          "path": "eval.yaml",
+          "bytes": 920,
+          "sha256": "a115b103292f0d24a1483de6b5eac826292bd6c66f7f9f8fc31ffbc560260984",
+          "source_url": "https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/eval.yaml"
+        },
+        {
+          "path": "main/test-00000-of-00001.parquet",
+          "bytes": 419088,
+          "sha256": "ee7b8da9e381df27b9e3f7758a159ab2bdaa4dbaa910546cbbc47e0cb44e4f59",
+          "source_url": "https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/main/test-00000-of-00001.parquet"
+        },
+        {
+          "path": "main/train-00000-of-00001.parquet",
+          "bytes": 2306545,
+          "sha256": "ea82612ea9582142387730c793eb67d3b12849002bc0b7fa6f8efafa7351419d",
+          "source_url": "https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/main/train-00000-of-00001.parquet"
+        },
+        {
+          "path": "socratic/test-00000-of-00001.parquet",
+          "bytes": 486995,
+          "sha256": "477dba7028204b465491b8f346ec774262ccd77147d942a0881e94cc6da7c99e",
+          "source_url": "https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/socratic/test-00000-of-00001.parquet"
+        },
+        {
+          "path": "socratic/train-00000-of-00001.parquet",
+          "bytes": 2677259,
+          "sha256": "54eb5fd2105a9126ac6410541b2e9dbe0199701258957c9af02d9ed675c90378",
+          "source_url": "https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/socratic/train-00000-of-00001.parquet"
+        }
+      ],
+      "splits": {
+        "train": {
+          "rows": 7473,
+          "columns": [
+            "question",
+            "answer"
+          ],
+          "features": "{'question': Value('string'), 'answer': Value('string')}",
+          "fingerprint": "c6f812ae33c9159d",
+          "canonical_rows_sha256": "dca449882e67a1e7716b5da453650a7b16588a1f2d1a0d82394a43d75ea7e9ca",
+          "cache_files": [
+            {
+              "filename": "/Users/bytedance/Documents/ChatGPT/b200优化/review-20261028/evidence/offline-eval-data/payload/.cache/unified/huggingface/datasets/openai___gsm8k/main/0.0.0/740312add88f781978c0658806c59bc2815b9866/gsm8k-train.arrow"
+            }
+          ]
+        },
+        "test": {
+          "rows": 1319,
+          "columns": [
+            "question",
+            "answer"
+          ],
+          "features": "{'question': Value('string'), 'answer': Value('string')}",
+          "fingerprint": "59ec1b7f9357c7a2",
+          "canonical_rows_sha256": "32c548f08195e19e33408b844dd7be6aa4bcae457d957bc05909ff4bd4a00595",
+          "cache_files": [
+            {
+              "filename": "/Users/bytedance/Documents/ChatGPT/b200优化/review-20261028/evidence/offline-eval-data/payload/.cache/unified/huggingface/datasets/openai___gsm8k/main/0.0.0/740312add88f781978c0658806c59bc2815b9866/gsm8k-test.arrow"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "repo_id": "math-ai/aime25",
+      "dataset_name": null,
+      "revision": "563bb8404243c5f09de6ec262f2db674fe5bce9b",
+      "source_page": "https://huggingface.co/datasets/math-ai/aime25/tree/563bb8404243c5f09de6ec262f2db674fe5bce9b",
+      "snapshot_path": "/Users/bytedance/Documents/ChatGPT/b200优化/review-20261028/evidence/offline-eval-data/payload/.cache/unified/huggingface/hub/datasets--math-ai--aime25/snapshots/563bb8404243c5f09de6ec262f2db674fe5bce9b",
+      "source_files": [
+        {
+          "path": ".gitattributes",
+          "bytes": 2461,
+          "sha256": "e7a120ab07b1bc5b486be249e9fc6c83d59448d0093e1dfebe95d1566d9cafc0",
+          "source_url": "https://huggingface.co/datasets/math-ai/aime25/resolve/563bb8404243c5f09de6ec262f2db674fe5bce9b/.gitattributes"
+        },
+        {
+          "path": "LICENSE",
+          "bytes": 11356,
+          "sha256": "498cdc89653a01fca77c90c94f5deb526398a1d4c0f8b54f0fdb93827dd011a9",
+          "source_url": "https://huggingface.co/datasets/math-ai/aime25/resolve/563bb8404243c5f09de6ec262f2db674fe5bce9b/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "bytes": 878,
+          "sha256": "ea8589560f464f85305edd22e4f5033759561af8040aa59d8b2759b606489c10",
+          "source_url": "https://huggingface.co/datasets/math-ai/aime25/resolve/563bb8404243c5f09de6ec262f2db674fe5bce9b/README.md"
+        },
+        {
+          "path": "test.jsonl",
+          "bytes": 15813,
+          "sha256": "b4e273c02d3e7fe1b74b59eae768fc8230bfb0f79539890cb56f4361caac0331",
+          "source_url": "https://huggingface.co/datasets/math-ai/aime25/resolve/563bb8404243c5f09de6ec262f2db674fe5bce9b/test.jsonl"
+        }
+      ],
+      "splits": {
+        "test": {
+          "rows": 30,
+          "columns": [
+            "problem",
+            "answer",
+            "id"
+          ],
+          "features": "{'problem': Value('string'), 'answer': Value('string'), 'id': Value('string')}",
+          "fingerprint": "cf493e24f4d1493b",
+          "canonical_rows_sha256": "93226328a3bc794c9b7cf8ccd90beb65491bafa0ac58b132f3c11fe9976131b9",
+          "cache_files": [
+            {
+              "filename": "/Users/bytedance/Documents/ChatGPT/b200优化/review-20261028/evidence/offline-eval-data/payload/.cache/unified/huggingface/datasets/math-ai___aime25/default/0.0.0/563bb8404243c5f09de6ec262f2db674fe5bce9b/aime25-test.arrow"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "completed_at": "2026-10-28T07:22:42.633531+00:00"
+}

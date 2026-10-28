@@ -1,0 +1,5 @@
+local-chat-completions ({'model': '/model', 'tokenizer': '/model', 'base_url': 'http://127.0.0.1:8000/v1/chat/completions', 'num_concurrent': 8, 'max_retries': 0, 'tokenized_requests': False, 'tokenizer_backend': None, 'max_length': 40000, 'timeout': 7200, 'seed': 20261028}), gen_kwargs: ({'do_sample': False, 'temperature': 0.0, 'max_gen_toks': 32768, 'until': ['Question:', '</s>', '<|im_end|>', '<|eot_id|>']}), limit: None, num_fewshot: 0, batch_size: 1
+|Tasks |Version|Filter|n-shot|  Metric   |   |Value |   |Stderr|
+|------|------:|------|-----:|-----------|---|-----:|---|-----:|
+|aime25|      0|none  |     0|exact_match|↑  |0.6333|±  |0.0895|
+

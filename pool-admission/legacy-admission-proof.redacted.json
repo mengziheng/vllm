@@ -1,0 +1,45 @@
+{
+  "task": "moe58986",
+  "release": "20261024-153729-7168ad",
+  "legacy_receipt_sha256": "11689650958767c6937d9eb526c7e28e30d8fc6f8acd6b37da9d7ebe932d4e32",
+  "current_task": {
+    "hosts": {
+      "h20-01": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad",
+      "h20-02": "/data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad"
+    },
+    "framework": "v032",
+    "gpu_scheduling": {
+      "primary_node": "h20-04",
+      "allowed_gpu_nodes": [
+        "h20-01",
+        "h20-02",
+        "h20-03",
+        "h20-04"
+      ]
+    },
+    "source_hosts": {
+      "h20-04": "/data03/tiger/vllm_pr58986_20261024"
+    },
+    "host_directories_are_not_gpu_permissions": true,
+    "existing_results": "CUDA12.9 results remain historical. Validate exact upstream PR source on fixed CUDA13 dependencies before accepting fresh performance.",
+    "pool_release_id": "20261024-153729-7168ad",
+    "pool_capture_time": 1792827452.2152581,
+    "preparation_errors": {
+      "h20-03": "Warning: Permanently added '<private-ip-redacted>' (ECDSA) to the list of known hosts.\nTraceback (most recent call last):\n  File \"/data03/tiger/operator_sweep_common/20261023-v1/bin/pool_transfer.py\", line 107, in <module>\n    elif op=='fetch':print(json.dumps(fetch(json.load(sys.stdin))))\n  File \"/data03/tiger/operator_sweep_common/20261023-v1/bin/pool_transfer.py\", line 101, in fetch\n    with preparation_lock():return _fetch(spec)\n  File \"/data03/tiger/operator_sweep_common/20261023-v1/bin/pool_transfer.py\", line 84, in _fetch\n    if shutil.disk_usage(str(root.parent)).free<required:raise RuntimeError('Insufficient expansion capacity; retain 15 GiB')\nRuntimeError: Insufficient expansion capacity; retain 15 GiB\n",
+      "h20-04": "Temporarily not ready for this task: Docker /data00/docker has zero free space; preserve prepared source at /data03/tiger/operator_sweep_pool_tasks/moe58986/20261024-153729-7168ad"
+    }
+  },
+  "official_pool_sha256": "d025113c20c85bd0451bd8243e5799c6b539b6e6f89ea683f377e8e31b903c0a",
+  "official_runtime_identity": {
+    "run.py": "9ee66e975cf1b1fb96c7dabc8e3cf7fa4811a17a25de0df104169ac98d97f1f7",
+    "bootstrap.py": "816d5063a77edbd84eec5ce40b34676954ce093b04617d8c874a3af60a7844da",
+    "pool_worker.py": "ff8403bb33433c90451f2dc2409991f641b34dc3bbc7d58fea6a68bea0f6df82",
+    "storage_policy.py": "15d4a90021f44fef2ad266463da514fd8556ad88cb1aa3adc5953d9ecfc89cea"
+  },
+  "compatibility_script_sha256": "ea70948ac09576d293b2e9a82180d87e86c21cb8f0b62116a7dc968613076be8",
+  "resolved_matches_current": true,
+  "no_shared_file_modified": true,
+  "runtime_identity_matches_original_gpu_job": true,
+  "ready_hosts_match_original_gpu_job": true,
+  "regression_tests": 8
+}

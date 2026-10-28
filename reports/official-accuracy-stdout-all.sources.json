@@ -1,0 +1,25 @@
+{
+  "kind": "accuracy",
+  "files": [
+    {
+      "source_relative_to_pair": "baseline/accuracy-gsm8k/attempt-001/stdout.txt",
+      "payload_offset": 68,
+      "payload_bytes": 745
+    },
+    {
+      "source_relative_to_pair": "baseline/accuracy-aime25/attempt-001/stdout.txt",
+      "payload_offset": 954,
+      "payload_bytes": 658
+    },
+    {
+      "source_relative_to_pair": "tuned/accuracy-gsm8k/attempt-001/stdout.txt",
+      "payload_offset": 1750,
+      "payload_bytes": 745
+    },
+    {
+      "source_relative_to_pair": "tuned/accuracy-aime25/attempt-001/stdout.txt",
+      "payload_offset": 2630,
+      "payload_bytes": 655
+    }
+  ]
+}

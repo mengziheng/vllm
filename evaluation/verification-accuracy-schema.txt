@@ -1,0 +1,11 @@
+test_cross_filter_input_or_target_difference_is_rejected (test_accuracy_schema.AccuracySchemaTests) ... ok
+test_cross_filter_raw_response_difference_is_rejected (test_accuracy_schema.AccuracySchemaTests) ... ok
+test_duplicate_or_shifted_doc_inside_one_filter_is_rejected (test_accuracy_schema.AccuracySchemaTests) ... ok
+test_full_aime_default_none_filter_remains_30_rows (test_accuracy_schema.AccuracySchemaTests) ... ok
+test_full_gsm_two_filters_are_2638_rows_and_1319_unique_docs_each (test_accuracy_schema.AccuracySchemaTests) ... ok
+test_missing_filter_cannot_look_like_complete_gsm (test_accuracy_schema.AccuracySchemaTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.234s
+
+OK

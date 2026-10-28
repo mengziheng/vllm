@@ -1,0 +1,136 @@
+{
+  "source_commit": "eb34e115d041ac685fa38eadf8eae6c51d61dc23",
+  "flashkda_commit": "17a037d98da546deb4591e967cf961a43c034d8b",
+  "cutlass_revision": "v4.7.1",
+  "scope": "Exact current main native CMake sections through HIP finalization, plus current FlashKDA target recipe; unrelated externals omitted",
+  "commands": [
+    {
+      "command": [
+        "cmake",
+        "-S",
+        "/work/driver-core",
+        "-B",
+        "/work/build/core",
+        "-G",
+        "Ninja",
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
+        "-DVLLM_PYTHON_EXECUTABLE=/usr/local/bin/python3",
+        "-DCMAKE_INSTALL_PREFIX=/work/package/native",
+        "-DCMAKE_CUDA_COMPILER=/usr/local/cuda/bin/nvcc",
+        "-DCMAKE_CXX_COMPILER=/opt/byted/toolchain/bin/g++",
+        "-DNVCC_THREADS=1"
+      ],
+      "log": "/work/logs/core-step-0.log",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "cmake",
+        "--build",
+        "/work/build/core",
+        "--parallel",
+        "16",
+        "--target",
+        "_C_stable_libtorch",
+        "_moe_C_stable_libtorch",
+        "_flashkda_C",
+        "cumem_allocator",
+        "spinloop",
+        "fs_io_C"
+      ],
+      "log": "/work/logs/core-step-1.log",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "cmake",
+        "--install",
+        "/work/build/core",
+        "--component",
+        "_C_stable_libtorch"
+      ],
+      "log": "/work/logs/core-step-2.log",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "cmake",
+        "--install",
+        "/work/build/core",
+        "--component",
+        "_moe_C_stable_libtorch"
+      ],
+      "log": "/work/logs/core-step-3.log",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "cmake",
+        "--install",
+        "/work/build/core",
+        "--component",
+        "_flashkda_C"
+      ],
+      "log": "/work/logs/core-step-4.log",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "cmake",
+        "--install",
+        "/work/build/core",
+        "--component",
+        "cumem_allocator"
+      ],
+      "log": "/work/logs/core-step-5.log",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "cmake",
+        "--install",
+        "/work/build/core",
+        "--component",
+        "spinloop"
+      ],
+      "log": "/work/logs/core-step-6.log",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "cmake",
+        "--install",
+        "/work/build/core",
+        "--component",
+        "fs_io_C"
+      ],
+      "log": "/work/logs/core-step-7.log",
+      "exit_code": 0
+    }
+  ],
+  "started_at": "2026-10-28T07:48:01.204276+00:00",
+  "source_files": {
+    "CMakeLists.txt": "07d01f5beeda9b73adcb490e999b85c2e634a1d9a6dabb8ab6da47024cc776ad",
+    "cmake/utils.cmake": "c982391e700eb61eb3d2fde56cfd2a50c8eb135746b3d8559b300943f2e7c476",
+    "cmake/external_projects/flashkda.cmake": "e1372e8f605c33bc7b9aae86b3c460128d2f91470187fec9003782d4352d8ac7"
+  },
+  "environment": {
+    "TORCH_CUDA_ARCH_LIST": "9.0",
+    "CUDA_HOME": "/usr/local/cuda",
+    "VLLM_CUTLASS_SRC_DIR": "/dependencies/cutlass-v4.7.1",
+    "FLASH_KDA_SRC_DIR": "/dependencies/flashkda-17a037d98da546deb4591e967cf961a43c034d8b",
+    "TMPDIR": "/work/tmp",
+    "CUDA_CACHE_PATH": "/work/cache/cuda",
+    "CCACHE_DIR": "/work/cache/ccache"
+  },
+  "finished_at": "2026-10-28T08:01:53.840764+00:00",
+  "artifacts": {
+    "vllm/_C_stable_libtorch.abi3.so": "3562f443c7bf3a523c333276057736d37ef58a7ac72bf4653e2b2902420837a0",
+    "vllm/spinloop.abi3.so": "89ea867934c2fc8efd37ffbb82abbedbe421b07a48b2cf4d976bae90d22844de",
+    "vllm/fs_io_C.abi3.so": "fad905759296c9ec65cdcf01f68cc87f3a368f0637df438908ce48ccfa9fcc7a",
+    "vllm/_moe_C_stable_libtorch.abi3.so": "fa393aca248538b71d666967468cec8bde3055a57ec8ef1207c50566bcf013b2",
+    "vllm/cumem_allocator.abi3.so": "a370228f46351c0e46bf75f8ca127506034de0de9b9c44430a93514dbb222f26",
+    "vllm/_flashkda_C.abi3.so": "47efbb43b69deec602a2b0c71fdcc8c024acbf13234ec0fa40ed3faac9aaaf8a"
+  }
+}

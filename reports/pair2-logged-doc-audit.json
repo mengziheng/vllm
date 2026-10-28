@@ -1,0 +1,97 @@
+{
+  "pair_id": "glm53-h20-pr58986-eb34e115-native-full-mtp3-20261028-pair2",
+  "tasks": {
+    "gsm8k": {
+      "baseline": {
+        "physical_log_rows": 2638,
+        "unique_docs": 1319,
+        "filter_counts": {
+          "strict-match": 1319,
+          "flexible-extract": 1319
+        },
+        "document_key_sets": [
+          [
+            "answer",
+            "question"
+          ]
+        ],
+        "canonical_rows_sha256": "32c548f08195e19e33408b844dd7be6aa4bcae457d957bc05909ff4bd4a00595",
+        "dataset_repo": "openai/gsm8k",
+        "dataset_revision": "740312add88f781978c0658806c59bc2815b9866",
+        "split": "test",
+        "expected_sha256": "32c548f08195e19e33408b844dd7be6aa4bcae457d957bc05909ff4bd4a00595",
+        "matches_prepared_test_split": true,
+        "samples_file": "baseline/accuracy-gsm8k/attempt-001/results/__model/samples_gsm8k_2026-10-28T17-45-31.058863.jsonl"
+      },
+      "tuned": {
+        "physical_log_rows": 2638,
+        "unique_docs": 1319,
+        "filter_counts": {
+          "strict-match": 1319,
+          "flexible-extract": 1319
+        },
+        "document_key_sets": [
+          [
+            "answer",
+            "question"
+          ]
+        ],
+        "canonical_rows_sha256": "32c548f08195e19e33408b844dd7be6aa4bcae457d957bc05909ff4bd4a00595",
+        "dataset_repo": "openai/gsm8k",
+        "dataset_revision": "740312add88f781978c0658806c59bc2815b9866",
+        "split": "test",
+        "expected_sha256": "32c548f08195e19e33408b844dd7be6aa4bcae457d957bc05909ff4bd4a00595",
+        "matches_prepared_test_split": true,
+        "samples_file": "tuned/accuracy-gsm8k/attempt-001/results/__model/samples_gsm8k_2026-10-28T18-30-33.450263.jsonl"
+      }
+    },
+    "aime25": {
+      "baseline": {
+        "physical_log_rows": 30,
+        "unique_docs": 30,
+        "filter_counts": {
+          "none": 30
+        },
+        "document_key_sets": [
+          [
+            "answer",
+            "id",
+            "problem"
+          ]
+        ],
+        "canonical_rows_sha256": "93226328a3bc794c9b7cf8ccd90beb65491bafa0ac58b132f3c11fe9976131b9",
+        "dataset_repo": "math-ai/aime25",
+        "dataset_revision": "563bb8404243c5f09de6ec262f2db674fe5bce9b",
+        "split": "test",
+        "expected_sha256": "93226328a3bc794c9b7cf8ccd90beb65491bafa0ac58b132f3c11fe9976131b9",
+        "matches_prepared_test_split": true,
+        "samples_file": "baseline/accuracy-aime25/attempt-001/results/__model/samples_aime25_2026-10-28T17-58-20.822678.jsonl"
+      },
+      "tuned": {
+        "physical_log_rows": 30,
+        "unique_docs": 30,
+        "filter_counts": {
+          "none": 30
+        },
+        "document_key_sets": [
+          [
+            "answer",
+            "id",
+            "problem"
+          ]
+        ],
+        "canonical_rows_sha256": "93226328a3bc794c9b7cf8ccd90beb65491bafa0ac58b132f3c11fe9976131b9",
+        "dataset_repo": "math-ai/aime25",
+        "dataset_revision": "563bb8404243c5f09de6ec262f2db674fe5bce9b",
+        "split": "test",
+        "expected_sha256": "93226328a3bc794c9b7cf8ccd90beb65491bafa0ac58b132f3c11fe9976131b9",
+        "matches_prepared_test_split": true,
+        "samples_file": "tuned/accuracy-aime25/attempt-001/results/__model/samples_aime25_2026-10-28T18-43-17.919283.jsonl"
+      }
+    }
+  },
+  "scope": "Four full logged test doc sets only; not scoring or overall pair completion.",
+  "canonical_format": "Full doc JSON, sorted keys, UTF-8 unicode, comma/colon separators; LF after every unique doc in ascending integer doc_id order.",
+  "gsm8k_train": "Not reconstructed; reuse the preparation receipt for train/few-shot source data.",
+  "status": "matched"
+}

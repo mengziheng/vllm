@@ -1,0 +1,3 @@
+-- Install configuration: "Release"
+-- Installing: /work/package/native/vllm/_flashkda_C.abi3.so
+-- Set non-toolchain portion of runtime path of "/work/package/native/vllm/_flashkda_C.abi3.so" to ""

@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "docker",
+    "exec",
+    "sweep-unified-moe58986-bbbd3419b670",
+    "python3",
+    "-I",
+    "-c",
+    "import json,datetime\nfrom pathlib import Path\nrecords=[]\nfor proc in sorted(Path(\"/proc\").iterdir(),key=lambda p:int(p.name) if p.name.isdigit() else -1):\n if not proc.name.isdigit():continue\n try:\n  argv=[x.decode(errors=\"replace\") for x in (proc/\"cmdline\").read_bytes().split(b\"\\0\") if x]\n  if not argv or not any(\"python\" in x.lower() or \"vllm\" in x.lower() for x in argv[:2]):continue\n  selected=[]\n  for line in (proc/\"maps\").read_text(errors=\"replace\").splitlines():\n   low=line.lower()\n   if \".so\" in low and (\"/vllm/\" in low or \"flashmla\" in low or \"deep_gemm\" in low or \"flash_attn\" in low or \"_c_stable\" in low):selected.append(line)\n  if selected:records.append({\"pid\":int(proc.name),\"cmdline\":argv,\"selected_maps\":selected})\n except (OSError,ValueError) as error:records.append({\"pid\":int(proc.name),\"error\":str(error)})\nprint(json.dumps({\"observed_utc\":datetime.datetime.now(datetime.timezone.utc).isoformat(),\"scope\":\"read-only live tuned worker native maps during GSM; stdlib only; no env read/model import/request\", \"processes\":records},ensure_ascii=False,indent=2))\n"
+  ],
+  "started_utc": "2026-10-28T10:26:48.731391+00:00",
+  "returncode": 0
+}

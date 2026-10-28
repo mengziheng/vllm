@@ -1,0 +1,20 @@
+test_accuracy_uses_task_modes_official_stops_and_eight_concurrent (test_pair.PairTests) ... ok
+test_argument_is_literal_and_timeout_retains_streams (test_pair.PairTests) ... ok
+test_benchmark_cache_salt_matches_arms_and_differs_by_shape_round (test_pair.PairTests) ... ok
+test_benchmark_receipt_changes_when_actual_prompt_changes (test_pair.PairTests) ... ok
+test_benchmark_recording_passes_original_requests_without_rng_change (test_pair.PairTests) ... ok
+test_client_cache_paths_are_explicit_and_offline (test_pair.PairTests) ... ok
+test_completed_job_is_reused_without_running_or_overwriting (test_pair.PairTests) ... ok
+test_completed_job_rejects_changed_command (test_pair.PairTests) ... ok
+test_failed_job_preserves_attempt_and_requires_explicit_resume (test_pair.PairTests) ... ok
+test_failed_warmup_is_rejected_even_when_all_measured_requests_succeed (test_pair.PairTests) ... ok
+test_real_git_source_allows_only_receipted_generated_files (test_pair.PairTests) ... ok
+test_runner_sigterm_saves_exit_and_stops_its_child (test_pair.PairTests) ... ok
+test_same_distribution_version_cannot_hide_wrong_client_import (test_pair.PairTests) ... ok
+test_server_context_stops_own_service_and_preserves_unrelated_process (test_pair.PairTests) ... skipped 'production service proof uses Linux /proc'
+test_storage_accepts_existing_bind_alias_on_same_data_filesystem (test_pair.PairTests) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 1.564s
+
+OK (skipped=1)

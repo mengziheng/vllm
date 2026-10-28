@@ -1,0 +1,12 @@
+{
+  "status": "matched",
+  "commit": "eb34e115d041ac685fa38eadf8eae6c51d61dc23",
+  "actual_tuned_config_sha256": {
+    "vllm/model_executor/layers/fused_moe/configs/E=288,N=512,device_name=NVIDIA_H20,dtype=fp8_w8a8,block_shape=[128,128].json": "1fa43070725ba035b0427a0574a1d13ad0f5ea6b2dbbf134376d5706fafede91"
+  },
+  "baseline_config_sha256": {},
+  "same_shared_source_native_hardware": true,
+  "source_reference": "pr-target-config-source.json",
+  "tuned_proof": "pair2-tuned-service-proof.json",
+  "baseline_proof": "pair2-baseline-service-proof.json"
+}

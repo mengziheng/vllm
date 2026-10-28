@@ -1,0 +1,9 @@
+test_changed_current_proof_is_rejected_without_request (test_reaudit_resume.ReauditResumeTests) ... ok
+test_changed_original_startup_snapshot_is_rejected_without_request (test_reaudit_resume.ReauditResumeTests) ... ok
+test_resume_reaudits_original_exit_zero_attempt_without_new_request (test_reaudit_resume.ReauditResumeTests) ... ok
+test_still_invalid_raw_is_not_retried_to_select_another_result (test_reaudit_resume.ReauditResumeTests) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.522s
+
+OK
