@@ -1,12 +1,12 @@
 {
-  "snapshot_utc": "2026-10-28T11:17:17.519514+00:00",
+  "snapshot_utc": "2026-10-28T11:50:26.755823+00:00",
   "excludes": [
     ".git/**",
     "CANDIDATE-FILES.json",
     "local scan state"
   ],
-  "listed_files": 623,
-  "listed_bytes": 80081820,
+  "listed_files": 666,
+  "listed_bytes": 80264397,
   "files": [
     {
       "file": "ATTRIBUTION.md",
@@ -14,7 +14,7 @@
     },
     {
       "file": "INCREMENTAL-CHECKS.json",
-      "bytes": 30283
+      "bytes": 30605
     },
     {
       "file": "LICENSE",
@@ -22,11 +22,11 @@
     },
     {
       "file": "PUBLICATION-CHECKS.json",
-      "bytes": 10812
+      "bytes": 11747
     },
     {
       "file": "README.md",
-      "bytes": 6392
+      "bytes": 6783
     },
     {
       "file": "analysis/README.md",
@@ -542,7 +542,7 @@
     },
     {
       "file": "publication-tooling/check_candidates.py",
-      "bytes": 9387
+      "bytes": 10233
     },
     {
       "file": "publication-tooling/collect_pair2_raw.py",
@@ -2491,6 +2491,178 @@
     {
       "file": "reports/pair2-summary.stdout.txt",
       "bytes": 0
+    },
+    {
+      "file": "review-followup-20261028/README.md",
+      "bytes": 1263
+    },
+    {
+      "file": "review-followup-20261028/config-format-commit.stderr.txt",
+      "bytes": 5930
+    },
+    {
+      "file": "review-followup-20261028/config-format-commit.stdout.txt",
+      "bytes": 139
+    },
+    {
+      "file": "review-followup-20261028/config-format-equivalence.json",
+      "bytes": 1404
+    },
+    {
+      "file": "review-followup-20261028/config-format-git-diff-check.txt",
+      "bytes": 0
+    },
+    {
+      "file": "review-followup-20261028/config-format-precommit-command.json",
+      "bytes": 363
+    },
+    {
+      "file": "review-followup-20261028/config-format-precommit-exit.json",
+      "bytes": 63
+    },
+    {
+      "file": "review-followup-20261028/config-format-precommit.stderr.txt",
+      "bytes": 0
+    },
+    {
+      "file": "review-followup-20261028/config-format-precommit.stdout.txt",
+      "bytes": 4091
+    },
+    {
+      "file": "review-followup-20261028/upstream-checks/DIAGNOSIS-eb34.md",
+      "bytes": 2448
+    },
+    {
+      "file": "review-followup-20261028/upstream-checks/DIAGNOSIS.md",
+      "bytes": 2082
+    },
+    {
+      "file": "review-followup-20261028/upstream-checks/current-account-permissions.json",
+      "bytes": 121
+    },
+    {
+      "file": "review-followup-20261028/upstream-checks/diagnosis-eb34.json",
+      "bytes": 5559
+    },
+    {
+      "file": "review-followup-20261028/upstream-checks/diagnosis.json",
+      "bytes": 5091
+    },
+    {
+      "file": "review-followup-20261028/upstream-checks/github-current-author-merged-prs.json",
+      "bytes": 79
+    },
+    {
+      "file": "review-followup-20261028/upstream-checks/github-head-docs-pre-run-check.txt",
+      "bytes": 3707
+    },
+    {
+      "file": "review-followup-20261028/upstream-checks/github-head-pre-commit-workflow.txt",
+      "bytes": 2747
+    },
+    {
+      "file": "review-followup-20261028/upstream-checks/github-head-readthedocs-config.txt",
+      "bytes": 627
+    },
+    {
+      "file": "review-followup-20261028/upstream-checks/github-pre-run-check-annotations.json",
+      "bytes": 498
+    },
+    {
+      "file": "review-followup-20261028/upstream-checks/github-pre-run-check-job-log.txt",
+      "bytes": 5790
+    },
+    {
+      "file": "review-followup-20261028/upstream-checks/new-head-check-runs.command.json",
+      "bytes": 217
+    },
+    {
+      "file": "review-followup-20261028/upstream-checks/new-head-check-runs.json",
+      "bytes": 41612
+    },
+    {
+      "file": "review-followup-20261028/upstream-checks/new-head-check-runs.stderr.txt",
+      "bytes": 0
+    },
+    {
+      "file": "review-followup-20261028/upstream-checks/new-head-pr-current.command.json",
+      "bytes": 156
+    },
+    {
+      "file": "review-followup-20261028/upstream-checks/new-head-pr-current.json",
+      "bytes": 42567
+    },
+    {
+      "file": "review-followup-20261028/upstream-checks/new-head-pr-current.stderr.txt",
+      "bytes": 0
+    },
+    {
+      "file": "review-followup-20261028/upstream-checks/new-head-pre-run-check-annotations.command.json",
+      "bytes": 180
+    },
+    {
+      "file": "review-followup-20261028/upstream-checks/new-head-pre-run-check-annotations.json",
+      "bytes": 498
+    },
+    {
+      "file": "review-followup-20261028/upstream-checks/new-head-pre-run-check-annotations.stderr.txt",
+      "bytes": 0
+    },
+    {
+      "file": "review-followup-20261028/upstream-checks/new-head-pre-run-check-log.command.json",
+      "bytes": 229
+    },
+    {
+      "file": "review-followup-20261028/upstream-checks/new-head-pre-run-check-log.stderr.txt",
+      "bytes": 0
+    },
+    {
+      "file": "review-followup-20261028/upstream-checks/new-head-pre-run-check-log.txt",
+      "bytes": 5790
+    },
+    {
+      "file": "review-followup-20261028/upstream-checks/new-head-runs.command.json",
+      "bytes": 220
+    },
+    {
+      "file": "review-followup-20261028/upstream-checks/new-head-runs.json",
+      "bytes": 24788
+    },
+    {
+      "file": "review-followup-20261028/upstream-checks/new-head-runs.stderr.txt",
+      "bytes": 0
+    },
+    {
+      "file": "review-followup-20261028/upstream-checks/new-head-status.command.json",
+      "bytes": 200
+    },
+    {
+      "file": "review-followup-20261028/upstream-checks/new-head-status.json",
+      "bytes": 4978
+    },
+    {
+      "file": "review-followup-20261028/upstream-checks/new-head-status.stderr.txt",
+      "bytes": 0
+    },
+    {
+      "file": "review-followup-20261028/upstream-checks/rtd-build-35462635-raw-log.txt",
+      "bytes": 3661
+    },
+    {
+      "file": "review-followup-20261028/upstream-checks/rtd-new-head-35468540-raw-log.request.json",
+      "bytes": 2257
+    },
+    {
+      "file": "review-followup-20261028/upstream-checks/rtd-new-head-35468540-raw-log.txt",
+      "bytes": 3217
+    },
+    {
+      "file": "review-followup-20261028/upstream-checks/rtd-new-head-35468540-v2-api.json",
+      "bytes": 5266
+    },
+    {
+      "file": "review-followup-20261028/upstream-checks/rtd-new-head-35468540-v2-api.request.json",
+      "bytes": 2245
     },
     {
       "file": "third-party-licenses/GSM8K-MIT.txt",

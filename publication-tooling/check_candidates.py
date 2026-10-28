@@ -15,7 +15,7 @@ from pathlib import Path
 import re
 import sys
 
-POLICY_VERSION = 2
+POLICY_VERSION = 3
 ALLOWED = {'.py', '.md', '.json', '.jsonl', '.txt', '.log', '.stdout', '.stderr', '.csv', '.sh', '.yaml', '.yml'}
 PATTERNS = {
     'private_key_material': r'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----',
@@ -28,7 +28,7 @@ PATTERNS = {
     'local_path_metadata': r'/(?:Users|home)/[^/\s\"\x27]+|/data\d+/(?:tiger|docker)\b',
 }
 AUTH_KEY = re.compile(r'(^|_)(TOKEN|PASSWORD|PASSWD|SECRET|API_KEY|ACCESS_KEY|AUTHORIZATION|COOKIE|PRIVATE_KEY)(_|$)')
-INFORMATIONAL = {'local_path_metadata', 'package_version_ip_shape', 'token_throughput_unit_label'}
+INFORMATIONAL = {'local_path_metadata', 'package_version_ip_shape', 'token_throughput_unit_label', 'github_app_permission_label'}
 
 
 def signature(path):
@@ -69,6 +69,13 @@ def scan(path):
                 and obj.get('throughput_units', {}).get('total_token_throughput') == 'input + output tokens/s'):
             findings['credential_json_key'] -= 1
             findings['token_throughput_unit_label'] = 1
+        # Public GitHub App permission levels are descriptors, not credentials.
+        if path.name == 'new-head-check-runs.json' and isinstance(obj, dict):
+            levels = [run.get('app', {}).get('permissions', {}).get('secret_scanning_bypass_requests')
+                      for run in obj.get('check_runs', [])]
+            public_levels = sum(level in ('read', 'write', 'none') for level in levels)
+            findings['credential_json_key'] -= public_levels
+            findings['github_app_permission_label'] = public_levels
         # The prior official result contains a package version shaped like an IP.
         if isinstance(obj, dict) and isinstance(obj.get('pretty_env_info'), str):
             ignored = sum(len(re.findall(PATTERNS['private_ipv4'], line))
@@ -109,6 +116,10 @@ def main():
     if old.get('policy_version') == 1 and old.get('root') == str(root):
         old['files'] = {name: entry for name, entry in old.get('files', {}).items()
                         if Path(name).name != 'pair2-summary.json'}
+        old['policy_version'] = POLICY_VERSION
+    if old.get('policy_version') == 2 and old.get('root') == str(root):
+        old['files'] = {name: entry for name, entry in old.get('files', {}).items()
+                        if Path(name).name != 'new-head-check-runs.json'}
         old['policy_version'] = POLICY_VERSION
     if old.get('policy_version') != POLICY_VERSION or old.get('root') != str(root):
         old = {}

@@ -1,0 +1,163 @@
+{
+  "captured_utc": "2026-10-28T11:40:30.601279+00:00",
+  "scope": "read-only official APIs, original logs and pinned source; no CI trigger, label, comment, code edit, model test or large hash rerun",
+  "pull_request": {
+    "number": 58986,
+    "head": "eb34e115d041ac685fa38eadf8eae6c51d61dc23",
+    "updated_at": "2026-10-28T11:20:31Z",
+    "mergeable_state": "blocked",
+    "labels": [
+      "bug",
+      "documentation",
+      "performance",
+      "ci/build",
+      "glm"
+    ]
+  },
+  "authorization": {
+    "accepted_labels": [
+      "verified",
+      "ready",
+      "ready-run-all-tests"
+    ],
+    "required_merged_pr_count": 4,
+    "current_merged_pr_count": 0,
+    "current_accepted_labels": [],
+    "latest_pre_run_check": {
+      "id": 122683215016,
+      "status": "completed",
+      "conclusion": "failure",
+      "started_at": "2026-10-28T07:12:55Z",
+      "completed_at": "2026-10-28T07:13:00Z",
+      "details_url": "https://github.com/vllm-project/vllm/actions/runs/40648625013/job/122683215016"
+    }
+  },
+  "readthedocs": {
+    "build_id": 35462635,
+    "commit": "eb34e115d041ac685fa38eadf8eae6c51d61dc23",
+    "success": false,
+    "commands": [
+      {
+        "command": "git clone --depth 1 https://github.com/vllm-project/vllm.git .",
+        "exit_code": 0,
+        "start_time": "2026-10-28T07:17:51.559093Z",
+        "end_time": "2026-10-28T07:17:58.543952Z"
+      },
+      {
+        "command": "git fetch origin --force --prune --prune-tags --depth 50 pull/58986/head:external-58986",
+        "exit_code": 0,
+        "start_time": "2026-10-28T07:17:58.592654Z",
+        "end_time": "2026-10-28T07:18:00.778709Z"
+      },
+      {
+        "command": "git checkout --force eb34e115d041ac685fa38eadf8eae6c51d61dc23",
+        "exit_code": 0,
+        "start_time": "2026-10-28T07:18:00.903145Z",
+        "end_time": "2026-10-28T07:18:01.805931Z"
+      },
+      {
+        "command": "cat .readthedocs.yaml",
+        "exit_code": 0,
+        "start_time": "2026-10-28T07:18:01.848828Z",
+        "end_time": "2026-10-28T07:18:01.924406Z"
+      },
+      {
+        "command": "git fetch origin main --unshallow --no-tags --filter=blob:none || true",
+        "exit_code": 0,
+        "start_time": "2026-10-28T07:18:01.978470Z",
+        "end_time": "2026-10-28T07:18:09.092495Z"
+      },
+      {
+        "command": "bash docs/pre_run_check.sh",
+        "exit_code": 1,
+        "start_time": "2026-10-28T07:18:09.163512Z",
+        "end_time": "2026-10-28T07:18:10.226393Z"
+      }
+    ],
+    "first_failure": "post_checkout bash docs/pre_run_check.sh exits1 because upstream pre-run-check conclusion=failure",
+    "docs_renderer_started": false,
+    "docs_validity": "not evaluated by this build"
+  },
+  "latest_head_workflow": {
+    "id": 40679204613,
+    "name": "PR title",
+    "status": "completed",
+    "conclusion": "skipped",
+    "created_at": "2026-10-28T11:20:36Z",
+    "updated_at": "2026-10-28T11:20:37Z",
+    "html_url": "https://github.com/vllm-project/vllm/actions/runs/40679204613"
+  },
+  "checks_brief": [
+    {
+      "id": 122785320266,
+      "name": "Check format",
+      "status": "completed",
+      "conclusion": "skipped",
+      "details_url": "https://github.com/vllm-project/vllm/actions/runs/40679204613/job/122785320266"
+    },
+    {
+      "id": 122686463956,
+      "name": "Check format",
+      "status": "completed",
+      "conclusion": "skipped",
+      "details_url": "https://github.com/vllm-project/vllm/actions/runs/40649644222/job/122686463956"
+    },
+    {
+      "id": 122683675492,
+      "name": "Check format",
+      "status": "completed",
+      "conclusion": "skipped",
+      "details_url": "https://github.com/vllm-project/vllm/actions/runs/40648767247/job/122683675492"
+    },
+    {
+      "id": 122683254240,
+      "name": "pre-commit",
+      "status": "completed",
+      "conclusion": "skipped",
+      "details_url": "https://github.com/vllm-project/vllm/actions/runs/40648625013/job/122683254240"
+    },
+    {
+      "id": 122683246656,
+      "name": "Meta Internal-Only Changes Check",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://code.facebook.com"
+    },
+    {
+      "id": 122683233625,
+      "name": "CodeRabbit",
+      "status": "completed",
+      "conclusion": "skipped",
+      "details_url": "https://coderabbit.ai?utm_source=cr_app&utm_medium=github"
+    },
+    {
+      "id": 122683216767,
+      "name": "Check format",
+      "status": "completed",
+      "conclusion": "skipped",
+      "details_url": "https://github.com/vllm-project/vllm/actions/runs/40648625117/job/122683216767"
+    },
+    {
+      "id": 122683215016,
+      "name": "pre-run-check",
+      "status": "completed",
+      "conclusion": "failure",
+      "details_url": "https://github.com/vllm-project/vllm/actions/runs/40648625013/job/122683215016"
+    },
+    {
+      "id": 122683201624,
+      "name": "DCO",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://probot.github.io/apps/dco/"
+    },
+    {
+      "id": 122683201585,
+      "name": "Summary",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://dashboard.mergify.com/orgs/vllm-project/repos/vllm/activity-log?pull_request=58986"
+    }
+  ],
+  "safe_next_step": "No code/docs correction is established by these failures. Keep authorization checks intact; prepare only task-scoped diff reductions and local checks. Any upstream authorization or CI/docs trigger belongs to the normal maintainer review process, and was not requested or performed here."
+}

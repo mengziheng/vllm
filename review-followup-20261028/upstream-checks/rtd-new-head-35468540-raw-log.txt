@@ -1,0 +1,81 @@
+Read the Docs build information
+Build id: 35468540
+Project: vllm
+Version: 58986
+Commit: 8dbd02e513817445a5f1ac08ad03bfb0a80aba29
+Date: 2026-10-28T11:45:56.956819Z
+State: finished
+Success: False
+
+
+[rtd-command-info] start-time: 2026-10-28T11:45:57.495608Z, end-time: 2026-10-28T11:46:03.527556Z, duration: 6, exit-code: 0
+git clone --depth 1 https://github.com/vllm-project/vllm.git .
+Cloning into '.'...
+
+[rtd-command-info] start-time: 2026-10-28T11:46:03.563959Z, end-time: 2026-10-28T11:46:05.347108Z, duration: 1, exit-code: 0
+git fetch origin --force --prune --prune-tags --depth 50 pull/58986/head:external-58986
+From https://github.com/vllm-project/vllm
+ * [new ref]         refs/pull/58986/head -> external-58986
+
+[rtd-command-info] start-time: 2026-10-28T11:46:05.448845Z, end-time: 2026-10-28T11:46:06.124786Z, duration: 0, exit-code: 0
+git checkout --force 8dbd02e513817445a5f1ac08ad03bfb0a80aba29
+Note: switching to '8dbd02e513817445a5f1ac08ad03bfb0a80aba29'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 8dbd02e style: compact H20 MoE configuration for review
+
+[rtd-command-info] start-time: 2026-10-28T11:46:06.172154Z, end-time: 2026-10-28T11:46:06.220736Z, duration: 0, exit-code: 0
+cat .readthedocs.yaml
+# Read the Docs configuration file
+# See https://docs.readthedocs.io/en/stable/config-file/v2.html for details
+
+version: 2
+
+build:
+  os: ubuntu-22.04
+  tools:
+    python: "3.12"
+  jobs:
+    post_checkout:
+      - git fetch origin main --unshallow --no-tags --filter=blob:none || true
+      - bash docs/pre_run_check.sh
+    pre_create_environment:
+      - pip install uv
+    create_environment:
+      - uv venv $READTHEDOCS_VIRTUALENV_PATH
+    install:
+      - uv pip install --python $READTHEDOCS_VIRTUALENV_PATH/bin/python --no-cache-dir -r requirements/docs.txt 
+
+mkdocs:
+  configuration: mkdocs.yaml
+  fail_on_warning: true
+
+[rtd-command-info] start-time: 2026-10-28T11:46:06.269650Z, end-time: 2026-10-28T11:46:12.020981Z, duration: 5, exit-code: 0
+git fetch origin main --unshallow --no-tags --filter=blob:none || true
+From https://github.com/vllm-project/vllm
+ * branch                main       -> FETCH_HEAD
+
+[rtd-command-info] start-time: 2026-10-28T11:46:12.056703Z, end-time: 2026-10-28T11:46:13.028053Z, duration: 0, exit-code: 1
+bash docs/pre_run_check.sh
+Checking for the 'build-docs' label on PR #58986...
+Checking for changes to docs-affecting files vs origin/main...
+Docs-affecting files changed; continuing pre-run-check.
+Checking pre-commit/pre-run-check status...
+pre-commit/pre-run-check conclusion: failure
+pre-commit/pre-run-check did not pass; skipping docs build.
+pre-commit/pre-run-check failure reason: https://github.com/vllm-project/vllm/actions/runs/40682482228/job/122796406733
+

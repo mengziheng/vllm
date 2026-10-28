@@ -300,12 +300,30 @@
       "classification": "Public performance metric unit, not an authentication token",
       "raw_file_or_metric_redacted": false,
       "scope": "Only exact filename, reaudited status and exact unit label; general credential matching remains active."
+    },
+    {
+      "file": "review-followup-20261028/upstream-checks/new-head-check-runs.json",
+      "field": "check_runs[4].app.permissions.secret_scanning_bypass_requests",
+      "value": "write",
+      "classification": "Public GitHub App permission descriptor, not a secret credential",
+      "raw_file_or_metric_redacted": false
     }
   ],
   "final_scan_policy_update": {
-    "version": 2,
-    "changed_scope": "Exact known public metric-unit field in pair2-summary.json",
+    "version": 3,
+    "changed_scope": "Exact public GitHub App permission descriptor enum in new-head-check-runs.json; policy2 metric-unit exception retained",
     "unaffected_prior_content_results_reused": true,
-    "affected_summary_rechecked": true
+    "affected_file_rechecked": true
+  },
+  "review_size_followup": {
+    "source_commit": "8dbd02e513817445a5f1ac08ad03bfb0a80aba29",
+    "added_lines": 82,
+    "changed_files": 4,
+    "change_since_tested_eb34": "JSON whitespace only; all24entries/types/orderspreserved",
+    "semantic_equivalence": "review-followup-20261028/config-format-equivalence.json",
+    "local_precommit_exit": 0,
+    "cpu_native_gpu_results_reused": true,
+    "upstream_current_head": "authorization gatefailure; precommit skipped; RTD stoppedbeforeMkDocs",
+    "new_model_or_scoring_requests": false
   }
 }

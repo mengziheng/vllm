@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "gh",
+    "run",
+    "view",
+    "40682482228",
+    "--repo",
+    "vllm-project/vllm",
+    "--job",
+    "122796406733",
+    "--log"
+  ],
+  "returncode": 0,
+  "captured_utc": "2026-10-28T11:47:01.989467+00:00"
+}

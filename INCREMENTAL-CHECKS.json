@@ -1,9 +1,9 @@
 {
-  "snapshot_utc": "2026-10-28T11:17:17.519514+00:00",
-  "policy_version": 2,
+  "snapshot_utc": "2026-10-28T11:50:26.755823+00:00",
+  "policy_version": 3,
   "status": "passed",
   "new_or_changed_files_scanned": 3,
-  "unchanged_file_results_reused": 619,
+  "unchanged_file_results_reused": 662,
   "removed_cached_files": 0,
   "blocking_findings": [],
   "broken_local_markdown_links": [],
@@ -1050,6 +1050,18 @@
       "file": "reports/pair2-summary.json",
       "categories": {
         "token_throughput_unit_label": 1
+      }
+    },
+    {
+      "file": "review-followup-20261028/config-format-precommit-command.json",
+      "categories": {
+        "local_path_metadata": 2
+      }
+    },
+    {
+      "file": "review-followup-20261028/upstream-checks/new-head-check-runs.json",
+      "categories": {
+        "github_app_permission_label": 1
       }
     }
   ],

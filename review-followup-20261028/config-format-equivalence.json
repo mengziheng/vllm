@@ -1,0 +1,19 @@
+{
+  "status": "semantically-identical",
+  "tested_commit": "eb34e115d041ac685fa38eadf8eae6c51d61dc23",
+  "path": "vllm/model_executor/layers/fused_moe/configs/E=288,N=512,device_name=NVIDIA_H20,dtype=fp8_w8a8,block_shape=[128,128].json",
+  "tested_raw_sha256": "1fa43070725ba035b0427a0574a1d13ad0f5ea6b2dbbf134376d5706fafede91",
+  "formatted_raw_sha256": "0cf3f8d9be03f5a96ec4ed7825e767717058e3ba8884eb98abdc47ef478afd0e",
+  "canonical_json_sha256": "a5bef1e1c4d5f2789b5eb634f3e80d2501a566aace33db3c2b28defbbcc32fae",
+  "before_lines": 195,
+  "after_lines": 27,
+  "numeric_token_entries": 24,
+  "all_values_and_types_unchanged": true,
+  "top_level_key_order_unchanged": true,
+  "parameter_key_order_unchanged": true,
+  "native_python_test_and_ci_sources_unchanged": true,
+  "runtime_selection_rationale": "The loader uses json.load, pops triton_version and selects the nearest numeric key. The entire parsed mapping and its insertion order are identical, including tie behavior for every M.",
+  "verification_reused": "CPU regressions and all paired GPU quality/serving results from eb34; no source, native, parameter or model changes beyond JSON whitespace.",
+  "generator_style_note": "Existing generator emits indent=4. This review follow-up intentionally uses one configuration per line; no repository formatter expands MoE JSON.",
+  "formatting_commit": "8dbd02e513817445a5f1ac08ad03bfb0a80aba29"
+}

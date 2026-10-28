@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "/Users/bytedance/Documents/ChatGPT/b200\u4f18\u5316/.venv/bin/python",
+    "-m",
+    "pre_commit",
+    "run",
+    "--files",
+    "vllm/model_executor/layers/fused_moe/configs/E=288,N=512,device_name=NVIDIA_H20,dtype=fp8_w8a8,block_shape=[128,128].json"
+  ],
+  "cwd": "/Users/bytedance/Documents/ChatGPT/b200\u4f18\u5316/review-20261028/vllm"
+}

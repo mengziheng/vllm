@@ -1,0 +1,9 @@
+{
+  "argv": [
+    "gh",
+    "api",
+    "repos/vllm-project/vllm/check-runs/122796406733/annotations"
+  ],
+  "returncode": 0,
+  "captured_utc": "2026-10-28T11:46:58.849733+00:00"
+}

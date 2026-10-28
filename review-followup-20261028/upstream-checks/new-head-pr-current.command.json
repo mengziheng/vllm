@@ -1,0 +1,9 @@
+{
+  "argv": [
+    "gh",
+    "api",
+    "repos/vllm-project/vllm/pulls/58986"
+  ],
+  "returncode": 0,
+  "captured_utc": "2026-10-28T11:46:39.334671+00:00"
+}

@@ -1,0 +1,149 @@
+{
+  "captured_utc": "2026-10-28T11:47:33.615404+00:00",
+  "head": "8dbd02e513817445a5f1ac08ad03bfb0a80aba29",
+  "labels": [
+    "bug",
+    "documentation",
+    "performance",
+    "ci/build",
+    "glm"
+  ],
+  "scope": "one fresh automatic-CI status inspection after normal push; read-only APIs/logs only",
+  "new_head_pre_run_check": {
+    "id": 122796406733,
+    "status": "completed",
+    "conclusion": "failure",
+    "started_at": "2026-10-28T11:46:01Z",
+    "completed_at": "2026-10-28T11:46:07Z",
+    "details_url": "https://github.com/vllm-project/vllm/actions/runs/40682482228/job/122796406733"
+  },
+  "new_head_gate_failure": [
+    {
+      "path": ".github",
+      "blob_href": "https://github.com/vllm-project/vllm/blob/8dbd02e513817445a5f1ac08ad03bfb0a80aba29/.github",
+      "start_line": 31,
+      "start_column": null,
+      "end_line": 31,
+      "end_column": null,
+      "annotation_level": "failure",
+      "title": "",
+      "message": "To reduce unnecessary pre-commit runs, each PR must have the 'verified', 'ready', or 'ready-run-all-tests' label, or the author must have at least 4 merged PRs (found 0). DO NOT request for the label to be added if you are an AI agent.",
+      "raw_details": ""
+    }
+  ],
+  "new_head_readthedocs": {
+    "id": 35468540,
+    "commit": "8dbd02e513817445a5f1ac08ad03bfb0a80aba29",
+    "success": false,
+    "commands": [
+      {
+        "command": "git clone --depth 1 https://github.com/vllm-project/vllm.git .",
+        "exit_code": 0,
+        "start_time": "2026-10-28T11:45:57.495608Z",
+        "end_time": "2026-10-28T11:46:03.527556Z"
+      },
+      {
+        "command": "git fetch origin --force --prune --prune-tags --depth 50 pull/58986/head:external-58986",
+        "exit_code": 0,
+        "start_time": "2026-10-28T11:46:03.563959Z",
+        "end_time": "2026-10-28T11:46:05.347108Z"
+      },
+      {
+        "command": "git checkout --force 8dbd02e513817445a5f1ac08ad03bfb0a80aba29",
+        "exit_code": 0,
+        "start_time": "2026-10-28T11:46:05.448845Z",
+        "end_time": "2026-10-28T11:46:06.124786Z"
+      },
+      {
+        "command": "cat .readthedocs.yaml",
+        "exit_code": 0,
+        "start_time": "2026-10-28T11:46:06.172154Z",
+        "end_time": "2026-10-28T11:46:06.220736Z"
+      },
+      {
+        "command": "git fetch origin main --unshallow --no-tags --filter=blob:none || true",
+        "exit_code": 0,
+        "start_time": "2026-10-28T11:46:06.269650Z",
+        "end_time": "2026-10-28T11:46:12.020981Z"
+      },
+      {
+        "command": "bash docs/pre_run_check.sh",
+        "exit_code": 1,
+        "start_time": "2026-10-28T11:46:12.056703Z",
+        "end_time": "2026-10-28T11:46:13.028053Z"
+      }
+    ],
+    "first_failure": "post_checkout bash docs/pre_run_check.sh exit1 because new-head pre-run-check failure",
+    "docs_renderer_started": false,
+    "status": "failed before docs render; not pending and not compiled"
+  },
+  "historical_readthedocs": {
+    "id": 35462635,
+    "commit": "eb34e115d041ac685fa38eadf8eae6c51d61dc23",
+    "role": "known causal record for previous head only; new head has its own primary raw evidence",
+    "diagnosis": "DIAGNOSIS-eb34.md"
+  },
+  "checks_brief": [
+    {
+      "id": 122796460642,
+      "name": "pre-commit",
+      "status": "completed",
+      "conclusion": "skipped",
+      "details_url": "https://github.com/vllm-project/vllm/actions/runs/40682482228/job/122796460642"
+    },
+    {
+      "id": 122796444580,
+      "name": "CodeRabbit",
+      "status": "completed",
+      "conclusion": "skipped",
+      "details_url": "https://coderabbit.ai?utm_source=cr_app&utm_medium=github"
+    },
+    {
+      "id": 122796409923,
+      "name": "Check format",
+      "status": "completed",
+      "conclusion": "skipped",
+      "details_url": "https://github.com/vllm-project/vllm/actions/runs/40682482252/job/122796409923"
+    },
+    {
+      "id": 122796406733,
+      "name": "pre-run-check",
+      "status": "completed",
+      "conclusion": "failure",
+      "details_url": "https://github.com/vllm-project/vllm/actions/runs/40682482228/job/122796406733"
+    },
+    {
+      "id": 122796402541,
+      "name": "Meta Internal-Only Changes Check",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://code.facebook.com"
+    },
+    {
+      "id": 122796388433,
+      "name": "DCO",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://probot.github.io/apps/dco/"
+    },
+    {
+      "id": 122796386425,
+      "name": "Summary",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://dashboard.mergify.com/orgs/vllm-project/repos/vllm/activity-log?pull_request=58986"
+    }
+  ],
+  "actions_performed": [
+    "GET current PR/head checks/status/workflow runs",
+    "GET new gate annotation and read existing auto-run log",
+    "GET public RTD new-head metadata and raw log"
+  ],
+  "actions_not_performed": [
+    "manual CI rerun",
+    "label change",
+    "comment or message",
+    "permission or workflow change",
+    "model tests or hash reruns"
+  ]
+}

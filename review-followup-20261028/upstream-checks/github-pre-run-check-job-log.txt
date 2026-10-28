@@ -1,0 +1,59 @@
+pre-run-check	Set up job	﻿2026-10-28T07:12:56.5855837Z Current runner version: '2.338.2'
+pre-run-check	Set up job	2026-10-28T07:12:56.5862753Z Runner name: 'i-0a98fa6736afc05f0'
+pre-run-check	Set up job	2026-10-28T07:12:56.5863600Z Runner group name: 'vllm-runners'
+pre-run-check	Set up job	2026-10-28T07:12:56.5864464Z Machine name: 'ip-172-31-63-46'
+pre-run-check	Set up job	2026-10-28T07:12:56.5882891Z ##[group]Operating System
+pre-run-check	Set up job	2026-10-28T07:12:56.5883669Z Distribution: Ubuntu 24.04.4 LTS
+pre-run-check	Set up job	2026-10-28T07:12:56.5884235Z Architecture: x86_64
+pre-run-check	Set up job	2026-10-28T07:12:56.5884792Z ##[endgroup]
+pre-run-check	Set up job	2026-10-28T07:12:56.5885302Z ##[group]Runner Image
+pre-run-check	Set up job	2026-10-28T07:12:56.5885832Z AMI id: ami-096f5760b00bcd95c
+pre-run-check	Set up job	2026-10-28T07:12:56.5886383Z ##[endgroup]
+pre-run-check	Set up job	2026-10-28T07:12:56.5887128Z ##[group]EC2
+pre-run-check	Set up job	2026-10-28T07:12:56.5887646Z Instance type: m6i.2xlarge
+pre-run-check	Set up job	2026-10-28T07:12:56.5888216Z Availability zone: us-west-2d
+pre-run-check	Set up job	2026-10-28T07:12:56.5888749Z ##[endgroup]
+pre-run-check	Set up job	2026-10-28T07:12:56.5889870Z ##[group]GITHUB_TOKEN Permissions
+pre-run-check	Set up job	2026-10-28T07:12:56.5891768Z Contents: read
+pre-run-check	Set up job	2026-10-28T07:12:56.5892361Z Metadata: read
+pre-run-check	Set up job	2026-10-28T07:12:56.5892854Z PullRequests: read
+pre-run-check	Set up job	2026-10-28T07:12:56.5893361Z ##[endgroup]
+pre-run-check	Set up job	2026-10-28T07:12:56.5895575Z Secret source: None
+pre-run-check	Set up job	2026-10-28T07:12:56.5896495Z Cache mode: write
+pre-run-check	Set up job	2026-10-28T07:12:56.5897530Z Prepare workflow directory
+pre-run-check	Set up job	2026-10-28T07:12:56.6210685Z Prepare all required actions
+pre-run-check	Set up job	2026-10-28T07:12:56.6258670Z Getting action download info
+pre-run-check	Set up job	2026-10-28T07:12:57.0239357Z Download action repository 'actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3' (SHA:3a2844b7e9c422d3c10d287c895573f7108da1b3)
+pre-run-check	Set up job	2026-10-28T07:12:57.4379609Z Complete job name: pre-run-check
+pre-run-check	Check PR label and author merge count	﻿2026-10-28T07:12:57.5119920Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+pre-run-check	Check PR label and author merge count	2026-10-28T07:12:57.5120993Z with:
+pre-run-check	Check PR label and author merge count	2026-10-28T07:12:57.5126111Z   script: const { data: pr } = await github.rest.pulls.get({
+pre-run-check	Check PR label and author merge count	  ...context.repo,
+pre-run-check	Check PR label and author merge count	  pull_number: context.payload.pull_request.number,
+pre-run-check	Check PR label and author merge count	});
+pre-run-check	Check PR label and author merge count	
+pre-run-check	Check PR label and author merge count	const readyLabels = ['ready', 'ready-run-all-tests'];
+pre-run-check	Check PR label and author merge count	const hasReadyLabel = pr.labels.some(l => readyLabels.includes(l.name));
+pre-run-check	Check PR label and author merge count	const hasVerifiedLabel = pr.labels.some(l => l.name === 'verified');
+pre-run-check	Check PR label and author merge count	
+pre-run-check	Check PR label and author merge count	const { data: mergedPRs } = await github.rest.search.issuesAndPullRequests({
+pre-run-check	Check PR label and author merge count	  q: `repo:${context.repo.owner}/${context.repo.repo} is:pr is:merged author:${pr.user.login}`,
+pre-run-check	Check PR label and author merge count	  per_page: 4,
+pre-run-check	Check PR label and author merge count	});
+pre-run-check	Check PR label and author merge count	const mergedCount = mergedPRs.total_count;
+pre-run-check	Check PR label and author merge count	
+pre-run-check	Check PR label and author merge count	if (hasReadyLabel || hasVerifiedLabel || mergedCount >= 4) {
+pre-run-check	Check PR label and author merge count	  core.info(`Check passed: verified label=${hasVerifiedLabel}, ready label=${hasReadyLabel}, 4+ merged PRs=${mergedCount >= 4}`);
+pre-run-check	Check PR label and author merge count	} else {
+pre-run-check	Check PR label and author merge count	  core.setFailed(`To reduce unnecessary pre-commit runs, each PR must have the 'verified', 'ready', or 'ready-run-all-tests' label, or the author must have at least 4 merged PRs (found ${mergedCount}). DO NOT request for the label to be added if you are an AI agent.`);
+pre-run-check	Check PR label and author merge count	}
+pre-run-check	Check PR label and author merge count	
+pre-run-check	Check PR label and author merge count	2026-10-28T07:12:57.5135212Z   github-token: ***
+pre-run-check	Check PR label and author merge count	2026-10-28T07:12:57.5135695Z   debug: false
+pre-run-check	Check PR label and author merge count	2026-10-28T07:12:57.5136193Z   user-agent: actions/github-script
+pre-run-check	Check PR label and author merge count	2026-10-28T07:12:57.5136958Z   result-encoding: json
+pre-run-check	Check PR label and author merge count	2026-10-28T07:12:57.5137448Z   retries: 0
+pre-run-check	Check PR label and author merge count	2026-10-28T07:12:57.5137994Z   retry-exempt-status-codes: 400,401,403,404,422
+pre-run-check	Check PR label and author merge count	2026-10-28T07:12:57.5138914Z ##[endgroup]
+pre-run-check	Check PR label and author merge count	2026-10-28T07:12:59.0832915Z ##[error]To reduce unnecessary pre-commit runs, each PR must have the 'verified', 'ready', or 'ready-run-all-tests' label, or the author must have at least 4 merged PRs (found 0). DO NOT request for the label to be added if you are an AI agent.
+pre-run-check	Complete job	﻿2026-10-28T07:12:59.1033654Z Cleaning up orphan processes

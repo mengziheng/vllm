@@ -1,0 +1,27 @@
+{
+  "url": "https://app.readthedocs.org/api/v2/build/35468540/",
+  "method": "GET",
+  "status": 200,
+  "headers": {
+    "Date": "Wed, 28 Oct 2026 11:46:58 GMT",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Server": "cloudflare",
+    "vary": "Accept-Encoding",
+    "allow": "GET, PUT, PATCH, HEAD, OPTIONS",
+    "content-security-policy": "style-src 'self' 'unsafe-inline' https://app-assets.readthedocs.org/; connect-src 'self' https://*.ingest.us.sentry.io https://ka-p.fontawesome.com https://kit.fontawesome.com https://plausible.io/api/event ws://app.readthedocs.org:10001/ws; form-action 'self' https://github.com https://gitlab.com https://bitbucket.org https://id.atlassian.com https://accounts.google.com https://billing.stripe.com https://checkout.stripe.com https://webhook.frontapp.com/forms/036c4169294f3b04abaa/dXtihffn7rLqYHi1tASB_7ppEgrNQcUXDNE-2JAXNZac3pdQ85Vjn3agjSnZSnCVomF1u6PT98oAyid-I_OMwE2JtwXXiVoXlaTj0VAn_7NPjQCEQcvjrB6QZZ8; default-src 'none'; frame-ancestors 'none'; base-uri 'self'; font-src 'self' data: https://ka-p.fontawesome.com https://app-assets.readthedocs.org/; script-src 'self' 'unsafe-eval' https://kit.fontawesome.com https://js.stripe.com/ https://app-assets.readthedocs.org/; img-src 'self' data: https:; frame-src https://js.stripe.com/; report-uri https://o40776.ingest.us.sentry.io/api/148442/security/?sentry_key=48196e632bb14305ad3fe47c6570e363",
+    "x-frame-options": "DENY",
+    "x-content-type-options": "nosniff",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "cross-origin-opener-policy": "same-origin",
+    "content-language": "en",
+    "strict-transport-security": "max-age=31536000;",
+    "x-backend": "web-i-001424f0e468d8abd",
+    "cf-cache-status": "DYNAMIC",
+    "set-cookie": "__cf_bm=eOzwjzauYmtWr.xNUipC6NeFXRRIl79djYLteq0.ouI-1793188018.6773484-1.0.1.1-SxE1GmC5HWEbFn3S5EcFcfvfilZZkTCisrjmZrOnO7PpKbu.K10N7g6uCnqyvjV8zYxG7ks2LDS1U3AnfcAoqnDt_xTI3IiVa6gFLRRU86s2mNTecpB35nSVjsbQE.j.; HttpOnly; SameSite=None; Secure; Path=/; Domain=readthedocs.org; Expires=Wed, 28 Oct 2026 12:16:58 GMT",
+    "CF-RAY": "a519b3fcbb7714fd-SIN"
+  },
+  "bytes": 5266,
+  "captured_utc": "2026-10-28T11:46:58.880954+00:00"
+}
