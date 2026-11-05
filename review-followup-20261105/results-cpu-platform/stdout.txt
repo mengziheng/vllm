@@ -1,0 +1,28 @@
+IMPORT_EVIDENCE {"python": "3.12.13 (001c8cb:001c8cb, Sep 11 2026, 20:08:55) [GCC 12.2.0]", "executable": "/usr/local/bin/python3", "vllm": "/subject/vllm/__init__.py", "benchmark": "/subject/benchmarks/kernels/benchmark_moe.py", "constructors": ["transformers.models.glm5_next.configuration_glm5_next", "transformers.models.glm5_next.configuration_glm5_next"], "versions": {"torch": "2.13.0+cu130", "triton": "3.7.1", "transformers": "5.19.0", "ray": "2.53.0", "pytest": "8.3.2"}, "cuda_initialized_before": false, "platform": "vllm.platforms.cpu.CpuPlatform", "VLLM_TARGET_DEVICE": "cpu"}
+============================= test session starts ==============================
+platform linux -- Python 3.12.13, pytest-8.3.2, pluggy-1.7.0 -- /usr/local/bin/python3
+rootdir: /subject
+configfile: pyproject.toml
+collecting ... collected 1129 items / 1126 deselected / 3 selected
+
+../subject/tests/kernels/moe/test_moe.py::test_glm5next_moe_model_params[nested] PASSED [ 33%]
+../subject/tests/kernels/moe/test_moe.py::test_glm5next_moe_model_params[text-only] PASSED [ 66%]
+../subject/tests/kernels/moe/test_moe.py::test_glm5next_outer_fp8_weight_block_size PASSED [100%]
+
+=============================== warnings summary ===============================
+../subject/tests/kernels/moe/test_moe.py:1094
+  /subject/tests/kernels/moe/test_moe.py:1094: PytestUnknownMarkWarning: Unknown pytest.mark.flaky - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.flaky(reruns=2)
+
+../subject/tests/kernels/moe/test_moe.py:1220
+  /subject/tests/kernels/moe/test_moe.py:1220: PytestUnknownMarkWarning: Unknown pytest.mark.flaky - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.flaky(reruns=2)
+
+../subject/tests/kernels/moe/test_moe.py:1284
+  /subject/tests/kernels/moe/test_moe.py:1284: PytestUnknownMarkWarning: Unknown pytest.mark.flaky - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.flaky(reruns=2)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+---------- generated xml file: /work/results-cpu-platform/pytest.xml -----------
+================ 3 passed, 1126 deselected, 3 warnings in 0.39s ================
+CUDA_INITIALIZED_AFTER False

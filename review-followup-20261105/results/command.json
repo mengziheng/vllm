@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/usr/local/bin/python3",
+    "-B",
+    "-c",
+    "\nimport importlib.metadata as metadata\nimport json\nfrom pathlib import Path\nimport pytest\nimport torch\nimport vllm\nfrom benchmarks.kernels import benchmark_moe\nfrom transformers import Glm5NextConfig, Glm5NextTextConfig\nassert str(Path(vllm.__file__).resolve()).startswith('/subject/vllm/')\nassert str(Path(benchmark_moe.__file__).resolve()).startswith('/subject/benchmarks/')\nassert not torch.cuda.is_initialized()\nprint('IMPORT_EVIDENCE ' + json.dumps({\n    'python': sys.version if 'sys' in globals() else __import__('sys').version,\n    'executable': __import__('sys').executable,\n    'vllm': vllm.__file__, 'benchmark': benchmark_moe.__file__,\n    'constructors': [Glm5NextConfig.__module__, Glm5NextTextConfig.__module__],\n    'versions': {n: metadata.version(n) for n in ['torch','triton','transformers','ray','pytest']},\n    'cuda_initialized_before': torch.cuda.is_initialized(),\n}), flush=True)\nrc = pytest.main([\n    '/subject/tests/kernels/moe/test_moe.py', '-k', 'glm5next',\n    '--confcutdir=/subject/tests/kernels/moe', '-p', 'no:cacheprovider',\n    '-vv', '--tb=short', '--junitxml=/work/results/pytest.xml',\n])\nprint('CUDA_INITIALIZED_AFTER ' + str(torch.cuda.is_initialized()), flush=True)\nassert not torch.cuda.is_initialized()\nraise SystemExit(rc)\n"
+  ],
+  "cwd": "/work",
+  "environment": {
+    "PYTHONPATH": "/subject:/common/site-packages:/work",
+    "PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1",
+    "CUDA_VISIBLE_DEVICES": "",
+    "NVIDIA_VISIBLE_DEVICES": "void"
+  }
+}

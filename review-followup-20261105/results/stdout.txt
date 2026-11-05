@@ -1,0 +1,20 @@
+IMPORT_EVIDENCE {"python": "3.12.13 (001c8cb:001c8cb, Sep 11 2026, 20:08:55) [GCC 12.2.0]", "executable": "/usr/local/bin/python3", "vllm": "/subject/vllm/__init__.py", "benchmark": "/subject/benchmarks/kernels/benchmark_moe.py", "constructors": ["transformers.models.glm5_next.configuration_glm5_next", "transformers.models.glm5_next.configuration_glm5_next"], "versions": {"torch": "2.13.0+cu130", "triton": "3.7.1", "transformers": "5.19.0", "ray": "2.53.0", "pytest": "8.3.2"}, "cuda_initialized_before": false}
+============================= test session starts ==============================
+platform linux -- Python 3.12.13, pytest-8.3.2, pluggy-1.7.0 -- /usr/local/bin/python3
+rootdir: /subject
+configfile: pyproject.toml
+collecting ... collected 0 items / 1 error
+
+==================================== ERRORS ====================================
+________________ ERROR collecting tests/kernels/moe/test_moe.py ________________
+/subject/tests/kernels/moe/test_moe.py:315: in <module>
+    vllm_config = VllmConfig()
+/subject/vllm/config/device.py:55: in __post_init__
+    raise RuntimeError(
+E   RuntimeError: Failed to infer device type, please set the environment variable `VLLM_LOGGING_LEVEL=DEBUG` to turn on verbose logging to help debug the issue.
+----------------- generated xml file: /work/results/pytest.xml -----------------
+=========================== short test summary info ============================
+ERROR ../subject/tests/kernels/moe/test_moe.py - RuntimeError: Failed to infer device type, please set the environment variable `VLLM_LOGGING_LEVEL=DEBUG` to turn on verbose logging to help debug the issue.
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.37s ===============================
+CUDA_INITIALIZED_AFTER False

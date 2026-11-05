@@ -1,12 +1,12 @@
 {
-  "snapshot_utc": "2026-10-28T11:50:26.755823+00:00",
+  "snapshot_utc": "2026-11-05T01:03:32.440429+00:00",
   "excludes": [
     ".git/**",
     "CANDIDATE-FILES.json",
     "local scan state"
   ],
-  "listed_files": 666,
-  "listed_bytes": 80264397,
+  "listed_files": 689,
+  "listed_bytes": 80309807,
   "files": [
     {
       "file": "ATTRIBUTION.md",
@@ -14,7 +14,7 @@
     },
     {
       "file": "INCREMENTAL-CHECKS.json",
-      "bytes": 30605
+      "bytes": 31343
     },
     {
       "file": "LICENSE",
@@ -2663,6 +2663,98 @@
     {
       "file": "review-followup-20261028/upstream-checks/rtd-new-head-35468540-v2-api.request.json",
       "bytes": 2245
+    },
+    {
+      "file": "review-followup-20261105/README.md",
+      "bytes": 3083
+    },
+    {
+      "file": "review-followup-20261105/precommit-exit.json",
+      "bytes": 295
+    },
+    {
+      "file": "review-followup-20261105/precommit.stderr.txt",
+      "bytes": 0
+    },
+    {
+      "file": "review-followup-20261105/precommit.stdout.txt",
+      "bytes": 5871
+    },
+    {
+      "file": "review-followup-20261105/provenance-cpu-platform.json",
+      "bytes": 2823
+    },
+    {
+      "file": "review-followup-20261105/provenance.json",
+      "bytes": 1253
+    },
+    {
+      "file": "review-followup-20261105/relocation-equivalence.json",
+      "bytes": 278
+    },
+    {
+      "file": "review-followup-20261105/results-cpu-platform/command.json",
+      "bytes": 1883
+    },
+    {
+      "file": "review-followup-20261105/results-cpu-platform/exit.json",
+      "bytes": 22
+    },
+    {
+      "file": "review-followup-20261105/results-cpu-platform/stderr.txt",
+      "bytes": 385
+    },
+    {
+      "file": "review-followup-20261105/results-cpu-platform/stdout.txt",
+      "bytes": 2468
+    },
+    {
+      "file": "review-followup-20261105/results/command.json",
+      "bytes": 1587
+    },
+    {
+      "file": "review-followup-20261105/results/exit.json",
+      "bytes": 22
+    },
+    {
+      "file": "review-followup-20261105/results/stderr.txt",
+      "bytes": 385
+    },
+    {
+      "file": "review-followup-20261105/results/stdout.txt",
+      "bytes": 1820
+    },
+    {
+      "file": "review-followup-20261105/run_relocated_tests.py",
+      "bytes": 2493
+    },
+    {
+      "file": "review-followup-20261105/run_relocated_tests_cpu_platform.py",
+      "bytes": 2863
+    },
+    {
+      "file": "review-followup-20261105/sweep-unified-moe58986-220bdfc71322.json",
+      "bytes": 4867
+    },
+    {
+      "file": "review-followup-20261105/sweep-unified-moe58986-220bdfc71322.log",
+      "bytes": 3160
+    },
+    {
+      "file": "review-followup-20261105/sweep-unified-moe58986-220bdfc71322.mounts.json",
+      "bytes": 881
+    },
+    {
+      "file": "review-followup-20261105/sweep-unified-moe58986-2515dbaba1b4.json",
+      "bytes": 4853
+    },
+    {
+      "file": "review-followup-20261105/sweep-unified-moe58986-2515dbaba1b4.log",
+      "bytes": 2499
+    },
+    {
+      "file": "review-followup-20261105/sweep-unified-moe58986-2515dbaba1b4.mounts.json",
+      "bytes": 881
     },
     {
       "file": "third-party-licenses/GSM8K-MIT.txt",

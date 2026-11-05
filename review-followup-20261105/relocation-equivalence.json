@@ -1,0 +1,10 @@
+{
+  "test_body_and_decorator_equivalence": true,
+  "test_functions": [
+    "test_glm5next_moe_model_params",
+    "test_glm5next_outer_fp8_weight_block_size"
+  ],
+  "cases": 3,
+  "source_parent": "ef428c29a23d9d682b244a5abed86898bff85937",
+  "runtime_changes_since_parent": []
+}

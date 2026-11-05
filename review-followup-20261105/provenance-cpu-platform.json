@@ -1,0 +1,54 @@
+{
+  "head": "ef428c29a23d9d682b244a5abed86898bff85937",
+  "source_snapshot": "git archive HEAD vllm benchmarks tests pyproject.toml; overlay edited tests/kernels/moe/test_moe.py and remove former tests/benchmarks/test_moe.py",
+  "remote_task_root": "/data03/tiger/vllm_pr58986_tests_20261105_ef428c29",
+  "native_libraries": "CPU-only real imports use common v032 extension symlinks; no native rebuild or native-version validation",
+  "files": {
+    "tests/kernels/moe/test_moe.py": "f6ed5ea43074acc0575a07919dcdd1002b70bd404d3e2eee2ced17d7635df71f",
+    "benchmarks/kernels/benchmark_moe.py": "084829cd31fe2e04427fe38fa2d8d21676b2f905654854c685658027598f3ff2"
+  },
+  "launcher_command": "ssh h20-01 'python3 /data03/tiger/operator_sweep_common/20261023-v1/bin/run.py --root /data03/tiger/vllm_pr58986_tests_20261105_ef428c29 --task moe58986 --framework v032 --storage-budget-gib 2 --bind-readonly /data03/tiger/vllm_pr58986_tests_20261105_ef428c29/source:/subject -- python3 /work/run_relocated_tests_cpu_platform.py'",
+  "launcher_exit_code": 0,
+  "result": "3 passed,1126deselected,3warnings in0.39s; CUDA uninitialized before/after",
+  "prior_gpu_results": "not rerun; this execution concerns relocated test collection only",
+  "platform_selection": "VLLM_TARGET_DEVICE=cpu; source supports this selector and imports vllm.platforms.cpu.CpuPlatform",
+  "test_module_collection": "1129 total selected from real tests/kernels/moe/test_moe.py; only3targetGLMcases selected",
+  "original_failure_retained": "results/ has original CPU-autodetection collection error; same unchanged source succeeds once explicit supportedCPUplatform is selected",
+  "current_worktree_file_hashes_match": true,
+  "receipt": "/Users/bytedance/Documents/ChatGPT/b200\u4f18\u5316/review-20261105-test-relocation/cpu-evidence/sweep-unified-moe58986-220bdfc71322.json",
+  "storage": {
+    "storage_ready": true,
+    "docker_storage": {
+      "root": "/data00/docker",
+      "device": 66305,
+      "available_gib": 16.818565368652344,
+      "available_inodes": 220608975,
+      "free_bytes": 18058797056,
+      "free_inodes": 220608975
+    },
+    "data_storage": {
+      "root": "/data03/tiger/vllm_pr58986_tests_20261105_ef428c29",
+      "device": 66310,
+      "available_gib": 81.01691818237305,
+      "available_inodes": 222196335,
+      "free_bytes": 86991253504,
+      "free_inodes": 222196335
+    },
+    "storage_budget_gib": 2.0,
+    "output_inodes": 10000
+  },
+  "container_state": {
+    "Status": "exited",
+    "Running": false,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 0,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-11-05T01:01:02.817890866Z",
+    "FinishedAt": "2026-11-05T01:01:14.415429783Z"
+  },
+  "checks_not_repeated": "No model/nativebuild/fullGPU reruns"
+}

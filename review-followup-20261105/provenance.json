@@ -1,0 +1,14 @@
+{
+  "head": "ef428c29a23d9d682b244a5abed86898bff85937",
+  "source_snapshot": "git archive HEAD vllm benchmarks tests pyproject.toml; overlay edited tests/kernels/moe/test_moe.py and remove former tests/benchmarks/test_moe.py",
+  "remote_task_root": "/data03/tiger/vllm_pr58986_tests_20261105_ef428c29",
+  "native_libraries": "CPU-only real imports use common v032 extension symlinks; no native rebuild or native-version validation",
+  "files": {
+    "tests/kernels/moe/test_moe.py": "f6ed5ea43074acc0575a07919dcdd1002b70bd404d3e2eee2ced17d7635df71f",
+    "benchmarks/kernels/benchmark_moe.py": "084829cd31fe2e04427fe38fa2d8d21676b2f905654854c685658027598f3ff2"
+  },
+  "launcher_command": "ssh h20-01 'python3 /data03/tiger/operator_sweep_common/20261023-v1/bin/run.py --root /data03/tiger/vllm_pr58986_tests_20261105_ef428c29 --task moe58986 --framework v032 --storage-budget-gib 2 --bind-readonly /data03/tiger/vllm_pr58986_tests_20261105_ef428c29/source:/subject -- python3 /work/run_relocated_tests.py'",
+  "launcher_exit_code": 2,
+  "result": "collection failure before target tests: module-level VllmConfig() cannot infer device in CPU-only environment",
+  "prior_gpu_results": "not rerun; this execution concerns relocated test collection only"
+}

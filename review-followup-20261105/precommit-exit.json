@@ -1,0 +1,13 @@
+{
+  "returncode": 0,
+  "command": [
+    "/Users/bytedance/Documents/ChatGPT/b200\u4f18\u5316/.venv/bin/python",
+    "-m",
+    "pre_commit",
+    "run",
+    "--files",
+    "tests/kernels/moe/test_moe.py",
+    ".buildkite/test_areas/kernels.yaml",
+    ".buildkite/test_areas/benchmarks.yaml"
+  ]
+}
