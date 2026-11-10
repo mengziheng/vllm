@@ -14,8 +14,6 @@ The remaining branch reads both GLM5Next text configs while retaining outer quan
 
 Existing raw evidence was selectively checked: four official accuracy stdout blocks match the PR, all 28 workload exit records are zero, and the 24 serving runs each record 128 measured requests plus 16 warmups. Accuracy concurrency is 8, serving client concurrency is 128, and server maximum sequences is 32. These historical GPU runs used `eb34e115`, not this source commit.
 
-## Pending H20 validation
+## Validation scope
 
-Upstream commit `c56706e8` (PR #63820), merged after the GPU evaluation revision, enables TMA weight loading for the target H20 shapes. The existing dedicated TMA test selects H200. Current-head H20 validation of this changed execution path remains unrun. The available H20 host failed the read-only preflight because all GPUs were occupied and the Docker filesystem was full; no GPU job was launched.
-
-A focused current-head H20 kernel comparison can exercise the seven tuned configurations and compare TMA with pointer loads, including CUDA Graph execution. This would supplement the historical full-model evidence; it would not turn the old full-model throughput numbers into current-head measurements.
+This follow-up removes dedicated tests and CI dependencies. Benchmark parsing and tuned configuration values are unchanged. Existing GPU results retain their original `eb34e115` scope; no new GPU measurements are claimed.

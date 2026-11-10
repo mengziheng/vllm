@@ -29,9 +29,5 @@
     "full_h20_source": "eb34e115d041ac685fa38eadf8eae6c51d61dc23",
     "nov5_cpu_snapshot": "ef428c29 source archive plus test overlay matching 7fff7220"
   },
-  "open_validation_gap": {
-    "consumer_change": "c56706e8 / vllm-project/vllm#63820 enables TMA weight loading for the H20 block-FP8 shapes after the full GPU evidence revision.",
-    "current_head_h20_tests_run": false,
-    "preflight_blocker": "Available H20 host has no idle GPU and its Docker data filesystem has no free capacity. No job launched; no other workload stopped or data removed."
-  }
+  "followup_scope": "Reviewer-requested removal of dedicated tests and CI dependencies; no new GPU measurements. Existing full GPU evidence remains scoped to eb34e115."
 }
