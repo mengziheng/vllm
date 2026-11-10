@@ -1,0 +1,37 @@
+{
+  "recorded_at_utc": "2026-11-10T00:26:56.047196+00:00",
+  "source_commit": "40cab637f7d0c2ef03c6e696c98fa87451a62407",
+  "base_commit": "fa3b9d1377219247060d3c8b49eae199c9e7e154",
+  "previous_head": "7fff7220a05470bccb72c95e2e30ce5d5062793c",
+  "diff_numstat": "9\t0\tbenchmarks/kernels/benchmark_moe.py\n27\t0\tvllm/model_executor/layers/fused_moe/configs/E=288,N=512,device_name=NVIDIA_H20,dtype=fp8_w8a8,block_shape=[128,128].json\n",
+  "review_comments": [
+    4517977414,
+    4517986274
+  ],
+  "changes": "Remove 46 added dedicated test lines and two added CI dependency lines. Runtime/config files unchanged from previous head.",
+  "local_checks": {
+    "precommit_command": [
+      "pre-commit",
+      "run",
+      "--files",
+      ".buildkite/test_areas/kernels.yaml",
+      "tests/kernels/moe/test_moe.py",
+      "benchmarks/kernels/benchmark_moe.py",
+      "vllm/model_executor/layers/fused_moe/configs/E=288,N=512,device_name=NVIDIA_H20,dtype=fp8_w8a8,block_shape=[128,128].json"
+    ],
+    "precommit_exit_code": 0,
+    "git_diff_check_exit_code": 0,
+    "test_and_ci_files_match_base": true,
+    "benchmark_and_config_files_match_previous_head": true,
+    "execution": "agent-executed against the exact working-tree content committed as source_commit; no GPU tests run"
+  },
+  "historical_evidence_reused": {
+    "full_h20_source": "eb34e115d041ac685fa38eadf8eae6c51d61dc23",
+    "nov5_cpu_snapshot": "ef428c29 source archive plus test overlay matching 7fff7220"
+  },
+  "open_validation_gap": {
+    "consumer_change": "c56706e8 / vllm-project/vllm#63820 enables TMA weight loading for the H20 block-FP8 shapes after the full GPU evidence revision.",
+    "current_head_h20_tests_run": false,
+    "preflight_blocker": "Available H20 host has no idle GPU and its Docker data filesystem has no free capacity. No job launched; no other workload stopped or data removed."
+  }
+}
